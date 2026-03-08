@@ -1,0 +1,169 @@
+{
+  "outputDir": "generated_schedules",
+  "classesProcessed": 20,
+  "filesGenerated": 20,
+  "unresolvedClasses": 0,
+  "importedRows": 723,
+  "report": [
+    {
+      "className": "1º Ano A",
+      "file": "generated_schedules\\horario_1anoa_fundamental1_normalizado.json",
+      "total": 35,
+      "unresolvedSubjects": 0,
+      "unresolvedTeachers": 0,
+      "importableRows": 35
+    },
+    {
+      "className": "1º Ano B",
+      "file": "generated_schedules\\horario_1anob_fundamental1_normalizado.json",
+      "total": 35,
+      "unresolvedSubjects": 0,
+      "unresolvedTeachers": 0,
+      "importableRows": 35
+    },
+    {
+      "className": "1º Ano C",
+      "file": "generated_schedules\\horario_1anoc_fundamental1_normalizado.json",
+      "total": 35,
+      "unresolvedSubjects": 0,
+      "unresolvedTeachers": 0,
+      "importableRows": 35
+    },
+    {
+      "className": "1º EM A",
+      "file": "generated_schedules\\horario_1ema_medio_normalizado.json",
+      "total": 45,
+      "unresolvedSubjects": 0,
+      "unresolvedTeachers": 0,
+      "importableRows": 45
+    },
+    {
+      "className": "2º Ano A",
+      "file": "generated_schedules\\horario_2anoa_fundamental1_normalizado.json",
+      "total": 35,
+      "unresolvedSubjects": 0,
+      "unresolvedTeachers": 0,
+      "importableRows": 35
+    },
+    {
+      "className": "2º Ano B",
+      "file": "generated_schedules\\horario_2anob_fundamental1_normalizado.json",
+      "total": 35,
+      "unresolvedSubjects": 0,
+      "unresolvedTeachers": 0,
+      "importableRows": 35
+    },
+    {
+      "className": "2º Ano C",
+      "file": "generated_schedules\\horario_2anoc_fundamental1_normalizado.json",
+      "total": 30,
+      "unresolvedSubjects": 0,
+      "unresolvedTeachers": 0,
+      "importableRows": 30
+    },
+    {
+      "className": "2º EM A",
+      "file": "generated_schedules\\horario_2ema_medio_normalizado.json",
+      "total": 45,
+      "unresolvedSubjects": 0,
+      "unresolvedTeachers": 0,
+      "importableRows": 45
+    },
+    {
+      "className": "3º Ano A",
+      "file": "generated_schedules\\horario_3anoa_fundamental1_normalizado.json",
+      "total": 35,
+      "unresolvedSubjects": 0,
+      "unresolvedTeachers": 0,
+      "importableRows": 35
+    },
+    {
+      "className": "3º Ano B",
+      "file": "generated_schedules\\horario_3anob_fundamental1_normalizado.json",
+      "total": 35,
+      "unresolvedSubjects": 0,
+      "unresolvedTeachers": 0,
+      "importableRows": 35
+    },
+    {
+      "className": "3º EM A",
+      "file": "generated_schedules\\horario_3ema_medio_normalizado.json",
+      "total": 45,
+      "unresolvedSubjects": 0,
+      "unresolvedTeachers": 0,
+      "importableRows": 45
+    },
+    {
+      "className": "4º Ano A",
+      "file": "generated_schedules\\horario_4anoa_fundamental1_normalizado.json",
+      "total": 35,
+      "unresolvedSubjects": 0,
+      "unresolvedTeachers": 0,
+      "importableRows": 35
+    },
+    {
+      "className": "4º Ano B",
+      "file": "generated_schedules\\horario_4anob_fundamental1_normalizado.json",
+      "total": 35,
+      "unresolvedSubjects": 0,
+      "unresolvedTeachers": 0,
+      "importableRows": 35
+    },
+    {
+      "className": "5º Ano A",
+      "file": "generated_schedules\\horario_5anoa_fundamental1_normalizado.json",
+      "total": 35,
+      "unresolvedSubjects": 0,
+      "unresolvedTeachers": 0,
+      "importableRows": 35
+    },
+    {
+      "className": "5º Ano B",
+      "file": "generated_schedules\\horario_5anob_fundamental1_normalizado.json",
+      "total": 30,
+      "unresolvedSubjects": 0,
+      "unresolvedTeachers": 0,
+      "importableRows": 30
+    },
+    {
+      "className": "6º Ano A",
+      "file": "generated_schedules\\horario_6anoa_fundamental2_normalizado.json",
+      "total": 35,
+      "unresolvedSubjects": 0,
+      "unresolvedTeachers": 0,
+      "importableRows": 35
+    },
+    {
+      "className": "6º Ano B",
+      "file": "generated_schedules\\horario_6anob_fundamental2_normalizado.json",
+      "total": 35,
+      "unresolvedSubjects": 0,
+      "unresolvedTeachers": 0,
+      "importableRows": 35
+    },
+    {
+      "className": "7º Ano A",
+      "file": "generated_schedules\\horario_7anoa_fundamental2_normalizado.json",
+      "total": 35,
+      "unresolvedSubjects": 0,
+      "unresolvedTeachers": 0,
+      "importableRows": 35
+    },
+    {
+      "className": "8º Ano A",
+      "file": "generated_schedules\\horario_8anoa_fundamental2_normalizado.json",
+      "total": 35,
+      "unresolvedSubjects": 0,
+      "unresolvedTeachers": 0,
+      "importableRows": 35
+    },
+    {
+      "className": "9º Ano A",
+      "file": "generated_schedules\\horario_9anoa_fundamental2_normalizado.json",
+      "total": 38,
+      "unresolvedSubjects": 0,
+      "unresolvedTeachers": 0,
+      "importableRows": 38
+    }
+  ]
+}

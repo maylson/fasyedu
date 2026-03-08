@@ -1,0 +1,358 @@
+{
+  "fonte": "C:\\Users\\Maylson\\Desktop\\Horário_de_aulas_2026.xlsx",
+  "turma": "1? Ano A",
+  "etapa": "Fundamental 1",
+  "total_registros": 35,
+  "horarios": [
+    {
+      "linha_planilha": 5,
+      "turma": "1? Ano A",
+      "dia_semana": "Segunda-feira",
+      "horario": "07:30h/08:15h",
+      "conteudo": "G.Coloq./Aud.Mus./Psicom.",
+      "disciplina": "G.Coloq./Aud.Mus./Psicom.",
+      "professor_indicado": "Luciana Cavalcante",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 15,
+      "turma": "1? Ano A",
+      "dia_semana": "Segunda-feira",
+      "horario": "07:30h/08:15h",
+      "conteudo": "G.Coloq./Aud.Mus./Psicom.",
+      "disciplina": "G.Coloq./Aud.Mus./Psicom.",
+      "professor_indicado": "Luciana Cavalcante",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 6,
+      "turma": "1? Ano A",
+      "dia_semana": "Segunda-feira",
+      "horario": "08:15h/09:00h",
+      "conteudo": "Português",
+      "disciplina": "Português",
+      "professor_indicado": "Luciana Cavalcante",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 16,
+      "turma": "1? Ano A",
+      "dia_semana": "Segunda-feira",
+      "horario": "08:15h/09:00h",
+      "conteudo": "Let. Cient e mat. (Kalleb)",
+      "disciplina": "Let. Cient e mat.",
+      "professor_indicado": "Kalleb",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 7,
+      "turma": "1? Ano A",
+      "dia_semana": "Segunda-feira",
+      "horario": "09:00h/09:15h",
+      "conteudo": "INTERVALO",
+      "disciplina": "INTERVALO",
+      "professor_indicado": null,
+      "tipo": "INTERVALO"
+    },
+    {
+      "linha_planilha": 17,
+      "turma": "1? Ano A",
+      "dia_semana": "Segunda-feira",
+      "horario": "09:00h/09:15h",
+      "conteudo": "INTERVALO",
+      "disciplina": "INTERVALO",
+      "professor_indicado": null,
+      "tipo": "INTERVALO"
+    },
+    {
+      "linha_planilha": 8,
+      "turma": "1? Ano A",
+      "dia_semana": "Segunda-feira",
+      "horario": "09:15h/10:00h",
+      "conteudo": "Ens. Religioso (Mônica)",
+      "disciplina": "Ens. Religioso",
+      "professor_indicado": "Mônica",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 18,
+      "turma": "1? Ano A",
+      "dia_semana": "Segunda-feira",
+      "horario": "09:15h/10:00h",
+      "conteudo": "Geografia",
+      "disciplina": "Geografia",
+      "professor_indicado": "Luciana Cavalcante",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 9,
+      "turma": "1? Ano A",
+      "dia_semana": "Segunda-feira",
+      "horario": "10:00h/10:45h",
+      "conteudo": "Matemática",
+      "disciplina": "Matemática",
+      "professor_indicado": "Luciana Cavalcante",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 19,
+      "turma": "1? Ano A",
+      "dia_semana": "Segunda-feira",
+      "horario": "10:00h/10:45h",
+      "conteudo": "Ciências",
+      "disciplina": "Ciências",
+      "professor_indicado": "Luciana Cavalcante",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 10,
+      "turma": "1? Ano A",
+      "dia_semana": "Segunda-feira",
+      "horario": "10:45h/11:30h",
+      "conteudo": "História",
+      "disciplina": "História",
+      "professor_indicado": "Luciana Cavalcante",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 20,
+      "turma": "1? Ano A",
+      "dia_semana": "Segunda-feira",
+      "horario": "10:45h/11:30h",
+      "conteudo": "Inglês (Rafaella)",
+      "disciplina": "Inglês",
+      "professor_indicado": "Rafaella",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 11,
+      "turma": "1? Ano A",
+      "dia_semana": "Segunda-feira",
+      "horario": "11:30h/12:15h",
+      "conteudo": "Inglês (Rafaella)",
+      "disciplina": "Inglês",
+      "professor_indicado": "Rafaella",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 21,
+      "turma": "1? Ano A",
+      "dia_semana": "Segunda-feira",
+      "horario": "11:30h/12:15h",
+      "conteudo": "Arte",
+      "disciplina": "Arte",
+      "professor_indicado": "Luciana Cavalcante",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 25,
+      "turma": "1? Ano A",
+      "dia_semana": "Quarta-feira",
+      "horario": "07:30h/08:15h",
+      "conteudo": "G.Coloq./Aud.Mus./Psicom.",
+      "disciplina": "G.Coloq./Aud.Mus./Psicom.",
+      "professor_indicado": "Luciana Cavalcante",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 26,
+      "turma": "1? Ano A",
+      "dia_semana": "Quarta-feira",
+      "horario": "08:15h/09:00h",
+      "conteudo": "Matemática",
+      "disciplina": "Matemática",
+      "professor_indicado": "Luciana Cavalcante",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 27,
+      "turma": "1? Ano A",
+      "dia_semana": "Quarta-feira",
+      "horario": "09:00h/09:15h",
+      "conteudo": "INTERVALO",
+      "disciplina": "INTERVALO",
+      "professor_indicado": null,
+      "tipo": "INTERVALO"
+    },
+    {
+      "linha_planilha": 28,
+      "turma": "1? Ano A",
+      "dia_semana": "Quarta-feira",
+      "horario": "09:15h/10:00h",
+      "conteudo": "Ciências",
+      "disciplina": "Ciências",
+      "professor_indicado": "Luciana Cavalcante",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 29,
+      "turma": "1? Ano A",
+      "dia_semana": "Quarta-feira",
+      "horario": "10:00h/10:45h",
+      "conteudo": "Inglês (Rafaella)",
+      "disciplina": "Inglês",
+      "professor_indicado": "Rafaella",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 30,
+      "turma": "1? Ano A",
+      "dia_semana": "Quarta-feira",
+      "horario": "10:45h/11:30h",
+      "conteudo": "Português",
+      "disciplina": "Português",
+      "professor_indicado": "Luciana Cavalcante",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 31,
+      "turma": "1? Ano A",
+      "dia_semana": "Quarta-feira",
+      "horario": "11:30h/12:15h",
+      "conteudo": "Português",
+      "disciplina": "Português",
+      "professor_indicado": "Luciana Cavalcante",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 35,
+      "turma": "1? Ano A",
+      "dia_semana": "Quinta-feira",
+      "horario": "07:30h/08:15h",
+      "conteudo": "G.Coloq./Aud.Mus./Psicom.",
+      "disciplina": "G.Coloq./Aud.Mus./Psicom.",
+      "professor_indicado": "Luciana Cavalcante",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 36,
+      "turma": "1? Ano A",
+      "dia_semana": "Quinta-feira",
+      "horario": "08:15h/09:00h",
+      "conteudo": "Virtudes (Mônica)",
+      "disciplina": "Virtudes",
+      "professor_indicado": "Mônica",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 37,
+      "turma": "1? Ano A",
+      "dia_semana": "Quinta-feira",
+      "horario": "09:00h/09:15h",
+      "conteudo": "INTERVALO",
+      "disciplina": "INTERVALO",
+      "professor_indicado": null,
+      "tipo": "INTERVALO"
+    },
+    {
+      "linha_planilha": 38,
+      "turma": "1? Ano A",
+      "dia_semana": "Quinta-feira",
+      "horario": "09:15h/10:00h",
+      "conteudo": "Inglês (Rafaella)",
+      "disciplina": "Inglês",
+      "professor_indicado": "Rafaella",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 39,
+      "turma": "1? Ano A",
+      "dia_semana": "Quinta-feira",
+      "horario": "10:00h/10:45h",
+      "conteudo": "Música(Fernanda/Ericson)",
+      "disciplina": "Música",
+      "professor_indicado": "Fernanda/Ericson",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 40,
+      "turma": "1? Ano A",
+      "dia_semana": "Quinta-feira",
+      "horario": "10:45h/11:30h",
+      "conteudo": "Português",
+      "disciplina": "Português",
+      "professor_indicado": "Luciana Cavalcante",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 41,
+      "turma": "1? Ano A",
+      "dia_semana": "Quinta-feira",
+      "horario": "11:30h/12:15h",
+      "conteudo": "Parque / Intens. Alfab.",
+      "disciplina": "Parque / Intens. Alfab.",
+      "professor_indicado": "Luciana Cavalcante",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 45,
+      "turma": "1? Ano A",
+      "dia_semana": "Sexta-feira",
+      "horario": "07:30h/08:15h",
+      "conteudo": "G.Coloq./Aud.Mus./Psicom.",
+      "disciplina": "G.Coloq./Aud.Mus./Psicom.",
+      "professor_indicado": "Luciana Cavalcante",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 46,
+      "turma": "1? Ano A",
+      "dia_semana": "Sexta-feira",
+      "horario": "08:15h/09:00h",
+      "conteudo": "Inglês (Rafaella)",
+      "disciplina": "Inglês",
+      "professor_indicado": "Rafaella",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 47,
+      "turma": "1? Ano A",
+      "dia_semana": "Sexta-feira",
+      "horario": "09:00h/09:15h",
+      "conteudo": "INTERVALO",
+      "disciplina": "INTERVALO",
+      "professor_indicado": null,
+      "tipo": "INTERVALO"
+    },
+    {
+      "linha_planilha": 48,
+      "turma": "1? Ano A",
+      "dia_semana": "Sexta-feira",
+      "horario": "09:15h/10:00h",
+      "conteudo": "Let. Literário (Gabriel)",
+      "disciplina": "Let. Literário",
+      "professor_indicado": "Gabriel",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 49,
+      "turma": "1? Ano A",
+      "dia_semana": "Sexta-feira",
+      "horario": "10:00h/10:45h",
+      "conteudo": "Português",
+      "disciplina": "Português",
+      "professor_indicado": "Luciana Cavalcante",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 50,
+      "turma": "1? Ano A",
+      "dia_semana": "Sexta-feira",
+      "horario": "10:45h/11:30h",
+      "conteudo": "Matemática",
+      "disciplina": "Matemática",
+      "professor_indicado": "Luciana Cavalcante",
+      "tipo": "AULA"
+    },
+    {
+      "linha_planilha": 51,
+      "turma": "1? Ano A",
+      "dia_semana": "Sexta-feira",
+      "horario": "11:30h/12:15h",
+      "conteudo": "Intens. Alfab. / LVA",
+      "disciplina": "Intens. Alfab. / LVA",
+      "professor_indicado": "Luciana Cavalcante",
+      "tipo": "AULA"
+    }
+  ]
+}

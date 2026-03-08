@@ -1,0 +1,5063 @@
+[
+  {
+    "excel_row": 5,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "1º ANO A",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 5,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "1º ANO B",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 5,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "1º ANO C",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 5,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "2º ANO A",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 5,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "2º ANO B",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 5,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "2º ANO C",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 5,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "3º ANO A",
+    "cell_text": "Grupo coloquial"
+  },
+  {
+    "excel_row": 5,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "3º ANO B",
+    "cell_text": "Grupo coloquial"
+  },
+  {
+    "excel_row": 5,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "4º ANO A",
+    "cell_text": "Grupo coloquial"
+  },
+  {
+    "excel_row": 5,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "4º ANO B",
+    "cell_text": "Grupo coloquial"
+  },
+  {
+    "excel_row": 5,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "5º ANO A",
+    "cell_text": "Grupo coloquial"
+  },
+  {
+    "excel_row": 5,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "5º ANO B",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 5,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "6º ANO A",
+    "cell_text": "Virtudes (PEC-Sammy)"
+  },
+  {
+    "excel_row": 5,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "6º ANO B",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 5,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "7º ANO",
+    "cell_text": "Música(Fernanda/Ericson)"
+  },
+  {
+    "excel_row": 5,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "8º ANO",
+    "cell_text": "Virtudes (PEC-Everton)"
+  },
+  {
+    "excel_row": 5,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "9º ANO",
+    "cell_text": "Ens.Religoso (Rainedy)"
+  },
+  {
+    "excel_row": 5,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Biologia (Nunes)"
+  },
+  {
+    "excel_row": 5,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Filosofia (Maurício)"
+  },
+  {
+    "excel_row": 5,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 6,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "1º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 6,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "1º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 6,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "1º ANO C",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 6,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "2º ANO A",
+    "cell_text": "Let. Cient e mat. (Kalleb)"
+  },
+  {
+    "excel_row": 6,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "2º ANO B",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 6,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "2º ANO C",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 6,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "3º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 6,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "3º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 6,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "4º ANO A",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 6,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "4º ANO B",
+    "cell_text": "Let. Literário (Gabriel)"
+  },
+  {
+    "excel_row": 6,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "5º ANO A",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 6,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "5º ANO B",
+    "cell_text": "Grupo coloquial"
+  },
+  {
+    "excel_row": 6,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "6º ANO A",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 6,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "6º ANO B",
+    "cell_text": "Virtudes (PEC-Sammy)"
+  },
+  {
+    "excel_row": 6,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "7º ANO",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 6,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "8º ANO",
+    "cell_text": "Ens.Religoso (Rainedy)"
+  },
+  {
+    "excel_row": 6,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "9º ANO",
+    "cell_text": "Música(Fernanda/Ericson)"
+  },
+  {
+    "excel_row": 6,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Biologia (Nunes)"
+  },
+  {
+    "excel_row": 6,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Sociologia (Maurício)"
+  },
+  {
+    "excel_row": 6,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 7,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "1º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 7,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "1º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 7,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "1º ANO C",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 7,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "2º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 7,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "2º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 7,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "3º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 7,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "3º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 7,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "4º ANO A",
+    "cell_text": "Let. Literário (Gabriel)"
+  },
+  {
+    "excel_row": 7,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "4º ANO B",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 7,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "5º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 7,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "5º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 7,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "6º ANO A",
+    "cell_text": "Música(Fernanda/Ericson)"
+  },
+  {
+    "excel_row": 7,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "6º ANO B",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 7,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "7º ANO",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 7,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "8º ANO",
+    "cell_text": "Geografia (Sammy)"
+  },
+  {
+    "excel_row": 7,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "9º ANO",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 7,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Ens.Religoso (Rainedy)"
+  },
+  {
+    "excel_row": 7,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Biologia (Nunes)"
+  },
+  {
+    "excel_row": 7,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Filosofia (Maurício)"
+  },
+  {
+    "excel_row": 8,
+    "day_of_week": 1,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "1º ANO A",
+    "cell_text": "Ens. Religioso (Mônica)"
+  },
+  {
+    "excel_row": 8,
+    "day_of_week": 1,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "1º ANO B",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 8,
+    "day_of_week": 1,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "1º ANO C",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 8,
+    "day_of_week": 1,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "2º ANO A",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 8,
+    "day_of_week": 1,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "2º ANO B",
+    "cell_text": "Let. Cient e mat. (Kalleb)"
+  },
+  {
+    "excel_row": 8,
+    "day_of_week": 1,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "2º ANO C",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 8,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "3º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 8,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "3º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 8,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "4º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 8,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "4º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 8,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "5º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 8,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "6º ANO A",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 8,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "6º ANO B",
+    "cell_text": "Música(Fernanda/Ericson)"
+  },
+  {
+    "excel_row": 8,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "7º ANO",
+    "cell_text": "Ens.Religoso (Rainedy)"
+  },
+  {
+    "excel_row": 8,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "8º ANO",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 8,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "9º ANO",
+    "cell_text": "Geografia (Sammy)"
+  },
+  {
+    "excel_row": 8,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 8,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Biologia (Nunes)"
+  },
+  {
+    "excel_row": 8,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Sociologia (Maurício)"
+  },
+  {
+    "excel_row": 9,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "1º ANO A",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 9,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "1º ANO B",
+    "cell_text": "Ens. Religioso (Mônica)"
+  },
+  {
+    "excel_row": 9,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "1º ANO C",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 9,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "2º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 9,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "2º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 9,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "2º ANO C",
+    "cell_text": "Let. Cient e mat. (Kalleb)"
+  },
+  {
+    "excel_row": 9,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "3º ANO A",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 9,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "3º ANO B",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 9,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "4º ANO A",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 9,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "4º ANO B",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 9,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "5º ANO A",
+    "cell_text": "Let. Literário (Gabriel)"
+  },
+  {
+    "excel_row": 9,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "5º ANO B",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 9,
+    "day_of_week": 1,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "6º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 9,
+    "day_of_week": 1,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "6º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 9,
+    "day_of_week": 1,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "7º ANO",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 9,
+    "day_of_week": 1,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "8º ANO",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 9,
+    "day_of_week": 1,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "9º ANO",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 9,
+    "day_of_week": 1,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 9,
+    "day_of_week": 1,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 9,
+    "day_of_week": 1,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 10,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "1º ANO A",
+    "cell_text": "História"
+  },
+  {
+    "excel_row": 10,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "1º ANO B",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 10,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "1º ANO C",
+    "cell_text": "Ens. Religioso (Mônica)"
+  },
+  {
+    "excel_row": 10,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "2º ANO A",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 10,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "2º ANO B",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 10,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "2º ANO C",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 10,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "3º ANO A",
+    "cell_text": "Geografia"
+  },
+  {
+    "excel_row": 10,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "3º ANO B",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 10,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "4º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 10,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "4º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 10,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "5º ANO A",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 10,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "5º ANO B",
+    "cell_text": "Let. Literário (Gabriel)"
+  },
+  {
+    "excel_row": 10,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "6º ANO A",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 10,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "6º ANO B",
+    "cell_text": "Ens.Religoso (Rainedy)"
+  },
+  {
+    "excel_row": 10,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "7º ANO",
+    "cell_text": "Geografia (Sammy)"
+  },
+  {
+    "excel_row": 10,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "8º ANO",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 10,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "9º ANO",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 10,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Arte(Heluza)"
+  },
+  {
+    "excel_row": 10,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "História (Maurício)"
+  },
+  {
+    "excel_row": 10,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Biologia (Nunes)"
+  },
+  {
+    "excel_row": 11,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "1º ANO A",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 11,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "1º ANO B",
+    "cell_text": "História"
+  },
+  {
+    "excel_row": 11,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "1º ANO C",
+    "cell_text": "História"
+  },
+  {
+    "excel_row": 11,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "2º ANO A",
+    "cell_text": "História"
+  },
+  {
+    "excel_row": 11,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "2º ANO B",
+    "cell_text": "História"
+  },
+  {
+    "excel_row": 11,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "2º ANO C",
+    "cell_text": "História"
+  },
+  {
+    "excel_row": 11,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "3º ANO A",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 11,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "3º ANO B",
+    "cell_text": "Geografia"
+  },
+  {
+    "excel_row": 11,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "4º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 11,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "4º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 11,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "5º ANO A",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 11,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "5º ANO B",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 11,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "6º ANO A",
+    "cell_text": "Ens.Religoso (Rainedy)"
+  },
+  {
+    "excel_row": 11,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "6º ANO B",
+    "cell_text": "Geografia (Sammy)"
+  },
+  {
+    "excel_row": 11,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "7º ANO",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 11,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "8º ANO",
+    "cell_text": "Música(Fernanda/Ericson)"
+  },
+  {
+    "excel_row": 11,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "9º ANO",
+    "cell_text": "História (Maurício)"
+  },
+  {
+    "excel_row": 11,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Virtudes (PEC-Gabrielle)"
+  },
+  {
+    "excel_row": 11,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Arte(Heluza)"
+  },
+  {
+    "excel_row": 11,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Biologia (Nunes)"
+  },
+  {
+    "excel_row": 12,
+    "day_of_week": 1,
+    "time_slot": "12:15h/13:00h",
+    "class_label": "9º ANO",
+    "cell_text": "História (Maurício)"
+  },
+  {
+    "excel_row": 12,
+    "day_of_week": 1,
+    "time_slot": "12:15h/13:00h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Física (Macedo)"
+  },
+  {
+    "excel_row": 12,
+    "day_of_week": 1,
+    "time_slot": "12:15h/13:00h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 12,
+    "day_of_week": 1,
+    "time_slot": "12:15h/13:00h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Literatura (Carol)"
+  },
+  {
+    "excel_row": 13,
+    "day_of_week": 1,
+    "time_slot": "13:00h/13:50h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 13,
+    "day_of_week": 1,
+    "time_slot": "13:00h/13:50h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Física (Macedo)"
+  },
+  {
+    "excel_row": 13,
+    "day_of_week": 1,
+    "time_slot": "13:00h/13:50h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Literatura (Carol)"
+  },
+  {
+    "excel_row": 15,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "1º ANO A",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 15,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "1º ANO B",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 15,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "1º ANO C",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 15,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "2º ANO A",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 15,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "2º ANO B",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 15,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "2º ANO C",
+    "cell_text": "Ed.Física (Déborah)"
+  },
+  {
+    "excel_row": 15,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "3º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 15,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "3º ANO B",
+    "cell_text": "Virtudes (Mônica)"
+  },
+  {
+    "excel_row": 15,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "4º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 15,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "4º ANO B",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 15,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "5º ANO A",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 15,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "5º ANO B",
+    "cell_text": "Música(Fernanda/Ericson)"
+  },
+  {
+    "excel_row": 15,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "6º ANO A",
+    "cell_text": "Matemática (Cadu)"
+  },
+  {
+    "excel_row": 15,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "6º ANO B",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 15,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "7º ANO",
+    "cell_text": "Virtudes (PEC-Rainedy)"
+  },
+  {
+    "excel_row": 15,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "8º ANO",
+    "cell_text": "Geografia (Sammy)"
+  },
+  {
+    "excel_row": 15,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "9º ANO",
+    "cell_text": "Cien.Quim. (Wendel)"
+  },
+  {
+    "excel_row": 15,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Matemática (Gleidson)"
+  },
+  {
+    "excel_row": 15,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Virtudes (PEC-Marçal)"
+  },
+  {
+    "excel_row": 15,
+    "day_of_week": 1,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 16,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "1º ANO A",
+    "cell_text": "Let. Cient e mat. (Kalleb)"
+  },
+  {
+    "excel_row": 16,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "1º ANO B",
+    "cell_text": "Geografia"
+  },
+  {
+    "excel_row": 16,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "1º ANO C",
+    "cell_text": "Geografia"
+  },
+  {
+    "excel_row": 16,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "2º ANO A",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 16,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "2º ANO B",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 16,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "2º ANO C",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 16,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "3º ANO A",
+    "cell_text": "Virtudes (Mônica)"
+  },
+  {
+    "excel_row": 16,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "3º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 16,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "4º ANO A",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 16,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "4º ANO B",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 16,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "5º ANO A",
+    "cell_text": "Música(Fernanda/Ericson)"
+  },
+  {
+    "excel_row": 16,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "5º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 16,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "6º ANO A",
+    "cell_text": "Matemática (Cadu)"
+  },
+  {
+    "excel_row": 16,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "6º ANO B",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 16,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "7º ANO",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 16,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "8º ANO",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 16,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "9º ANO",
+    "cell_text": "Cien.Quim. (Wendel)"
+  },
+  {
+    "excel_row": 16,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Matemática (Gleidson)"
+  },
+  {
+    "excel_row": 16,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Ens.Religoso (Rainedy)"
+  },
+  {
+    "excel_row": 16,
+    "day_of_week": 1,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "História (Maurício)"
+  },
+  {
+    "excel_row": 17,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "1º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 17,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "1º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 17,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "1º ANO C",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 17,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "2º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 17,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "2º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 17,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "3º ANO A",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 17,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "3º ANO B",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 17,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "4º ANO A",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 17,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "4º ANO B",
+    "cell_text": "Música(Fernanda/Ericson)"
+  },
+  {
+    "excel_row": 17,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "5º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 17,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "5º ANO B",
+    "cell_text": "Ens.Religoso (Rainedy)"
+  },
+  {
+    "excel_row": 17,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "6º ANO A",
+    "cell_text": "Ciências (Arthur)"
+  },
+  {
+    "excel_row": 17,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "6º ANO B",
+    "cell_text": "Matemática (Cadu)"
+  },
+  {
+    "excel_row": 17,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "7º ANO",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 17,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "8º ANO",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 17,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "9º ANO",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 17,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "História (Maurício)"
+  },
+  {
+    "excel_row": 17,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Química (Wendel)"
+  },
+  {
+    "excel_row": 17,
+    "day_of_week": 1,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Matemática (Gleidson)"
+  },
+  {
+    "excel_row": 18,
+    "day_of_week": 1,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "1º ANO A",
+    "cell_text": "Geografia"
+  },
+  {
+    "excel_row": 18,
+    "day_of_week": 1,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "1º ANO B",
+    "cell_text": "Let. Cient e mat. (Kalleb)"
+  },
+  {
+    "excel_row": 18,
+    "day_of_week": 1,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "1º ANO C",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 18,
+    "day_of_week": 1,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "2º ANO A",
+    "cell_text": "Let. Literário (Gabriel)"
+  },
+  {
+    "excel_row": 18,
+    "day_of_week": 1,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "2º ANO B",
+    "cell_text": "Ens. Religioso (Mônica)"
+  },
+  {
+    "excel_row": 18,
+    "day_of_week": 1,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "2º ANO C",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 18,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "3º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 18,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "3º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 18,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "4º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 18,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "4º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 18,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "5º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 18,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "6º ANO A",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 18,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "6º ANO B",
+    "cell_text": "História (Maurício)"
+  },
+  {
+    "excel_row": 18,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "7º ANO",
+    "cell_text": "Ciências (Arthur)"
+  },
+  {
+    "excel_row": 18,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "8º ANO",
+    "cell_text": "Matemática (Cadu)"
+  },
+  {
+    "excel_row": 18,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "9º ANO",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 18,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 18,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Química (Wendel)"
+  },
+  {
+    "excel_row": 18,
+    "day_of_week": 1,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Matemática (Gleidson)"
+  },
+  {
+    "excel_row": 19,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "1º ANO A",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 19,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "1º ANO B",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 19,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "1º ANO C",
+    "cell_text": "Let. Cient e mat. (Kalleb)"
+  },
+  {
+    "excel_row": 19,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "2º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 19,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "2º ANO B",
+    "cell_text": "Let. Literário (Gabriel)"
+  },
+  {
+    "excel_row": 19,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "2º ANO C",
+    "cell_text": "Ens. Religioso (Mônica)"
+  },
+  {
+    "excel_row": 19,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "3º ANO A",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 19,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "3º ANO B",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 19,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "4º ANO A",
+    "cell_text": "Música(Fernanda/Ericson)"
+  },
+  {
+    "excel_row": 19,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "4º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 19,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "5º ANO A",
+    "cell_text": "Ens.Religoso (Rainedy)"
+  },
+  {
+    "excel_row": 19,
+    "day_of_week": 1,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "5º ANO B",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 19,
+    "day_of_week": 1,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "6º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 19,
+    "day_of_week": 1,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "6º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 19,
+    "day_of_week": 1,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "7º ANO",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 19,
+    "day_of_week": 1,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "8º ANO",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 19,
+    "day_of_week": 1,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "9º ANO",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 19,
+    "day_of_week": 1,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 19,
+    "day_of_week": 1,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 19,
+    "day_of_week": 1,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 20,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "1º ANO A",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 20,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "1º ANO B",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 20,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "1º ANO C",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 20,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "2º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 20,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "2º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 20,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "2º ANO C",
+    "cell_text": "Let. Literário (Gabriel)"
+  },
+  {
+    "excel_row": 20,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "3º ANO A",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 20,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "3º ANO B",
+    "cell_text": "História"
+  },
+  {
+    "excel_row": 20,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "4º ANO A",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 20,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "4º ANO B",
+    "cell_text": "Ens.Religoso (Rainedy)"
+  },
+  {
+    "excel_row": 20,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "5º ANO A",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 20,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "5º ANO B",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 20,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "6º ANO A",
+    "cell_text": "História (Maurício)"
+  },
+  {
+    "excel_row": 20,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "6º ANO B",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 20,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "7º ANO",
+    "cell_text": "Matemática (Cadu)"
+  },
+  {
+    "excel_row": 20,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "8º ANO",
+    "cell_text": "Ciências (Arthur)"
+  },
+  {
+    "excel_row": 20,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "9º ANO",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 20,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Química (Wendel)"
+  },
+  {
+    "excel_row": 20,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Matemática (Gleidson)"
+  },
+  {
+    "excel_row": 20,
+    "day_of_week": 1,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Biologia (Enrique)"
+  },
+  {
+    "excel_row": 21,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "1º ANO A",
+    "cell_text": "Arte"
+  },
+  {
+    "excel_row": 21,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "1º ANO B",
+    "cell_text": "Arte"
+  },
+  {
+    "excel_row": 21,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "1º ANO C",
+    "cell_text": "Arte"
+  },
+  {
+    "excel_row": 21,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "2º ANO A",
+    "cell_text": "Ens. Religioso (Mônica)"
+  },
+  {
+    "excel_row": 21,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "2º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 21,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "2º ANO C",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 21,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "3º ANO A",
+    "cell_text": "História"
+  },
+  {
+    "excel_row": 21,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "3º ANO B",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 21,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "4º ANO A",
+    "cell_text": "Ens.Religoso (Rainedy)"
+  },
+  {
+    "excel_row": 21,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "4º ANO B",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 21,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "5º ANO A",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 21,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "5º ANO B",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 21,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "6º ANO A",
+    "cell_text": "Geografia (Sammy)"
+  },
+  {
+    "excel_row": 21,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "6º ANO B",
+    "cell_text": "Ciências (Arthur)"
+  },
+  {
+    "excel_row": 21,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "7º ANO",
+    "cell_text": "Matemática (Cadu)"
+  },
+  {
+    "excel_row": 21,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "8º ANO",
+    "cell_text": "História (Maurício)"
+  },
+  {
+    "excel_row": 21,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "9º ANO",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 21,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Química (Wendel)"
+  },
+  {
+    "excel_row": 21,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Matemática (Gleidson)"
+  },
+  {
+    "excel_row": 21,
+    "day_of_week": 1,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 22,
+    "day_of_week": 1,
+    "time_slot": "12:15h/13:00h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "História (Maurício)"
+  },
+  {
+    "excel_row": 22,
+    "day_of_week": 1,
+    "time_slot": "12:15h/13:00h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Literatura (Carol)"
+  },
+  {
+    "excel_row": 22,
+    "day_of_week": 1,
+    "time_slot": "12:15h/13:00h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Química (Wendel)"
+  },
+  {
+    "excel_row": 23,
+    "day_of_week": 1,
+    "time_slot": "13:00h/13:50h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "História (Maurício)"
+  },
+  {
+    "excel_row": 23,
+    "day_of_week": 1,
+    "time_slot": "13:00h/13:50h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Literatura (Carol)"
+  },
+  {
+    "excel_row": 23,
+    "day_of_week": 1,
+    "time_slot": "13:00h/13:50h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Química (Wendel)"
+  },
+  {
+    "excel_row": 25,
+    "day_of_week": 3,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "1º ANO A",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 25,
+    "day_of_week": 3,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "1º ANO B",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 25,
+    "day_of_week": 3,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "1º ANO C",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 25,
+    "day_of_week": 3,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "2º ANO A",
+    "cell_text": "G.Coloq./Aud.Musical"
+  },
+  {
+    "excel_row": 25,
+    "day_of_week": 3,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "2º ANO B",
+    "cell_text": "Ed.Física (Déborah)"
+  },
+  {
+    "excel_row": 25,
+    "day_of_week": 3,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "2º ANO C",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 25,
+    "day_of_week": 3,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "3º ANO A",
+    "cell_text": "Grupo coloquial"
+  },
+  {
+    "excel_row": 25,
+    "day_of_week": 3,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "3º ANO B",
+    "cell_text": "Grupo coloquial"
+  },
+  {
+    "excel_row": 25,
+    "day_of_week": 3,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "4º ANO A",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 25,
+    "day_of_week": 3,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "4º ANO B",
+    "cell_text": "Ed. Física"
+  },
+  {
+    "excel_row": 25,
+    "day_of_week": 3,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "5º ANO A",
+    "cell_text": "Grupo coloquial"
+  },
+  {
+    "excel_row": 25,
+    "day_of_week": 3,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "5º ANO B",
+    "cell_text": "Virtudes (Mônica)"
+  },
+  {
+    "excel_row": 25,
+    "day_of_week": 3,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "6º ANO A",
+    "cell_text": "Ciências (Arthur)"
+  },
+  {
+    "excel_row": 25,
+    "day_of_week": 3,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "6º ANO B",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 25,
+    "day_of_week": 3,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "7º ANO",
+    "cell_text": "Matemática (Cadu)"
+  },
+  {
+    "excel_row": 25,
+    "day_of_week": 3,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "8º ANO",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 25,
+    "day_of_week": 3,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "9º ANO",
+    "cell_text": "Espanhol (Eliane)"
+  },
+  {
+    "excel_row": 25,
+    "day_of_week": 3,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Matemática (Iago)"
+  },
+  {
+    "excel_row": 25,
+    "day_of_week": 3,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Geografia (Sammy)"
+  },
+  {
+    "excel_row": 25,
+    "day_of_week": 3,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Química (Anderson)"
+  },
+  {
+    "excel_row": 26,
+    "day_of_week": 3,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "1º ANO A",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 26,
+    "day_of_week": 3,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "1º ANO B",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 26,
+    "day_of_week": 3,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "1º ANO C",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 26,
+    "day_of_week": 3,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "2º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 26,
+    "day_of_week": 3,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "2º ANO B",
+    "cell_text": "G.Coloq./Aud.Musical"
+  },
+  {
+    "excel_row": 26,
+    "day_of_week": 3,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "2º ANO C",
+    "cell_text": "G.Coloq./Aud.Musical"
+  },
+  {
+    "excel_row": 26,
+    "day_of_week": 3,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "3º ANO A",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 26,
+    "day_of_week": 3,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "3º ANO B",
+    "cell_text": "Música(Fernanda/Ericson)"
+  },
+  {
+    "excel_row": 26,
+    "day_of_week": 3,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "4º ANO A",
+    "cell_text": "Grupo coloquial"
+  },
+  {
+    "excel_row": 26,
+    "day_of_week": 3,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "4º ANO B",
+    "cell_text": "Grupo coloquial"
+  },
+  {
+    "excel_row": 26,
+    "day_of_week": 3,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "5º ANO A",
+    "cell_text": "História"
+  },
+  {
+    "excel_row": 26,
+    "day_of_week": 3,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "5º ANO B",
+    "cell_text": "Grupo coloquial"
+  },
+  {
+    "excel_row": 26,
+    "day_of_week": 3,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "6º ANO A",
+    "cell_text": "Ciências (Arthur)"
+  },
+  {
+    "excel_row": 26,
+    "day_of_week": 3,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "6º ANO B",
+    "cell_text": "Espanhol (Eliane)"
+  },
+  {
+    "excel_row": 26,
+    "day_of_week": 3,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "7º ANO",
+    "cell_text": "Matemática (Cadu)"
+  },
+  {
+    "excel_row": 26,
+    "day_of_week": 3,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "8º ANO",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 26,
+    "day_of_week": 3,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "9º ANO",
+    "cell_text": "Matemática (Iago)"
+  },
+  {
+    "excel_row": 26,
+    "day_of_week": 3,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Geografia (Sammy)"
+  },
+  {
+    "excel_row": 26,
+    "day_of_week": 3,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 26,
+    "day_of_week": 3,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Química (Anderson)"
+  },
+  {
+    "excel_row": 27,
+    "day_of_week": 3,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "1º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 27,
+    "day_of_week": 3,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "1º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 27,
+    "day_of_week": 3,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "1º ANO C",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 27,
+    "day_of_week": 3,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "2º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 27,
+    "day_of_week": 3,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "2º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 27,
+    "day_of_week": 3,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "3º ANO A",
+    "cell_text": "Música(Fernanda/Ericson)"
+  },
+  {
+    "excel_row": 27,
+    "day_of_week": 3,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "3º ANO B",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 27,
+    "day_of_week": 3,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "4º ANO A",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 27,
+    "day_of_week": 3,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "4º ANO B",
+    "cell_text": "Geografia"
+  },
+  {
+    "excel_row": 27,
+    "day_of_week": 3,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "5º ANO A",
+    "cell_text": "Virtudes (Mônica)"
+  },
+  {
+    "excel_row": 27,
+    "day_of_week": 3,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "5º ANO B",
+    "cell_text": "História"
+  },
+  {
+    "excel_row": 27,
+    "day_of_week": 3,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "6º ANO A",
+    "cell_text": "Espanhol (Eliane)"
+  },
+  {
+    "excel_row": 27,
+    "day_of_week": 3,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "6º ANO B",
+    "cell_text": "Geografia (Sammy)"
+  },
+  {
+    "excel_row": 27,
+    "day_of_week": 3,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "7º ANO",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 27,
+    "day_of_week": 3,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "8º ANO",
+    "cell_text": "Ciências (Arthur)"
+  },
+  {
+    "excel_row": 27,
+    "day_of_week": 3,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "9º ANO",
+    "cell_text": "Ciên.Fís.(Luciano)"
+  },
+  {
+    "excel_row": 27,
+    "day_of_week": 3,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 27,
+    "day_of_week": 3,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Química (Anderson)"
+  },
+  {
+    "excel_row": 27,
+    "day_of_week": 3,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Matemática (Iago)"
+  },
+  {
+    "excel_row": 28,
+    "day_of_week": 3,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "1º ANO A",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 28,
+    "day_of_week": 3,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "1º ANO B",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 28,
+    "day_of_week": 3,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "1º ANO C",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 28,
+    "day_of_week": 3,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "2º ANO A",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 28,
+    "day_of_week": 3,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "2º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 28,
+    "day_of_week": 3,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "2º ANO C",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 28,
+    "day_of_week": 3,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "3º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 28,
+    "day_of_week": 3,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "3º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 28,
+    "day_of_week": 3,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "4º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 28,
+    "day_of_week": 3,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "4º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 28,
+    "day_of_week": 3,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "5º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 28,
+    "day_of_week": 3,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "6º ANO A",
+    "cell_text": "Matemática (Cadu)"
+  },
+  {
+    "excel_row": 28,
+    "day_of_week": 3,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "6º ANO B",
+    "cell_text": "Ciências (Arthur)"
+  },
+  {
+    "excel_row": 28,
+    "day_of_week": 3,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "7º ANO",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 28,
+    "day_of_week": 3,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "8º ANO",
+    "cell_text": "Matemática (Iago)"
+  },
+  {
+    "excel_row": 28,
+    "day_of_week": 3,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "9º ANO",
+    "cell_text": "Ciên.Fís.(Luciano)"
+  },
+  {
+    "excel_row": 28,
+    "day_of_week": 3,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Espanhol (Eliane)"
+  },
+  {
+    "excel_row": 28,
+    "day_of_week": 3,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Química (Anderson)"
+  },
+  {
+    "excel_row": 28,
+    "day_of_week": 3,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Física (Macedo)"
+  },
+  {
+    "excel_row": 29,
+    "day_of_week": 3,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "1º ANO A",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 29,
+    "day_of_week": 3,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "1º ANO B",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 29,
+    "day_of_week": 3,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "1º ANO C",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 29,
+    "day_of_week": 3,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "2º ANO A",
+    "cell_text": "Música(Fernanda/Ericson)"
+  },
+  {
+    "excel_row": 29,
+    "day_of_week": 3,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "2º ANO B",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 29,
+    "day_of_week": 3,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "2º ANO C",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 29,
+    "day_of_week": 3,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "3º ANO A",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 29,
+    "day_of_week": 3,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "3º ANO B",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 29,
+    "day_of_week": 3,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "4º ANO A",
+    "cell_text": "História"
+  },
+  {
+    "excel_row": 29,
+    "day_of_week": 3,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "4º ANO B",
+    "cell_text": "Virtudes (Mônica)"
+  },
+  {
+    "excel_row": 29,
+    "day_of_week": 3,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "5º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 29,
+    "day_of_week": 3,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "5º ANO B",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 29,
+    "day_of_week": 3,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "6º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 29,
+    "day_of_week": 3,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "6º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 29,
+    "day_of_week": 3,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "7º ANO",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 29,
+    "day_of_week": 3,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "8º ANO",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 29,
+    "day_of_week": 3,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "9º ANO",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 29,
+    "day_of_week": 3,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 29,
+    "day_of_week": 3,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 29,
+    "day_of_week": 3,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 30,
+    "day_of_week": 3,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "1º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 30,
+    "day_of_week": 3,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "1º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 30,
+    "day_of_week": 3,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "1º ANO C",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 30,
+    "day_of_week": 3,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "2º ANO A",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 30,
+    "day_of_week": 3,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "2º ANO B",
+    "cell_text": "Música(Fernanda/Ericson)"
+  },
+  {
+    "excel_row": 30,
+    "day_of_week": 3,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "2º ANO C",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 30,
+    "day_of_week": 3,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "3º ANO A",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 30,
+    "day_of_week": 3,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "3º ANO B",
+    "cell_text": "Let. Literário (Gabriel)"
+  },
+  {
+    "excel_row": 30,
+    "day_of_week": 3,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "4º ANO A",
+    "cell_text": "Virtudes (Mônica)"
+  },
+  {
+    "excel_row": 30,
+    "day_of_week": 3,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "4º ANO B",
+    "cell_text": "História"
+  },
+  {
+    "excel_row": 30,
+    "day_of_week": 3,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "5º ANO A",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 30,
+    "day_of_week": 3,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "5º ANO B",
+    "cell_text": "Geografia"
+  },
+  {
+    "excel_row": 30,
+    "day_of_week": 3,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "6º ANO A",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 30,
+    "day_of_week": 3,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "6º ANO B",
+    "cell_text": "Matemática (Cadu)"
+  },
+  {
+    "excel_row": 30,
+    "day_of_week": 3,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "7º ANO",
+    "cell_text": "Ciências (Arthur)"
+  },
+  {
+    "excel_row": 30,
+    "day_of_week": 3,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "8º ANO",
+    "cell_text": "Espanhol (Eliane)"
+  },
+  {
+    "excel_row": 30,
+    "day_of_week": 3,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "9º ANO",
+    "cell_text": "Matemática (Iago)"
+  },
+  {
+    "excel_row": 30,
+    "day_of_week": 3,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 30,
+    "day_of_week": 3,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Física (Luciano)"
+  },
+  {
+    "excel_row": 30,
+    "day_of_week": 3,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Física (Macedo)"
+  },
+  {
+    "excel_row": 31,
+    "day_of_week": 3,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "1º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 31,
+    "day_of_week": 3,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "1º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 31,
+    "day_of_week": 3,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "1º ANO C",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 31,
+    "day_of_week": 3,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "2º ANO A",
+    "cell_text": "Ed.Física (Déborah)"
+  },
+  {
+    "excel_row": 31,
+    "day_of_week": 3,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "2º ANO B",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 31,
+    "day_of_week": 3,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "2º ANO C",
+    "cell_text": "Música(Fernanda/Ericson)"
+  },
+  {
+    "excel_row": 31,
+    "day_of_week": 3,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "3º ANO A",
+    "cell_text": "Let. Literário (Gabriel)"
+  },
+  {
+    "excel_row": 31,
+    "day_of_week": 3,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "3º ANO B",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 31,
+    "day_of_week": 3,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "4º ANO A",
+    "cell_text": "Geografia"
+  },
+  {
+    "excel_row": 31,
+    "day_of_week": 3,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "4º ANO B",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 31,
+    "day_of_week": 3,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "5º ANO A",
+    "cell_text": "Geografia"
+  },
+  {
+    "excel_row": 31,
+    "day_of_week": 3,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "5º ANO B",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 31,
+    "day_of_week": 3,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "6º ANO A",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 31,
+    "day_of_week": 3,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "6º ANO B",
+    "cell_text": "Matemática (Cadu)"
+  },
+  {
+    "excel_row": 31,
+    "day_of_week": 3,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "7º ANO",
+    "cell_text": "Espanhol (Eliane)"
+  },
+  {
+    "excel_row": 31,
+    "day_of_week": 3,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "8º ANO",
+    "cell_text": "Matemática (Iago)"
+  },
+  {
+    "excel_row": 31,
+    "day_of_week": 3,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "9º ANO",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 31,
+    "day_of_week": 3,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Física (Macedo)"
+  },
+  {
+    "excel_row": 31,
+    "day_of_week": 3,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Física (Luciano)"
+  },
+  {
+    "excel_row": 31,
+    "day_of_week": 3,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Biologia (Arthur)"
+  },
+  {
+    "excel_row": 32,
+    "day_of_week": 3,
+    "time_slot": "12:15h/13:00h",
+    "class_label": "9º ANO",
+    "cell_text": "Cien.Biolog.(Arthur)"
+  },
+  {
+    "excel_row": 32,
+    "day_of_week": 3,
+    "time_slot": "12:15h/13:00h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Literatura (Carol)"
+  },
+  {
+    "excel_row": 32,
+    "day_of_week": 3,
+    "time_slot": "12:15h/13:00h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Espanhol (Eliane)"
+  },
+  {
+    "excel_row": 32,
+    "day_of_week": 3,
+    "time_slot": "12:15h/13:00h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Física (Luciano)"
+  },
+  {
+    "excel_row": 33,
+    "day_of_week": 3,
+    "time_slot": "13:00h/13:50h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Literatura (Carol)"
+  },
+  {
+    "excel_row": 33,
+    "day_of_week": 3,
+    "time_slot": "13:00h/13:50h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 33,
+    "day_of_week": 3,
+    "time_slot": "13:00h/13:50h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Física (Luciano)"
+  },
+  {
+    "excel_row": 35,
+    "day_of_week": 4,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "1º ANO A",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 35,
+    "day_of_week": 4,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "1º ANO B",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 35,
+    "day_of_week": 4,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "1º ANO C",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 35,
+    "day_of_week": 4,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "2º ANO A",
+    "cell_text": "Ed.Física (Déborah)"
+  },
+  {
+    "excel_row": 35,
+    "day_of_week": 4,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "2º ANO B",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 35,
+    "day_of_week": 4,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "2º ANO C",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 35,
+    "day_of_week": 4,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "3º ANO A",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 35,
+    "day_of_week": 4,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "3º ANO B",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 35,
+    "day_of_week": 4,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "4º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 35,
+    "day_of_week": 4,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "4º ANO B",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 35,
+    "day_of_week": 4,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "5º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 35,
+    "day_of_week": 4,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "5º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 35,
+    "day_of_week": 4,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "6º ANO A",
+    "cell_text": "Matemática (Cadu)"
+  },
+  {
+    "excel_row": 35,
+    "day_of_week": 4,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "6º ANO B",
+    "cell_text": "Arte (Heluza)"
+  },
+  {
+    "excel_row": 35,
+    "day_of_week": 4,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "7º ANO",
+    "cell_text": "Geografia (Sammy)"
+  },
+  {
+    "excel_row": 35,
+    "day_of_week": 4,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "8º ANO",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 35,
+    "day_of_week": 4,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "9º ANO",
+    "cell_text": "Matemática (Henrique)"
+  },
+  {
+    "excel_row": 35,
+    "day_of_week": 4,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Filosofia (Maurício)"
+  },
+  {
+    "excel_row": 35,
+    "day_of_week": 4,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 35,
+    "day_of_week": 4,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Geografia (Marco)"
+  },
+  {
+    "excel_row": 36,
+    "day_of_week": 4,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "1º ANO A",
+    "cell_text": "Virtudes (Mônica)"
+  },
+  {
+    "excel_row": 36,
+    "day_of_week": 4,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "1º ANO B",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 36,
+    "day_of_week": 4,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "1º ANO C",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 36,
+    "day_of_week": 4,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "2º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 36,
+    "day_of_week": 4,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "2º ANO B",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 36,
+    "day_of_week": 4,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "2º ANO C",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 36,
+    "day_of_week": 4,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "3º ANO A",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 36,
+    "day_of_week": 4,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "3º ANO B",
+    "cell_text": "Ens.Religoso (Rainedy)"
+  },
+  {
+    "excel_row": 36,
+    "day_of_week": 4,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "4º ANO A",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 36,
+    "day_of_week": 4,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "4º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 36,
+    "day_of_week": 4,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "5º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 36,
+    "day_of_week": 4,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "5º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 36,
+    "day_of_week": 4,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "6º ANO A",
+    "cell_text": "Matemática (Cadu)"
+  },
+  {
+    "excel_row": 36,
+    "day_of_week": 4,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "6º ANO B",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 36,
+    "day_of_week": 4,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "7º ANO",
+    "cell_text": "Arte (Heluza)"
+  },
+  {
+    "excel_row": 36,
+    "day_of_week": 4,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "8º ANO",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 36,
+    "day_of_week": 4,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "9º ANO",
+    "cell_text": "Matemática (Henrique)"
+  },
+  {
+    "excel_row": 36,
+    "day_of_week": 4,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Sociologia (Maurício)"
+  },
+  {
+    "excel_row": 36,
+    "day_of_week": 4,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 36,
+    "day_of_week": 4,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Geografia (Marco)"
+  },
+  {
+    "excel_row": 37,
+    "day_of_week": 4,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "1º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 37,
+    "day_of_week": 4,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "1º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 37,
+    "day_of_week": 4,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "1º ANO C",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 37,
+    "day_of_week": 4,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "2º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 37,
+    "day_of_week": 4,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "2º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 37,
+    "day_of_week": 4,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "3º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 37,
+    "day_of_week": 4,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "3º ANO B",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 37,
+    "day_of_week": 4,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "4º ANO A",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 37,
+    "day_of_week": 4,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "4º ANO B",
+    "cell_text": "Let. Cient e mat. (Kalleb)"
+  },
+  {
+    "excel_row": 37,
+    "day_of_week": 4,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "5º ANO A",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 37,
+    "day_of_week": 4,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "5º ANO B",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 37,
+    "day_of_week": 4,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "6º ANO A",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 37,
+    "day_of_week": 4,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "6º ANO B",
+    "cell_text": "Matemática (Cadu)"
+  },
+  {
+    "excel_row": 37,
+    "day_of_week": 4,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "7º ANO",
+    "cell_text": "História (Maurício)"
+  },
+  {
+    "excel_row": 37,
+    "day_of_week": 4,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "8º ANO",
+    "cell_text": "Arte (Heluza)"
+  },
+  {
+    "excel_row": 37,
+    "day_of_week": 4,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "9º ANO",
+    "cell_text": "TCC (Everton)"
+  },
+  {
+    "excel_row": 37,
+    "day_of_week": 4,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Física (Luciano)"
+  },
+  {
+    "excel_row": 37,
+    "day_of_week": 4,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Geografia (Marco)"
+  },
+  {
+    "excel_row": 37,
+    "day_of_week": 4,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Ens. Relig. (Rainedy)"
+  },
+  {
+    "excel_row": 38,
+    "day_of_week": 4,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "1º ANO A",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 38,
+    "day_of_week": 4,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "1º ANO B",
+    "cell_text": "Virtudes (Mônica)"
+  },
+  {
+    "excel_row": 38,
+    "day_of_week": 4,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "1º ANO C",
+    "cell_text": "Intens. Alfab. / LVA"
+  },
+  {
+    "excel_row": 38,
+    "day_of_week": 4,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "2º ANO A",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 38,
+    "day_of_week": 4,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "2º ANO B",
+    "cell_text": "Ed.Física (Déborah)"
+  },
+  {
+    "excel_row": 38,
+    "day_of_week": 4,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "2º ANO C",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 38,
+    "day_of_week": 4,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "3º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 38,
+    "day_of_week": 4,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "3º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 38,
+    "day_of_week": 4,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "4º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 38,
+    "day_of_week": 4,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "4º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 38,
+    "day_of_week": 4,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "5º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 38,
+    "day_of_week": 4,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "6º ANO A",
+    "cell_text": "Redação (Raquel)"
+  },
+  {
+    "excel_row": 38,
+    "day_of_week": 4,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "6º ANO B",
+    "cell_text": "Matemática (Cadu)"
+  },
+  {
+    "excel_row": 38,
+    "day_of_week": 4,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "7º ANO",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 38,
+    "day_of_week": 4,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "8º ANO",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 38,
+    "day_of_week": 4,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "9º ANO",
+    "cell_text": "Arte (Heluza)"
+  },
+  {
+    "excel_row": 38,
+    "day_of_week": 4,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Física (Luciano)"
+  },
+  {
+    "excel_row": 38,
+    "day_of_week": 4,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Geografia (Marco)"
+  },
+  {
+    "excel_row": 38,
+    "day_of_week": 4,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "História (Maurício)"
+  },
+  {
+    "excel_row": 39,
+    "day_of_week": 4,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "1º ANO A",
+    "cell_text": "Música(Fernanda/Ericson)"
+  },
+  {
+    "excel_row": 39,
+    "day_of_week": 4,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "1º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 39,
+    "day_of_week": 4,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "1º ANO C",
+    "cell_text": "Virtudes (Mônica)"
+  },
+  {
+    "excel_row": 39,
+    "day_of_week": 4,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "2º ANO A",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 39,
+    "day_of_week": 4,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "2º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 39,
+    "day_of_week": 4,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "2º ANO C",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 39,
+    "day_of_week": 4,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "3º ANO A",
+    "cell_text": "Ens.Religoso (Rainedy)"
+  },
+  {
+    "excel_row": 39,
+    "day_of_week": 4,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "3º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 39,
+    "day_of_week": 4,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "4º ANO A",
+    "cell_text": "Let. Cient e mat. (Kalleb)"
+  },
+  {
+    "excel_row": 39,
+    "day_of_week": 4,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "4º ANO B",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 39,
+    "day_of_week": 4,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "5º ANO A",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 39,
+    "day_of_week": 4,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "5º ANO B",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 39,
+    "day_of_week": 4,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "6º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 39,
+    "day_of_week": 4,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "6º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 39,
+    "day_of_week": 4,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "7º ANO",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 39,
+    "day_of_week": 4,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "8º ANO",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 39,
+    "day_of_week": 4,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "9º ANO",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 39,
+    "day_of_week": 4,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 39,
+    "day_of_week": 4,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 39,
+    "day_of_week": 4,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 40,
+    "day_of_week": 4,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "1º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 40,
+    "day_of_week": 4,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "1º ANO B",
+    "cell_text": "Música(Fernanda/Ericson)"
+  },
+  {
+    "excel_row": 40,
+    "day_of_week": 4,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "1º ANO C",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 40,
+    "day_of_week": 4,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "2º ANO A",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 40,
+    "day_of_week": 4,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "2º ANO B",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 40,
+    "day_of_week": 4,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "2º ANO C",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 40,
+    "day_of_week": 4,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "3º ANO A",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 40,
+    "day_of_week": 4,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "3º ANO B",
+    "cell_text": "Let. Cient e mat. (Kalleb)"
+  },
+  {
+    "excel_row": 40,
+    "day_of_week": 4,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "4º ANO A",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 40,
+    "day_of_week": 4,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "4º ANO B",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 40,
+    "day_of_week": 4,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "5º ANO A",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 40,
+    "day_of_week": 4,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "5º ANO B",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 40,
+    "day_of_week": 4,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "6º ANO A",
+    "cell_text": "Arte (Heluza)"
+  },
+  {
+    "excel_row": 40,
+    "day_of_week": 4,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "6º ANO B",
+    "cell_text": "Redação (Raquel)"
+  },
+  {
+    "excel_row": 40,
+    "day_of_week": 4,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "7º ANO",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 40,
+    "day_of_week": 4,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "8º ANO",
+    "cell_text": "Matemática (Cadu)"
+  },
+  {
+    "excel_row": 40,
+    "day_of_week": 4,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "9º ANO",
+    "cell_text": "Geografia (Sammy)"
+  },
+  {
+    "excel_row": 40,
+    "day_of_week": 4,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Geografia (Marco)"
+  },
+  {
+    "excel_row": 40,
+    "day_of_week": 4,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 40,
+    "day_of_week": 4,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "História (Maurício)"
+  },
+  {
+    "excel_row": 41,
+    "day_of_week": 4,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "1º ANO A",
+    "cell_text": "Parque / Intens. Alfab."
+  },
+  {
+    "excel_row": 41,
+    "day_of_week": 4,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "1º ANO B",
+    "cell_text": "Parque / Intens. Alfab."
+  },
+  {
+    "excel_row": 41,
+    "day_of_week": 4,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "1º ANO C",
+    "cell_text": "Música(Fernanda/Ericson)"
+  },
+  {
+    "excel_row": 41,
+    "day_of_week": 4,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "2º ANO A",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 41,
+    "day_of_week": 4,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "2º ANO B",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 41,
+    "day_of_week": 4,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "2º ANO C",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 41,
+    "day_of_week": 4,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "3º ANO A",
+    "cell_text": "Let. Cient e mat. (Kalleb)"
+  },
+  {
+    "excel_row": 41,
+    "day_of_week": 4,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "3º ANO B",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 41,
+    "day_of_week": 4,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "4º ANO A",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 41,
+    "day_of_week": 4,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "4º ANO B",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 41,
+    "day_of_week": 4,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "5º ANO A",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 41,
+    "day_of_week": 4,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "5º ANO B",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 41,
+    "day_of_week": 4,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "6º ANO A",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 41,
+    "day_of_week": 4,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "6º ANO B",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 41,
+    "day_of_week": 4,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "7º ANO",
+    "cell_text": "Matemática (Cadu)"
+  },
+  {
+    "excel_row": 41,
+    "day_of_week": 4,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "8º ANO",
+    "cell_text": "Redação (Raquel)"
+  },
+  {
+    "excel_row": 41,
+    "day_of_week": 4,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "9º ANO",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 41,
+    "day_of_week": 4,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Geografia (Marco)"
+  },
+  {
+    "excel_row": 41,
+    "day_of_week": 4,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "História (Maurício)"
+  },
+  {
+    "excel_row": 41,
+    "day_of_week": 4,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Arte (Heluza)"
+  },
+  {
+    "excel_row": 42,
+    "day_of_week": 4,
+    "time_slot": "12:15h/13:00h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Química (Anderson)"
+  },
+  {
+    "excel_row": 42,
+    "day_of_week": 4,
+    "time_slot": "12:15h/13:00h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "História (Maurício)"
+  },
+  {
+    "excel_row": 42,
+    "day_of_week": 4,
+    "time_slot": "12:15h/13:00h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Redação (Raquel)"
+  },
+  {
+    "excel_row": 43,
+    "day_of_week": 4,
+    "time_slot": "13:00h/13:50h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Química (Anderson)"
+  },
+  {
+    "excel_row": 43,
+    "day_of_week": 4,
+    "time_slot": "13:00h/13:50h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Física (Macedo)"
+  },
+  {
+    "excel_row": 43,
+    "day_of_week": 4,
+    "time_slot": "13:00h/13:50h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Redação (Raquel)"
+  },
+  {
+    "excel_row": 45,
+    "day_of_week": 5,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "1º ANO A",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 45,
+    "day_of_week": 5,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "1º ANO B",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 45,
+    "day_of_week": 5,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "1º ANO C",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 45,
+    "day_of_week": 5,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "2º ANO A",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 45,
+    "day_of_week": 5,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "2º ANO B",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 45,
+    "day_of_week": 5,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "2º ANO C",
+    "cell_text": "Ed.Física (Déborah)"
+  },
+  {
+    "excel_row": 45,
+    "day_of_week": 5,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "3º ANO A",
+    "cell_text": "Grupo coloquial"
+  },
+  {
+    "excel_row": 45,
+    "day_of_week": 5,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "3º ANO B",
+    "cell_text": "Grupo coloquial"
+  },
+  {
+    "excel_row": 45,
+    "day_of_week": 5,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "4º ANO A",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 45,
+    "day_of_week": 5,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "4º ANO B",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 45,
+    "day_of_week": 5,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "5º ANO A",
+    "cell_text": "Grupo coloquial"
+  },
+  {
+    "excel_row": 45,
+    "day_of_week": 5,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "5º ANO B",
+    "cell_text": "Grupo coloquial"
+  },
+  {
+    "excel_row": 45,
+    "day_of_week": 5,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "6º ANO A",
+    "cell_text": "História (Maurício)"
+  },
+  {
+    "excel_row": 45,
+    "day_of_week": 5,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "6º ANO B",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 45,
+    "day_of_week": 5,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "7º ANO",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 45,
+    "day_of_week": 5,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "8º ANO",
+    "cell_text": "Matemática (Iago)"
+  },
+  {
+    "excel_row": 45,
+    "day_of_week": 5,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "9º ANO",
+    "cell_text": "Espanhol (Eliane)"
+  },
+  {
+    "excel_row": 45,
+    "day_of_week": 5,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Matemática (Henrique)"
+  },
+  {
+    "excel_row": 45,
+    "day_of_week": 5,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Redação (Raquel)"
+  },
+  {
+    "excel_row": 45,
+    "day_of_week": 5,
+    "time_slot": "07:30h/08:15h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Geografia (Sammy)"
+  },
+  {
+    "excel_row": 46,
+    "day_of_week": 5,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "1º ANO A",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 46,
+    "day_of_week": 5,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "1º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 46,
+    "day_of_week": 5,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "1º ANO C",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 46,
+    "day_of_week": 5,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "2º ANO A",
+    "cell_text": "G.Coloq./Aud.Mus./Psicom."
+  },
+  {
+    "excel_row": 46,
+    "day_of_week": 5,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "2º ANO B",
+    "cell_text": "Geografia"
+  },
+  {
+    "excel_row": 46,
+    "day_of_week": 5,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "2º ANO C",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 46,
+    "day_of_week": 5,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "3º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 46,
+    "day_of_week": 5,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "3º ANO B",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 46,
+    "day_of_week": 5,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "4º ANO A",
+    "cell_text": "Grupo coloquial"
+  },
+  {
+    "excel_row": 46,
+    "day_of_week": 5,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "4º ANO B",
+    "cell_text": "Grupo coloquial"
+  },
+  {
+    "excel_row": 46,
+    "day_of_week": 5,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "5º ANO A",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 46,
+    "day_of_week": 5,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "5º ANO B",
+    "cell_text": "Let. Cient e mat. (Kalleb)"
+  },
+  {
+    "excel_row": 46,
+    "day_of_week": 5,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "6º ANO A",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 46,
+    "day_of_week": 5,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "6º ANO B",
+    "cell_text": "Espanhol (Eliane)"
+  },
+  {
+    "excel_row": 46,
+    "day_of_week": 5,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "7º ANO",
+    "cell_text": "História (Maurício)"
+  },
+  {
+    "excel_row": 46,
+    "day_of_week": 5,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "8º ANO",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 46,
+    "day_of_week": 5,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "9º ANO",
+    "cell_text": "Matemática (Iago)"
+  },
+  {
+    "excel_row": 46,
+    "day_of_week": 5,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Matemática (Henrique)"
+  },
+  {
+    "excel_row": 46,
+    "day_of_week": 5,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Redação (Raquel)"
+  },
+  {
+    "excel_row": 46,
+    "day_of_week": 5,
+    "time_slot": "08:15h/09:00h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 47,
+    "day_of_week": 5,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "1º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 47,
+    "day_of_week": 5,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "1º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 47,
+    "day_of_week": 5,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "1º ANO C",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 47,
+    "day_of_week": 5,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "2º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 47,
+    "day_of_week": 5,
+    "time_slot": "09:00h/09:15h",
+    "class_label": "2º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 47,
+    "day_of_week": 5,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "3º ANO A",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 47,
+    "day_of_week": 5,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "3º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 47,
+    "day_of_week": 5,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "4º ANO A",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 47,
+    "day_of_week": 5,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "4º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 47,
+    "day_of_week": 5,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "5º ANO A",
+    "cell_text": "Let. Cient e mat. (Kalleb)"
+  },
+  {
+    "excel_row": 47,
+    "day_of_week": 5,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "5º ANO B",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 47,
+    "day_of_week": 5,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "6º ANO A",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 47,
+    "day_of_week": 5,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "6º ANO B",
+    "cell_text": "Ciências (Arthur)"
+  },
+  {
+    "excel_row": 47,
+    "day_of_week": 5,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "7º ANO",
+    "cell_text": "Espanhol (Eliane)"
+  },
+  {
+    "excel_row": 47,
+    "day_of_week": 5,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "8º ANO",
+    "cell_text": "História (Maurício)"
+  },
+  {
+    "excel_row": 47,
+    "day_of_week": 5,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "9º ANO",
+    "cell_text": "Virtudes (PEC-Everton)"
+  },
+  {
+    "excel_row": 47,
+    "day_of_week": 5,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Redação (Raquel)"
+  },
+  {
+    "excel_row": 47,
+    "day_of_week": 5,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Matemática (Iago)"
+  },
+  {
+    "excel_row": 47,
+    "day_of_week": 5,
+    "time_slot": "09:00h/09:45h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Matemática (Henrique)"
+  },
+  {
+    "excel_row": 48,
+    "day_of_week": 5,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "1º ANO A",
+    "cell_text": "Let. Literário (Gabriel)"
+  },
+  {
+    "excel_row": 48,
+    "day_of_week": 5,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "1º ANO B",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 48,
+    "day_of_week": 5,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "1º ANO C",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 48,
+    "day_of_week": 5,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "2º ANO A",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 48,
+    "day_of_week": 5,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "2º ANO B",
+    "cell_text": "Virtudes (Mônica)"
+  },
+  {
+    "excel_row": 48,
+    "day_of_week": 5,
+    "time_slot": "09:15h/10:00h",
+    "class_label": "2º ANO C",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 48,
+    "day_of_week": 5,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "3º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 48,
+    "day_of_week": 5,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "3º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 48,
+    "day_of_week": 5,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "4º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 48,
+    "day_of_week": 5,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "4º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 48,
+    "day_of_week": 5,
+    "time_slot": "09:45h/10:00h",
+    "class_label": "5º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 48,
+    "day_of_week": 5,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "6º ANO A",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 48,
+    "day_of_week": 5,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "6º ANO B",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 48,
+    "day_of_week": 5,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "7º ANO",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 48,
+    "day_of_week": 5,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "8º ANO",
+    "cell_text": "Espanhol (Eliane)"
+  },
+  {
+    "excel_row": 48,
+    "day_of_week": 5,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "9º ANO",
+    "cell_text": "Cien.Biolog.(Arthur)"
+  },
+  {
+    "excel_row": 48,
+    "day_of_week": 5,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Redação (Raquel)"
+  },
+  {
+    "excel_row": 48,
+    "day_of_week": 5,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Matemática (Iago)"
+  },
+  {
+    "excel_row": 48,
+    "day_of_week": 5,
+    "time_slot": "09:45h/10:30h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Matemática (Henrique)"
+  },
+  {
+    "excel_row": 49,
+    "day_of_week": 5,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "1º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 49,
+    "day_of_week": 5,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "1º ANO B",
+    "cell_text": "Let. Literário (Gabriel)"
+  },
+  {
+    "excel_row": 49,
+    "day_of_week": 5,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "1º ANO C",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 49,
+    "day_of_week": 5,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "2º ANO A",
+    "cell_text": "Geografia"
+  },
+  {
+    "excel_row": 49,
+    "day_of_week": 5,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "2º ANO B",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 49,
+    "day_of_week": 5,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "2º ANO C",
+    "cell_text": "Virtudes (Mônica)"
+  },
+  {
+    "excel_row": 49,
+    "day_of_week": 5,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "3º ANO A",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 49,
+    "day_of_week": 5,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "3º ANO B",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 49,
+    "day_of_week": 5,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "4º ANO A",
+    "cell_text": "Português"
+  },
+  {
+    "excel_row": 49,
+    "day_of_week": 5,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "4º ANO B",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 49,
+    "day_of_week": 5,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "5º ANO A",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 49,
+    "day_of_week": 5,
+    "time_slot": "10:00h/10:45h",
+    "class_label": "5º ANO B",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 49,
+    "day_of_week": 5,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "6º ANO A",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 49,
+    "day_of_week": 5,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "6º ANO B",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 49,
+    "day_of_week": 5,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "7º ANO",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 49,
+    "day_of_week": 5,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "8º ANO",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 49,
+    "day_of_week": 5,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "9º ANO",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 49,
+    "day_of_week": 5,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 49,
+    "day_of_week": 5,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 49,
+    "day_of_week": 5,
+    "time_slot": "10:30h/10:45h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "INTERVALO"
+  },
+  {
+    "excel_row": 50,
+    "day_of_week": 5,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "1º ANO A",
+    "cell_text": "Matemática"
+  },
+  {
+    "excel_row": 50,
+    "day_of_week": 5,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "1º ANO B",
+    "cell_text": "Intens. Alfab. / LVA"
+  },
+  {
+    "excel_row": 50,
+    "day_of_week": 5,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "1º ANO C",
+    "cell_text": "Let. Literário (Gabriel)"
+  },
+  {
+    "excel_row": 50,
+    "day_of_week": 5,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "2º ANO A",
+    "cell_text": "Virtudes (Mônica)"
+  },
+  {
+    "excel_row": 50,
+    "day_of_week": 5,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "2º ANO B",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 50,
+    "day_of_week": 5,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "2º ANO C",
+    "cell_text": "Geografia"
+  },
+  {
+    "excel_row": 50,
+    "day_of_week": 5,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "3º ANO A",
+    "cell_text": "Arte"
+  },
+  {
+    "excel_row": 50,
+    "day_of_week": 5,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "3º ANO B",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 50,
+    "day_of_week": 5,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "4º ANO A",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 50,
+    "day_of_week": 5,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "4º ANO B",
+    "cell_text": "Ciências"
+  },
+  {
+    "excel_row": 50,
+    "day_of_week": 5,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "5º ANO A",
+    "cell_text": "Arte"
+  },
+  {
+    "excel_row": 50,
+    "day_of_week": 5,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "5º ANO B",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 50,
+    "day_of_week": 5,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "6º ANO A",
+    "cell_text": "Espanhol (Eliane)"
+  },
+  {
+    "excel_row": 50,
+    "day_of_week": 5,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "6º ANO B",
+    "cell_text": "História (Maurício)"
+  },
+  {
+    "excel_row": 50,
+    "day_of_week": 5,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "7º ANO",
+    "cell_text": "Redação (Raquel)"
+  },
+  {
+    "excel_row": 50,
+    "day_of_week": 5,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "8º ANO",
+    "cell_text": "Ciências (Arthur)"
+  },
+  {
+    "excel_row": 50,
+    "day_of_week": 5,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "9º ANO",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 50,
+    "day_of_week": 5,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Biologia (Enrique)"
+  },
+  {
+    "excel_row": 50,
+    "day_of_week": 5,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Matemática (Henrique)"
+  },
+  {
+    "excel_row": 50,
+    "day_of_week": 5,
+    "time_slot": "10:45h/11:30h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Matemática (Iago)"
+  },
+  {
+    "excel_row": 51,
+    "day_of_week": 5,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "1º ANO A",
+    "cell_text": "Intens. Alfab. / LVA"
+  },
+  {
+    "excel_row": 51,
+    "day_of_week": 5,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "1º ANO B",
+    "cell_text": "Inglês (Rafaella)"
+  },
+  {
+    "excel_row": 51,
+    "day_of_week": 5,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "1º ANO C",
+    "cell_text": "Parque / Intens. Alfab."
+  },
+  {
+    "excel_row": 51,
+    "day_of_week": 5,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "2º ANO A",
+    "cell_text": "Arte"
+  },
+  {
+    "excel_row": 51,
+    "day_of_week": 5,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "2º ANO B",
+    "cell_text": "Arte"
+  },
+  {
+    "excel_row": 51,
+    "day_of_week": 5,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "2º ANO C",
+    "cell_text": "Arte"
+  },
+  {
+    "excel_row": 51,
+    "day_of_week": 5,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "3º ANO A",
+    "cell_text": "Ed.Física (Marçal)"
+  },
+  {
+    "excel_row": 51,
+    "day_of_week": 5,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "3º ANO B",
+    "cell_text": "Arte"
+  },
+  {
+    "excel_row": 51,
+    "day_of_week": 5,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "4º ANO A",
+    "cell_text": "Arte"
+  },
+  {
+    "excel_row": 51,
+    "day_of_week": 5,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "4º ANO B",
+    "cell_text": "Arte"
+  },
+  {
+    "excel_row": 51,
+    "day_of_week": 5,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "5º ANO A",
+    "cell_text": "Inglês (Beatriz)"
+  },
+  {
+    "excel_row": 51,
+    "day_of_week": 5,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "5º ANO B",
+    "cell_text": "Arte"
+  },
+  {
+    "excel_row": 51,
+    "day_of_week": 5,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "6º ANO A",
+    "cell_text": "Geografia (Sammy)"
+  },
+  {
+    "excel_row": 51,
+    "day_of_week": 5,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "6º ANO B",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 51,
+    "day_of_week": 5,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "7º ANO",
+    "cell_text": "Ciências (Arthur)"
+  },
+  {
+    "excel_row": 51,
+    "day_of_week": 5,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "8º ANO",
+    "cell_text": "Ling.Port. (Everton)"
+  },
+  {
+    "excel_row": 51,
+    "day_of_week": 5,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "9º ANO",
+    "cell_text": "Redação (Raquel)"
+  },
+  {
+    "excel_row": 51,
+    "day_of_week": 5,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Biologia (Enrique)"
+  },
+  {
+    "excel_row": 51,
+    "day_of_week": 5,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Matemática (Henrique)"
+  },
+  {
+    "excel_row": 51,
+    "day_of_week": 5,
+    "time_slot": "11:30h/12:15h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Espanhol (Eliane)"
+  },
+  {
+    "excel_row": 52,
+    "day_of_week": 5,
+    "time_slot": "12:15h/13:00h",
+    "class_label": "9º ANO",
+    "cell_text": "Redação (Raquel)"
+  },
+  {
+    "excel_row": 52,
+    "day_of_week": 5,
+    "time_slot": "12:15h/13:00h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Inglês (Gabrielle)"
+  },
+  {
+    "excel_row": 52,
+    "day_of_week": 5,
+    "time_slot": "12:15h/13:00h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Biologia (Enrique)"
+  },
+  {
+    "excel_row": 52,
+    "day_of_week": 5,
+    "time_slot": "12:15h/13:00h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Virtudes (PEC-Eliane)"
+  },
+  {
+    "excel_row": 53,
+    "day_of_week": 5,
+    "time_slot": "13:00h/13:50h",
+    "class_label": "1ªsérie/Médio",
+    "cell_text": "Matemática (Iago)"
+  },
+  {
+    "excel_row": 53,
+    "day_of_week": 5,
+    "time_slot": "13:00h/13:50h",
+    "class_label": "2ªsérie/Médio",
+    "cell_text": "Biologia (Enrique)"
+  },
+  {
+    "excel_row": 53,
+    "day_of_week": 5,
+    "time_slot": "13:00h/13:50h",
+    "class_label": "3ªsérie/Médio",
+    "cell_text": "Inglês (Gabrielle)"
+  }
+]
