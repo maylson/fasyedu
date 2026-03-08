@@ -766,7 +766,7 @@ export async function duplicateLessonPlanAction(formData: FormData) {
 
   const { data: targetSchedule, error: targetScheduleError } = await supabase
     .from("class_schedules")
-    .select("id, class_subject_id, entry_type")
+    .select("id, class_subject_id, entry_type, day_of_week")
     .eq("id", targetScheduleId)
     .eq("school_id", schoolId)
     .maybeSingle();
@@ -777,6 +777,17 @@ export async function duplicateLessonPlanAction(formData: FormData) {
   if (!targetSchedule.class_subject_id || targetSchedule.entry_type === "INTERVALO") {
     throw new Error("O horário de destino não permite planejamento porque não possui disciplina.");
   }
+
+  const targetDate = new Date(`${targetLessonDate}T12:00:00`);
+  if (Number.isNaN(targetDate.getTime())) {
+    throw new Error("Data de destino inválida.");
+  }
+  const isoWeekday = targetDate.getDay() === 0 ? 7 : targetDate.getDay();
+  if (isoWeekday !== targetSchedule.day_of_week) {
+    throw new Error("A data de destino precisa corresponder ao dia da semana do horário selecionado.");
+  }
+
+  const sourceStatus = source.status === "UNDER_REVIEW" ? "HUMAN_REVIEW" : source.status;
 
   const payload = {
     school_id: schoolId,
@@ -795,7 +806,7 @@ export async function duplicateLessonPlanAction(formData: FormData) {
     ai_last_response_id: null,
     analyzed_at: null,
     planned_date: targetLessonDate,
-    status: "DRAFT" as LessonPlanStatus,
+    status: (sourceStatus as LessonPlanStatus) ?? ("DRAFT" as LessonPlanStatus),
     reviewer_comment: null,
     created_by: userId,
   };

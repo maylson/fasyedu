@@ -57,8 +57,11 @@ type CoordinationWeekGridProps = {
     classId: string;
     className: string;
     classSeries: string | null;
+    dayOfWeek: number;
     label: string;
   }>;
+  duplicateDateMin: string | null;
+  duplicateDateMax: string | null;
 };
 
 const PILLAR_OPTIONS = ["Físico", "Socioafetivo", "Volitivo", "Cognitivo", "Transcendental"] as const;
@@ -108,6 +111,12 @@ function normalizePersistedStatus(status: PlanStatus): PersistedStatus {
   return "DRAFT";
 }
 
+function isoWeekdayFromDateInput(dateValue: string) {
+  const date = new Date(`${dateValue}T12:00:00`);
+  if (Number.isNaN(date.getTime())) return null;
+  return date.getDay() === 0 ? 7 : date.getDay();
+}
+
 function showLoadingOverlay(targetId: string) {
   const target = document.getElementById(targetId);
   if (!target) return;
@@ -128,6 +137,8 @@ export function CoordinationWeekGrid({
   entries,
   showPillars,
   duplicateTargets,
+  duplicateDateMin,
+  duplicateDateMax,
 }: CoordinationWeekGridProps) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -141,6 +152,8 @@ export function CoordinationWeekGrid({
   const [recentlyUpdatedCardKey, setRecentlyUpdatedCardKey] = useState<string | null>(null);
   const [duplicateSource, setDuplicateSource] = useState<CoordinationEntry | null>(null);
   const [duplicateTargetClassId, setDuplicateTargetClassId] = useState<string>("");
+  const [duplicateTargetScheduleId, setDuplicateTargetScheduleId] = useState<string>("");
+  const [duplicateTargetDate, setDuplicateTargetDate] = useState<string>("");
   const highlightTimeoutRef = useRef<number | null>(null);
 
   useEffect(() => {
@@ -214,9 +227,16 @@ export function CoordinationWeekGrid({
   const effectiveTargetClassId =
     duplicateTargetClassId && eligibleTargetClasses.some((item) => item.classId === duplicateTargetClassId)
       ? duplicateTargetClassId
-      : (eligibleTargetClasses[0]?.classId ?? "");
+      : "";
   const visibleScheduleTargets = eligibleDuplicateTargets.filter((item) => item.classId === effectiveTargetClassId);
-  const duplicateDefaultTarget = visibleScheduleTargets[0]?.scheduleId ?? "";
+  const effectiveTargetScheduleId =
+    duplicateTargetScheduleId && visibleScheduleTargets.some((item) => item.scheduleId === duplicateTargetScheduleId)
+      ? duplicateTargetScheduleId
+      : "";
+  const selectedTargetSchedule = visibleScheduleTargets.find((item) => item.scheduleId === effectiveTargetScheduleId);
+  const duplicateDateWeekday = isoWeekdayFromDateInput(duplicateTargetDate);
+  const isDuplicateDateCompatible =
+    !selectedTargetSchedule || !duplicateDateWeekday ? true : duplicateDateWeekday === selectedTargetSchedule.dayOfWeek;
 
   const modalFormId = activeEntry ? `coord-plan-form-${activeEntry.scheduleId}-${activeEntry.lessonDate}` : "coord-plan-form";
 
@@ -374,6 +394,8 @@ export function CoordinationWeekGrid({
                                       event.stopPropagation();
                                       setDuplicateSource(entry);
                                       setDuplicateTargetClassId("");
+                                      setDuplicateTargetScheduleId("");
+                                      setDuplicateTargetDate(entry.lessonDate);
                                     }}
                                     className="rounded-lg border border-[var(--line)] bg-white px-2 py-1 text-[11px] hover:bg-[var(--panel-soft)]"
                                   >
@@ -537,16 +559,28 @@ export function CoordinationWeekGrid({
               Origem: {duplicateSource.className} · {duplicateSource.subjectName} · {duplicateSource.teacherName} ·{" "}
               {new Date(`${duplicateSource.lessonDate}T12:00:00`).toLocaleDateString("pt-BR")} · {duplicateSource.startsAt.slice(0, 5)}
             </p>
-            <form action={duplicateLessonPlanAction} className="mt-4 grid gap-3">
+            <form
+              action={duplicateLessonPlanAction}
+              className="mt-4 grid gap-3"
+              onSubmit={() => {
+                window.setTimeout(() => setDuplicateSource(null), 120);
+              }}
+            >
               <input type="hidden" name="source_id" value={duplicateSource.plan.id ?? ""} />
               <label className="grid gap-1 text-sm">
                 <span className="font-medium">Turma de destino</span>
                 <select
                   value={effectiveTargetClassId}
-                  onChange={(event) => setDuplicateTargetClassId(event.currentTarget.value)}
+                  onChange={(event) => {
+                    setDuplicateTargetClassId(event.currentTarget.value);
+                    setDuplicateTargetScheduleId("");
+                  }}
                   className="fasy-input"
                   required
                 >
+                  <option value="" disabled>
+                    Selecione a turma
+                  </option>
                   {eligibleTargetClasses.length === 0 ? (
                     <option value="">Sem turmas compatíveis</option>
                   ) : null}
@@ -559,8 +593,14 @@ export function CoordinationWeekGrid({
               </label>
               <label className="grid gap-1 text-sm">
                 <span className="font-medium">Horário de destino</span>
-                <select name="target_schedule_id" defaultValue={duplicateDefaultTarget} className="fasy-input" required>
-                  <option value="" disabled={visibleScheduleTargets.length > 0}>
+                <select
+                  name="target_schedule_id"
+                  value={effectiveTargetScheduleId}
+                  onChange={(event) => setDuplicateTargetScheduleId(event.currentTarget.value)}
+                  className="fasy-input"
+                  required
+                >
+                  <option value="" disabled>
                     Selecione o destino
                   </option>
                   {visibleScheduleTargets.map((item) => (
@@ -572,7 +612,19 @@ export function CoordinationWeekGrid({
               </label>
               <label className="grid gap-1 text-sm">
                 <span className="font-medium">Data de destino</span>
-                <input type="date" name="target_lesson_date" defaultValue={duplicateSource.lessonDate} className="fasy-input" required />
+                <input
+                  type="date"
+                  name="target_lesson_date"
+                  value={duplicateTargetDate}
+                  min={duplicateDateMin ?? undefined}
+                  max={duplicateDateMax ?? undefined}
+                  onChange={(event) => setDuplicateTargetDate(event.currentTarget.value)}
+                  className="fasy-input"
+                  required
+                />
+                {!isDuplicateDateCompatible ? (
+                  <p className="text-xs text-rose-700">A data precisa cair no mesmo dia da semana do horário de destino.</p>
+                ) : null}
               </label>
               <div className="flex items-center justify-end gap-2">
                 <button
@@ -584,7 +636,7 @@ export function CoordinationWeekGrid({
                 </button>
                 <SubmitButton
                   pendingLabel="Duplicando..."
-                  onClick={() => setDuplicateSource(null)}
+                  disabled={!isDuplicateDateCompatible || !effectiveTargetScheduleId}
                   className="fasy-btn-primary px-3 py-2 text-sm"
                 >
                   Confirmar duplicação

@@ -37,6 +37,8 @@ export default async function PlanejamentoPage({ searchParams }: PlanejamentoPag
   const isProfessor = roles.includes("PROFESSOR");
   const params = await searchParams;
   const requestedWeek = typeof params.week === "string" ? params.week : undefined;
+  const initialOpenScheduleId = typeof params.open_schedule_id === "string" ? params.open_schedule_id : "";
+  const initialOpenLessonDate = typeof params.open_lesson_date === "string" ? params.open_lesson_date : "";
 
   const weekStart = getWeekStart(requestedWeek);
   const weekStartIso = getDateOnly(weekStart);
@@ -46,9 +48,9 @@ export default async function PlanejamentoPage({ searchParams }: PlanejamentoPag
 
   if (!isProfessor) {
     return (
-      <ModuleShell title="Planejamento de Aulas" description="CalendÃ¡rio semanal de planejamento do professor">
+      <ModuleShell title="Planejamento de Aulas" description="Calendário semanal de planejamento do professor">
         <p className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">
-          Esta Ã¡rea Ã© exclusiva para o perfil Professor.
+          Esta área é exclusiva para o perfil Professor.
         </p>
       </ModuleShell>
     );
@@ -63,9 +65,9 @@ export default async function PlanejamentoPage({ searchParams }: PlanejamentoPag
 
   if (!teacher) {
     return (
-      <ModuleShell title="Planejamento de Aulas" description="CalendÃ¡rio semanal de planejamento">
+      <ModuleShell title="Planejamento de Aulas" description="Calendário semanal de planejamento">
         <p className="rounded-xl border border-[var(--line)] bg-[var(--panel-soft)] p-4 text-sm">
-          Seu usuÃ¡rio nÃ£o estÃ¡ vinculado a um cadastro de professor nesta escola.
+          Seu usuário não está vinculado a um cadastro de professor nesta escola.
         </p>
       </ModuleShell>
     );
@@ -75,6 +77,12 @@ export default async function PlanejamentoPage({ searchParams }: PlanejamentoPag
     .from("schools")
     .select("planning_pillars_enabled")
     .eq("id", activeSchoolId)
+    .maybeSingle();
+  const { data: activeSchoolYear } = await supabase
+    .from("school_years")
+    .select("starts_at, ends_at")
+    .eq("school_id", activeSchoolId)
+    .eq("is_active", true)
     .maybeSingle();
 
   const [schedulesResult, plansResult] = await Promise.all([
@@ -225,7 +233,26 @@ export default async function PlanejamentoPage({ searchParams }: PlanejamentoPag
     a.localeCompare(b, "pt-BR"),
   );
 
-  const duplicateTargets = schedules.map((schedule) => {
+  const allSchedulesResult = await supabase
+    .from("class_schedules")
+    .select("id, class_id, day_of_week, starts_at, classes(id,name,series), class_subjects(subjects(name))")
+    .eq("school_id", activeSchoolId)
+    .eq("entry_type", "AULA")
+    .order("day_of_week")
+    .order("starts_at");
+
+  const allSchedules = (allSchedulesResult.data ?? []) as Array<{
+    id: string;
+    class_id: string;
+    day_of_week: number;
+    starts_at: string;
+    classes?: { id?: string; name?: string; series?: string | null } | Array<{ id?: string; name?: string; series?: string | null }>;
+    class_subjects?:
+      | { subjects?: { name?: string } | Array<{ name?: string }> }
+      | Array<{ subjects?: { name?: string } | Array<{ name?: string }> }>;
+  }>;
+
+  const duplicateTargets = allSchedules.map((schedule) => {
     const className = Array.isArray(schedule.classes) ? schedule.classes[0]?.name : schedule.classes?.name;
     const classId = Array.isArray(schedule.classes) ? schedule.classes[0]?.id : schedule.classes?.id;
     const classSeries = Array.isArray(schedule.classes) ? schedule.classes[0]?.series : schedule.classes?.series;
@@ -237,12 +264,13 @@ export default async function PlanejamentoPage({ searchParams }: PlanejamentoPag
       classId: classId ?? schedule.class_id,
       className: className ?? "Turma",
       classSeries: classSeries ?? null,
-      label: `${className ?? "Turma"} · ${subjectName ?? "Disciplina"} · ${weekdayLabel} ${schedule.starts_at.slice(0, 5)}`,
+      dayOfWeek: schedule.day_of_week,
+      label: `${weekdayLabel} · ${schedule.starts_at.slice(0, 5)} · ${subjectName ?? "Disciplina"}`,
     };
   });
 
   return (
-    <ModuleShell title="Planejamento de Aulas" description="CalendÃ¡rio semanal de planejamento do professor">
+    <ModuleShell title="Planejamento de Aulas" description="Calendário semanal de planejamento do professor">
       <div id="planning-grid-zone" className="relative">
         <div
           data-loading-overlay
@@ -266,6 +294,10 @@ export default async function PlanejamentoPage({ searchParams }: PlanejamentoPag
           entries={entries}
           showPillars={Boolean(schoolSettings?.planning_pillars_enabled)}
           duplicateTargets={duplicateTargets}
+          duplicateDateMin={activeSchoolYear?.starts_at ?? null}
+          duplicateDateMax={activeSchoolYear?.ends_at ?? null}
+          initialOpenScheduleId={initialOpenScheduleId}
+          initialOpenLessonDate={initialOpenLessonDate}
         />
       </div>
     </ModuleShell>

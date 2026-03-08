@@ -79,9 +79,17 @@ export default async function CoordenacaoPage({ searchParams }: CoordenacaoPageP
     .select("planning_pillars_enabled")
     .eq("id", activeSchoolId)
     .maybeSingle();
+  const { data: activeSchoolYear } = await supabase
+    .from("school_years")
+    .select("starts_at, ends_at")
+    .eq("school_id", activeSchoolId)
+    .eq("is_active", true)
+    .maybeSingle();
 
   let entries: Array<{
     scheduleId: string;
+    classId: string;
+    classSeries: string | null;
     dayOfWeek: number;
     startsAt: string;
     endsAt: string;
@@ -106,7 +114,14 @@ export default async function CoordenacaoPage({ searchParams }: CoordenacaoPageP
 
   let days: Array<{ value: number; label: string; lessonDate: string }> = [];
   let timeSlots: string[] = [];
-  let duplicateTargets: Array<{ scheduleId: string; label: string }> = [];
+  let duplicateTargets: Array<{
+    scheduleId: string;
+    classId: string;
+    className: string;
+    classSeries: string | null;
+    dayOfWeek: number;
+    label: string;
+  }> = [];
 
   if (selectedClassId) {
     const schedulesResult = await supabase
@@ -246,7 +261,6 @@ export default async function CoordenacaoPage({ searchParams }: CoordenacaoPageP
 
     duplicateTargets = allSchedules.map((schedule) => {
       const classInfo = Array.isArray(schedule.classes) ? schedule.classes[0] : schedule.classes;
-      const teacherInfo = Array.isArray(schedule.teachers) ? schedule.teachers[0] : schedule.teachers;
       const classSubject = Array.isArray(schedule.class_subjects) ? schedule.class_subjects[0] : schedule.class_subjects;
       const subjectName = Array.isArray(classSubject?.subjects) ? classSubject?.subjects[0]?.name : classSubject?.subjects?.name;
       const weekdayLabel = getWeekdayLabel(schedule.day_of_week);
@@ -255,7 +269,8 @@ export default async function CoordenacaoPage({ searchParams }: CoordenacaoPageP
         classId: classInfo?.id ?? schedule.class_id,
         className: classInfo?.name ?? "Turma",
         classSeries: classInfo?.series ?? null,
-        label: `${classInfo?.name ?? "Turma"} · ${subjectName ?? "Disciplina"} · ${teacherInfo?.full_name ?? "Professor"} · ${weekdayLabel} ${schedule.starts_at.slice(0, 5)}`,
+        dayOfWeek: schedule.day_of_week,
+        label: `${weekdayLabel} · ${schedule.starts_at.slice(0, 5)} · ${subjectName ?? "Disciplina"}`,
       };
     });
   }
@@ -303,6 +318,8 @@ export default async function CoordenacaoPage({ searchParams }: CoordenacaoPageP
             entries={entries}
             showPillars={Boolean(schoolSettings?.planning_pillars_enabled)}
             duplicateTargets={duplicateTargets}
+            duplicateDateMin={activeSchoolYear?.starts_at ?? null}
+            duplicateDateMax={activeSchoolYear?.ends_at ?? null}
           />
         )}
       </div>
