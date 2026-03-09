@@ -31,7 +31,7 @@ Projeto em desenvolvimento ativo, com base funcional para uso interno ja impleme
 
 ### Pontos de atencao atuais
 
-- Ainda existem textos com problema de encoding em alguns arquivos antigos (ex.: `Ã§`, `Ã£`).
+- Ainda existem textos com problema de encoding em alguns arquivos antigos (ex.: `ç`, `ã`).
 - Ha funcionalidades com foco em MVP e que ainda pedem refinamento de UX e fluxo.
 - Nao ha suite formal de testes automatizados (unitarios/integracao/e2e).
 

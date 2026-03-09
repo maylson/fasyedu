@@ -13,6 +13,33 @@ function hasManagementRole(roles: UserRole[]) {
   return roles.some((role) => MANAGEMENT_ROLES.includes(role));
 }
 
+async function findExistingAuthUserIdByEmail(
+  admin: ReturnType<typeof createAdminClient>,
+  email: string,
+) {
+  const normalized = email.trim().toLowerCase();
+  let page = 1;
+  const perPage = 200;
+
+  while (page <= 20) {
+    const { data, error } = await admin.auth.admin.listUsers({ page, perPage });
+    if (error) {
+      throw new Error(error.message);
+    }
+
+    const users = data?.users ?? [];
+    const found = users.find((item) => (item.email ?? "").trim().toLowerCase() === normalized);
+    if (found?.id) {
+      return found.id;
+    }
+
+    if (users.length < perPage) break;
+    page += 1;
+  }
+
+  return null;
+}
+
 async function getUserManagementContext() {
   const supabase = await createClient();
   const {
@@ -20,7 +47,7 @@ async function getUserManagementContext() {
   } = await supabase.auth.getUser();
 
   if (!user) {
-    throw new Error("UsuÃ¡rio nÃ£o autenticado.");
+    throw new Error("Usuário não autenticado.");
   }
 
   const { data: memberships, error } = await supabase
@@ -45,7 +72,7 @@ async function getUserManagementContext() {
     .map((item) => item.role as UserRole);
 
   if (!hasManagementRole(roles)) {
-    throw new Error("Sem permissÃ£o para criar usuÃ¡rios.");
+    throw new Error("Sem permissão para criar usuários.");
   }
 
   return { schoolId: activeMembership.school_id, creatorUserId: user.id };
@@ -58,7 +85,7 @@ async function getDirectionContext() {
   } = await supabase.auth.getUser();
 
   if (!user) {
-    throw new Error("UsuÃ¡rio nÃ£o autenticado.");
+    throw new Error("Usuário não autenticado.");
   }
 
   const { data: memberships, error } = await supabase
@@ -83,7 +110,7 @@ async function getDirectionContext() {
     .map((item) => item.role as UserRole);
 
   if (!schoolRoles.includes("DIRECAO") && !schoolRoles.includes("SUPPORT")) {
-    throw new Error("Apenas o perfil DIREÃ‡ÃƒO pode editar outros usuÃ¡rios.");
+    throw new Error("Apenas o perfil DIREÇÃO pode editar outros usuários.");
   }
 
   return { schoolId: activeMembership.school_id };
@@ -108,13 +135,13 @@ export async function createUserWithRolesAction(formData: FormData) {
       .filter((role): role is (typeof ROLE_OPTIONS)[number] => ROLE_OPTIONS.includes(role as (typeof ROLE_OPTIONS)[number]));
 
     if (!fullName || !email || !password) {
-      redirect(`/usuarios?error=${encodeURIComponent("Nome, e-mail e senha sÃ£o obrigatÃ³rios.")}`);
+      redirect(`/usuarios?error=${encodeURIComponent("Nome, e-mail e senha são obrigatórios.")}`);
     }
     if (password.length < 8) {
-      redirect(`/usuarios?error=${encodeURIComponent("A senha deve ter no mÃ­nimo 8 caracteres.")}`);
+      redirect(`/usuarios?error=${encodeURIComponent("A senha deve ter no mínimo 8 caracteres.")}`);
     }
     if (selectedRoles.length === 0) {
-      redirect(`/usuarios?error=${encodeURIComponent("Selecione ao menos um perfil para o usuÃ¡rio.")}`);
+      redirect(`/usuarios?error=${encodeURIComponent("Selecione ao menos um perfil para o usuário.")}`);
     }
 
     let targetUserId: string | null = null;
@@ -128,11 +155,11 @@ export async function createUserWithRolesAction(formData: FormData) {
     if (createResult.error) {
       const errorMessage = createResult.error.message.toLowerCase();
       if (errorMessage.includes("already")) {
-        const { data: existingUser, error: existingError } = await admin.schema("auth").from("users").select("id").eq("email", email).maybeSingle();
-        if (existingError || !existingUser?.id) {
-          redirect(`/usuarios?error=${encodeURIComponent("NÃ£o foi possÃ­vel localizar o usuÃ¡rio existente.")}`);
+        const existingUserId = await findExistingAuthUserIdByEmail(admin, email);
+        if (!existingUserId) {
+          redirect(`/usuarios?error=${encodeURIComponent("Não foi possível localizar o usuário existente.")}`);
         }
-        targetUserId = existingUser.id;
+        targetUserId = existingUserId;
       } else {
         redirect(`/usuarios?error=${encodeURIComponent(createResult.error.message)}`);
       }
@@ -141,7 +168,7 @@ export async function createUserWithRolesAction(formData: FormData) {
     }
 
     if (!targetUserId) {
-      redirect(`/usuarios?error=${encodeURIComponent("Falha ao resolver o usuÃ¡rio criado.")}`);
+      redirect(`/usuarios?error=${encodeURIComponent("Falha ao resolver o usuário criado.")}`);
     }
 
     const { error: profileError } = await admin.from("user_profiles").upsert({
@@ -186,11 +213,11 @@ export async function createUserWithRolesAction(formData: FormData) {
     if (isRedirectError(error)) {
       throw error;
     }
-    const message = error instanceof Error ? error.message : "Erro inesperado ao criar usuÃ¡rio.";
+    const message = error instanceof Error ? error.message : "Erro inesperado ao criar usuário.";
     redirect(`/usuarios?error=${encodeURIComponent(message)}`);
   }
 
-  redirect(`/usuarios?success=${encodeURIComponent("UsuÃ¡rio criado e vinculado com sucesso.")}`);
+  redirect(`/usuarios?success=${encodeURIComponent("Usuário criado e vinculado com sucesso.")}`);
 }
 
 export async function updateUserByDirectionAction(formData: FormData) {
@@ -211,10 +238,10 @@ export async function updateUserByDirectionAction(formData: FormData) {
       .filter((role): role is (typeof ROLE_OPTIONS)[number] => ROLE_OPTIONS.includes(role as (typeof ROLE_OPTIONS)[number]));
 
     if (!targetUserId) {
-      redirect(`/usuarios?error=${encodeURIComponent("UsuÃ¡rio alvo invÃ¡lido.")}`);
+      redirect(`/usuarios?error=${encodeURIComponent("Usuário alvo inválido.")}`);
     }
     if (!fullName) {
-      redirect(`/usuarios?error=${encodeURIComponent("Nome completo Ã© obrigatÃ³rio.")}`);
+      redirect(`/usuarios?error=${encodeURIComponent("Nome completo é obrigatório.")}`);
     }
     if (selectedRoles.length === 0) {
       redirect(`/usuarios?error=${encodeURIComponent("Selecione ao menos um perfil ativo.")}`);
@@ -284,11 +311,12 @@ export async function updateUserByDirectionAction(formData: FormData) {
     if (isRedirectError(error)) {
       throw error;
     }
-    const message = error instanceof Error ? error.message : "Erro inesperado ao editar usuÃ¡rio.";
+    const message = error instanceof Error ? error.message : "Erro inesperado ao editar usuário.";
     redirect(`/usuarios?error=${encodeURIComponent(message)}`);
   }
 
-  redirect(`/usuarios?success=${encodeURIComponent("UsuÃ¡rio atualizado com sucesso.")}`);
+  redirect(`/usuarios?success=${encodeURIComponent("Usuário atualizado com sucesso.")}`);
 }
+
 
 

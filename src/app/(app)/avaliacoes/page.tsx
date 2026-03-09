@@ -162,7 +162,7 @@ export default async function AvaliacoesPage({ searchParams }: AvaliacoesPagePro
                   const subjectRef = asSingle(row.subjects);
                   return (
                     <option key={row.id} value={row.id}>
-                      {(classRef?.name ?? "Turma")} Â· {(subjectRef?.name ?? "Disciplina")}
+                      {(classRef?.name ?? "Turma")} · {(subjectRef?.name ?? "Disciplina")}
                     </option>
                   );
                 })}
@@ -187,7 +187,7 @@ export default async function AvaliacoesPage({ searchParams }: AvaliacoesPagePro
                   const subjectRef = asSingle(classSubject?.subjects);
                   return (
                     <option key={row.id} value={row.id}>
-                      {row.title} Â· {(classRef?.name ?? "Turma")} Â· {(subjectRef?.name ?? "Disciplina")}
+                      {row.title} · {(classRef?.name ?? "Turma")} · {(subjectRef?.name ?? "Disciplina")}
                     </option>
                   );
                 })}
@@ -208,7 +208,7 @@ export default async function AvaliacoesPage({ searchParams }: AvaliacoesPagePro
                 <option value="" disabled>Selecione o item</option>
                 {items.map((row) => (
                   <option key={row.id} value={row.id}>
-                    {row.title} Â· max {row.max_score}
+                    {row.title} · max {row.max_score}
                   </option>
                 ))}
               </select>
@@ -219,7 +219,7 @@ export default async function AvaliacoesPage({ searchParams }: AvaliacoesPagePro
                   const classRef = asSingle(row.classes);
                   return (
                     <option key={row.id} value={row.id}>
-                      {(studentRef?.full_name ?? "Aluno")} Â· {(classRef?.name ?? "Turma")}
+                      {(studentRef?.full_name ?? "Aluno")} · {(classRef?.name ?? "Turma")}
                     </option>
                   );
                 })}

@@ -1,4 +1,4 @@
-import fs from "node:fs";
+﻿import fs from "node:fs";
 import { createClient } from "@supabase/supabase-js";
 
 const INPUT_FILE = "generated_schedules/horarios_infantil_consolidado.tsv";
@@ -282,3 +282,5 @@ main().catch((err) => {
   console.error(err);
   process.exit(1);
 });
+
+

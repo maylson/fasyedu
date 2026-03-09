@@ -177,7 +177,7 @@ async function getBaseContext(): Promise<ActionContext> {
   } = await supabase.auth.getUser();
 
   if (!user) {
-    throw new Error("UsuÃ¡rio nÃ£o autenticado.");
+    throw new Error("Usuário não autenticado.");
   }
 
   const { data: memberships, error } = await supabase
@@ -194,7 +194,7 @@ async function getBaseContext(): Promise<ActionContext> {
   const activeMembership = memberships.find((item) => item.school_id === activeSchoolCookie) ?? memberships[0];
 
   if (!activeMembership) {
-    throw new Error("Nenhuma escola ativa disponÃ­vel.");
+    throw new Error("Nenhuma escola ativa disponível.");
   }
 
   const roles = memberships
@@ -207,7 +207,7 @@ async function getBaseContext(): Promise<ActionContext> {
 async function getSchoolManagementContext() {
   const context = await getBaseContext();
   if (!hasAnyRole(context.roles, SCHOOL_MANAGEMENT_ROLES)) {
-    throw new Error("Seu perfil nÃ£o possui permissÃ£o para cadastrar dados.");
+    throw new Error("Seu perfil não possui permissão para cadastrar dados.");
   }
   return context;
 }
@@ -215,7 +215,7 @@ async function getSchoolManagementContext() {
 async function getAcademicContext() {
   const context = await getBaseContext();
   if (!hasAnyRole(context.roles, ACADEMIC_ROLES)) {
-    throw new Error("Seu perfil nÃ£o possui permissÃ£o acadÃªmica.");
+    throw new Error("Seu perfil não possui permissão acadêmica.");
   }
   return context;
 }
@@ -236,7 +236,7 @@ export async function createStudentAction(formData: FormData) {
   const birthDateRaw = String(formData.get("birth_date") ?? "").trim();
 
   if (!registrationCode || !fullName || !stage) {
-    throw new Error("Preencha os campos obrigatÃ³rios do aluno.");
+    throw new Error("Preencha os campos obrigatórios do aluno.");
   }
 
   const { error } = await supabase.from("students").insert({
@@ -261,7 +261,7 @@ export async function createSubjectAction(formData: FormData) {
   const workload = Number(formData.get("weekly_workload") ?? 0);
 
   if (!name || !stage) {
-    throw new Error("Preencha os campos obrigatÃ³rios da disciplina.");
+    throw new Error("Preencha os campos obrigatórios da disciplina.");
   }
 
   const { error } = await supabase.from("subjects").insert({
@@ -295,7 +295,7 @@ export async function createClassDisciplineAction(formData: FormData) {
     .maybeSingle();
 
   if (classError || !classData) {
-    throw new Error("Turma invÃ¡lida para vincular disciplina.");
+    throw new Error("Turma inválida para vincular disciplina.");
   }
 
   let subjectId: string | null = null;
@@ -322,7 +322,7 @@ export async function createClassDisciplineAction(formData: FormData) {
       .single();
 
     if (subjectCreateError || !createdSubject?.id) {
-      throw new Error(subjectCreateError?.message ?? "NÃ£o foi possÃ­vel criar a disciplina.");
+      throw new Error(subjectCreateError?.message ?? "Não foi possível criar a disciplina.");
     }
     subjectId = createdSubject.id;
   }
@@ -351,7 +351,7 @@ export async function duplicateClassDisciplineAction(formData: FormData) {
     .filter(Boolean);
 
   if (!sourceLinkId) {
-    throw new Error("Disciplina de origem invÃ¡lida para duplicaÃ§Ã£o.");
+    throw new Error("Disciplina de origem inválida para duplicação.");
   }
 
   if (targetClassIds.length === 0) {
@@ -366,7 +366,7 @@ export async function duplicateClassDisciplineAction(formData: FormData) {
     .maybeSingle();
 
   if (sourceError || !sourceLink) {
-    throw new Error("NÃ£o foi possÃ­vel localizar a disciplina de origem.");
+    throw new Error("Não foi possível localizar a disciplina de origem.");
   }
 
   const distinctTargets = Array.from(new Set(targetClassIds)).filter((classId) => classId !== sourceLink.class_id);
@@ -403,7 +403,7 @@ export async function updateClassDisciplineAction(formData: FormData) {
   const code = String(formData.get("code") ?? "").trim();
 
   if (!linkId || !classId || !disciplineName) {
-    throw new Error("Dados obrigatÃ³rios para ediÃ§Ã£o da disciplina nÃ£o informados.");
+    throw new Error("Dados obrigatórios para edição da disciplina não informados.");
   }
 
   const { data: sourceLink, error: sourceError } = await supabase
@@ -414,7 +414,7 @@ export async function updateClassDisciplineAction(formData: FormData) {
     .maybeSingle();
 
   if (sourceError || !sourceLink) {
-    throw new Error("Disciplina da turma nÃ£o encontrada para ediÃ§Ã£o.");
+    throw new Error("Disciplina da turma não encontrada para edição.");
   }
 
   const { data: classData, error: classError } = await supabase
@@ -425,7 +425,7 @@ export async function updateClassDisciplineAction(formData: FormData) {
     .maybeSingle();
 
   if (classError || !classData) {
-    throw new Error("Turma vinculada nÃ£o encontrada.");
+    throw new Error("Turma vinculada não encontrada.");
   }
 
   let targetSubjectId: string;
@@ -451,7 +451,7 @@ export async function updateClassDisciplineAction(formData: FormData) {
       .single();
 
     if (createSubjectError || !createdSubject?.id) {
-      throw new Error(createSubjectError?.message ?? "NÃ£o foi possÃ­vel criar a disciplina para atualizaÃ§Ã£o.");
+      throw new Error(createSubjectError?.message ?? "Não foi possível criar a disciplina para atualização.");
     }
 
     targetSubjectId = createdSubject.id;
@@ -467,7 +467,7 @@ export async function updateClassDisciplineAction(formData: FormData) {
     .maybeSingle();
 
   if (existingLink?.id) {
-    redirect(`/disciplinas?error=${encodeURIComponent("Esta disciplina jÃ¡ estÃ¡ vinculada a esta turma.")}`);
+    redirect(`/disciplinas?error=${encodeURIComponent("Esta disciplina já está vinculada a esta turma.")}`);
   }
 
   const { error: updateError } = await supabase
@@ -491,7 +491,7 @@ export async function deleteClassDisciplineAction(formData: FormData) {
   const linkId = String(formData.get("link_id") ?? "").trim();
 
   if (!linkId) {
-    throw new Error("Disciplina da turma invÃ¡lida para exclusÃ£o.");
+    throw new Error("Disciplina da turma inválida para exclusão.");
   }
 
   const { error } = await supabase.from("class_subjects").delete().eq("id", linkId).eq("school_id", schoolId);
@@ -515,7 +515,7 @@ export async function createClassAction(formData: FormData) {
   const vacancies = Number(formData.get("vacancies") ?? 0);
 
   if (!name || !stage || !shift) {
-    throw new Error("Preencha os campos obrigatÃ³rios da turma.");
+    throw new Error("Preencha os campos obrigatórios da turma.");
   }
   if (stage !== "CURSO_LIVRE" && !series) {
     throw new Error("Selecione a série da turma.");
@@ -529,7 +529,7 @@ export async function createClassAction(formData: FormData) {
     .maybeSingle();
 
   if (!schoolYear) {
-    throw new Error("NÃ£o existe ano letivo ativo. Cadastre e ative um ano letivo primeiro.");
+    throw new Error("Não existe ano letivo ativo. Cadastre e ative um ano letivo primeiro.");
   }
 
   const { error } = await supabase.from("classes").insert({
@@ -656,7 +656,7 @@ export async function updateClassAction(formData: FormData) {
   const vacancies = Number(formData.get("vacancies") ?? 0);
 
   if (!classId || !name || !stage || !shift) {
-    throw new Error("Preencha os campos obrigatÃ³rios para editar a turma.");
+    throw new Error("Preencha os campos obrigatórios para editar a turma.");
   }
   if (stage !== "CURSO_LIVRE" && !series) {
     throw new Error("Selecione a série da turma.");
@@ -689,7 +689,7 @@ export async function deleteClassAction(formData: FormData) {
   const classId = String(formData.get("class_id") ?? "").trim();
 
   if (!classId) {
-    redirect(`/turmas?error=${encodeURIComponent("Turma invÃ¡lida para exclusÃ£o.")}`);
+    redirect(`/turmas?error=${encodeURIComponent("Turma inválida para exclusão.")}`);
   }
 
   const { error } = await supabase.from("classes").delete().eq("id", classId).eq("school_id", schoolId);
@@ -702,7 +702,7 @@ export async function deleteClassAction(formData: FormData) {
   revalidatePath("/disciplinas");
   revalidatePath("/horarios");
   revalidatePath("/matriculas");
-  redirect(`/turmas?success=${encodeURIComponent("Turma excluÃ­da com sucesso.")}`);
+  redirect(`/turmas?success=${encodeURIComponent("Turma excluída com sucesso.")}`);
 }
 
 export async function linkSubjectToClassAction(formData: FormData) {
@@ -888,7 +888,7 @@ export async function createAnnouncementAction(formData: FormData) {
   const attachmentFile = formData.get("attachment_file");
 
   if (!title || !message) {
-    throw new Error("Preencha os campos obrigatÃ³rios do aviso.");
+    throw new Error("Preencha os campos obrigatórios do aviso.");
   }
 
   let publishedAt = new Date();
@@ -1335,7 +1335,7 @@ export async function updateClassScheduleAction(formData: FormData) {
 export async function deleteClassScheduleAction(formData: FormData) {
   const { supabase, schoolId } = await getScheduleManagementContext();
   const id = String(formData.get("id") ?? "").trim();
-  if (!id) throw new Error("HorÃ¡rio invÃ¡lido para exclusÃ£o.");
+  if (!id) throw new Error("Horário inválido para exclusão.");
 
   const { error } = await supabase.from("class_schedules").delete().eq("id", id).eq("school_id", schoolId);
   if (error) throw new Error(error.message);
@@ -1364,7 +1364,7 @@ export async function saveLessonPlanAction(formData: FormData) {
   const reviewerComment = String(formData.get("reviewer_comment") ?? "").trim();
 
   if (!classScheduleId || !lessonDate) {
-    throw new Error("HorÃ¡rio e data da aula sÃ£o obrigatÃ³rios.");
+    throw new Error("Horário e data da aula são obrigatórios.");
   }
 
   const { data: schedule, error: scheduleError } = await supabase
@@ -1383,7 +1383,7 @@ export async function saveLessonPlanAction(formData: FormData) {
 
   const canReview = hasAnyRole(roles, REVIEW_ROLES);
   if (!canReview && reviewerComment) {
-    throw new Error("Somente coordenaÃ§Ã£o/direÃ§Ã£o pode registrar parecer.");
+    throw new Error("Somente coordenação/direção pode registrar parecer.");
   }
 
   const normalizedStatus: LessonPlanStatus = requestedStatus === "UNDER_REVIEW" ? "HUMAN_REVIEW" : requestedStatus;
@@ -1437,7 +1437,7 @@ export async function saveLessonPlanAction(formData: FormData) {
 export async function deleteLessonPlanAction(formData: FormData) {
   const { supabase, schoolId, roles, userId } = await getAcademicContext();
   const id = String(formData.get("id") ?? "").trim();
-  if (!id) throw new Error("Planejamento invÃ¡lido.");
+  if (!id) throw new Error("Planejamento inválido.");
 
   const canReview = hasAnyRole(roles, REVIEW_ROLES);
   let query = supabase.from("lesson_plans").delete().eq("id", id).eq("school_id", schoolId);
@@ -1458,14 +1458,14 @@ export async function duplicateLessonPlanAction(formData: FormData) {
   const targetLessonDate = String(formData.get("target_lesson_date") ?? "").trim();
 
   if (!sourceId || !targetScheduleId || !targetLessonDate) {
-    throw new Error("Dados obrigatÃ³rios para duplicaÃ§Ã£o nÃ£o informados.");
+    throw new Error("Dados obrigatórios para duplicação não informados.");
   }
 
   const canReview = hasAnyRole(roles, REVIEW_ROLES);
   let sourceQuery = supabase.from("lesson_plans").select("*").eq("id", sourceId).eq("school_id", schoolId);
   if (!canReview) sourceQuery = sourceQuery.eq("created_by", userId);
   const { data: source, error: sourceError } = await sourceQuery.maybeSingle();
-  if (sourceError || !source) throw new Error("Planejamento de origem nÃ£o encontrado.");
+  if (sourceError || !source) throw new Error("Planejamento de origem não encontrado.");
 
   const { data: targetSchedule, error: targetScheduleError } = await supabase
     .from("class_schedules")
