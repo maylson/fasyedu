@@ -21,8 +21,146 @@ type ActionContext = {
   roles: UserRole[];
 };
 
+const EVENT_ATTACHMENTS_BUCKET = "event-attachments";
+const ANNOUNCEMENT_ATTACHMENTS_BUCKET = "announcement-attachments";
+
 function hasAnyRole(userRoles: UserRole[], allowedRoles: UserRole[]) {
   return userRoles.some((role) => allowedRoles.includes(role));
+}
+
+async function ensureEventAttachmentsBucket() {
+  const admin = createAdminClient();
+  const { data: buckets } = await admin.storage.listBuckets();
+  const exists = (buckets ?? []).some((bucket) => bucket.name === EVENT_ATTACHMENTS_BUCKET);
+  if (!exists) {
+    await admin.storage.createBucket(EVENT_ATTACHMENTS_BUCKET, { public: false, fileSizeLimit: 10 * 1024 * 1024 });
+  }
+  return admin;
+}
+
+async function ensureAnnouncementAttachmentsBucket() {
+  const admin = createAdminClient();
+  const { data: buckets } = await admin.storage.listBuckets();
+  const exists = (buckets ?? []).some((bucket) => bucket.name === ANNOUNCEMENT_ATTACHMENTS_BUCKET);
+  if (!exists) {
+    await admin.storage.createBucket(ANNOUNCEMENT_ATTACHMENTS_BUCKET, { public: false, fileSizeLimit: 10 * 1024 * 1024 });
+  }
+  return admin;
+}
+
+function normalizeEventDateInput(input: string) {
+  const raw = input.trim();
+  if (!raw) return null;
+  if (/^\d{4}-\d{2}-\d{2}$/.test(raw)) {
+    const parsed = new Date(`${raw}T08:00:00`);
+    return Number.isNaN(parsed.getTime()) ? null : parsed;
+  }
+  const parsed = new Date(raw);
+  return Number.isNaN(parsed.getTime()) ? null : parsed;
+}
+
+function readEventTargeting(formData: FormData) {
+  const targetStages = formData
+    .getAll("target_stages")
+    .map((value) => String(value).trim())
+    .filter(Boolean);
+  const targetSeries = formData
+    .getAll("target_series")
+    .map((value) => String(value).trim())
+    .filter(Boolean);
+  const targetClassIds = formData
+    .getAll("target_class_ids")
+    .map((value) => String(value).trim())
+    .filter(Boolean);
+
+  return {
+    targetStages: Array.from(new Set(targetStages)),
+    targetSeries: Array.from(new Set(targetSeries)),
+    targetClassIds: Array.from(new Set(targetClassIds)),
+  };
+}
+
+async function uploadEventAttachment(
+  schoolId: string,
+  file: File | null,
+  currentPath?: string | null,
+): Promise<{
+  attachment_path: string | null;
+  attachment_name: string | null;
+  attachment_mime: string | null;
+  attachment_size: number | null;
+}> {
+  if (!(file instanceof File) || file.size === 0) {
+    return {
+      attachment_path: currentPath ?? null,
+      attachment_name: null,
+      attachment_mime: null,
+      attachment_size: null,
+    };
+  }
+
+  const admin = await ensureEventAttachmentsBucket();
+  const safeName = file.name.replace(/[^\w.\-() ]+/g, "_");
+  const filePath = `${schoolId}/${Date.now()}-${safeName}`;
+  const bytes = Buffer.from(await file.arrayBuffer());
+
+  const { error: uploadError } = await admin.storage
+    .from(EVENT_ATTACHMENTS_BUCKET)
+    .upload(filePath, bytes, { contentType: file.type || "application/octet-stream" });
+
+  if (uploadError) {
+    throw new Error(uploadError.message);
+  }
+
+  if (currentPath) {
+    await admin.storage.from(EVENT_ATTACHMENTS_BUCKET).remove([currentPath]);
+  }
+
+  return {
+    attachment_path: filePath,
+    attachment_name: file.name,
+    attachment_mime: file.type || null,
+    attachment_size: file.size,
+  };
+}
+
+async function uploadAnnouncementAttachment(
+  schoolId: string,
+  file: File | null,
+): Promise<{
+  attachment_path: string | null;
+  attachment_name: string | null;
+  attachment_mime: string | null;
+  attachment_size: number | null;
+}> {
+  if (!(file instanceof File) || file.size === 0) {
+    return {
+      attachment_path: null,
+      attachment_name: null,
+      attachment_mime: null,
+      attachment_size: null,
+    };
+  }
+
+  const admin = await ensureAnnouncementAttachmentsBucket();
+  const safeName = file.name.replace(/[^\w.\-() ]+/g, "_");
+  const filePath = `${schoolId}/${Date.now()}-${safeName}`;
+  const bytes = Buffer.from(await file.arrayBuffer());
+
+  const { error: uploadError } = await admin.storage
+    .from(ANNOUNCEMENT_ATTACHMENTS_BUCKET)
+    .upload(filePath, bytes, { contentType: file.type || "application/octet-stream" });
+
+  if (uploadError) {
+    throw new Error(uploadError.message);
+  }
+
+  return {
+    attachment_path: filePath,
+    attachment_name: file.name,
+    attachment_mime: file.type || null,
+    attachment_size: file.size,
+  };
 }
 
 async function getBaseContext(): Promise<ActionContext> {
@@ -486,15 +624,35 @@ export async function linkSubjectToClassAction(formData: FormData) {
 }
 
 export async function createAnnouncementAction(formData: FormData) {
-  const { supabase, schoolId, userId } = await getSchoolManagementContext();
+  const { supabase, schoolId, userId, roles } = await getBaseContext();
+  if (!roles.includes("DIRECAO") && !roles.includes("COORDENACAO")) {
+    throw new Error("Somente Direção e Coordenação podem publicar avisos no mural.");
+  }
+
   const title = String(formData.get("title") ?? "").trim();
   const message = String(formData.get("message") ?? "").trim();
   const audience = String(formData.get("audience") ?? "TODOS").trim();
   const isPinned = String(formData.get("is_pinned") ?? "") === "on";
+  const publishedDateRaw = String(formData.get("published_date") ?? "").trim();
+  const attachmentFile = formData.get("attachment_file");
 
   if (!title || !message) {
     throw new Error("Preencha os campos obrigatÃ³rios do aviso.");
   }
+
+  let publishedAt = new Date();
+  if (publishedDateRaw) {
+    const parsed = new Date(`${publishedDateRaw}T08:00:00`);
+    if (Number.isNaN(parsed.getTime())) {
+      throw new Error("Data de publicação inválida.");
+    }
+    publishedAt = parsed;
+  }
+
+  const attachment = await uploadAnnouncementAttachment(
+    schoolId,
+    attachmentFile instanceof File ? attachmentFile : null,
+  );
 
   const { error } = await supabase.from("announcements").insert({
     school_id: schoolId,
@@ -502,6 +660,8 @@ export async function createAnnouncementAction(formData: FormData) {
     message,
     audience,
     is_pinned: isPinned,
+    published_at: publishedAt.toISOString(),
+    ...attachment,
     created_by: userId,
   });
   if (error) throw new Error(error.message);
@@ -513,27 +673,172 @@ export async function createAnnouncementAction(formData: FormData) {
 export async function createEventAction(formData: FormData) {
   const { supabase, schoolId, userId } = await getSchoolManagementContext();
   const title = String(formData.get("title") ?? "").trim();
-  const startsAt = String(formData.get("starts_at") ?? "").trim();
-  const endsAt = String(formData.get("ends_at") ?? "").trim();
+  const startsAtRaw = String(formData.get("event_date") ?? formData.get("starts_at") ?? "").trim();
+  const endsAtRaw = String(formData.get("ends_at") ?? "").trim();
   const audience = String(formData.get("audience") ?? "TODOS").trim();
   const description = String(formData.get("description") ?? "").trim();
+  const eventType = String(formData.get("event_type") ?? "PROGRAMACAO").trim();
+  const isAdministrative = String(formData.get("is_administrative") ?? "") === "on";
+  const attachmentFile = formData.get("attachment_file");
 
-  if (!title || !startsAt) {
-    throw new Error("TÃ­tulo e inÃ­cio do evento sÃ£o obrigatÃ³rios.");
+  if (!title || !startsAtRaw) {
+    throw new Error("Título e início do evento são obrigatórios.");
   }
+
+  const startsAt = normalizeEventDateInput(startsAtRaw);
+  if (!startsAt) {
+    throw new Error("Data do evento inválida.");
+  }
+
+  const endsAt = endsAtRaw ? new Date(endsAtRaw) : null;
+  if (endsAtRaw && (!endsAt || Number.isNaN(endsAt.getTime()))) {
+    throw new Error("Data/hora de término inválida.");
+  }
+  if (endsAt && endsAt.getTime() < startsAt.getTime()) {
+    throw new Error("O término não pode ser antes do início.");
+  }
+
+  const rawTargeting = readEventTargeting(formData);
+  const targetStages = isAdministrative ? [] : rawTargeting.targetStages;
+  const targetSeries = isAdministrative ? [] : rawTargeting.targetSeries;
+  const targetClassIds = isAdministrative ? [] : rawTargeting.targetClassIds;
+  const attachment = await uploadEventAttachment(schoolId, attachmentFile instanceof File ? attachmentFile : null);
 
   const { error } = await supabase.from("events").insert({
     school_id: schoolId,
     title,
-    starts_at: startsAt,
-    ends_at: endsAt || null,
+    starts_at: startsAt.toISOString(),
+    ends_at: endsAt ? endsAt.toISOString() : null,
     audience,
     description: description || null,
+    event_type: eventType,
+    target_stages: targetStages,
+    target_series: targetSeries,
+    target_class_ids: targetClassIds,
+    is_administrative: isAdministrative,
+    ...attachment,
     created_by: userId,
   });
   if (error) throw new Error(error.message);
 
   revalidatePath("/calendario");
+  revalidatePath("/dashboard");
+}
+
+export async function updateEventAction(formData: FormData) {
+  const { supabase, schoolId } = await getSchoolManagementContext();
+  const id = String(formData.get("id") ?? "").trim();
+  const title = String(formData.get("title") ?? "").trim();
+  const startsAtRaw = String(formData.get("event_date") ?? formData.get("starts_at") ?? "").trim();
+  const endsAtRaw = String(formData.get("ends_at") ?? "").trim();
+  const audience = String(formData.get("audience") ?? "TODOS").trim();
+  const description = String(formData.get("description") ?? "").trim();
+  const eventType = String(formData.get("event_type") ?? "PROGRAMACAO").trim();
+  const isAdministrative = String(formData.get("is_administrative") ?? "") === "on";
+  const removeAttachment = String(formData.get("remove_attachment") ?? "") === "on";
+  const attachmentFile = formData.get("attachment_file");
+
+  if (!id || !title || !startsAtRaw) {
+    throw new Error("Dados obrigatórios para edição do evento não informados.");
+  }
+
+  const startsAt = normalizeEventDateInput(startsAtRaw);
+  if (!startsAt) {
+    throw new Error("Data do evento inválida.");
+  }
+  const endsAt = endsAtRaw ? new Date(endsAtRaw) : null;
+  if (endsAtRaw && (!endsAt || Number.isNaN(endsAt.getTime()))) {
+    throw new Error("Data/hora de término inválida.");
+  }
+  if (endsAt && endsAt.getTime() < startsAt.getTime()) {
+    throw new Error("O término não pode ser antes do início.");
+  }
+
+  const { data: existingEvent, error: existingError } = await supabase
+    .from("events")
+    .select("id, attachment_path, attachment_name, attachment_mime, attachment_size")
+    .eq("id", id)
+    .eq("school_id", schoolId)
+    .maybeSingle();
+
+  if (existingError || !existingEvent) {
+    throw new Error("Evento não encontrado para edição.");
+  }
+
+  let attachmentPayload = {
+    attachment_path: existingEvent.attachment_path as string | null,
+    attachment_name: existingEvent.attachment_name as string | null,
+    attachment_mime: existingEvent.attachment_mime as string | null,
+    attachment_size: existingEvent.attachment_size as number | null,
+  };
+
+  if (removeAttachment && existingEvent.attachment_path) {
+    const admin = await ensureEventAttachmentsBucket();
+    await admin.storage.from(EVENT_ATTACHMENTS_BUCKET).remove([existingEvent.attachment_path]);
+    attachmentPayload = {
+      attachment_path: null,
+      attachment_name: null,
+      attachment_mime: null,
+      attachment_size: null,
+    };
+  }
+
+  if (attachmentFile instanceof File && attachmentFile.size > 0) {
+    const uploaded = await uploadEventAttachment(schoolId, attachmentFile, attachmentPayload.attachment_path);
+    attachmentPayload = uploaded;
+  }
+
+  const rawTargeting = readEventTargeting(formData);
+  const targetStages = isAdministrative ? [] : rawTargeting.targetStages;
+  const targetSeries = isAdministrative ? [] : rawTargeting.targetSeries;
+  const targetClassIds = isAdministrative ? [] : rawTargeting.targetClassIds;
+
+  const { error } = await supabase
+    .from("events")
+    .update({
+      title,
+      starts_at: startsAt.toISOString(),
+      ends_at: endsAt ? endsAt.toISOString() : null,
+      audience,
+      description: description || null,
+      event_type: eventType,
+      target_stages: targetStages,
+      target_series: targetSeries,
+      target_class_ids: targetClassIds,
+      is_administrative: isAdministrative,
+      ...attachmentPayload,
+    })
+    .eq("id", id)
+    .eq("school_id", schoolId);
+
+  if (error) throw new Error(error.message);
+
+  revalidatePath("/calendario");
+  revalidatePath("/dashboard");
+}
+
+export async function deleteEventAction(formData: FormData) {
+  const { supabase, schoolId } = await getSchoolManagementContext();
+  const id = String(formData.get("id") ?? "").trim();
+  if (!id) throw new Error("Evento inválido para exclusão.");
+
+  const { data: event } = await supabase
+    .from("events")
+    .select("attachment_path")
+    .eq("id", id)
+    .eq("school_id", schoolId)
+    .maybeSingle();
+
+  if (event?.attachment_path) {
+    const admin = await ensureEventAttachmentsBucket();
+    await admin.storage.from(EVENT_ATTACHMENTS_BUCKET).remove([event.attachment_path]);
+  }
+
+  const { error } = await supabase.from("events").delete().eq("id", id).eq("school_id", schoolId);
+  if (error) throw new Error(error.message);
+
+  revalidatePath("/calendario");
+  revalidatePath("/dashboard");
 }
 
 export async function createClassScheduleAction(formData: FormData) {

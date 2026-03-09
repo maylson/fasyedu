@@ -86,6 +86,16 @@ function uniqueByKey<T>(items: T[], getKey: (item: T) => string) {
   });
 }
 
+function sanitizeFeedbackHtml(input: string) {
+  if (!input) return "";
+  return input
+    .replace(/<script[\s\S]*?>[\s\S]*?<\/script>/gi, "")
+    .replace(/<style[\s\S]*?>[\s\S]*?<\/style>/gi, "")
+    .replace(/\son\w+="[^"]*"/gi, "")
+    .replace(/\son\w+='[^']*'/gi, "")
+    .replace(/javascript:/gi, "");
+}
+
 export default async function DashboardPage() {
   const { supabase, activeSchoolId, roles, user } = await getUserContext();
 
@@ -142,11 +152,28 @@ export default async function DashboardPage() {
       id: string;
       day_of_week: number;
       starts_at: string;
+      ends_at?: string;
       classes?: { name?: string } | Array<{ name?: string }>;
       class_subjects?:
         | { subjects?: { name?: string } | Array<{ name?: string }> }
         | Array<{ subjects?: { name?: string } | Array<{ name?: string }> }>;
     }>;
+
+    const scheduleMetaById = new Map(
+      schedules.map((schedule) => {
+        const classRef = Array.isArray(schedule.classes) ? schedule.classes[0] : schedule.classes;
+        const classSubjectRef = Array.isArray(schedule.class_subjects) ? schedule.class_subjects[0] : schedule.class_subjects;
+        const subjectRef = Array.isArray(classSubjectRef?.subjects) ? classSubjectRef?.subjects[0] : classSubjectRef?.subjects;
+        return [
+          schedule.id,
+          {
+            className: classRef?.name ?? "Turma não informada",
+            subjectName: subjectRef?.name ?? "Disciplina não informada",
+            startsAt: schedule.starts_at,
+          },
+        ] as const;
+      }),
+    );
 
     const scheduleIds = schedules.map((item) => item.id);
     const plansResult =
@@ -207,7 +234,13 @@ export default async function DashboardPage() {
             {latestFeedbacks.length === 0 ? (
               <p className="text-sm text-[var(--muted)]">Sem feedback recente nesta semana.</p>
             ) : (
-              latestFeedbacks.map((item) => (
+              latestFeedbacks.map((item) => {
+                const rawFeedback = item.reviewer_comment || item.ai_feedback || "Feedback disponível";
+                const isHtml = /<\/?[a-z][\s\S]*>/i.test(rawFeedback);
+                const safeFeedback = sanitizeFeedbackHtml(rawFeedback);
+                const scheduleMeta = item.class_schedule_id ? scheduleMetaById.get(item.class_schedule_id) : null;
+
+                return (
                 <Link
                   key={item.id}
                   href={
@@ -218,9 +251,22 @@ export default async function DashboardPage() {
                   className="block rounded-xl border border-[var(--line)] bg-[var(--panel-soft)] p-3 transition hover:border-[var(--primary)] hover:bg-white"
                 >
                   <p className="text-xs text-[var(--muted)]">{item.lesson_date ? new Date(`${item.lesson_date}T12:00:00`).toLocaleDateString("pt-BR") : "Sem data"}</p>
-                  <p className="mt-1 text-sm line-clamp-2">{item.reviewer_comment || item.ai_feedback || "Feedback disponível"}</p>
+                  <p className="mt-1 text-xs text-[var(--brand-blue)]">
+                    {scheduleMeta
+                      ? `${scheduleMeta.className} · ${scheduleMeta.subjectName} · ${scheduleMeta.startsAt.slice(0, 5)}`
+                      : "Aula sem vínculo de horário"}
+                  </p>
+                  {isHtml ? (
+                    <div
+                      className="mt-1 line-clamp-2 text-sm [&_p]:m-0 [&_strong]:font-semibold"
+                      dangerouslySetInnerHTML={{ __html: safeFeedback }}
+                    />
+                  ) : (
+                    <p className="mt-1 text-sm line-clamp-2">{safeFeedback}</p>
+                  )}
                 </Link>
-              ))
+                );
+              })
             )}
           </div>
         </section>

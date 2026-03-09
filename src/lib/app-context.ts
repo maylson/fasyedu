@@ -56,12 +56,13 @@ export async function getUserContext() {
   const roles = normalizedMemberships
     .filter((membership) => membership.school_id === activeSchoolId)
     .map((membership) => membership.role as UserRole);
+  const uniqueRoles = Array.from(new Set(roles));
 
   return {
     user,
     memberships: normalizedMemberships,
     activeSchoolId,
-    roles,
+    roles: uniqueRoles,
     supabase,
   };
 }
