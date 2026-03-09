@@ -33,6 +33,7 @@ export const NAV_ITEMS: NavItemDef[] = [
   { href: "/disciplinas", label: "Disciplinas", icon: "subjects", allowedRoles: ["DIRECAO", "COORDENACAO", "SECRETARIA"] },
   { href: "/matriculas", label: "Matrículas", icon: "enrollments", allowedRoles: ["DIRECAO", "COORDENACAO", "SECRETARIA"] },
   { href: "/planejamento", label: "Planejamento", icon: "planning", allowedRoles: ["PROFESSOR"] },
+  { href: "/agenda", label: "Agenda", icon: "calendar", allowedRoles: ["PAI", "ALUNO"] },
   { href: "/avaliacoes", label: "Avaliações", icon: "assessments", allowedRoles: ["DIRECAO", "COORDENACAO", "PROFESSOR", "ALUNO"] },
   { href: "/calendario", label: "Calendário", icon: "calendar", allowedRoles: ALL_ROLES },
   { href: "/mural", label: "Mural", icon: "board", allowedRoles: ALL_ROLES },

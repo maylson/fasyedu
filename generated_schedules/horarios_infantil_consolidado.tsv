@@ -1,0 +1,717 @@
+Tipo	classname	component	teachername	DiaSemana	hora_inicio	hora_fim
+AULA	Baú da Clara I	Acolhida	Alcione Castilho	SEGUNDA	07:30	07:40
+AULA	Baú da Clara I	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes	Alcione Castilho	SEGUNDA	07:40	07:50
+AULA	Baú da Clara I	Inglês	Ana Paula Jacó	SEGUNDA	07:50	08:20
+AULA	Baú da Clara I	Grupo Coloquial	Alcione Castilho	SEGUNDA	08:20	08:40
+AULA	Baú da Clara I	Leitura em Voz Alta	Alcione Castilho	SEGUNDA	08:40	08:50
+INTERVALO	Baú da Clara I	Lanche e Parque		SEGUNDA	08:50	09:20
+AULA	Baú da Clara I	Matemática Divertida	Alcione Castilho	SEGUNDA	09:20	09:50
+AULA	Baú da Clara I	Estação de Aprendizagem	Alcione Castilho	SEGUNDA	09:40	10:00
+AULA	Baú da Clara I	Psicomotricidade	Deborah Costa	SEGUNDA	10:00	10:30
+AULA	Baú da Clara I	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Alcione Castilho	SEGUNDA	10:30	10:45
+AULA	Baú da Clara I	Grafomotricidade	Alcione Castilho	SEGUNDA	10:45	11:05
+AULA	Baú da Clara I	Passeio de Aprendizagem	Alcione Castilho	SEGUNDA	11:05	11:25
+AULA	Baú da Clara I	Oração e Atividade Lúdica	Alcione Castilho	SEGUNDA	11:25	11:30
+AULA	Baú da Clara I	Acolhida	Alcione Castilho	TERçA	07:30	07:40
+AULA	Baú da Clara I	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes	Alcione Castilho	TERçA	07:40	07:50
+AULA	Baú da Clara I	Inglês	Ana Paula Jacó	TERçA	07:50	08:20
+AULA	Baú da Clara I	Grupo Coloquial	Alcione Castilho	TERçA	08:20	08:40
+AULA	Baú da Clara I	Leitura em Voz Alta	Alcione Castilho	TERçA	08:40	08:50
+INTERVALO	Baú da Clara I	Lanche e Parque		TERçA	08:50	09:20
+AULA	Baú da Clara I	Virtudes	Alcione Castilho	TERçA	09:20	09:50
+AULA	Baú da Clara I	Psicomotricidade	Deborah Costa	TERçA	10:00	10:30
+AULA	Baú da Clara I	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Alcione Castilho	TERçA	10:30	10:45
+AULA	Baú da Clara I	Grafomotricidade	Alcione Castilho	TERçA	10:45	11:05
+AULA	Baú da Clara I	Musicalização	Ericson Silveira	TERçA	10:45	11:05
+AULA	Baú da Clara I	Estação de Aprendizagem	Alcione Castilho	TERçA	11:05	11:25
+AULA	Baú da Clara I	Oração e Atividade Lúdica	Alcione Castilho	TERçA	11:25	11:30
+AULA	Baú da Clara I	Acolhida	Alcione Castilho	QUARTA	07:30	07:40
+AULA	Baú da Clara I	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes	Alcione Castilho	QUARTA	07:40	07:50
+AULA	Baú da Clara I	Inglês	Ana Paula Jacó	QUARTA	07:50	08:20
+AULA	Baú da Clara I	Grupo Coloquial	Alcione Castilho	QUARTA	08:20	08:40
+AULA	Baú da Clara I	Leitura em Voz Alta	Alcione Castilho	QUARTA	08:40	08:50
+INTERVALO	Baú da Clara I	Lanche e Parque		QUARTA	08:50	09:20
+AULA	Baú da Clara I	Matemática Divertida	Alcione Castilho	QUARTA	09:20	09:50
+AULA	Baú da Clara I	Psicomotricidade	Deborah Costa	QUARTA	10:00	10:30
+AULA	Baú da Clara I	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Alcione Castilho	QUARTA	10:30	10:45
+AULA	Baú da Clara I	Leitura	Alcione Castilho	QUARTA	10:45	11:05
+AULA	Baú da Clara I	Estação de Aprendizagem	Alcione Castilho	QUARTA	11:05	11:25
+AULA	Baú da Clara I	Oração e Atividade Lúdica	Alcione Castilho	QUARTA	11:25	11:30
+AULA	Baú da Clara I	Acolhida	Alcione Castilho	QUINTA	07:30	07:40
+AULA	Baú da Clara I	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes	Alcione Castilho	QUINTA	07:40	07:50
+AULA	Baú da Clara I	Inglês	Ana Paula Jacó	QUINTA	07:50	08:20
+AULA	Baú da Clara I	Grupo Coloquial	Alcione Castilho	QUINTA	08:20	08:40
+AULA	Baú da Clara I	Leitura em Voz Alta	Alcione Castilho	QUINTA	08:40	08:50
+INTERVALO	Baú da Clara I	Lanche e Parque		QUINTA	08:50	09:20
+AULA	Baú da Clara I	Aprendendo com Jesus	Alcione Castilho	QUINTA	09:20	09:50
+AULA	Baú da Clara I	Psicomotricidade	Deborah Costa	QUINTA	10:00	10:30
+AULA	Baú da Clara I	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Alcione Castilho	QUINTA	10:30	10:45
+AULA	Baú da Clara I	Grafomotricidade	Alcione Castilho	QUINTA	10:45	11:05
+AULA	Baú da Clara I	Estação de Aprendizagem	Alcione Castilho	QUINTA	11:05	11:25
+AULA	Baú da Clara I	Oração e Atividade Lúdica	Alcione Castilho	QUINTA	11:25	11:30
+AULA	Baú da Clara I	Acolhida	Alcione Castilho	SEXTA	07:30	07:40
+AULA	Baú da Clara I	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes	Alcione Castilho	SEXTA	07:40	07:50
+AULA	Baú da Clara I	Inglês	Ana Paula Jacó	SEXTA	07:50	08:20
+AULA	Baú da Clara I	Grafomotricidade	Alcione Castilho	SEXTA	08:20	08:40
+AULA	Baú da Clara I	Leitura em Voz Alta	Alcione Castilho	SEXTA	08:40	08:50
+INTERVALO	Baú da Clara I	Lanche e Parque		SEXTA	08:50	09:20
+AULA	Baú da Clara I	Matemática Divertida	Alcione Castilho	SEXTA	09:20	09:50
+AULA	Baú da Clara I	Psicomotricidade	Deborah Costa	SEXTA	10:00	10:30
+AULA	Baú da Clara I	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Alcione Castilho	SEXTA	10:30	10:45
+AULA	Baú da Clara I	Leitura	Alcione Castilho	SEXTA	10:45	11:05
+AULA	Baú da Clara I	Estação de Aprendizagem	Alcione Castilho	SEXTA	11:05	11:25
+AULA	Baú da Clara I	Oração e Atividade Lúdica	Alcione Castilho	SEXTA	11:25	11:30
+AULA	Baú da Clara II	Acolhida	Nilciane Wanzeler	SEGUNDA	07:30	07:40
+AULA	Baú da Clara II	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Nilciane Wanzeler	SEGUNDA	07:40	08:00
+AULA	Baú da Clara II	Grupo Coloquial	Nilciane Wanzeler	SEGUNDA	08:00	08:20
+AULA	Baú da Clara II	Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Nilciane Wanzeler	SEGUNDA	08:20	08:50
+AULA	Baú da Clara II	Inglês	Ana Paula Jacó	SEGUNDA	08:20	08:50
+INTERVALO	Baú da Clara II	Lanche e Parque		SEGUNDA	08:50	09:20
+AULA	Baú da Clara II	Leitura em Voz Alta	Nilciane Wanzeler	SEGUNDA	09:20	09:30
+AULA	Baú da Clara II	Psicomotricidade	Deborah Costa	SEGUNDA	09:30	10:00
+AULA	Baú da Clara II	Estação de Aprendizagem	Nilciane Wanzeler	SEGUNDA	10:00	10:20
+AULA	Baú da Clara II	Matemática Divertida	Nilciane Wanzeler	SEGUNDA	10:20	10:40
+AULA	Baú da Clara II	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Nilciane Wanzeler	SEGUNDA	10:40	11:05
+AULA	Baú da Clara II	Grafomotricidade	Nilciane Wanzeler	SEGUNDA	11:05	11:25
+AULA	Baú da Clara II	Oração e Atividade Lúdica	Nilciane Wanzeler	SEGUNDA	11:25	11:30
+AULA	Baú da Clara II	Acolhida	Nilciane Wanzeler	TERçA	07:30	07:40
+AULA	Baú da Clara II	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Nilciane Wanzeler	TERçA	07:40	08:00
+AULA	Baú da Clara II	Grupo Coloquial	Nilciane Wanzeler	TERçA	08:00	08:20
+AULA	Baú da Clara II	Inglês	Ana Paula Jacó	TERçA	08:20	08:50
+INTERVALO	Baú da Clara II	Lanche e Parque		TERçA	08:50	09:20
+AULA	Baú da Clara II	Leitura em Voz Alta	Nilciane Wanzeler	TERçA	09:20	09:30
+AULA	Baú da Clara II	Aprendendo com Jesus	Nilciane Wanzeler	TERçA	09:30	10:00
+AULA	Baú da Clara II	Psicomotricidade	Deborah Costa	TERçA	09:30	10:00
+AULA	Baú da Clara II	Estação de Aprendizagem	Nilciane Wanzeler	TERçA	10:00	10:20
+AULA	Baú da Clara II	Virtudes	Nilciane Wanzeler	TERçA	10:20	10:40
+AULA	Baú da Clara II	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Nilciane Wanzeler	TERçA	10:40	11:05
+AULA	Baú da Clara II	Musicalização	Ericson Silveira	TERçA	11:05	11:25
+AULA	Baú da Clara II	Oração e Atividade Lúdica	Nilciane Wanzeler	TERçA	11:25	11:30
+AULA	Baú da Clara II	Acolhida	Nilciane Wanzeler	QUARTA	07:30	07:40
+AULA	Baú da Clara II	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Nilciane Wanzeler	QUARTA	07:40	08:00
+AULA	Baú da Clara II	Grupo Coloquial	Nilciane Wanzeler	QUARTA	08:00	08:20
+AULA	Baú da Clara II	Inglês	Ana Paula Jacó	QUARTA	08:20	08:50
+INTERVALO	Baú da Clara II	Lanche e Parque		QUARTA	08:50	09:20
+AULA	Baú da Clara II	Leitura em Voz Alta	Nilciane Wanzeler	QUARTA	09:20	09:30
+AULA	Baú da Clara II	Matemática Divertida	Nilciane Wanzeler	QUARTA	09:30	10:00
+AULA	Baú da Clara II	Psicomotricidade	Deborah Costa	QUARTA	09:30	10:00
+AULA	Baú da Clara II	Estação de Aprendizagem	Nilciane Wanzeler	QUARTA	10:00	10:20
+AULA	Baú da Clara II	Matemática Divertida	Nilciane Wanzeler	QUARTA	10:20	10:40
+AULA	Baú da Clara II	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Nilciane Wanzeler	QUARTA	10:40	11:05
+AULA	Baú da Clara II	Grafomotricidade	Nilciane Wanzeler	QUARTA	11:05	11:25
+AULA	Baú da Clara II	Oração e Atividade Lúdica	Nilciane Wanzeler	QUARTA	11:25	11:30
+AULA	Baú da Clara II	Acolhida	Nilciane Wanzeler	QUINTA	07:30	07:40
+AULA	Baú da Clara II	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Nilciane Wanzeler	QUINTA	07:40	08:00
+AULA	Baú da Clara II	Grupo Coloquial	Nilciane Wanzeler	QUINTA	08:00	08:20
+AULA	Baú da Clara II	Inglês	Ana Paula Jacó	QUINTA	08:20	08:50
+INTERVALO	Baú da Clara II	Lanche e Parque		QUINTA	08:50	09:20
+AULA	Baú da Clara II	Leitura em Voz Alta	Nilciane Wanzeler	QUINTA	09:20	09:30
+AULA	Baú da Clara II	Aprendendo com Jesus	Nilciane Wanzeler	QUINTA	09:30	10:00
+AULA	Baú da Clara II	Psicomotricidade	Deborah Costa	QUINTA	09:30	10:00
+AULA	Baú da Clara II	Estação de Aprendizagem	Nilciane Wanzeler	QUINTA	10:00	10:20
+AULA	Baú da Clara II	Matemática Divertida	Nilciane Wanzeler	QUINTA	10:20	10:40
+AULA	Baú da Clara II	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Nilciane Wanzeler	QUINTA	10:40	11:05
+AULA	Baú da Clara II	Grafomotricidade	Nilciane Wanzeler	QUINTA	11:05	11:25
+AULA	Baú da Clara II	Oração e Atividade Lúdica	Nilciane Wanzeler	QUINTA	11:25	11:30
+AULA	Baú da Clara II	Acolhida	Nilciane Wanzeler	SEXTA	07:30	07:40
+AULA	Baú da Clara II	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Nilciane Wanzeler	SEXTA	07:40	08:00
+AULA	Baú da Clara II	Aprendendo com Jesus	Nilciane Wanzeler	SEXTA	08:00	08:20
+AULA	Baú da Clara II	Inglês	Ana Paula Jacó	SEXTA	08:20	08:50
+AULA	Baú da Clara II	Matemática Divertida	Nilciane Wanzeler	SEXTA	08:20	08:50
+INTERVALO	Baú da Clara II	Lanche e Parque		SEXTA	08:50	09:20
+AULA	Baú da Clara II	Leitura em Voz Alta	Nilciane Wanzeler	SEXTA	09:20	09:30
+AULA	Baú da Clara II	Matemática Divertida	Nilciane Wanzeler	SEXTA	09:30	10:00
+AULA	Baú da Clara II	Psicomotricidade	Deborah Costa	SEXTA	09:30	10:00
+AULA	Baú da Clara II	Passeio de Aprendizagem	Nilciane Wanzeler	SEXTA	10:00	10:20
+AULA	Baú da Clara II	Leitura	Nilciane Wanzeler	SEXTA	10:20	10:40
+AULA	Baú da Clara II	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Nilciane Wanzeler	SEXTA	10:40	11:05
+AULA	Baú da Clara II	Grafomotricidade	Nilciane Wanzeler	SEXTA	11:05	11:25
+AULA	Baú da Clara II	Oração e Atividade Lúdica	Nilciane Wanzeler	SEXTA	11:25	11:30
+AULA	Baú da Clara III	Acolhida	Kelly Figueira	SEGUNDA	07:30	07:40
+AULA	Baú da Clara III	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Kelly Figueira	SEGUNDA	07:40	08:00
+AULA	Baú da Clara III	Grupo Coloquial	Kelly Figueira	SEGUNDA	08:00	08:20
+AULA	Baú da Clara III	Matemática Divertida	Kelly Figueira	SEGUNDA	08:20	08:40
+AULA	Baú da Clara III	L.V.A.	Kelly Figueira	SEGUNDA	08:40	08:50
+INTERVALO	Baú da Clara III	Lanche e Parque		SEGUNDA	08:50	09:20
+AULA	Baú da Clara III	Passeio de Aprendizagem	Kelly Figueira	SEGUNDA	09:20	09:40
+AULA	Baú da Clara III	Aprendendo com Jesus	Kelly Figueira	SEGUNDA	09:40	10:00
+AULA	Baú da Clara III	Psicomotricidade	Deborah Costa	SEGUNDA	10:00	10:30
+AULA	Baú da Clara III	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Kelly Figueira	SEGUNDA	10:30	10:50
+AULA	Baú da Clara III	Inglês	Ana Paula Jacó	SEGUNDA	10:45	11:20
+INTERVALO	Baú da Clara III	Lanche e Parque		SEGUNDA	10:50	11:20
+AULA	Baú da Clara III	Oração e Atividade Lúdica	Kelly Figueira	SEGUNDA	11:20	11:30
+AULA	Baú da Clara III	Acolhida	Kelly Figueira	TERçA	07:30	07:40
+AULA	Baú da Clara III	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Kelly Figueira	TERçA	07:40	08:00
+AULA	Baú da Clara III	Grupo Coloquial	Kelly Figueira	TERçA	08:00	08:20
+AULA	Baú da Clara III	Virtudes	Kelly Figueira	TERçA	08:20	08:40
+AULA	Baú da Clara III	L.V.A.	Kelly Figueira	TERçA	08:40	08:50
+INTERVALO	Baú da Clara III	Lanche e Parque		TERçA	08:50	09:20
+AULA	Baú da Clara III	Estação de Aprendizagem	Kelly Figueira	TERçA	09:20	09:40
+AULA	Baú da Clara III	Grafomotricidade	Kelly Figueira	TERçA	09:40	10:00
+AULA	Baú da Clara III	Psicomotricidade	Deborah Costa	TERçA	10:00	10:30
+AULA	Baú da Clara III	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Kelly Figueira	TERçA	10:30	10:50
+AULA	Baú da Clara III	Inglês	Ana Paula Jacó	TERçA	10:45	11:20
+INTERVALO	Baú da Clara III	Lanche e Parque		TERçA	10:50	11:20
+AULA	Baú da Clara III	Oração e Atividade Lúdica	Kelly Figueira	TERçA	11:20	11:30
+AULA	Baú da Clara III	Acolhida	Kelly Figueira	QUARTA	07:30	07:40
+AULA	Baú da Clara III	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Kelly Figueira	QUARTA	07:40	08:00
+AULA	Baú da Clara III	Grupo Coloquial	Kelly Figueira	QUARTA	08:00	08:20
+AULA	Baú da Clara III	Matemática Divertida	Kelly Figueira	QUARTA	08:20	08:40
+AULA	Baú da Clara III	L.V.A.	Kelly Figueira	QUARTA	08:40	08:50
+INTERVALO	Baú da Clara III	Lanche e Parque		QUARTA	08:50	09:20
+AULA	Baú da Clara III	Estação de Aprendizagem	Kelly Figueira	QUARTA	09:20	09:40
+AULA	Baú da Clara III	Grafomotricidade	Kelly Figueira	QUARTA	09:40	10:00
+AULA	Baú da Clara III	Psicomotricidade	Deborah Costa	QUARTA	10:00	10:30
+AULA	Baú da Clara III	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Kelly Figueira	QUARTA	10:30	10:50
+AULA	Baú da Clara III	Inglês	Ana Paula Jacó	QUARTA	10:45	11:20
+INTERVALO	Baú da Clara III	Lanche e Parque		QUARTA	10:50	11:20
+AULA	Baú da Clara III	Oração e Atividade Lúdica	Kelly Figueira	QUARTA	11:20	11:30
+AULA	Baú da Clara III	Acolhida	Kelly Figueira	QUINTA	07:30	07:40
+AULA	Baú da Clara III	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Kelly Figueira	QUINTA	07:40	08:00
+AULA	Baú da Clara III	Musicalização	Ericson Silveira	QUINTA	08:00	08:20
+AULA	Baú da Clara III	Matemática Divertida	Ericson Silveira	QUINTA	08:20	08:40
+AULA	Baú da Clara III	L.V.A.	Kelly Figueira	QUINTA	08:40	08:50
+INTERVALO	Baú da Clara III	Lanche e Parque		QUINTA	08:50	09:20
+AULA	Baú da Clara III	Estação de Aprendizagem	Kelly Figueira	QUINTA	09:20	09:40
+AULA	Baú da Clara III	Grafomotricidade	Kelly Figueira	QUINTA	09:40	10:00
+AULA	Baú da Clara III	Psicomotricidade	Deborah Costa	QUINTA	10:00	10:30
+AULA	Baú da Clara III	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Kelly Figueira	QUINTA	10:30	10:50
+AULA	Baú da Clara III	Inglês	Ana Paula Jacó	QUINTA	10:45	11:20
+INTERVALO	Baú da Clara III	Lanche e Parque		QUINTA	10:50	11:20
+AULA	Baú da Clara III	Oração e Atividade Lúdica	Kelly Figueira	QUINTA	11:20	11:30
+AULA	Baú da Clara III	Acolhida	Kelly Figueira	SEXTA	07:30	07:40
+AULA	Baú da Clara III	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Kelly Figueira	SEXTA	07:40	08:00
+AULA	Baú da Clara III	Grupo Coloquial	Kelly Figueira	SEXTA	08:00	08:20
+AULA	Baú da Clara III	Matemática Divertida	Kelly Figueira	SEXTA	08:00	08:20
+AULA	Baú da Clara III	Leitura	Kelly Figueira	SEXTA	08:20	08:40
+AULA	Baú da Clara III	L.V.A.	Kelly Figueira	SEXTA	08:40	08:50
+INTERVALO	Baú da Clara III	Lanche e Parque		SEXTA	08:50	09:20
+AULA	Baú da Clara III	Estação de Aprendizagem	Kelly Figueira	SEXTA	09:20	09:40
+AULA	Baú da Clara III	Grafomotricidade	Kelly Figueira	SEXTA	09:40	10:00
+AULA	Baú da Clara III	Psicomotricidade	Deborah Costa	SEXTA	10:00	10:30
+AULA	Baú da Clara III	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Kelly Figueira	SEXTA	10:30	10:50
+AULA	Baú da Clara III	Inglês	Ana Paula Jacó	SEXTA	10:45	11:20
+INTERVALO	Baú da Clara III	Lanche e Parque		SEXTA	10:50	11:20
+AULA	Baú da Clara III	Oração e Atividade Lúdica	Kelly Figueira	SEXTA	11:20	11:30
+AULA	Baú da Inés I	Acolhida	Brenda Lopes	SEGUNDA	07:30	07:40
+AULA	Baú da Inés I	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes	Brenda Lopes	SEGUNDA	07:40	07:50
+AULA	Baú da Inés I	Inglês	Eduarda Morais	SEGUNDA	07:50	08:30
+AULA	Baú da Inés I	Grupo Coloquial	Brenda Lopes	SEGUNDA	08:30	08:50
+AULA	Baú da Inés I	Leitura	Brenda Lopes	SEGUNDA	08:50	09:10
+AULA	Baú da Inés I	Matemática Divertida	Brenda Lopes	SEGUNDA	09:10	09:40
+AULA	Baú da Inés I	Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular / Bits de Matemática	Brenda Lopes	SEGUNDA	09:40	09:50
+INTERVALO	Baú da Inés I	Lanche e Parque		SEGUNDA	09:50	10:20
+AULA	Baú da Inés I	Audição Musical / Bits de Linguagem e Inteligência / Bits de Matemática	Brenda Lopes	SEGUNDA	10:20	10:30
+AULA	Baú da Inés I	Psicomotricidade	Deborah Costa	SEGUNDA	10:30	11:00
+AULA	Baú da Inés I	L. V. A.	Brenda Lopes	SEGUNDA	11:00	11:10
+AULA	Baú da Inés I	Passeio de Aprendizagem / Oração	Brenda Lopes	SEGUNDA	11:10	11:30
+AULA	Baú da Inés I	Acolhida	Brenda Lopes	TERçA	07:30	07:40
+AULA	Baú da Inés I	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes	Brenda Lopes	TERçA	07:40	07:50
+AULA	Baú da Inés I	Inglês	Eduarda Morais	TERçA	07:50	08:30
+AULA	Baú da Inés I	Grupo Coloquial	Brenda Lopes	TERçA	08:30	08:50
+AULA	Baú da Inés I	Estação de Aprendizagem	Brenda Lopes	TERçA	08:50	09:10
+AULA	Baú da Inés I	Leitura	Brenda Lopes	TERçA	09:10	09:40
+AULA	Baú da Inés I	Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular / Bits de Matemática	Brenda Lopes	TERçA	09:40	09:50
+INTERVALO	Baú da Inés I	Lanche e Parque		TERçA	09:50	10:20
+AULA	Baú da Inés I	Audição Musical / Bits de Linguagem e Inteligência / Bits de Matemática	Brenda Lopes	TERçA	10:20	10:30
+AULA	Baú da Inés I	Psicomotricidade	Deborah Costa	TERçA	10:30	11:00
+AULA	Baú da Inés I	L. V. A.	Brenda Lopes	TERçA	11:00	11:10
+AULA	Baú da Inés I	Grafomotricidade / Oração	Brenda Lopes	TERçA	11:10	11:30
+AULA	Baú da Inés I	Acolhida	Brenda Lopes	QUARTA	07:30	07:40
+AULA	Baú da Inés I	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes	Brenda Lopes	QUARTA	07:40	07:50
+AULA	Baú da Inés I	Inglês	Eduarda Morais	QUARTA	07:50	08:30
+AULA	Baú da Inés I	Grupo Coloquial	Brenda Lopes	QUARTA	08:30	08:50
+AULA	Baú da Inés I	Estação de Aprendizagem	Brenda Lopes	QUARTA	08:50	09:10
+AULA	Baú da Inés I	Matemática Divertida	Brenda Lopes	QUARTA	09:10	09:40
+AULA	Baú da Inés I	Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular / Bits de Matemática	Brenda Lopes	QUARTA	09:40	09:50
+INTERVALO	Baú da Inés I	Lanche e Parque		QUARTA	09:50	10:20
+AULA	Baú da Inés I	Audição Musical / Bits de Linguagem e Inteligência / Bits de Matemática	Brenda Lopes	QUARTA	10:20	10:30
+AULA	Baú da Inés I	Psicomotricidade	Deborah Costa	QUARTA	10:30	11:00
+AULA	Baú da Inés I	L. V. A.	Brenda Lopes	QUARTA	11:00	11:10
+AULA	Baú da Inés I	Leitura / Oração	Brenda Lopes	QUARTA	11:10	11:30
+AULA	Baú da Inés I	Acolhida	Brenda Lopes	QUINTA	07:30	07:40
+AULA	Baú da Inés I	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes	Brenda Lopes	QUINTA	07:40	07:50
+AULA	Baú da Inés I	Inglês	Eduarda Morais	QUINTA	07:50	08:30
+AULA	Baú da Inés I	Grupo Coloquial / Aprendendo com Jesus	Brenda Lopes	QUINTA	08:30	08:50
+AULA	Baú da Inés I	Estação de Aprendizagem	Brenda Lopes	QUINTA	08:50	09:10
+AULA	Baú da Inés I	Virtudes	Brenda Lopes	QUINTA	09:10	09:40
+AULA	Baú da Inés I	Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular / Bits de Matemática	Brenda Lopes	QUINTA	09:40	09:50
+INTERVALO	Baú da Inés I	Lanche e Parque		QUINTA	09:50	10:20
+AULA	Baú da Inés I	Audição Musical / Bits de Linguagem e Inteligência / Bits de Matemática	Brenda Lopes	QUINTA	10:20	10:30
+AULA	Baú da Inés I	Psicomotricidade	Deborah Costa	QUINTA	10:30	11:00
+AULA	Baú da Inés I	L. V. A.	Brenda Lopes	QUINTA	11:00	11:10
+AULA	Baú da Inés I	Leitura / Oração	Brenda Lopes	QUINTA	11:10	11:30
+AULA	Baú da Inés I	Acolhida	Brenda Lopes	SEXTA	07:30	07:40
+AULA	Baú da Inés I	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes	Brenda Lopes	SEXTA	07:40	07:50
+AULA	Baú da Inés I	Inglês	Eduarda Morais	SEXTA	07:50	08:30
+AULA	Baú da Inés I	Musicalização	Ericson Silveira	SEXTA	08:30	08:50
+AULA	Baú da Inés I	Estação de Aprendizagem	Brenda Lopes	SEXTA	08:50	09:10
+AULA	Baú da Inés I	Matemática Divertida	Brenda Lopes	SEXTA	09:10	09:40
+AULA	Baú da Inés I	Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular / Bits de Matemática	Brenda Lopes	SEXTA	09:40	09:50
+INTERVALO	Baú da Inés I	Lanche e Parque		SEXTA	09:50	10:20
+AULA	Baú da Inés I	Audição Musical / Bits de Linguagem e Inteligência / Bits de Matemática	Brenda Lopes	SEXTA	10:20	10:30
+AULA	Baú da Inés I	Psicomotricidade	Deborah Costa	SEXTA	10:30	11:00
+AULA	Baú da Inés I	L. V. A.	Brenda Lopes	SEXTA	11:00	11:10
+AULA	Baú da Inés I	Grafomotricidade / Oração	Brenda Lopes	SEXTA	11:10	11:30
+AULA	Baú da Inés II	Acolhida	Bruna de Souza	SEGUNDA	07:30	07:40
+AULA	Baú da Inés II	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical / Bits de Linguagem e Inteligência	Bruna de Souza	SEGUNDA	07:40	08:00
+AULA	Baú da Inés II	L. V. A.	Keila Brito	SEGUNDA	08:00	08:30
+AULA	Baú da Inés II	Psicomotricidade	Deborah Costa	SEGUNDA	08:00	08:30
+AULA	Baú da Inés II	Grupo Coloquial	Bruna de Souza	SEGUNDA	08:30	08:50
+AULA	Baú da Inés II	Estação de Aprendizagem	Bruna de Souza	SEGUNDA	08:50	09:10
+AULA	Baú da Inés II	Inglês	Eduarda Morais	SEGUNDA	09:10	09:50
+AULA	Baú da Inés II	Grafomotricidade	Bruna de Souza	SEGUNDA	09:30	10:20
+INTERVALO	Baú da Inés II	Lanche e Parque		SEGUNDA	09:50	10:20
+AULA	Baú da Inés II	Matemática Divertida	Bruna de Souza	SEGUNDA	10:20	10:50
+AULA	Baú da Inés II	Musicalização	Ericson Silveira	SEGUNDA	10:50	11:10
+AULA	Baú da Inés II	Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular / L. V. A. / Bits de Matemática / Oração	Bruna de Souza	SEGUNDA	11:10	11:30
+AULA	Baú da Inés II	Acolhida	Bruna de Souza	TERçA	07:30	07:40
+AULA	Baú da Inés II	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical / Bits de Linguagem e Inteligência	Bruna de Souza	TERçA	07:40	08:00
+AULA	Baú da Inés II	L. V. A.	Keila Brito	TERçA	08:00	08:30
+AULA	Baú da Inés II	Psicomotricidade	Deborah Costa	TERçA	08:00	08:30
+AULA	Baú da Inés II	Grupo Coloquial	Bruna de Souza	TERçA	08:30	08:50
+AULA	Baú da Inés II	Estação de Aprendizagem	Bruna de Souza	TERçA	08:50	09:10
+AULA	Baú da Inés II	Inglês	Eduarda Morais	TERçA	09:10	09:50
+INTERVALO	Baú da Inés II	Lanche e Parque		TERçA	09:50	10:20
+AULA	Baú da Inés II	Leitura	Bruna de Souza	TERçA	10:20	10:50
+AULA	Baú da Inés II	Grafomotricidade	Bruna de Souza	TERçA	10:50	11:10
+AULA	Baú da Inés II	Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular / L. V. A. / Bits de Matemática / Oração	Bruna de Souza	TERçA	11:10	11:30
+AULA	Baú da Inés II	Acolhida	Bruna de Souza	QUARTA	07:30	07:40
+AULA	Baú da Inés II	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical / Bits de Linguagem e Inteligência	Bruna de Souza	QUARTA	07:40	08:00
+AULA	Baú da Inés II	L. V. A.	Keila Brito	QUARTA	08:00	08:30
+AULA	Baú da Inés II	Psicomotricidade	Deborah Costa	QUARTA	08:00	08:30
+AULA	Baú da Inés II	Grupo Coloquial	Bruna de Souza	QUARTA	08:30	08:50
+AULA	Baú da Inés II	Estação de Aprendizagem	Bruna de Souza	QUARTA	08:50	09:10
+AULA	Baú da Inés II	Inglês	Eduarda Morais	QUARTA	09:10	09:50
+INTERVALO	Baú da Inés II	Lanche e Parque		QUARTA	09:50	10:20
+AULA	Baú da Inés II	Matemática Divertida	Bruna de Souza	QUARTA	10:20	10:50
+AULA	Baú da Inés II	Leitura	Bruna de Souza	QUARTA	10:50	11:10
+AULA	Baú da Inés II	Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular / L. V. A. / Bits de Matemática / Oração	Bruna de Souza	QUARTA	11:10	11:30
+AULA	Baú da Inés II	Acolhida	Bruna de Souza	QUINTA	07:30	07:40
+AULA	Baú da Inés II	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical / Bits de Linguagem e Inteligência	Bruna de Souza	QUINTA	07:40	08:00
+AULA	Baú da Inés II	Psicomotricidade	Deborah Costa	QUINTA	08:00	08:30
+AULA	Baú da Inés II	Grupo Coloquial / Aprendendo com Jesus	Bruna de Souza	QUINTA	08:30	08:50
+AULA	Baú da Inés II	Virtudes	Thaiane Vasconcelos	QUINTA	08:50	09:10
+AULA	Baú da Inés II	Inglês	Eduarda Morais	QUINTA	09:10	09:50
+INTERVALO	Baú da Inés II	Lanche e Parque		QUINTA	09:50	10:20
+AULA	Baú da Inés II	Leitura	Bruna de Souza	QUINTA	10:20	10:50
+AULA	Baú da Inés II	Grafomotricidade	Bruna de Souza	QUINTA	10:50	11:10
+AULA	Baú da Inés II	Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular / L. V. A. / Bits de Matemática / Oração	Bruna de Souza	QUINTA	11:10	11:30
+AULA	Baú da Inés II	Acolhida	Bruna de Souza	SEXTA	07:30	07:40
+AULA	Baú da Inés II	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical / Bits de Linguagem e Inteligência	Bruna de Souza	SEXTA	07:40	08:00
+AULA	Baú da Inés II	L. V. A.	Bruna de Souza	SEXTA	08:00	08:30
+AULA	Baú da Inés II	Psicomotricidade	Deborah Costa	SEXTA	08:00	08:30
+AULA	Baú da Inés II	Passeio de Aprendizagem	Bruna de Souza	SEXTA	08:30	08:50
+AULA	Baú da Inés II	Estação de Aprendizagem	Bruna de Souza	SEXTA	08:50	09:10
+AULA	Baú da Inés II	Inglês	Eduarda Morais	SEXTA	09:10	09:50
+INTERVALO	Baú da Inés II	Lanche e Parque		SEXTA	09:50	10:20
+AULA	Baú da Inés II	Matemática Divertida	Bruna de Souza	SEXTA	10:20	10:50
+AULA	Baú da Inés II	Leitura	Bruna de Souza	SEXTA	10:50	11:10
+AULA	Baú da Inés II	Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular / L. V. A. / Bits de Matemática / Oração	Bruna de Souza	SEXTA	11:10	11:30
+AULA	Baú da Inés III	Acolhida	Kelly da Silva	SEGUNDA	07:30	07:40
+AULA	Baú da Inés III	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical / Bits de Matemática	Kelly da Silva	SEGUNDA	07:40	08:00
+AULA	Baú da Inés III	Grupo Coloquial	Kelly da Silva	SEGUNDA	08:00	08:20
+AULA	Baú da Inés III	L. V. A.	Kelly da Silva	SEGUNDA	08:20	08:30
+AULA	Baú da Inés III	Inglês	Eduarda Morais	SEGUNDA	08:30	09:10
+AULA	Baú da Inés III	Estação de Aprendizagem	Kelly da Silva	SEGUNDA	09:10	09:30
+AULA	Baú da Inés III	Leitura	Kelly da Silva	SEGUNDA	09:30	09:50
+INTERVALO	Baú da Inés III	Lanche e Parque		SEGUNDA	09:50	10:20
+AULA	Baú da Inés III	Matemática Divertida	Kelly da Silva	SEGUNDA	10:20	10:50
+AULA	Baú da Inés III	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua	Kelly da Silva	SEGUNDA	10:50	11:00
+AULA	Baú da Inés III	Psicomotricidade / Oração	Deborah Costa	SEGUNDA	11:00	11:30
+AULA	Baú da Inés III	Acolhida	Kelly da Silva	TERçA	07:30	07:40
+AULA	Baú da Inés III	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical / Bits de Matemática	Kelly da Silva	TERçA	07:40	08:00
+AULA	Baú da Inés III	Grupo Coloquial	Kelly da Silva	TERçA	08:00	08:20
+AULA	Baú da Inés III	L. V. A.	Kelly da Silva	TERçA	08:20	08:30
+AULA	Baú da Inés III	Inglês	Eduarda Morais	TERçA	08:30	09:10
+AULA	Baú da Inés III	Estação de Aprendizagem	Kelly da Silva	TERçA	09:10	09:30
+AULA	Baú da Inés III	Grafomotricidade	Kelly da Silva	TERçA	09:30	09:50
+INTERVALO	Baú da Inés III	Lanche e Parque		TERçA	09:50	10:20
+AULA	Baú da Inés III	Leitura	Kelly da Silva	TERçA	10:20	10:50
+AULA	Baú da Inés III	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua	Kelly da Silva	TERçA	10:50	11:00
+AULA	Baú da Inés III	Psicomotricidade / Oração	Deborah Costa	TERçA	11:00	11:30
+AULA	Baú da Inés III	Acolhida	Kelly da Silva	QUARTA	07:30	07:40
+AULA	Baú da Inés III	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical / Bits de Matemática	Kelly da Silva	QUARTA	07:40	08:00
+AULA	Baú da Inés III	Grupo Coloquial	Kelly da Silva	QUARTA	08:00	08:20
+AULA	Baú da Inés III	L. V. A.	Kelly da Silva	QUARTA	08:20	08:30
+AULA	Baú da Inés III	Inglês	Eduarda Morais	QUARTA	08:30	09:10
+AULA	Baú da Inés III	Estação de Aprendizagem	Kelly da Silva	QUARTA	09:10	09:30
+AULA	Baú da Inés III	Leitura	Kelly da Silva	QUARTA	09:30	09:50
+INTERVALO	Baú da Inés III	Lanche e Parque		QUARTA	09:50	10:20
+AULA	Baú da Inés III	Matemática Divertida	Kelly da Silva	QUARTA	10:20	10:50
+AULA	Baú da Inés III	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua	Kelly da Silva	QUARTA	10:50	11:00
+AULA	Baú da Inés III	Psicomotricidade / Oração	Deborah Costa	QUARTA	11:00	11:30
+AULA	Baú da Inés III	Acolhida	Kelly da Silva	QUINTA	07:30	07:40
+AULA	Baú da Inés III	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical / Bits de Matemática	Kelly da Silva	QUINTA	07:40	08:00
+AULA	Baú da Inés III	Grupo Coloquial / Aprendendo com Jesus	Kelly da Silva	QUINTA	08:00	08:20
+AULA	Baú da Inés III	L. V. A.	Kelly da Silva	QUINTA	08:20	08:30
+AULA	Baú da Inés III	Inglês	Eduarda Morais	QUINTA	08:30	09:10
+AULA	Baú da Inés III	Virtudes	Kelly da Silva	QUINTA	09:10	09:30
+AULA	Baú da Inés III	Grafomotricidade	Kelly da Silva	QUINTA	09:30	09:50
+INTERVALO	Baú da Inés III	Lanche e Parque		QUINTA	09:50	10:20
+AULA	Baú da Inés III	Leitura	Kelly da Silva	QUINTA	10:20	10:50
+AULA	Baú da Inés III	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua	Kelly da Silva	QUINTA	10:50	11:00
+AULA	Baú da Inés III	Psicomotricidade / Oração	Deborah Costa	QUINTA	11:00	11:30
+AULA	Baú da Inés III	Acolhida	Kelly da Silva	SEXTA	07:30	07:40
+AULA	Baú da Inés III	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical / Bits de Matemática	Kelly da Silva	SEXTA	07:40	08:00
+AULA	Baú da Inés III	Musicalização	Kelly da Silva	SEXTA	08:00	08:20
+AULA	Baú da Inés III	L. V. A.	Kelly da Silva	SEXTA	08:20	08:30
+AULA	Baú da Inés III	Inglês	Eduarda Morais	SEXTA	08:30	09:10
+AULA	Baú da Inés III	Estação de Aprendizagem	Kelly da Silva	SEXTA	09:10	09:30
+AULA	Baú da Inés III	Passeio de Aprendizagem	Kelly da Silva	SEXTA	09:30	09:50
+INTERVALO	Baú da Inés III	Lanche e Parque		SEXTA	09:50	10:20
+AULA	Baú da Inés III	Matemática Divertida	Kelly da Silva	SEXTA	10:20	10:50
+AULA	Baú da Inés III	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua	Kelly da Silva	SEXTA	10:50	11:00
+AULA	Baú da Inés III	Psicomotricidade / Oração	Deborah Costa	SEXTA	11:00	11:30
+AULA	Baú do Miguel I	Acolhida	Leticia Nayara	SEGUNDA	07:30	07:40
+AULA	Baú do Miguel I	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Leticia Nayara	SEGUNDA	07:40	08:00
+AULA	Baú do Miguel I	Matemática Divertida	Leticia Nayara	SEGUNDA	08:00	08:30
+AULA	Baú do Miguel I	Psicomotricidade	Deborah Costa	SEGUNDA	08:30	09:00
+AULA	Baú do Miguel I	Grupo Coloquial	Leticia Nayara	SEGUNDA	09:00	09:20
+AULA	Baú do Miguel I	L.V.A.	Leticia Nayara	SEGUNDA	09:20	09:30
+INTERVALO	Baú do Miguel I	Lanche e Parque		SEGUNDA	09:30	10:00
+AULA	Baú do Miguel I	Inglês	Eduarda Morais	SEGUNDA	10:00	10:30
+AULA	Baú do Miguel I	Virtudes	Leticia Nayara	SEGUNDA	10:30	10:50
+AULA	Baú do Miguel I	Grafomotricidade	Leticia Nayara	SEGUNDA	10:50	11:10
+AULA	Baú do Miguel I	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Leticia Nayara	SEGUNDA	11:10	11:20
+AULA	Baú do Miguel I	Oração e Atividade Lúdica	Leticia Nayara	SEGUNDA	11:20	11:30
+AULA	Baú do Miguel I	Acolhida	Leticia Nayara	TERçA	07:30	07:40
+AULA	Baú do Miguel I	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Leticia Nayara	TERçA	07:40	08:00
+AULA	Baú do Miguel I	Leitura	Leticia Nayara	TERçA	08:00	08:30
+AULA	Baú do Miguel I	Psicomotricidade	Deborah Costa	TERçA	08:30	09:00
+AULA	Baú do Miguel I	Grupo Coloquial	Leticia Nayara	TERçA	09:00	09:20
+AULA	Baú do Miguel I	L.V.A.	Leticia Nayara	TERçA	09:20	09:30
+INTERVALO	Baú do Miguel I	Lanche e Parque		TERçA	09:30	10:00
+AULA	Baú do Miguel I	Inglês	Eduarda Morais	TERçA	10:00	10:30
+AULA	Baú do Miguel I	Estação de Aprendizagem	Leticia Nayara	TERçA	10:30	10:50
+AULA	Baú do Miguel I	Grafomotricidade	Leticia Nayara	TERçA	10:50	11:10
+AULA	Baú do Miguel I	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Leticia Nayara	TERçA	11:10	11:20
+AULA	Baú do Miguel I	Oração e Atividade Lúdica	Leticia Nayara	TERçA	11:20	11:30
+AULA	Baú do Miguel I	Acolhida	Leticia Nayara	QUARTA	07:30	07:40
+AULA	Baú do Miguel I	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Leticia Nayara	QUARTA	07:40	08:00
+AULA	Baú do Miguel I	Matemática Divertida	Leticia Nayara	QUARTA	08:00	08:30
+AULA	Baú do Miguel I	Psicomotricidade	Deborah Costa	QUARTA	08:30	09:00
+AULA	Baú do Miguel I	Grupo Coloquial	Leticia Nayara	QUARTA	09:00	09:20
+AULA	Baú do Miguel I	L.V.A.	Leticia Nayara	QUARTA	09:20	09:30
+INTERVALO	Baú do Miguel I	Lanche e Parque		QUARTA	09:30	10:00
+AULA	Baú do Miguel I	Inglês	Eduarda Morais	QUARTA	10:00	10:30
+AULA	Baú do Miguel I	Estação de Aprendizagem	Leticia Nayara	QUARTA	10:30	10:50
+AULA	Baú do Miguel I	Grafomotricidade	Leticia Nayara	QUARTA	10:50	11:10
+AULA	Baú do Miguel I	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Leticia Nayara	QUARTA	11:10	11:20
+AULA	Baú do Miguel I	Oração e Atividade Lúdica	Leticia Nayara	QUARTA	11:20	11:30
+AULA	Baú do Miguel I	Acolhida	Leticia Nayara	QUINTA	07:30	07:40
+AULA	Baú do Miguel I	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Leticia Nayara	QUINTA	07:40	08:00
+AULA	Baú do Miguel I	Grupo Coloquial	Leticia Nayara	QUINTA	08:00	08:30
+AULA	Baú do Miguel I	Psicomotricidade	Deborah Costa	QUINTA	08:30	09:00
+AULA	Baú do Miguel I	Musicalização	Ericson Silveira	QUINTA	09:00	09:20
+AULA	Baú do Miguel I	L.V.A.	Leticia Nayara	QUINTA	09:20	09:30
+INTERVALO	Baú do Miguel I	Lanche e Parque		QUINTA	09:30	10:00
+AULA	Baú do Miguel I	Inglês	Eduarda Morais	QUINTA	10:00	10:30
+AULA	Baú do Miguel I	Estação de Aprendizagem	Leticia Nayara	QUINTA	10:30	10:50
+AULA	Baú do Miguel I	Leitura	Leticia Nayara	QUINTA	10:50	11:10
+AULA	Baú do Miguel I	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Leticia Nayara	QUINTA	11:10	11:20
+AULA	Baú do Miguel I	Oração e Atividade Lúdica	Leticia Nayara	QUINTA	11:20	11:30
+AULA	Baú do Miguel I	Acolhida	Leticia Nayara	SEXTA	07:30	07:40
+AULA	Baú do Miguel I	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Leticia Nayara	SEXTA	07:40	08:00
+AULA	Baú do Miguel I	Matemática Divertida	Leticia Nayara	SEXTA	08:00	08:30
+AULA	Baú do Miguel I	Psicomotricidade	Deborah Costa	SEXTA	08:30	09:00
+AULA	Baú do Miguel I	Passeio de Aprendizagem	Leticia Nayara	SEXTA	09:00	09:20
+AULA	Baú do Miguel I	L.V.A.	Leticia Nayara	SEXTA	09:20	09:30
+INTERVALO	Baú do Miguel I	Lanche e Parque		SEXTA	09:30	10:00
+AULA	Baú do Miguel I	Inglês	Eduarda Morais	SEXTA	10:00	10:30
+AULA	Baú do Miguel I	Estação de Aprendizagem	Leticia Nayara	SEXTA	10:30	10:50
+AULA	Baú do Miguel I	Aprendendo com Jesus	Leticia Nayara	SEXTA	10:50	11:10
+AULA	Baú do Miguel I	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Leticia Nayara	SEXTA	11:10	11:20
+AULA	Baú do Miguel I	Oração e Atividade Lúdica	Leticia Nayara	SEXTA	11:20	11:30
+AULA	Baú do Miguel II	Acolhida	Suellen Tabosa	SEGUNDA	07:30	07:40
+AULA	Baú do Miguel II	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Suellen Tabosa	SEGUNDA	07:40	08:00
+AULA	Baú do Miguel II	Grupo Coloquial	Suellen Tabosa	SEGUNDA	08:00	08:20
+AULA	Baú do Miguel II	Estação de Aprendizagem	Suellen Tabosa	SEGUNDA	08:20	08:40
+AULA	Baú do Miguel II	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Suellen Tabosa	SEGUNDA	08:40	09:00
+AULA	Baú do Miguel II	Psicomotricidade	Suellen Tabosa	SEGUNDA	09:00	09:30
+AULA	Baú do Miguel II	Psicomotricidade	Deborah Costa	SEGUNDA	09:00	09:30
+INTERVALO	Baú do Miguel II	Lanche e Parque		SEGUNDA	09:30	10:00
+AULA	Baú do Miguel II	Matemática Divertida	Suellen Tabosa	SEGUNDA	10:00	10:30
+AULA	Baú do Miguel II	Inglês	Eduarda Morais	SEGUNDA	10:30	11:00
+AULA	Baú do Miguel II	Leitura em Voz Alta	Suellen Tabosa	SEGUNDA	11:00	11:10
+AULA	Baú do Miguel II	Musicalização	Ericson Silveira	SEGUNDA	11:10	11:30
+AULA	Baú do Miguel II	Oração e Atividade Lúdica	Suellen Tabosa	SEGUNDA	11:20	11:30
+AULA	Baú do Miguel II	Acolhida	Suellen Tabosa	TERçA	07:30	07:40
+AULA	Baú do Miguel II	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Suellen Tabosa	TERçA	07:40	08:00
+AULA	Baú do Miguel II	Grupo Coloquial	Suellen Tabosa	TERçA	08:00	08:20
+AULA	Baú do Miguel II	Estação de Aprendizagem	Suellen Tabosa	TERçA	08:20	08:40
+AULA	Baú do Miguel II	Grafomotricidade	Suellen Tabosa	TERçA	08:40	09:00
+AULA	Baú do Miguel II	Psicomotricidade	Thaiane Vasconcelos	TERçA	09:00	09:30
+AULA	Baú do Miguel II	Psicomotricidade	Deborah Costa	TERçA	09:00	09:30
+INTERVALO	Baú do Miguel II	Lanche e Parque		TERçA	09:30	10:00
+AULA	Baú do Miguel II	Aprendendo com Jesus	Suellen Tabosa	TERçA	10:00	10:30
+AULA	Baú do Miguel II	Inglês	Eduarda Morais	TERçA	10:30	11:00
+AULA	Baú do Miguel II	Leitura em Voz Alta	Suellen Tabosa	TERçA	11:00	11:10
+AULA	Baú do Miguel II	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Suellen Tabosa	TERçA	11:10	11:30
+AULA	Baú do Miguel II	Oração e Atividade Lúdica	Suellen Tabosa	TERçA	11:20	11:30
+AULA	Baú do Miguel II	Acolhida	Suellen Tabosa	QUARTA	07:30	07:40
+AULA	Baú do Miguel II	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Suellen Tabosa	QUARTA	07:40	08:00
+AULA	Baú do Miguel II	Grupo Coloquial	Suellen Tabosa	QUARTA	08:00	08:20
+AULA	Baú do Miguel II	Estação de Aprendizagem	Suellen Tabosa	QUARTA	08:20	08:40
+AULA	Baú do Miguel II	Leitura	Suellen Tabosa	QUARTA	08:40	09:00
+AULA	Baú do Miguel II	Psicomotricidade	Suellen Tabosa	QUARTA	09:00	09:30
+AULA	Baú do Miguel II	Psicomotricidade	Deborah Costa	QUARTA	09:00	09:30
+INTERVALO	Baú do Miguel II	Lanche e Parque		QUARTA	09:30	10:00
+AULA	Baú do Miguel II	Matemática Divertida	Suellen Tabosa	QUARTA	10:00	10:30
+AULA	Baú do Miguel II	Inglês	Eduarda Morais	QUARTA	10:30	11:00
+AULA	Baú do Miguel II	Leitura em Voz Alta	Suellen Tabosa	QUARTA	11:00	11:10
+AULA	Baú do Miguel II	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Suellen Tabosa	QUARTA	11:10	11:30
+AULA	Baú do Miguel II	Oração e Atividade Lúdica	Suellen Tabosa	QUARTA	11:20	11:30
+AULA	Baú do Miguel II	Acolhida	Suellen Tabosa	QUINTA	07:30	07:40
+AULA	Baú do Miguel II	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Suellen Tabosa	QUINTA	07:40	08:00
+AULA	Baú do Miguel II	Grupo Coloquial	Suellen Tabosa	QUINTA	08:00	08:20
+AULA	Baú do Miguel II	Estação de Aprendizagem	Suellen Tabosa	QUINTA	08:20	08:40
+AULA	Baú do Miguel II	Grafomotricidade	Suellen Tabosa	QUINTA	08:40	09:00
+AULA	Baú do Miguel II	Psicomotricidade	Suellen Tabosa	QUINTA	09:00	09:30
+AULA	Baú do Miguel II	Psicomotricidade	Deborah Costa	QUINTA	09:00	09:30
+INTERVALO	Baú do Miguel II	Lanche e Parque		QUINTA	09:30	10:00
+AULA	Baú do Miguel II	Leitura	Suellen Tabosa	QUINTA	10:00	10:30
+AULA	Baú do Miguel II	Inglês	Eduarda Morais	QUINTA	10:30	11:00
+AULA	Baú do Miguel II	Leitura em Voz Alta	Suellen Tabosa	QUINTA	11:00	11:10
+AULA	Baú do Miguel II	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Suellen Tabosa	QUINTA	11:10	11:30
+AULA	Baú do Miguel II	Oração e Atividade Lúdica	Suellen Tabosa	QUINTA	11:20	11:30
+AULA	Baú do Miguel II	Acolhida	Suellen Tabosa	SEXTA	07:30	07:40
+AULA	Baú do Miguel II	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Suellen Tabosa	SEXTA	07:40	08:00
+AULA	Baú do Miguel II	Passeio de Aprendizagem	Suellen Tabosa	SEXTA	08:00	08:20
+AULA	Baú do Miguel II	Leitura	Suellen Tabosa	SEXTA	08:20	08:40
+AULA	Baú do Miguel II	Grafomotricidade	Suellen Tabosa	SEXTA	08:40	09:00
+AULA	Baú do Miguel II	Psicomotricidade	Deborah Costa	SEXTA	09:00	09:30
+AULA	Baú do Miguel II	Psicomotricidade	Suellen Tabosa	SEXTA	09:00	09:30
+INTERVALO	Baú do Miguel II	Lanche e Parque		SEXTA	09:30	10:00
+AULA	Baú do Miguel II	Matemática Divertida	Suellen Tabosa	SEXTA	10:00	10:30
+AULA	Baú do Miguel II	Inglês	Eduarda Morais	SEXTA	10:30	11:00
+AULA	Baú do Miguel II	Leitura em Voz Alta	Suellen Tabosa	SEXTA	11:00	11:10
+AULA	Baú do Miguel II	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Suellen Tabosa	SEXTA	11:10	11:30
+AULA	Baú do Miguel II	Oração e Atividade Lúdica	Suellen Tabosa	SEXTA	11:20	11:30
+AULA	Baú do Miguel III	Acolhida	Letícia Alves	SEGUNDA	07:30	07:40
+AULA	Baú do Miguel III	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Letícia Alves	SEGUNDA	07:40	08:00
+AULA	Baú do Miguel III	Grupo Coloquial	Letícia Alves	SEGUNDA	08:00	08:20
+AULA	Baú do Miguel III	Estação de Aprendizagem	Letícia Alves	SEGUNDA	08:20	08:40
+AULA	Baú do Miguel III	Aprendendo com Jesus	Letícia Alves	SEGUNDA	08:40	09:00
+AULA	Baú do Miguel III	Psicomotricidade	Deborah Costa	SEGUNDA	09:00	09:30
+INTERVALO	Baú do Miguel III	Lanche e Parque		SEGUNDA	09:30	10:00
+AULA	Baú do Miguel III	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Letícia Alves	SEGUNDA	10:00	10:20
+AULA	Baú do Miguel III	Matemática Divertida	Letícia Alves	SEGUNDA	10:20	10:50
+AULA	Baú do Miguel III	L. V. A.	Letícia Alves	SEGUNDA	10:50	11:00
+AULA	Baú do Miguel III	Inglês / Oração	Eduarda Morais	SEGUNDA	11:00	11:30
+AULA	Baú do Miguel III	Acolhida	Letícia Alves	TERçA	07:30	07:40
+AULA	Baú do Miguel III	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Letícia Alves	TERçA	07:40	08:00
+AULA	Baú do Miguel III	Grupo Coloquial	Letícia Alves	TERçA	08:00	08:20
+AULA	Baú do Miguel III	Estação de Aprendizagem	Letícia Alves	TERçA	08:20	08:40
+AULA	Baú do Miguel III	Grafomotricidade	Letícia Alves	TERçA	08:40	09:00
+AULA	Baú do Miguel III	Psicomotricidade	Deborah Costa	TERçA	09:00	09:30
+INTERVALO	Baú do Miguel III	Lanche e Parque		TERçA	09:30	10:00
+AULA	Baú do Miguel III	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Letícia Alves	TERçA	10:00	10:20
+AULA	Baú do Miguel III	Virtudes	Letícia Alves	TERçA	10:20	10:50
+AULA	Baú do Miguel III	L. V. A.	Letícia Alves	TERçA	10:50	11:00
+AULA	Baú do Miguel III	Inglês / Oração	Eduarda Morais	TERçA	11:00	11:30
+AULA	Baú do Miguel III	Acolhida	Letícia Alves	QUARTA	07:30	07:40
+AULA	Baú do Miguel III	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Letícia Alves	QUARTA	07:40	08:00
+AULA	Baú do Miguel III	Grupo Coloquial	Letícia Alves	QUARTA	08:00	08:20
+AULA	Baú do Miguel III	Estação de Aprendizagem	Letícia Alves	QUARTA	08:20	08:40
+AULA	Baú do Miguel III	Leitura	Letícia Alves	QUARTA	08:40	09:00
+AULA	Baú do Miguel III	Psicomotricidade	Deborah Costa	QUARTA	09:00	09:30
+INTERVALO	Baú do Miguel III	Lanche e Parque		QUARTA	09:30	10:00
+AULA	Baú do Miguel III	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Letícia Alves	QUARTA	10:00	10:20
+AULA	Baú do Miguel III	Matemática Divertida	Letícia Alves	QUARTA	10:20	10:50
+AULA	Baú do Miguel III	L. V. A.	Letícia Alves	QUARTA	10:50	11:00
+AULA	Baú do Miguel III	Inglês / Oração	Eduarda Morais	QUARTA	11:00	11:30
+AULA	Baú do Miguel III	Acolhida	Letícia Alves	QUINTA	07:30	07:40
+AULA	Baú do Miguel III	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Letícia Alves	QUINTA	07:40	08:00
+AULA	Baú do Miguel III	Grupo Coloquial	Letícia Alves	QUINTA	08:00	08:20
+AULA	Baú do Miguel III	Musicalização	Ericson Silveira	QUINTA	08:20	08:40
+AULA	Baú do Miguel III	Grafomotricidade	Letícia Alves	QUINTA	08:40	09:00
+AULA	Baú do Miguel III	Psicomotricidade	Deborah Costa	QUINTA	09:00	09:30
+INTERVALO	Baú do Miguel III	Lanche e Parque		QUINTA	09:30	10:00
+AULA	Baú do Miguel III	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Letícia Alves	QUINTA	10:00	10:20
+AULA	Baú do Miguel III	Leitura	Letícia Alves	QUINTA	10:20	10:50
+AULA	Baú do Miguel III	L. V. A.	Letícia Alves	QUINTA	10:50	11:00
+AULA	Baú do Miguel III	Inglês / Oração	Eduarda Morais	QUINTA	11:00	11:30
+AULA	Baú do Miguel III	Acolhida	Letícia Alves	SEXTA	07:30	07:40
+AULA	Baú do Miguel III	Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática	Letícia Alves	SEXTA	07:40	08:00
+AULA	Baú do Miguel III	Passeio de Aprendizagem	Letícia Alves	SEXTA	08:00	08:20
+AULA	Baú do Miguel III	Estação de Aprendizagem	Letícia Alves	SEXTA	08:20	08:40
+AULA	Baú do Miguel III	Grafomotricidade	Letícia Alves	SEXTA	08:40	09:00
+AULA	Baú do Miguel III	Psicomotricidade	Deborah Costa	SEXTA	09:00	09:30
+INTERVALO	Baú do Miguel III	Lanche e Parque		SEXTA	09:30	10:00
+AULA	Baú do Miguel III	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular	Letícia Alves	SEXTA	10:00	10:20
+AULA	Baú do Miguel III	Matemática Divertida	Letícia Alves	SEXTA	10:20	10:50
+AULA	Baú do Miguel III	L. V. A.	Letícia Alves	SEXTA	10:50	11:00
+AULA	Baú do Miguel III	Inglês / Oração	Eduarda Morais	SEXTA	11:00	11:30
+AULA	Baú do Nico I	Acolhida	Amanda Duarte	SEGUNDA	07:30	07:50
+AULA	Baú do Nico I	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua	Maylson Gonçalves	SEGUNDA	07:30	07:50
+AULA	Baú do Nico I	Oração / Rotina do Dia / Chamadinha	Amanda Duarte	SEGUNDA	07:50	08:20
+AULA	Baú do Nico I	Grupo Coloquial / Hábitos / Aprendendo com Jesus	Amanda Duarte	SEGUNDA	08:20	08:40
+AULA	Baú do Nico I	Leitura em Voz Alta	Amanda Duarte	SEGUNDA	08:40	09:20
+INTERVALO	Baú do Nico I	Lanche e Parque		SEGUNDA	08:50	09:20
+AULA	Baú do Nico I	Inglês	Ana Paula Jacó	SEGUNDA	09:20	09:50
+AULA	Baú do Nico I	Estações de Aprendizagem	Amanda Duarte	SEGUNDA	09:50	10:20
+AULA	Baú do Nico I	Motricidade Fina	Amanda Duarte	SEGUNDA	10:20	10:40
+AULA	Baú do Nico I	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua	Amanda Duarte	SEGUNDA	10:40	11:00
+AULA	Baú do Nico I	Psicomotricidade	Deborah Costa	SEGUNDA	11:00	11:30
+AULA	Baú do Nico I	Oração e Atividade Lúdica	Amanda Duarte	SEGUNDA	11:20	11:30
+AULA	Baú do Nico I	Acolhida	Amanda Duarte	TERçA	07:30	07:50
+AULA	Baú do Nico I	Oração / Rotina do Dia / Chamadinha	Amanda Duarte	TERçA	07:50	08:20
+AULA	Baú do Nico I	Grupo Coloquial / Conhecimento de Si / Autonomia Pessoal	Amanda Duarte	TERçA	08:20	08:40
+AULA	Baú do Nico I	Leitura em Voz Alta	Amanda Duarte	TERçA	08:40	09:20
+INTERVALO	Baú do Nico I	Lanche e Parque		TERçA	08:50	09:20
+AULA	Baú do Nico I	Inglês	Ana Paula Jacó	TERçA	09:20	09:50
+AULA	Baú do Nico I	Estações de Aprendizagem	Amanda Duarte	TERçA	09:50	10:20
+AULA	Baú do Nico I	Motricidade Fina	Amanda Duarte	TERçA	10:20	10:40
+AULA	Baú do Nico I	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua	Amanda Duarte	TERçA	10:40	11:00
+AULA	Baú do Nico I	Psicomotricidade	Deborah Costa	TERçA	11:00	11:30
+AULA	Baú do Nico I	Oração e Atividade Lúdica	Amanda Duarte	TERçA	11:20	11:30
+AULA	Baú do Nico I	Acolhida	Amanda Duarte	QUARTA	07:30	07:50
+AULA	Baú do Nico I	Oração / Rotina do Dia / Chamadinha	Amanda Duarte	QUARTA	07:50	08:20
+AULA	Baú do Nico I	Grupo Coloquial / Conhecimento de Mundo	Amanda Duarte	QUARTA	08:20	08:40
+AULA	Baú do Nico I	Leitura em Voz Alta	Amanda Duarte	QUARTA	08:40	09:20
+INTERVALO	Baú do Nico I	Lanche e Parque		QUARTA	08:50	09:20
+AULA	Baú do Nico I	Inglês	Ana Paula Jacó	QUARTA	09:20	09:50
+AULA	Baú do Nico I	Estações de Aprendizagem	Amanda Duarte	QUARTA	09:50	10:20
+AULA	Baú do Nico I	Práxis buco facial	Amanda Duarte	QUARTA	10:20	10:40
+AULA	Baú do Nico I	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua	Amanda Duarte	QUARTA	10:40	11:00
+AULA	Baú do Nico I	Psicomotricidade	Deborah Costa	QUARTA	11:00	11:30
+AULA	Baú do Nico I	Oração e Atividade Lúdica	Amanda Duarte	QUARTA	11:20	11:30
+AULA	Baú do Nico I	Acolhida	Amanda Duarte	QUINTA	07:30	07:50
+AULA	Baú do Nico I	Oração / Rotina do Dia / Chamadinha	Amanda Duarte	QUINTA	07:50	08:20
+AULA	Baú do Nico I	Grupo Coloquial / Comunicação e Representação	Amanda Duarte	QUINTA	08:20	08:40
+AULA	Baú do Nico I	Psicomotricidade	Deborah Costa	QUINTA	08:20	08:40
+AULA	Baú do Nico I	Leitura em Voz Alta	Amanda Duarte	QUINTA	08:40	09:20
+INTERVALO	Baú do Nico I	Lanche e Parque		QUINTA	08:50	09:20
+AULA	Baú do Nico I	Inglês	Ana Paula Jacó	QUINTA	09:20	09:50
+AULA	Baú do Nico I	Estações de Aprendizagem	Amanda Duarte	QUINTA	09:50	10:20
+AULA	Baú do Nico I	Motricidade Fina	Amanda Duarte	QUINTA	10:20	10:40
+AULA	Baú do Nico I	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua	Amanda Duarte	QUINTA	10:40	11:00
+AULA	Baú do Nico I	Psicomotricidade	Deborah Costa	QUINTA	11:00	11:30
+AULA	Baú do Nico I	Oração e Atividade Lúdica	Amanda Duarte	QUINTA	11:20	11:30
+AULA	Baú do Nico I	Acolhida	Amanda Duarte	SEXTA	07:30	07:50
+AULA	Baú do Nico I	Oração / Rotina do Dia / Chamadinha	Amanda Duarte	SEXTA	07:50	08:20
+AULA	Baú do Nico I	Grupo Coloquial / Passeio de Aprendizagem	Amanda Duarte	SEXTA	08:20	08:40
+AULA	Baú do Nico I	Leitura em Voz Alta	Amanda Duarte	SEXTA	08:40	09:20
+INTERVALO	Baú do Nico I	Lanche e Parque		SEXTA	08:50	09:20
+AULA	Baú do Nico I	Inglês	Ana Paula Jacó	SEXTA	09:20	09:50
+AULA	Baú do Nico I	Musicalização	Amanda Duarte	SEXTA	09:50	10:20
+AULA	Baú do Nico I	Motricidade Fina	Amanda Duarte	SEXTA	10:20	10:40
+AULA	Baú do Nico I	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua	Amanda Duarte	SEXTA	10:40	11:00
+AULA	Baú do Nico I	Psicomotricidade	Deborah Costa	SEXTA	11:00	11:30
+AULA	Baú do Nico I	Oração e Atividade Lúdica	Amanda Duarte	SEXTA	11:20	11:30
+AULA	Baú do Nico II	Acolhida	Gabriely Castro	SEGUNDA	07:30	07:50
+AULA	Baú do Nico II	Oração / Rotina do Dia / Chamadinha / Calendário / Tempo / Virtudes / Audição Musical / Bits de Matemática	Gabriely Castro	SEGUNDA	07:50	08:20
+AULA	Baú do Nico II	Estações de Aprendizagem	Gabriely Castro	SEGUNDA	08:20	08:50
+INTERVALO	Baú do Nico II	Lanche e Parque		SEGUNDA	08:50	09:20
+AULA	Baú do Nico II		Gabriely Castro	SEGUNDA	09:20	09:40
+AULA	Baú do Nico II	Grupo Coloquial / Hábitos / Aprendendo com Jesus	Gabriely Castro	SEGUNDA	09:20	09:40
+AULA	Baú do Nico II	Bits de Linguagem e Inteligência	Gabriely Castro	SEGUNDA	09:40	09:50
+AULA	Baú do Nico II	Inglês	Ana Paula Jacó	SEGUNDA	09:50	10:20
+AULA	Baú do Nico II	Leitura em Voz Alta	Gabriely Castro	SEGUNDA	10:20	10:30
+AULA	Baú do Nico II	Psicomotricidade	Deborah Costa	SEGUNDA	10:30	11:00
+AULA	Baú do Nico II	Motricidade Fina	Gabriely Castro	SEGUNDA	11:00	11:15
+AULA	Baú do Nico II	Conto / Poesia / Trava-Língua / Oração e Atividade Lúdica	Gabriely Castro	SEGUNDA	11:20	11:30
+AULA	Baú do Nico II	Acolhida	Gabriely Castro	TERçA	07:30	07:50
+AULA	Baú do Nico II	Oração / Rotina do Dia / Chamadinha / Calendário / Tempo / Virtudes / Audição Musical / Bits de Matemática	Gabriely Castro	TERçA	07:50	08:20
+AULA	Baú do Nico II	Estações de Aprendizagem	Gabriely Castro	TERçA	08:20	08:50
+INTERVALO	Baú do Nico II	Lanche e Parque		TERçA	08:50	09:20
+AULA	Baú do Nico II		Gabriely Castro	TERçA	09:20	09:40
+AULA	Baú do Nico II	Grupo Coloquial / Conhecimento de Si / Autonomia Pessoal	Gabriely Castro	TERçA	09:20	09:40
+AULA	Baú do Nico II	Bits de Linguagem e Inteligência	Gabriely Castro	TERçA	09:40	09:50
+AULA	Baú do Nico II	Inglês	Ana Paula Jacó	TERçA	09:50	10:20
+AULA	Baú do Nico II	Leitura em Voz Alta	Gabriely Castro	TERçA	10:20	10:30
+AULA	Baú do Nico II	Psicomotricidade	Deborah Costa	TERçA	10:30	11:00
+AULA	Baú do Nico II	Motricidade Fina	Gabriely Castro	TERçA	11:00	11:15
+AULA	Baú do Nico II	Conto / Poesia / Trava-Língua / Oração e Atividade Lúdica	Gabriely Castro	TERçA	11:20	11:30
+AULA	Baú do Nico II	Acolhida	Gabriely Castro	QUARTA	07:30	07:50
+AULA	Baú do Nico II	Oração / Rotina do Dia / Chamadinha / Calendário / Tempo / Virtudes / Audição Musical / Bits de Matemática	Gabriely Castro	QUARTA	07:50	08:20
+AULA	Baú do Nico II	Estações de Aprendizagem	Gabriely Castro	QUARTA	08:20	08:50
+INTERVALO	Baú do Nico II	Lanche e Parque		QUARTA	08:50	09:20
+AULA	Baú do Nico II		Gabriely Castro	QUARTA	09:20	09:40
+AULA	Baú do Nico II	Grupo Coloquial / Conhecimento de Mundo	Gabriely Castro	QUARTA	09:20	09:40
+AULA	Baú do Nico II	Bits de Linguagem e Inteligência	Gabriely Castro	QUARTA	09:40	09:50
+AULA	Baú do Nico II	Inglês	Ana Paula Jacó	QUARTA	09:50	10:20
+AULA	Baú do Nico II	Leitura em Voz Alta	Gabriely Castro	QUARTA	10:20	10:30
+AULA	Baú do Nico II	Psicomotricidade	Deborah Costa	QUARTA	10:30	11:00
+AULA	Baú do Nico II	Práxis buco facial	Gabriely Castro	QUARTA	11:00	11:15
+AULA	Baú do Nico II	Conto / Poesia / Trava-Língua / Oração e Atividade Lúdica	Gabriely Castro	QUARTA	11:20	11:30
+AULA	Baú do Nico II	Acolhida	Gabriely Castro	QUINTA	07:30	07:50
+AULA	Baú do Nico II	Oração / Rotina do Dia / Chamadinha / Calendário / Tempo / Virtudes / Audição Musical / Bits de Matemática	Gabriely Castro	QUINTA	07:50	08:20
+AULA	Baú do Nico II	Estações de Aprendizagem	Gabriely Castro	QUINTA	08:20	08:50
+INTERVALO	Baú do Nico II	Lanche e Parque		QUINTA	08:50	09:20
+AULA	Baú do Nico II		Gabriely Castro	QUINTA	09:20	09:40
+AULA	Baú do Nico II	Grupo Coloquial / Comunicação e Representação	Gabriely Castro	QUINTA	09:20	09:40
+AULA	Baú do Nico II	Bits de Linguagem e Inteligência	Gabriely Castro	QUINTA	09:40	09:50
+AULA	Baú do Nico II	Inglês	Ana Paula Jacó	QUINTA	09:50	10:20
+AULA	Baú do Nico II	Leitura em Voz Alta	Gabriely Castro	QUINTA	10:20	10:30
+AULA	Baú do Nico II	Psicomotricidade	Deborah Costa	QUINTA	10:30	11:00
+AULA	Baú do Nico II	Motricidade Fina	Gabriely Castro	QUINTA	11:00	11:15
+AULA	Baú do Nico II	Conto / Poesia / Trava-Língua / Oração e Atividade Lúdica	Gabriely Castro	QUINTA	11:20	11:30
+AULA	Baú do Nico II	Acolhida	Gabriely Castro	SEXTA	07:30	07:50
+AULA	Baú do Nico II	Oração / Rotina do Dia / Chamadinha / Calendário / Tempo / Virtudes / Audição Musical / Bits de Matemática	Gabriely Castro	SEXTA	07:50	08:20
+AULA	Baú do Nico II	Musicalização	Gabriely Castro	SEXTA	08:20	08:50
+INTERVALO	Baú do Nico II	Lanche e Parque		SEXTA	08:50	09:20
+AULA	Baú do Nico II		Gabriely Castro	SEXTA	09:20	09:40
+AULA	Baú do Nico II	Grupo Coloquial / Passeio de Aprendizagem	Gabriely Castro	SEXTA	09:20	09:40
+AULA	Baú do Nico II	Bits de Linguagem e Inteligência	Gabriely Castro	SEXTA	09:40	09:50
+AULA	Baú do Nico II	Inglês	Ana Paula Jacó	SEXTA	09:50	10:20
+AULA	Baú do Nico II	Leitura em Voz Alta	Gabriely Castro	SEXTA	10:20	10:30
+AULA	Baú do Nico II	Psicomotricidade	Deborah Costa	SEXTA	10:30	11:00
+AULA	Baú do Nico II	Motricidade Fina	Gabriely Castro	SEXTA	11:00	11:15
+AULA	Baú do Nico II	Conto / Poesia / Trava-Língua / Oração e Atividade Lúdica	Gabriely Castro	SEXTA	11:20	11:30
+AULA	Baú do Nico III	Acolhida	Lorena dos Santos	SEGUNDA	07:30	07:50
+AULA	Baú do Nico III	Oração / Rotina do Dia / Chamadinha / Calendário / Tempo / Virtudes / Audição Musical / Bits de Matemática	Lorena dos Santos	SEGUNDA	07:50	08:20
+AULA	Baú do Nico III	Estações de Aprendizagem	Lorena dos Santos	SEGUNDA	08:20	08:50
+INTERVALO	Baú do Nico III	Lanche e Parque		SEGUNDA	08:50	09:20
+AULA	Baú do Nico III	Leitura em Voz Alta	Lorena dos Santos	SEGUNDA	09:20	09:30
+AULA	Baú do Nico III	Psicomotricidade	Deborah Costa	SEGUNDA	09:30	10:00
+AULA	Baú do Nico III	Grupo Coloquial / Hábitos / Aprendendo com Jesus	Lorena dos Santos	SEGUNDA	10:00	10:20
+AULA	Baú do Nico III	Inglês	Ana Paula Jacó	SEGUNDA	10:20	10:50
+AULA	Baú do Nico III	Motricidade Fina	Lorena dos Santos	SEGUNDA	10:50	11:05
+AULA	Baú do Nico III	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua	Lorena dos Santos	SEGUNDA	11:05	11:25
+AULA	Baú do Nico III	Oração e Atividade Lúdica	Lorena dos Santos	SEGUNDA	11:25	11:30
+AULA	Baú do Nico III	Acolhida	Lorena dos Santos	TERçA	07:30	07:50
+AULA	Baú do Nico III	Oração / Rotina do Dia / Chamadinha / Calendário / Tempo / Virtudes / Audição Musical / Bits de Matemática	Lorena dos Santos	TERçA	07:50	08:20
+AULA	Baú do Nico III	Estações de Aprendizagem	Lorena dos Santos	TERçA	08:20	08:50
+INTERVALO	Baú do Nico III	Lanche e Parque		TERçA	08:50	09:20
+AULA	Baú do Nico III	Leitura em Voz Alta	Lorena dos Santos	TERçA	09:20	09:30
+AULA	Baú do Nico III	Psicomotricidade	Deborah Costa	TERçA	09:30	10:00
+AULA	Baú do Nico III	Grupo Coloquial / Conhecimento de Si / Autonomia Pessoal	Lorena dos Santos	TERçA	10:00	10:20
+AULA	Baú do Nico III	Inglês	Ana Paula Jacó	TERçA	10:20	10:50
+AULA	Baú do Nico III	Motricidade Fina	Lorena dos Santos	TERçA	10:50	11:05
+AULA	Baú do Nico III	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua	Lorena dos Santos	TERçA	11:05	11:25
+AULA	Baú do Nico III	Oração e Atividade Lúdica	Lorena dos Santos	TERçA	11:25	11:30
+AULA	Baú do Nico III	Acolhida	Lorena dos Santos	QUARTA	07:30	07:50
+AULA	Baú do Nico III	Oração / Rotina do Dia / Chamadinha / Calendário / Tempo / Virtudes / Audição Musical / Bits de Matemática	Lorena dos Santos	QUARTA	07:50	08:20
+AULA	Baú do Nico III	Estações de Aprendizagem	Lorena dos Santos	QUARTA	08:20	08:50
+INTERVALO	Baú do Nico III	Lanche e Parque		QUARTA	08:50	09:20
+AULA	Baú do Nico III	Leitura em Voz Alta	Lorena dos Santos	QUARTA	09:20	09:30
+AULA	Baú do Nico III	Psicomotricidade	Deborah Costa	QUARTA	09:30	10:00
+AULA	Baú do Nico III	Grupo Coloquial / Conhecimento de Mundo	Lorena dos Santos	QUARTA	10:00	10:20
+AULA	Baú do Nico III	Inglês	Ana Paula Jacó	QUARTA	10:20	10:50
+AULA	Baú do Nico III	Práxis buco facial	Lorena dos Santos	QUARTA	10:50	11:05
+AULA	Baú do Nico III	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua	Lorena dos Santos	QUARTA	11:05	11:25
+AULA	Baú do Nico III	Oração e Atividade Lúdica	Lorena dos Santos	QUARTA	11:25	11:30
+AULA	Baú do Nico III	Acolhida	Lorena dos Santos	QUINTA	07:30	07:50
+AULA	Baú do Nico III	Oração / Rotina do Dia / Chamadinha / Calendário / Tempo / Virtudes / Audição Musical / Bits de Matemática	Lorena dos Santos	QUINTA	07:50	08:20
+AULA	Baú do Nico III	Estações de Aprendizagem	Lorena dos Santos	QUINTA	08:20	08:50
+INTERVALO	Baú do Nico III	Lanche e Parque		QUINTA	08:50	09:20
+AULA	Baú do Nico III	Leitura em Voz Alta	Lorena dos Santos	QUINTA	09:20	09:30
+AULA	Baú do Nico III	Psicomotricidade	Deborah Costa	QUINTA	09:30	10:00
+AULA	Baú do Nico III	Grupo Coloquial / Comunicação e Representação	Lorena dos Santos	QUINTA	10:00	10:20
+AULA	Baú do Nico III	Inglês	Ana Paula Jacó	QUINTA	10:20	10:50
+AULA	Baú do Nico III	Motricidade Fina	Lorena dos Santos	QUINTA	10:50	11:05
+AULA	Baú do Nico III	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua	Lorena dos Santos	QUINTA	11:05	11:25
+AULA	Baú do Nico III	Oração e Atividade Lúdica	Lorena dos Santos	QUINTA	11:25	11:30
+AULA	Baú do Nico III	Acolhida	Lorena dos Santos	SEXTA	07:30	07:50
+AULA	Baú do Nico III	Oração / Rotina do Dia / Chamadinha / Calendário / Tempo / Virtudes / Audição Musical / Bits de Matemática	Lorena dos Santos	SEXTA	07:50	08:20
+AULA	Baú do Nico III	Musicalização	Lorena dos Santos	SEXTA	08:20	08:50
+INTERVALO	Baú do Nico III	Lanche e Parque		SEXTA	08:50	09:20
+AULA	Baú do Nico III	Leitura em Voz Alta	Lorena dos Santos	SEXTA	09:20	09:30
+AULA	Baú do Nico III	Psicomotricidade	Deborah Costa	SEXTA	09:30	10:00
+AULA	Baú do Nico III	Grupo Coloquial / Passeio de Aprendizagem	Lorena dos Santos	SEXTA	10:00	10:20
+AULA	Baú do Nico III	Inglês	Ana Paula Jacó	SEXTA	10:20	10:50
+AULA	Baú do Nico III	Motricidade Fina	Lorena dos Santos	SEXTA	10:50	11:05
+AULA	Baú do Nico III	Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua	Lorena dos Santos	SEXTA	11:05	11:25
+AULA	Baú do Nico III	Oração e Atividade Lúdica	Lorena dos Santos	SEXTA	11:25	11:30

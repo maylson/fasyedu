@@ -4,9 +4,21 @@ import { AppSidebar } from "@/components/app-sidebar";
 import { getAllowedNavItems } from "@/lib/navigation";
 
 export default async function AppLayout({ children }: { children: ReactNode }) {
-  const { user, memberships, activeSchoolId, roles } = await getUserContext();
+  const { user, memberships, activeSchoolId, roles, supabase } = await getUserContext();
   const activeSchool = memberships.find((item) => item.school_id === activeSchoolId)?.schools?.name ?? "Sem escola ativa";
-  const navItems = getAllowedNavItems(roles);
+  let navItems = getAllowedNavItems(roles);
+
+  if (activeSchoolId) {
+    const { data: schoolFlags } = await supabase
+      .from("schools")
+      .select("student_agenda_enabled")
+      .eq("id", activeSchoolId)
+      .maybeSingle();
+
+    if (!schoolFlags?.student_agenda_enabled) {
+      navItems = navItems.filter((item) => item.href !== "/agenda");
+    }
+  }
 
   return (
     <div className="min-h-screen bg-[var(--background)] p-4 md:p-6">

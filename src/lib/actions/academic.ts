@@ -163,6 +163,12 @@ async function uploadAnnouncementAttachment(
   };
 }
 
+async function removeAnnouncementAttachment(path: string | null) {
+  if (!path) return;
+  const admin = await ensureAnnouncementAttachmentsBucket();
+  await admin.storage.from(ANNOUNCEMENT_ATTACHMENTS_BUCKET).remove([path]);
+}
+
 async function getBaseContext(): Promise<ActionContext> {
   const supabase = await createClient();
   const {
@@ -540,6 +546,105 @@ export async function createClassAction(formData: FormData) {
   revalidatePath("/dashboard");
 }
 
+export async function createEnrollmentAction(formData: FormData) {
+  const { supabase, schoolId } = await getSchoolManagementContext();
+  const studentId = String(formData.get("student_id") ?? "").trim();
+  const classId = String(formData.get("class_id") ?? "").trim();
+  const enrolledAt = String(formData.get("enrolled_at") ?? "").trim();
+
+  if (!studentId || !classId) {
+    redirect(`/matriculas?error=${encodeURIComponent("Selecione aluno e turma para realizar a matrícula.")}`);
+  }
+
+  const [studentResult, classResult] = await Promise.all([
+    supabase.from("students").select("id").eq("id", studentId).eq("school_id", schoolId).maybeSingle(),
+    supabase
+      .from("classes")
+      .select("id, school_year_id")
+      .eq("id", classId)
+      .eq("school_id", schoolId)
+      .maybeSingle(),
+  ]);
+
+  if (!studentResult.data || !classResult.data) {
+    redirect(`/matriculas?error=${encodeURIComponent("Aluno ou turma inválidos para matrícula.")}`);
+  }
+
+  const { error } = await supabase.from("enrollments").insert({
+    school_id: schoolId,
+    student_id: studentId,
+    class_id: classId,
+    school_year_id: classResult.data.school_year_id,
+    status: "ATIVA",
+    enrolled_at: enrolledAt || new Date().toISOString().slice(0, 10),
+    canceled_at: null,
+  });
+
+  if (error) {
+    const friendly = error.message.includes("unique")
+      ? "Este aluno já possui matrícula ativa para esta turma no ano letivo."
+      : error.message;
+    redirect(`/matriculas?error=${encodeURIComponent(friendly)}`);
+  }
+
+  revalidatePath("/matriculas");
+  revalidatePath("/dashboard");
+  redirect(`/matriculas?success=${encodeURIComponent("Matrícula cadastrada com sucesso.")}`);
+}
+
+export async function updateEnrollmentAction(formData: FormData) {
+  const { supabase, schoolId } = await getSchoolManagementContext();
+  const enrollmentId = String(formData.get("enrollment_id") ?? "").trim();
+  const status = String(formData.get("status") ?? "").trim();
+  const canceledAt = String(formData.get("canceled_at") ?? "").trim();
+
+  if (!enrollmentId || !status) {
+    redirect(`/matriculas?error=${encodeURIComponent("Dados inválidos para atualizar matrícula.")}`);
+  }
+
+  const allowedStatuses = new Set(["ATIVA", "CANCELADA", "TRANCADA", "CONCLUIDA"]);
+  if (!allowedStatuses.has(status)) {
+    redirect(`/matriculas?error=${encodeURIComponent("Status de matrícula inválido.")}`);
+  }
+
+  const payload: { status: string; canceled_at: string | null } = {
+    status,
+    canceled_at: status === "CANCELADA" ? canceledAt || new Date().toISOString().slice(0, 10) : null,
+  };
+
+  const { error } = await supabase
+    .from("enrollments")
+    .update(payload)
+    .eq("id", enrollmentId)
+    .eq("school_id", schoolId);
+
+  if (error) {
+    redirect(`/matriculas?error=${encodeURIComponent(error.message)}`);
+  }
+
+  revalidatePath("/matriculas");
+  revalidatePath("/dashboard");
+  redirect(`/matriculas?success=${encodeURIComponent("Matrícula atualizada com sucesso.")}`);
+}
+
+export async function deleteEnrollmentAction(formData: FormData) {
+  const { supabase, schoolId } = await getSchoolManagementContext();
+  const enrollmentId = String(formData.get("enrollment_id") ?? "").trim();
+
+  if (!enrollmentId) {
+    redirect(`/matriculas?error=${encodeURIComponent("Matrícula inválida para exclusão.")}`);
+  }
+
+  const { error } = await supabase.from("enrollments").delete().eq("id", enrollmentId).eq("school_id", schoolId);
+  if (error) {
+    redirect(`/matriculas?error=${encodeURIComponent(error.message)}`);
+  }
+
+  revalidatePath("/matriculas");
+  revalidatePath("/dashboard");
+  redirect(`/matriculas?success=${encodeURIComponent("Matrícula excluída com sucesso.")}`);
+}
+
 export async function updateClassAction(formData: FormData) {
   const { supabase, schoolId } = await getSchoolManagementContext();
   const classId = String(formData.get("class_id") ?? "").trim();
@@ -623,6 +728,151 @@ export async function linkSubjectToClassAction(formData: FormData) {
   revalidatePath("/coordenacao");
 }
 
+export async function createAssessmentAction(formData: FormData) {
+  const { supabase, schoolId, userId } = await getAcademicContext();
+  const classSubjectId = String(formData.get("class_subject_id") ?? "").trim();
+  const title = String(formData.get("title") ?? "").trim();
+  const assessmentDate = String(formData.get("assessment_date") ?? "").trim();
+  const maxScore = Number(formData.get("max_score") ?? 10);
+
+  if (!classSubjectId || !title || !assessmentDate) {
+    redirect(`/avaliacoes?error=${encodeURIComponent("Preencha turma/disciplina, titulo e data da avaliacao.")}`);
+  }
+
+  const { data: classSubject } = await supabase
+    .from("class_subjects")
+    .select("id")
+    .eq("id", classSubjectId)
+    .eq("school_id", schoolId)
+    .maybeSingle();
+
+  if (!classSubject) {
+    redirect(`/avaliacoes?error=${encodeURIComponent("Turma/disciplina invalida para criar avaliacao.")}`);
+  }
+
+  const { error } = await supabase.from("assessments").insert({
+    school_id: schoolId,
+    class_subject_id: classSubjectId,
+    title,
+    assessment_date: assessmentDate,
+    max_score: Number.isFinite(maxScore) && maxScore > 0 ? maxScore : 10,
+    created_by: userId,
+  });
+
+  if (error) {
+    redirect(`/avaliacoes?error=${encodeURIComponent(error.message)}`);
+  }
+
+  revalidatePath("/avaliacoes");
+  revalidatePath("/dashboard");
+  redirect(`/avaliacoes?success=${encodeURIComponent("Avaliacao cadastrada com sucesso.")}`);
+}
+
+export async function createAssessmentItemAction(formData: FormData) {
+  const { supabase, schoolId } = await getAcademicContext();
+  const assessmentId = String(formData.get("assessment_id") ?? "").trim();
+  const title = String(formData.get("title") ?? "").trim();
+  const weight = Number(formData.get("weight") ?? 1);
+  const maxScore = Number(formData.get("max_score") ?? 10);
+
+  if (!assessmentId || !title) {
+    redirect(`/avaliacoes?error=${encodeURIComponent("Preencha avaliacao e titulo do item.")}`);
+  }
+
+  const { data: assessment } = await supabase
+    .from("assessments")
+    .select("id")
+    .eq("id", assessmentId)
+    .eq("school_id", schoolId)
+    .maybeSingle();
+
+  if (!assessment) {
+    redirect(`/avaliacoes?error=${encodeURIComponent("Avaliacao invalida para adicionar item.")}`);
+  }
+
+  const { error } = await supabase.from("assessment_items").insert({
+    school_id: schoolId,
+    assessment_id: assessmentId,
+    title,
+    weight: Number.isFinite(weight) && weight > 0 ? weight : 1,
+    max_score: Number.isFinite(maxScore) && maxScore > 0 ? maxScore : 10,
+  });
+
+  if (error) {
+    redirect(`/avaliacoes?error=${encodeURIComponent(error.message)}`);
+  }
+
+  revalidatePath("/avaliacoes");
+  redirect(`/avaliacoes?success=${encodeURIComponent("Item da avaliacao cadastrado com sucesso.")}`);
+}
+
+export async function upsertGradeAction(formData: FormData) {
+  const { supabase, schoolId } = await getAcademicContext();
+  const assessmentItemId = String(formData.get("assessment_item_id") ?? "").trim();
+  const enrollmentId = String(formData.get("enrollment_id") ?? "").trim();
+  const score = Number(formData.get("score") ?? 0);
+
+  if (!assessmentItemId || !enrollmentId || !Number.isFinite(score)) {
+    redirect(`/avaliacoes?error=${encodeURIComponent("Preencha item, matricula e nota.")}`);
+  }
+
+  const [itemResult, enrollmentResult] = await Promise.all([
+    supabase
+      .from("assessment_items")
+      .select("id, max_score, assessments!inner(id, class_subject_id)")
+      .eq("id", assessmentItemId)
+      .eq("school_id", schoolId)
+      .maybeSingle(),
+    supabase
+      .from("enrollments")
+      .select("id, class_id")
+      .eq("id", enrollmentId)
+      .eq("school_id", schoolId)
+      .maybeSingle(),
+  ]);
+
+  if (!itemResult.data || !enrollmentResult.data) {
+    redirect(`/avaliacoes?error=${encodeURIComponent("Item de avaliacao ou matricula invalida.")}`);
+  }
+
+  const itemAssessment = Array.isArray(itemResult.data.assessments)
+    ? itemResult.data.assessments[0]
+    : itemResult.data.assessments;
+
+  const { data: classSubject } = await supabase
+    .from("class_subjects")
+    .select("id, class_id")
+    .eq("id", itemAssessment.class_subject_id)
+    .eq("school_id", schoolId)
+    .maybeSingle();
+
+  if (!classSubject || classSubject.class_id !== enrollmentResult.data.class_id) {
+    redirect(`/avaliacoes?error=${encodeURIComponent("A matricula nao pertence a turma da avaliacao selecionada.")}`);
+  }
+
+  if (score < 0 || score > Number(itemResult.data.max_score ?? 10)) {
+    redirect(`/avaliacoes?error=${encodeURIComponent("A nota deve estar dentro do intervalo permitido para o item.")}`);
+  }
+
+  const { error } = await supabase.from("grades").upsert(
+    {
+      school_id: schoolId,
+      enrollment_id: enrollmentId,
+      assessment_item_id: assessmentItemId,
+      score,
+    },
+    { onConflict: "enrollment_id,assessment_item_id" },
+  );
+
+  if (error) {
+    redirect(`/avaliacoes?error=${encodeURIComponent(error.message)}`);
+  }
+
+  revalidatePath("/avaliacoes");
+  revalidatePath("/dashboard");
+  redirect(`/avaliacoes?success=${encodeURIComponent("Nota salva com sucesso.")}`);
+}
+
 export async function createAnnouncementAction(formData: FormData) {
   const { supabase, schoolId, userId, roles } = await getBaseContext();
   if (!roles.includes("DIRECAO") && !roles.includes("COORDENACAO")) {
@@ -668,6 +918,129 @@ export async function createAnnouncementAction(formData: FormData) {
 
   revalidatePath("/mural");
   revalidatePath("/dashboard");
+}
+
+export async function updateAnnouncementAction(formData: FormData) {
+  const { supabase, schoolId, roles } = await getBaseContext();
+  if (!roles.includes("DIRECAO") && !roles.includes("COORDENACAO")) {
+    throw new Error("Somente Direção e Coordenação podem editar avisos no mural.");
+  }
+
+  const id = String(formData.get("id") ?? "").trim();
+  const title = String(formData.get("title") ?? "").trim();
+  const message = String(formData.get("message") ?? "").trim();
+  const audience = String(formData.get("audience") ?? "TODOS").trim();
+  const isPinned = String(formData.get("is_pinned") ?? "") === "on";
+  const publishedDateRaw = String(formData.get("published_date") ?? "").trim();
+  const removeAttachment = String(formData.get("remove_attachment") ?? "") === "on";
+  const attachmentFile = formData.get("attachment_file");
+
+  if (!id || !title || !message) {
+    redirect(`/mural?error=${encodeURIComponent("Preencha os campos obrigatórios do aviso.")}`);
+  }
+
+  const { data: existing, error: existingError } = await supabase
+    .from("announcements")
+    .select("id, attachment_path")
+    .eq("id", id)
+    .eq("school_id", schoolId)
+    .maybeSingle();
+
+  if (existingError || !existing) {
+    redirect(`/mural?error=${encodeURIComponent("Aviso não encontrado para edição.")}`);
+  }
+
+  let publishedAt = new Date();
+  if (publishedDateRaw) {
+    const parsed = new Date(`${publishedDateRaw}T08:00:00`);
+    if (Number.isNaN(parsed.getTime())) {
+      redirect(`/mural?error=${encodeURIComponent("Data de publicação inválida.")}`);
+    }
+    publishedAt = parsed;
+  }
+
+  let attachmentPayload: {
+    attachment_path: string | null;
+    attachment_name: string | null;
+    attachment_mime: string | null;
+    attachment_size: number | null;
+  } = {
+    attachment_path: existing.attachment_path,
+    attachment_name: null,
+    attachment_mime: null,
+    attachment_size: null,
+  };
+
+  if (removeAttachment) {
+    await removeAnnouncementAttachment(existing.attachment_path);
+    attachmentPayload = {
+      attachment_path: null,
+      attachment_name: null,
+      attachment_mime: null,
+      attachment_size: null,
+    };
+  }
+
+  if (attachmentFile instanceof File && attachmentFile.size > 0) {
+    const uploaded = await uploadAnnouncementAttachment(schoolId, attachmentFile);
+    if (existing.attachment_path) {
+      await removeAnnouncementAttachment(existing.attachment_path);
+    }
+    attachmentPayload = uploaded;
+  }
+
+  const { error } = await supabase
+    .from("announcements")
+    .update({
+      title,
+      message,
+      audience,
+      is_pinned: isPinned,
+      published_at: publishedAt.toISOString(),
+      ...attachmentPayload,
+    })
+    .eq("id", id)
+    .eq("school_id", schoolId);
+
+  if (error) {
+    redirect(`/mural?error=${encodeURIComponent(error.message)}`);
+  }
+
+  revalidatePath("/mural");
+  revalidatePath("/dashboard");
+  redirect(`/mural?success=${encodeURIComponent("Aviso atualizado com sucesso.")}`);
+}
+
+export async function deleteAnnouncementAction(formData: FormData) {
+  const { supabase, schoolId, roles } = await getBaseContext();
+  if (!roles.includes("DIRECAO") && !roles.includes("COORDENACAO")) {
+    throw new Error("Somente Direção e Coordenação podem excluir avisos no mural.");
+  }
+
+  const id = String(formData.get("id") ?? "").trim();
+  if (!id) {
+    redirect(`/mural?error=${encodeURIComponent("Aviso inválido para exclusão.")}`);
+  }
+
+  const { data: existing } = await supabase
+    .from("announcements")
+    .select("attachment_path")
+    .eq("id", id)
+    .eq("school_id", schoolId)
+    .maybeSingle();
+
+  if (existing?.attachment_path) {
+    await removeAnnouncementAttachment(existing.attachment_path);
+  }
+
+  const { error } = await supabase.from("announcements").delete().eq("id", id).eq("school_id", schoolId);
+  if (error) {
+    redirect(`/mural?error=${encodeURIComponent(error.message)}`);
+  }
+
+  revalidatePath("/mural");
+  revalidatePath("/dashboard");
+  redirect(`/mural?success=${encodeURIComponent("Aviso excluído com sucesso.")}`);
 }
 
 export async function createEventAction(formData: FormData) {
@@ -914,6 +1287,17 @@ export async function updateClassScheduleAction(formData: FormData) {
     throw new Error("Para aula, selecione disciplina e professor.");
   }
 
+  const { data: currentSchedule, error: currentScheduleError } = await supabase
+    .from("class_schedules")
+    .select("id, class_id")
+    .eq("id", id)
+    .eq("school_id", schoolId)
+    .maybeSingle();
+
+  if (currentScheduleError || !currentSchedule) {
+    throw new Error("Horário não encontrado para atualização.");
+  }
+
   const { error } = await supabase
     .from("class_schedules")
     .update({
@@ -927,11 +1311,24 @@ export async function updateClassScheduleAction(formData: FormData) {
     })
     .eq("id", id)
     .eq("school_id", schoolId);
-  if (error) throw new Error(error.message);
+  if (error) {
+    const normalized = error.message ?? "Não foi possível atualizar o horário.";
+    const friendlyMessage = normalized.includes("uq_class_schedules_slot")
+      ? "Já existe um horário nesta turma para o mesmo dia e horário de início."
+      : normalized.includes("Selected class subject does not belong to selected class")
+        ? "A disciplina selecionada não pertence à turma escolhida."
+        : normalized.includes("chk_class_schedules_entry_data")
+          ? "Para aula, informe disciplina e professor. Para intervalo, não informe esses campos."
+          : normalized;
+    redirect(
+      `/horarios?class_id=${encodeURIComponent(currentSchedule.class_id)}&edit_schedule_id=${encodeURIComponent(id)}&error=${encodeURIComponent(friendlyMessage)}`,
+    );
+  }
 
   revalidatePath("/horarios");
   revalidatePath("/planejamento");
   revalidatePath("/coordenacao");
+  redirect(`/horarios?class_id=${encodeURIComponent(currentSchedule.class_id)}`);
 }
 
 export async function deleteClassScheduleAction(formData: FormData) {

@@ -1,0 +1,74 @@
+{
+  "school": "Colégio Mirante",
+  "school_id": "d8f6b9cc-cfdd-43a6-b279-1e1f8ff8573c",
+  "totalRows": 716,
+  "prepared": 692,
+  "skippedDuplicateSlotInFile": 19,
+  "unresolvedClass": 0,
+  "unresolvedDay": 0,
+  "unresolvedSubject": 5,
+  "unresolvedTeacher": 0,
+  "upserted": 692,
+  "unresolvedExamples": [
+    {
+      "reason": "subject",
+      "row": {
+        "Tipo": "AULA",
+        "classname": "Baú do Nico II",
+        "component": "",
+        "teachername": "Gabriely Castro",
+        "DiaSemana": "SEGUNDA",
+        "hora_inicio": "09:20",
+        "hora_fim": "09:40"
+      }
+    },
+    {
+      "reason": "subject",
+      "row": {
+        "Tipo": "AULA",
+        "classname": "Baú do Nico II",
+        "component": "",
+        "teachername": "Gabriely Castro",
+        "DiaSemana": "TERçA",
+        "hora_inicio": "09:20",
+        "hora_fim": "09:40"
+      }
+    },
+    {
+      "reason": "subject",
+      "row": {
+        "Tipo": "AULA",
+        "classname": "Baú do Nico II",
+        "component": "",
+        "teachername": "Gabriely Castro",
+        "DiaSemana": "QUARTA",
+        "hora_inicio": "09:20",
+        "hora_fim": "09:40"
+      }
+    },
+    {
+      "reason": "subject",
+      "row": {
+        "Tipo": "AULA",
+        "classname": "Baú do Nico II",
+        "component": "",
+        "teachername": "Gabriely Castro",
+        "DiaSemana": "QUINTA",
+        "hora_inicio": "09:20",
+        "hora_fim": "09:40"
+      }
+    },
+    {
+      "reason": "subject",
+      "row": {
+        "Tipo": "AULA",
+        "classname": "Baú do Nico II",
+        "component": "",
+        "teachername": "Gabriely Castro",
+        "DiaSemana": "SEXTA",
+        "hora_inicio": "09:20",
+        "hora_fim": "09:40"
+      }
+    }
+  ]
+}

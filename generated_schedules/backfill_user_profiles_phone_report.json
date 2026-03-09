@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-03-09T05:39:12.637Z",
+  "school_id": "d8f6b9cc-cfdd-43a6-b279-1e1f8ff8573c",
+  "school_name": "Colégio Mirante",
+  "totals": {
+    "profiles": 686,
+    "guardians_with_user": 636,
+    "teachers_with_user": 58,
+    "candidate_users_with_phone": 566
+  },
+  "result": {
+    "updated": 0,
+    "skipped_has_phone": 569,
+    "skipped_no_source": 117,
+    "errors_count": 0
+  },
+  "validation": {
+    "guardians_linked_count": 636,
+    "linked_profiles_with_phone": 565
+  },
+  "errors": []
+}

@@ -56,6 +56,7 @@ export function AppSidebar({ navItems, email, rolesLabel, schoolName }: AppSideb
     if (typeof window === "undefined") return false;
     return window.localStorage.getItem("fasy_sidebar_collapsed") === "true";
   });
+  const [mobileCollapsed, setMobileCollapsed] = useState(false);
 
   function toggleCollapse() {
     const next = !collapsed;
@@ -65,16 +66,25 @@ export function AppSidebar({ navItems, email, rolesLabel, schoolName }: AppSideb
 
   return (
     <aside
-      className={`fasy-dark-panel rounded-3xl border border-[#1d4f84] p-4 shadow-[0_14px_40px_rgba(8,33,63,0.38)] transition-all duration-300 ${
-        collapsed ? "w-20" : "w-[280px]"
+      className={`fasy-dark-panel w-full rounded-3xl border border-[#1d4f84] p-4 shadow-[0_14px_40px_rgba(8,33,63,0.38)] transition-all duration-300 ${
+        collapsed ? "md:w-20" : "md:w-[280px]"
       }`}
     >
-      <div className="flex items-center justify-between">
-        <p className={`text-xs tracking-[0.18em] uppercase text-cyan-200 ${collapsed ? "hidden" : ""}`}>FASY</p>
+      <div className="flex items-center justify-between gap-2">
+        <p className={`hidden text-xs tracking-[0.18em] uppercase text-cyan-200 md:block ${collapsed ? "md:hidden" : ""}`}>FASY</p>
+        <p className="text-xs tracking-[0.18em] uppercase text-cyan-200 md:hidden">FASY · Menu</p>
+        <button
+          type="button"
+          onClick={() => setMobileCollapsed((prev) => !prev)}
+          className="rounded-lg border border-cyan-200/35 bg-white/8 px-2 py-1 text-xs text-cyan-50 hover:bg-white/16 md:hidden"
+          title={mobileCollapsed ? "Expandir menu" : "Recolher menu"}
+        >
+          {mobileCollapsed ? "v" : "^"}
+        </button>
         <button
           type="button"
           onClick={toggleCollapse}
-          className="rounded-lg border border-cyan-200/35 bg-white/8 px-2 py-1 text-xs text-cyan-50 hover:bg-white/16"
+          className="hidden rounded-lg border border-cyan-200/35 bg-white/8 px-2 py-1 text-xs text-cyan-50 hover:bg-white/16 md:inline-flex"
           title={collapsed ? "Expandir menu" : "Recolher menu"}
         >
           {collapsed ? ">>" : "<<"}
@@ -83,12 +93,13 @@ export function AppSidebar({ navItems, email, rolesLabel, schoolName }: AppSideb
 
       {!collapsed ? (
         <>
-          <h1 className="mt-2 text-xl font-semibold leading-tight text-[var(--brand-ice)]">Formative Assessment System</h1>
-          <p className="mt-1 text-xs text-cyan-100/90">{schoolName}</p>
+          <h1 className="mt-2 hidden text-xl font-semibold leading-tight text-[var(--brand-ice)] md:block">Formative Assessment System</h1>
+          <p className="mt-1 hidden text-xs text-cyan-100/90 md:block">{schoolName}</p>
         </>
       ) : null}
 
-      <nav className="mt-6 grid gap-2">
+      <div className={`${mobileCollapsed ? "hidden md:block" : ""}`}>
+      <nav className="mt-3 grid gap-2 md:mt-6">
         {navItems.map((item) => {
           const effectivePath = optimisticNav && pathname === optimisticNav.fromPath ? optimisticNav.href : pathname;
           const active = effectivePath === item.href || effectivePath.startsWith(`${item.href}/`);
@@ -111,7 +122,7 @@ export function AppSidebar({ navItems, email, rolesLabel, schoolName }: AppSideb
         })}
       </nav>
 
-      <div className={`mt-6 rounded-xl border border-cyan-200/30 bg-[#0a2445]/70 p-3 text-xs ${collapsed ? "px-2 py-3" : ""}`}>
+      <div className={`mt-4 rounded-xl border border-cyan-200/30 bg-[#0a2445]/70 p-3 text-xs ${collapsed ? "px-2 py-3" : ""}`}>
         <p className={`font-medium break-words ${collapsed ? "hidden" : ""}`}>{email}</p>
         <p
           className={`mt-1 text-cyan-100 ${collapsed ? "hidden" : ""}`}
@@ -133,6 +144,7 @@ export function AppSidebar({ navItems, email, rolesLabel, schoolName }: AppSideb
           {collapsed ? "x" : "Sair"}
         </button>
       </form>
+      </div>
     </aside>
   );
 }

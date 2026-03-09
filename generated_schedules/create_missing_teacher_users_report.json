@@ -1,0 +1,195 @@
+{
+  "school": "Colégio Mirante",
+  "school_id": "d8f6b9cc-cfdd-43a6-b279-1e1f8ff8573c",
+  "pending": 23,
+  "created": 23,
+  "reused": 0,
+  "linked": 23,
+  "failed": 0,
+  "items": [
+    {
+      "teacher_id": "4b25c840-940a-4298-9822-878178ff3414",
+      "full_name": "Alcione Castilho",
+      "email": "alcione26castilho@gmail.com",
+      "password": "alcione2024",
+      "user_id": "2d22c382-c8cb-4866-bb76-e3fec3c5ec01",
+      "status": "created_auth"
+    },
+    {
+      "teacher_id": "13523d1e-e899-4fbe-a48b-8ebdfca0a179",
+      "full_name": "Amanda Duarte",
+      "email": "amandacolegiomirante@gmail.com",
+      "password": "amanda2024",
+      "user_id": "29d3533e-8186-4d64-950b-cd046a46f2da",
+      "status": "created_auth"
+    },
+    {
+      "teacher_id": "e9e99641-a079-4d69-9385-dc0545c5bb15",
+      "full_name": "Ana Cristina Maciel",
+      "email": "anacristinacmaciel@gmail.com",
+      "password": "ana2024",
+      "user_id": "38b35bea-84a4-4a09-a2e1-a8eaddc90d57",
+      "status": "created_auth"
+    },
+    {
+      "teacher_id": "a0fc5d68-ce82-4955-a186-42b5402588f3",
+      "full_name": "Ana Paula Jacó",
+      "email": "ana_paula_jaco@hotmail.com",
+      "password": "ana2024",
+      "user_id": "bf87a7f2-3955-4ded-b0ff-da51e833c0b1",
+      "status": "created_auth"
+    },
+    {
+      "teacher_id": "14a7178c-9351-400c-9cbd-d9c1e9118b7d",
+      "full_name": "Ana Paula Leal",
+      "email": "leala7434@gmail.com",
+      "password": "ana2024",
+      "user_id": "570777cd-d09d-4080-a0d4-0dfe02c2f3d9",
+      "status": "created_auth"
+    },
+    {
+      "teacher_id": "bd92a6e4-ee1e-42c7-9a24-d93e48ce859d",
+      "full_name": "Anne Marruaz",
+      "email": "anne_marruaz@hotmail.com",
+      "password": "anne2024",
+      "user_id": "e614e7d3-7342-4bd7-bfdd-7de86b7c1165",
+      "status": "created_auth"
+    },
+    {
+      "teacher_id": "428b815c-8e00-4624-8bd8-16038b87e58b",
+      "full_name": "Brenda Lopes",
+      "email": "brendacinara4@gmail.com",
+      "password": "brenda2024",
+      "user_id": "a4d36bed-7fc9-4ec7-a1f3-0a485bcd674b",
+      "status": "created_auth"
+    },
+    {
+      "teacher_id": "88afc413-cab4-4b76-b15a-811e374ab8cc",
+      "full_name": "Bruna de Souza",
+      "email": "o.bruna2017@gmail.com",
+      "password": "bruna2024",
+      "user_id": "d8f90e7c-656a-43fd-8c3a-676e32de42e2",
+      "status": "created_auth"
+    },
+    {
+      "teacher_id": "3f2e5c7d-51e3-48e4-9c1f-c665f1d4f9a0",
+      "full_name": "Deborah Costa",
+      "email": "deborahvanessaef@gmail.com",
+      "password": "deborah2024",
+      "user_id": "8bd5ee22-2979-4832-91ed-8ac8254e3381",
+      "status": "created_auth"
+    },
+    {
+      "teacher_id": "500e18b0-4784-4dbb-a27b-4219a0573da1",
+      "full_name": "Eduarda Morais",
+      "email": "eduardaosodrac30@gmail.com",
+      "password": "eduarda2024",
+      "user_id": "dcf254fb-c6bf-45f6-bd7a-7dd2c6b72b5f",
+      "status": "created_auth"
+    },
+    {
+      "teacher_id": "44db8add-3d53-4df7-8d2f-39558acdfc9e",
+      "full_name": "Gabriely Castro",
+      "email": "gabrielycstro@outlook.com",
+      "password": "gabriely2024",
+      "user_id": "28f27260-49c4-4f28-9464-648baa9c1307",
+      "status": "created_auth"
+    },
+    {
+      "teacher_id": "6a6eefc1-8f13-4e1d-8400-c795d97e0d5f",
+      "full_name": "Juliana Santana dos Santos",
+      "email": "julianasnt10@gmail.com",
+      "password": "juliana2024",
+      "user_id": "e78f1b91-4e34-471e-8a1f-bf6ee51bc73c",
+      "status": "created_auth"
+    },
+    {
+      "teacher_id": "3f7260e2-64bd-4fda-8d72-08785bbb40c9",
+      "full_name": "Keila Brito",
+      "email": "keila.souza.brito@hotmail.com",
+      "password": "keila2024",
+      "user_id": "39fd4424-7dc5-4cde-9b0a-9caf8c5541a8",
+      "status": "created_auth"
+    },
+    {
+      "teacher_id": "339ea676-d5e9-4116-addf-42d9e3571ff7",
+      "full_name": "Kelly da Silva",
+      "email": "kellyekellen@gmail.com",
+      "password": "kelly2024",
+      "user_id": "1994d2c7-5908-4d38-a829-1d3c6050d41a",
+      "status": "created_auth"
+    },
+    {
+      "teacher_id": "c8b95bf6-c2f0-47bf-864c-265c211881e2",
+      "full_name": "Kelly Figueira",
+      "email": "kellyfigueira64@gmail.com",
+      "password": "kelly2024",
+      "user_id": "0f15eb44-1f7e-4530-b97e-87d9008e3e08",
+      "status": "created_auth"
+    },
+    {
+      "teacher_id": "03bd0e9d-3746-404c-a1ed-6278ce07accc",
+      "full_name": "Letícia Alves",
+      "email": "leticiaalvesuepa@gmail.com",
+      "password": "leticia2024",
+      "user_id": "33a99379-ee1a-4611-a171-58902d7edede",
+      "status": "created_auth"
+    },
+    {
+      "teacher_id": "3773c9cd-9a0f-4bba-875e-984b48bc4732",
+      "full_name": "Leticia Nayara",
+      "email": "professoraleticiacm@gmail.com",
+      "password": "leticia2024",
+      "user_id": "912c3bb4-130e-40e6-abcd-f2a7f707e191",
+      "status": "created_auth"
+    },
+    {
+      "teacher_id": "315235cb-2201-4cc8-8848-0766156e5f74",
+      "full_name": "Lorena dos Santos",
+      "email": "lorena_lory.br@hotmail.com",
+      "password": "lorena2024",
+      "user_id": "f7e0bc08-6a3a-496b-8382-39495166f1a8",
+      "status": "created_auth"
+    },
+    {
+      "teacher_id": "0252a32f-a6a8-4219-b3e3-67f489e5d18a",
+      "full_name": "Luciana Cavalcante",
+      "email": "luciana.prof.mirante@gmail.com",
+      "password": "luciana2024",
+      "user_id": "ef64f91c-5066-4137-99c8-151fefde5f50",
+      "status": "created_auth"
+    },
+    {
+      "teacher_id": "27b2d13f-70a8-4b19-9c39-3309e6bac292",
+      "full_name": "Nilciane Wanzeler",
+      "email": "nilcianew@gmail.com",
+      "password": "nilciane2024",
+      "user_id": "4fd5fed3-013f-4077-a31e-13909607ebb0",
+      "status": "created_auth"
+    },
+    {
+      "teacher_id": "b63cdc29-463a-4f46-be0f-8cc1bb22f0e6",
+      "full_name": "Rafaella",
+      "email": "rafapedran@gmail.com",
+      "password": "rafaella2024",
+      "user_id": "35e40c99-6274-4540-888a-561e4f7e0522",
+      "status": "created_auth"
+    },
+    {
+      "teacher_id": "ceba3175-6f1c-4d98-a255-a2ffa673f5f5",
+      "full_name": "Suellen Tabosa",
+      "email": "suvinitabosa@gmail.com",
+      "password": "suellen2024",
+      "user_id": "5e989546-461d-4131-bf72-7d033ff75cc4",
+      "status": "created_auth"
+    },
+    {
+      "teacher_id": "a9d80926-b24e-4059-8f89-9df0a9f38f24",
+      "full_name": "Thaiane Vasconcelos",
+      "email": "thaianevasconcels14@gmail.com",
+      "password": "thaiane2024",
+      "user_id": "a5aa2b38-96a7-4cb8-a57a-2b4630d574fd",
+      "status": "created_auth"
+    }
+  ]
+}

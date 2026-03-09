@@ -1,6 +1,11 @@
+import Link from "next/link";
 import { ModuleShell } from "@/components/module-shell";
 import { SubmitButton } from "@/components/submit-button";
-import { createAnnouncementAction } from "@/lib/actions/academic";
+import {
+  createAnnouncementAction,
+  deleteAnnouncementAction,
+  updateAnnouncementAction,
+} from "@/lib/actions/academic";
 import { getUserContext } from "@/lib/app-context";
 import { type EducationStage, type UserRole } from "@/lib/constants";
 
@@ -37,7 +42,10 @@ type EventRow = {
 
 type ClassAudienceRow = {
   class_id: string;
-  classes: { id: string; stage: EducationStage; series: string | null } | Array<{ id: string; stage: EducationStage; series: string | null }> | null;
+  classes:
+    | { id: string; stage: EducationStage; series: string | null }
+    | Array<{ id: string; stage: EducationStage; series: string | null }>
+    | null;
 };
 
 type FeedItem =
@@ -63,7 +71,6 @@ type FeedItem =
       isAdministrative: boolean;
       targetStages: EducationStage[];
       targetSeries: string[];
-      targetClasses: string[];
       attachmentUrl: string | null;
       attachmentName: string | null;
       attachmentMime: string | null;
@@ -99,7 +106,9 @@ function getEventTypeCardStyles(type: EventRow["event_type"]) {
 }
 
 function isStaff(roles: UserRole[]) {
-  return roles.some((role) => ["DIRECAO", "COORDENACAO", "SECRETARIA", "PROFESSOR"].includes(role));
+  return roles.some((role) =>
+    ["DIRECAO", "COORDENACAO", "SECRETARIA", "PROFESSOR"].includes(role),
+  );
 }
 
 function canManageMural(roles: UserRole[]) {
@@ -131,7 +140,8 @@ function canSeeEventByAudience(
   const targetStages = event.target_stages ?? [];
   const targetSeries = event.target_series ?? [];
   const targetClassIds = event.target_class_ids ?? [];
-  const hasTargeting = targetStages.length > 0 || targetSeries.length > 0 || targetClassIds.length > 0;
+  const hasTargeting =
+    targetStages.length > 0 || targetSeries.length > 0 || targetClassIds.length > 0;
   if (!hasTargeting) return true;
 
   if (targetClassIds.some((id) => classIds.has(id))) return true;
@@ -142,12 +152,24 @@ function canSeeEventByAudience(
 
 export default async function MuralPage({ searchParams }: MuralPageProps) {
   const { supabase, user, activeSchoolId, roles } = await getUserContext();
-  await searchParams;
+  const params = await searchParams;
+
+  const error = typeof params.error === "string" ? params.error : null;
+  const success = typeof params.success === "string" ? params.success : null;
+  const editAnnouncementId =
+    typeof params.edit_announcement_id === "string" ? params.edit_announcement_id : "";
+  const deleteAnnouncementId =
+    typeof params.delete_announcement_id === "string" ? params.delete_announcement_id : "";
 
   if (!activeSchoolId) {
     return (
-      <ModuleShell title="Mural" description="Timeline de avisos, recados e eventos do calendário">
-        <p className="rounded-xl border border-[var(--line)] bg-[var(--panel-soft)] p-4 text-sm">Nenhuma escola ativa para exibir o mural.</p>
+      <ModuleShell
+        title="Mural"
+        description="Timeline de avisos, recados e eventos do calendário"
+      >
+        <p className="rounded-xl border border-[var(--line)] bg-[var(--panel-soft)] p-4 text-sm">
+          Nenhuma escola ativa para exibir o mural.
+        </p>
       </ModuleShell>
     );
   }
@@ -170,7 +192,9 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
   const [announcementsResult, eventsResult] = await Promise.all([
     supabase
       .from("announcements")
-      .select("id, title, message, audience, is_pinned, published_at, attachment_path, attachment_name, attachment_mime")
+      .select(
+        "id, title, message, audience, is_pinned, published_at, attachment_path, attachment_name, attachment_mime",
+      )
       .eq("school_id", activeSchoolId)
       .gte("published_at", rangeStart.toISOString())
       .lte("published_at", rangeEnd.toISOString())
@@ -220,7 +244,10 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
           .select("student_id")
           .eq("school_id", activeSchoolId)
           .in("guardian_id", guardianIds);
-        studentIds = [...studentIds, ...(guardianStudents?.map((item) => item.student_id) ?? [])];
+        studentIds = [
+          ...studentIds,
+          ...(guardianStudents?.map((item) => item.student_id) ?? []),
+        ];
       }
     }
 
@@ -235,7 +262,9 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
 
       const classRows = (classesByStudent ?? []) as ClassAudienceRow[];
       for (const item of classRows) {
-        const classRelation = Array.isArray(item.classes) ? item.classes[0] : item.classes;
+        const classRelation = Array.isArray(item.classes)
+          ? item.classes[0]
+          : item.classes;
         if (!item.class_id || !classRelation) continue;
         studentClassIds.add(item.class_id);
         studentClassStages.add(classRelation.stage);
@@ -248,7 +277,13 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
     canSeeAnnouncement(String(announcement.audience || "TODOS"), roles),
   );
   const eventsVisible = events.filter((event) =>
-    canSeeEventByAudience(event, roles, studentClassIds, studentClassStages, studentClassSeries),
+    canSeeEventByAudience(
+      event,
+      roles,
+      studentClassIds,
+      studentClassStages,
+      studentClassSeries,
+    ),
   );
 
   const items: FeedItem[] = [];
@@ -256,7 +291,9 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
   for (const announcement of announcementsVisible) {
     let attachmentUrl: string | null = null;
     if (announcement.attachment_path) {
-      const signed = await supabase.storage.from("announcement-attachments").createSignedUrl(announcement.attachment_path, 3600);
+      const signed = await supabase.storage
+        .from("announcement-attachments")
+        .createSignedUrl(announcement.attachment_path, 3600);
       attachmentUrl = signed.data?.signedUrl ?? null;
     }
     items.push({
@@ -276,7 +313,9 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
   for (const event of eventsVisible) {
     let attachmentUrl: string | null = null;
     if (event.attachment_path) {
-      const signed = await supabase.storage.from("event-attachments").createSignedUrl(event.attachment_path, 3600);
+      const signed = await supabase.storage
+        .from("event-attachments")
+        .createSignedUrl(event.attachment_path, 3600);
       attachmentUrl = signed.data?.signedUrl ?? null;
     }
     items.push({
@@ -289,28 +328,81 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
       isAdministrative: event.is_administrative,
       targetStages: event.target_stages ?? [],
       targetSeries: event.target_series ?? [],
-      targetClasses: event.target_class_ids ?? [],
       attachmentUrl,
       attachmentName: event.attachment_name,
       attachmentMime: event.attachment_mime,
     });
   }
 
-  const feed = items
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  const feed = items.sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+  );
 
   const canManage = canManageMural(roles);
+  const announcementToEdit = canManage
+    ? announcements.find((announcement) => announcement.id === editAnnouncementId) ?? null
+    : null;
+  const editPublishedDate = announcementToEdit
+    ? new Date(announcementToEdit.published_at).toISOString().slice(0, 10)
+    : "";
 
   return (
-    <ModuleShell title="Mural" description="Timeline de avisos, recados e eventos do calendário">
+    <ModuleShell
+      title="Mural"
+      description="Timeline de avisos, recados e eventos do calendário"
+    >
+      {error ? (
+        <p className="rounded-xl border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-700">
+          {error}
+        </p>
+      ) : null}
+      {success ? (
+        <p className="rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm text-emerald-700">
+          {success}
+        </p>
+      ) : null}
+
       {canManage ? (
         <section className="rounded-2xl border border-[var(--line)] bg-white p-4">
-          <h3 className="text-sm font-semibold text-[var(--brand-blue)]">Novo aviso</h3>
-          <form action={createAnnouncementAction} className="mt-3 grid gap-3">
+          <div className="flex items-center justify-between gap-2">
+            <h3 className="text-sm font-semibold text-[var(--brand-blue)]">
+              {announcementToEdit ? "Editar aviso" : "Novo aviso"}
+            </h3>
+            {announcementToEdit ? (
+              <Link
+                href="/mural"
+                className="rounded-lg border border-[var(--line)] bg-white px-3 py-1 text-xs hover:bg-[var(--panel-soft)]"
+              >
+                Cancelar edição
+              </Link>
+            ) : null}
+          </div>
+          <form
+            action={announcementToEdit ? updateAnnouncementAction : createAnnouncementAction}
+            className="mt-3 grid gap-3"
+          >
+            {announcementToEdit ? (
+              <input type="hidden" name="id" value={announcementToEdit.id} />
+            ) : null}
             <div className="grid gap-3 lg:grid-cols-3">
-              <input name="title" className="fasy-input" placeholder="Título do aviso" required />
-              <input name="published_date" type="date" className="fasy-input" />
-              <select name="audience" defaultValue="TODOS" className="fasy-input">
+              <input
+                name="title"
+                className="fasy-input"
+                placeholder="Título do aviso"
+                defaultValue={announcementToEdit?.title ?? ""}
+                required
+              />
+              <input
+                name="published_date"
+                type="date"
+                className="fasy-input"
+                defaultValue={announcementToEdit ? editPublishedDate : ""}
+              />
+              <select
+                name="audience"
+                defaultValue={announcementToEdit?.audience ?? "TODOS"}
+                className="fasy-input"
+              >
                 <option value="TODOS">Todos</option>
                 <option value="STAFF">Staff</option>
                 <option value="PROFESSORES">Professores</option>
@@ -318,17 +410,42 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
                 <option value="ALUNOS">Alunos</option>
               </select>
             </div>
-            <textarea name="message" className="fasy-input min-h-24" placeholder="Descrição / recado" required />
+            <textarea
+              name="message"
+              className="fasy-input min-h-24"
+              placeholder="Descrição / recado"
+              defaultValue={announcementToEdit?.message ?? ""}
+              required
+            />
             <div className="grid gap-3 lg:grid-cols-[1fr_auto] lg:items-center">
               <label className="flex items-center gap-2 text-sm">
-                <input type="checkbox" name="is_pinned" className="h-4 w-4" />
+                <input
+                  type="checkbox"
+                  name="is_pinned"
+                  className="h-4 w-4"
+                  defaultChecked={Boolean(announcementToEdit?.is_pinned)}
+                />
                 <span>Fixar no topo do mural</span>
               </label>
-              <input type="file" name="attachment_file" accept=".pdf,image/*" className="fasy-input text-sm" />
+              <input
+                type="file"
+                name="attachment_file"
+                accept=".pdf,image/*"
+                className="fasy-input text-sm"
+              />
             </div>
+            {announcementToEdit?.attachment_name ? (
+              <label className="flex items-center gap-2 text-sm">
+                <input type="checkbox" name="remove_attachment" className="h-4 w-4" />
+                <span>Remover anexo atual ({announcementToEdit.attachment_name})</span>
+              </label>
+            ) : null}
             <div>
-              <SubmitButton className="fasy-btn-primary px-4 py-2 text-sm" pendingLabel="Publicando...">
-                Publicar aviso
+              <SubmitButton
+                className="fasy-btn-primary px-4 py-2 text-sm"
+                pendingLabel={announcementToEdit ? "Salvando..." : "Publicando..."}
+              >
+                {announcementToEdit ? "Salvar alterações" : "Publicar aviso"}
               </SubmitButton>
             </div>
           </form>
@@ -336,7 +453,7 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
       ) : null}
 
       <section className="relative space-y-4">
-        <div className="pointer-events-none absolute left-[13px] top-1 bottom-1 w-px bg-[var(--line)]" />
+        <div className="pointer-events-none absolute bottom-1 left-[13px] top-1 w-px bg-[var(--line)]" />
         {feed.length === 0 ? (
           <p className="rounded-xl border border-[var(--line)] bg-[var(--panel-soft)] p-4 text-sm text-[var(--muted)]">
             Nenhum item no mural para este período.
@@ -354,9 +471,15 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
               <span className="absolute -left-[26px] top-4 h-3 w-3 rounded-full bg-[var(--brand-blue)] ring-4 ring-white" />
               <div className="flex flex-wrap items-start justify-between gap-2">
                 <div>
-                  <h3 className="text-base font-semibold text-[var(--brand-blue)]">{item.title}</h3>
+                  <h3 className="text-base font-semibold text-[var(--brand-blue)]">
+                    {item.title}
+                  </h3>
                   <p className="mt-1 text-xs text-[var(--muted)]">
-                    {new Date(item.date).toLocaleDateString("pt-BR")} · {new Date(item.date).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}
+                    {new Date(item.date).toLocaleDateString("pt-BR")} ·{" "}
+                    {new Date(item.date).toLocaleTimeString("pt-BR", {
+                      hour: "2-digit",
+                      minute: "2-digit",
+                    })}
                   </p>
                 </div>
                 {item.kind === "announcement" ? (
@@ -365,32 +488,49 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
                       Aviso · {audienceLabel(item.audience)}
                     </span>
                     {item.isPinned ? (
-                      <span className="rounded-full bg-[var(--accent)] px-2 py-0.5 text-[10px] font-semibold text-[#113c66]">Fixado</span>
+                      <span className="rounded-full bg-[var(--accent)] px-2 py-0.5 text-[10px] font-semibold text-[#113c66]">
+                        Fixado
+                      </span>
                     ) : null}
                   </div>
                 ) : (
                   <div className="flex flex-wrap items-center gap-2">
-                    <span className={`rounded-full border px-2 py-0.5 text-[10px] ${getEventTypeCardStyles(item.eventType)}`}>
+                    <span
+                      className={`rounded-full border px-2 py-0.5 text-[10px] ${getEventTypeCardStyles(item.eventType)}`}
+                    >
                       Evento · {EVENT_TYPE_LABELS[item.eventType]}
                     </span>
                     {item.isAdministrative ? (
-                      <span className="rounded-full border border-slate-300 bg-slate-100 px-2 py-0.5 text-[10px] text-slate-700">Administrativo</span>
+                      <span className="rounded-full border border-slate-300 bg-slate-100 px-2 py-0.5 text-[10px] text-slate-700">
+                        Administrativo
+                      </span>
                     ) : null}
                   </div>
                 )}
               </div>
 
-              {item.body ? <p className="mt-3 text-sm text-[var(--text)] whitespace-pre-wrap">{item.body}</p> : null}
+              {item.body ? (
+                <p className="mt-3 whitespace-pre-wrap text-sm text-[var(--text)]">
+                  {item.body}
+                </p>
+              ) : null}
 
-              {item.kind === "event" && (item.targetStages.length > 0 || item.targetSeries.length > 0) ? (
+              {item.kind === "event" &&
+              (item.targetStages.length > 0 || item.targetSeries.length > 0) ? (
                 <div className="mt-3 flex flex-wrap gap-1">
                   {item.targetStages.map((stage) => (
-                    <span key={`${item.id}-${stage}`} className="rounded-full border border-[var(--line)] bg-[var(--panel-soft)] px-2 py-0.5 text-[10px]">
+                    <span
+                      key={`${item.id}-${stage}`}
+                      className="rounded-full border border-[var(--line)] bg-[var(--panel-soft)] px-2 py-0.5 text-[10px]"
+                    >
                       {STAGE_LABELS[stage]}
                     </span>
                   ))}
                   {item.targetSeries.map((series) => (
-                    <span key={`${item.id}-${series}`} className="rounded-full border border-[var(--line)] bg-[var(--panel-soft)] px-2 py-0.5 text-[10px]">
+                    <span
+                      key={`${item.id}-${series}`}
+                      className="rounded-full border border-[var(--line)] bg-[var(--panel-soft)] px-2 py-0.5 text-[10px]"
+                    >
                       {series}
                     </span>
                   ))}
@@ -400,7 +540,11 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
               {item.attachmentUrl ? (
                 <div className="mt-3 space-y-2">
                   {item.attachmentMime?.startsWith("image/") ? (
-                    <img src={item.attachmentUrl} alt={item.attachmentName ?? "Anexo"} className="max-h-56 w-full rounded-xl border border-[var(--line)] object-cover" />
+                    <img
+                      src={item.attachmentUrl}
+                      alt={item.attachmentName ?? "Anexo"}
+                      className="max-h-56 w-full rounded-xl border border-[var(--line)] object-cover"
+                    />
                   ) : item.attachmentMime === "application/pdf" ? (
                     <iframe
                       src={`${item.attachmentUrl}#toolbar=0&navpanes=0&scrollbar=0&page=1`}
@@ -408,9 +552,51 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
                       title={item.attachmentName ?? "Pré-visualização do PDF"}
                     />
                   ) : null}
-                  <a href={item.attachmentUrl} target="_blank" rel="noreferrer" className="text-xs underline">
+                  <a
+                    href={item.attachmentUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-xs underline"
+                  >
                     {item.attachmentName ?? "Abrir anexo"}
                   </a>
+                </div>
+              ) : null}
+
+              {canManage && item.kind === "announcement" ? (
+                <div className="mt-3 flex flex-wrap items-center gap-2">
+                  <Link
+                    href={`/mural?edit_announcement_id=${item.id}`}
+                    className="rounded-lg border border-[var(--line)] bg-white px-2 py-1 text-xs hover:bg-[var(--panel-soft)]"
+                  >
+                    Editar
+                  </Link>
+                  {deleteAnnouncementId === item.id ? (
+                    <>
+                      <form action={deleteAnnouncementAction}>
+                        <input type="hidden" name="id" value={item.id} />
+                        <SubmitButton
+                          className="rounded-lg border border-rose-200 bg-rose-50 px-2 py-1 text-xs text-rose-700 hover:bg-rose-100"
+                          pendingLabel="Excluindo..."
+                        >
+                          Confirmar exclusão
+                        </SubmitButton>
+                      </form>
+                      <Link
+                        href="/mural"
+                        className="rounded-lg border border-[var(--line)] bg-white px-2 py-1 text-xs hover:bg-[var(--panel-soft)]"
+                      >
+                        Cancelar
+                      </Link>
+                    </>
+                  ) : (
+                    <Link
+                      href={`/mural?delete_announcement_id=${item.id}`}
+                      className="rounded-lg border border-rose-200 bg-rose-50 px-2 py-1 text-xs text-rose-700 hover:bg-rose-100"
+                    >
+                      Excluir
+                    </Link>
+                  )}
                 </div>
               ) : null}
             </article>

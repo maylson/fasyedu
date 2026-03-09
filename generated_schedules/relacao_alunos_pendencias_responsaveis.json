@@ -1,0 +1,1040 @@
+{
+  "total": 115,
+  "itens": [
+    {
+      "turma": "1º Ano C",
+      "aluno": "João Lamarque Oliveira Santos",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Lamarque Santos de Jesus Santos",
+      "responsavel_email": "lamarkcontamedical@gmail.com",
+      "responsavel_telefone": "91981433671",
+      "chave": "email:lamarkcontamedical@gmail.com"
+    },
+    {
+      "turma": "1º EM A",
+      "aluno": "Artur Bernardo Castro de Macedo",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Silvia Sabrina de Castro de Macedo",
+      "responsavel_email": "",
+      "responsavel_telefone": "91980408822",
+      "chave": "name_phone:silviasabrinadecastrodemacedo|91980408822"
+    },
+    {
+      "turma": "2º Ano C",
+      "aluno": "Maria Júlia dos Santos Reis",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Allan Menezes Dos Reis",
+      "responsavel_email": "",
+      "responsavel_telefone": "",
+      "chave": "name:allanmenezesdosreis"
+    },
+    {
+      "turma": "2º EM A",
+      "aluno": "Luca Fernandes Caldato",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Milena Coelho Fernandes Caldato",
+      "responsavel_email": "milenacaldato@hotmail.com",
+      "responsavel_telefone": "91992060808",
+      "chave": "email:milenacaldato@hotmail.com"
+    },
+    {
+      "turma": "3º Ano A",
+      "aluno": "Arthur Roberto Pinheiro de Souza Saldanha Pereira Mendes dos Reis Pinto Martins",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Flavia Luciana Pinheiro de Souza Pinto Martins",
+      "responsavel_email": "",
+      "responsavel_telefone": "",
+      "chave": "name:flavialucianapinheirodesouzapintomartins"
+    },
+    {
+      "turma": "4º Ano A",
+      "aluno": "Rafaella Braga de Souza Barbas",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Luciana Braga de Souza",
+      "responsavel_email": "lubraga.imoveis@gmail.com",
+      "responsavel_telefone": "91985221613",
+      "chave": "email:lubraga.imoveis@gmail.com"
+    },
+    {
+      "turma": "5º Ano B",
+      "aluno": "Davi Maia das Neves",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Thales Monteiro das Neves",
+      "responsavel_email": "thalesmont@gmail.com",
+      "responsavel_telefone": "91988318009",
+      "chave": "email:thalesmont@gmail.com"
+    },
+    {
+      "turma": "6º Ano A",
+      "aluno": "Pedro Mendes Brilhante",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Adriana da Cunha Mendes Brilhante",
+      "responsavel_email": "mendesdrica@yahoo.com.br",
+      "responsavel_telefone": "91981121907",
+      "chave": "email:mendesdrica@yahoo.com.br"
+    },
+    {
+      "turma": "6º Ano A",
+      "aluno": "Luiz Guilherme Sardinha da Costa",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "LUIZ OTAVIO OLIVEIRA DA COSTA",
+      "responsavel_email": "servodecristo@gmail.com",
+      "responsavel_telefone": "91981150692",
+      "chave": "email:servodecristo@gmail.com"
+    },
+    {
+      "turma": "6º Ano A",
+      "aluno": "Cecília de Almeida Vieira",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Lilian Costa de Almeida",
+      "responsavel_email": "draliliancalmeida@gmail.com",
+      "responsavel_telefone": "91991200909",
+      "chave": "email:draliliancalmeida@gmail.com"
+    },
+    {
+      "turma": "6º Ano A",
+      "aluno": "Cecília de Almeida Vieira",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Audolino da Costa Vieira Junior",
+      "responsavel_email": "audojr@hotmail.com",
+      "responsavel_telefone": "91991929111",
+      "chave": "email:audojr@hotmail.com"
+    },
+    {
+      "turma": "6º Ano A",
+      "aluno": "Kallel Davi de Sousa Lima",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Suellen Keyth Macedo de Sousa",
+      "responsavel_email": "suelleen54@hotmail.com",
+      "responsavel_telefone": "91983657112",
+      "chave": "email:suelleen54@hotmail.com"
+    },
+    {
+      "turma": "6º Ano B",
+      "aluno": "Lara Guimarães Nascimento",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Suziane Rocha Guimarães Nascimento",
+      "responsavel_email": "",
+      "responsavel_telefone": "",
+      "chave": "name:suzianerochaguimaraesnascimento"
+    },
+    {
+      "turma": "7º Ano A",
+      "aluno": "Leticia Todescatto Frizon",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Ingrid Todescatto Frizon",
+      "responsavel_email": "ingridtodescatto@hotmail.com",
+      "responsavel_telefone": "91981133510",
+      "chave": "email:ingridtodescatto@hotmail.com"
+    },
+    {
+      "turma": "7º Ano A",
+      "aluno": "Leticia Todescatto Frizon",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Luiz Antonio Frizon",
+      "responsavel_email": "frizon@lemarketing.com.br",
+      "responsavel_telefone": "11959020021",
+      "chave": "email:frizon@lemarketing.com.br"
+    },
+    {
+      "turma": "7º Ano A",
+      "aluno": "Jorge Sousa Silva",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Robson Costa Silva",
+      "responsavel_email": "",
+      "responsavel_telefone": "",
+      "chave": "name:robsoncostasilva"
+    },
+    {
+      "turma": "7º Ano A",
+      "aluno": "Anna Luiza Leal Saliba Fonseca Gomes",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Verônica Souza Leal Saliba Gomes",
+      "responsavel_email": "veronica.saliba@gmail.com",
+      "responsavel_telefone": "91981233460",
+      "chave": "email:veronica.saliba@gmail.com"
+    },
+    {
+      "turma": "8º Ano A",
+      "aluno": "João Cardoso Farias",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Alexandre Lobato Farias",
+      "responsavel_email": "alfariasrep@gmail.com",
+      "responsavel_telefone": "91991445873",
+      "chave": "email:alfariasrep@gmail.com"
+    },
+    {
+      "turma": "8º Ano A",
+      "aluno": "Maria Elisa Martins Batista",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Maricel Cândida Martins e Martins",
+      "responsavel_email": "meg-martins@hotmail.com",
+      "responsavel_telefone": "91991494669",
+      "chave": "email:meg-martins@hotmail.com"
+    },
+    {
+      "turma": "8º Ano A",
+      "aluno": "Davi Bastos Fernandes",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Francisco José de Sousa Fernandes",
+      "responsavel_email": "franciscofernandes@iec.gov.br",
+      "responsavel_telefone": "",
+      "chave": "email:franciscofernandes@iec.gov.br"
+    },
+    {
+      "turma": "8º Ano A",
+      "aluno": "Manuela Souza dos Santos",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Renata Souza dos Santos",
+      "responsavel_email": "repedjus@hotmail.com",
+      "responsavel_telefone": "91984415000",
+      "chave": "email:repedjus@hotmail.com"
+    },
+    {
+      "turma": "8º Ano A",
+      "aluno": "Emanuel Silva Monteiro",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Semíramis Pereira Silva de Sousa",
+      "responsavel_email": "semiramis.sds@gmail.com",
+      "responsavel_telefone": "91999144321",
+      "chave": "email:semiramis.sds@gmail.com"
+    },
+    {
+      "turma": "8º Ano A",
+      "aluno": "Melina Carvalho de Moraes",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Gerson Pessoa de Moraes Filho",
+      "responsavel_email": "gersonpessoa@yahoo.com.br",
+      "responsavel_telefone": "91999833361",
+      "chave": "email:gersonpessoa@yahoo.com.br"
+    },
+    {
+      "turma": "9º Ano A",
+      "aluno": "Maria Geovana Pacheco da Cunha",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Arilucia Amorim Pacheco",
+      "responsavel_email": "tialuciaescolar@gmail.com",
+      "responsavel_telefone": "9199290382",
+      "chave": "email:tialuciaescolar@gmail.com"
+    },
+    {
+      "turma": "9º Ano A",
+      "aluno": "Ravy Braga de Souza Barbas",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Luciana Braga de Souza",
+      "responsavel_email": "lubraga.imoveis@gmail.com",
+      "responsavel_telefone": "91985221613",
+      "chave": "email:lubraga.imoveis@gmail.com"
+    },
+    {
+      "turma": "Baú da Clara II",
+      "aluno": "Luiza de Aguiar Ramos",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Kleyson Robson Castro de Aguiar Ramos",
+      "responsavel_email": "",
+      "responsavel_telefone": "91980877939",
+      "chave": "name_phone:kleysonrobsoncastrodeaguiarramos|91980877939"
+    },
+    {
+      "turma": "Baú da Clara II",
+      "aluno": "Ester Dos Santos Reis",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Josiane Pinto dos Santos",
+      "responsavel_email": "",
+      "responsavel_telefone": "",
+      "chave": "name:josianepintodossantos"
+    },
+    {
+      "turma": "Baú da Clara II",
+      "aluno": "Miguel de Castilho Pinho",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Rubya Fernanda de Castilho Pinho",
+      "responsavel_email": "rubyapinho.adv@gmail.com",
+      "responsavel_telefone": "91982698949",
+      "chave": "email:rubyapinho.adv@gmail.com"
+    },
+    {
+      "turma": "Baú da Clara II",
+      "aluno": "Miguel de Castilho Pinho",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Luiz Cláudio Pinho",
+      "responsavel_email": "pinholuiz@terra.com.br",
+      "responsavel_telefone": "91981195721",
+      "chave": "email:pinholuiz@terra.com.br"
+    },
+    {
+      "turma": "Baú da Clara II",
+      "aluno": "Maria Cecília Castro de Macedo",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Eduardo Fabrício Freitas de Macedo",
+      "responsavel_email": "diretoriatecnica@supermassa.com.br",
+      "responsavel_telefone": "91980255958",
+      "chave": "email:diretoriatecnica@supermassa.com.br"
+    },
+    {
+      "turma": "Baú da Clara III",
+      "aluno": "Gabriel Roberto Pinheiro de Souza Saldanha Pereira Mendes dos Reis Pinto Martins",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Mario Roberto Saldanha Pereira Mendes dos Reis Pinto Martins",
+      "responsavel_email": "mariopintomartins@gmail.com",
+      "responsavel_telefone": "91981162240",
+      "chave": "email:mariopintomartins@gmail.com"
+    },
+    {
+      "turma": "Baú da Clara III",
+      "aluno": "Gabriel da Silva Chaves",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Hedrica Lorena da Silva Chaves",
+      "responsavel_email": "hedricachaves@gmail.com",
+      "responsavel_telefone": "91982620642",
+      "chave": "email:hedricachaves@gmail.com"
+    },
+    {
+      "turma": "Baú da Clara III",
+      "aluno": "Gabriel da Silva Chaves",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Lucyan Victor de Almeida Chaves",
+      "responsavel_email": "lucyan.vchaves@gmail.com",
+      "responsavel_telefone": "91981515239",
+      "chave": "email:lucyan.vchaves@gmail.com"
+    },
+    {
+      "turma": "Baú da Inês I",
+      "aluno": "Bento Lopes Barros Resende Leite",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Elaine Cristina Lopes Barros",
+      "responsavel_email": "elaineclbarros@gmail.com",
+      "responsavel_telefone": "91981418294",
+      "chave": "email:elaineclbarros@gmail.com"
+    },
+    {
+      "turma": "Baú da Inês I",
+      "aluno": "Bento Lopes Barros Resende Leite",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Ciro Resende Leite",
+      "responsavel_email": "cirorleite@gmail.com",
+      "responsavel_telefone": "9182882060",
+      "chave": "email:cirorleite@gmail.com"
+    },
+    {
+      "turma": "Baú da Inês I",
+      "aluno": "Maitê Lopes Afonso",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Rosana Telma Lopes Afonso",
+      "responsavel_email": "rosana_telma@yahoo.com.br",
+      "responsavel_telefone": "91981876128",
+      "chave": "email:rosana_telma@yahoo.com.br"
+    },
+    {
+      "turma": "Baú da Inês II",
+      "aluno": "Joaquim de Almeida Sales",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Fabricio Rendeiro Sales",
+      "responsavel_email": "oftalmorendeiro@hotmail.com",
+      "responsavel_telefone": "91981164412",
+      "chave": "email:oftalmorendeiro@hotmail.com"
+    },
+    {
+      "turma": "Baú da Inês II",
+      "aluno": "Emília Baptista Himercirio Pingarilho",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Gisele Baptista Himercirio Pingarilho",
+      "responsavel_email": "gisabh@gmail.com",
+      "responsavel_telefone": "91981128354",
+      "chave": "email:gisabh@gmail.com"
+    },
+    {
+      "turma": "Baú da Inês II",
+      "aluno": "Emília Baptista Himercirio Pingarilho",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Allan Fábio da Silva Pingarilho",
+      "responsavel_email": "allanpingarilho@uol.com.br",
+      "responsavel_telefone": "91988928437",
+      "chave": "email:allanpingarilho@uol.com.br"
+    },
+    {
+      "turma": "Baú da Inês II",
+      "aluno": "Tomás Castro Holanda",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Michelle Castro da Silva Holanda",
+      "responsavel_email": "casilva.michelle@gmail.com",
+      "responsavel_telefone": "91981659206",
+      "chave": "email:casilva.michelle@gmail.com"
+    },
+    {
+      "turma": "Baú da Inês II",
+      "aluno": "Tomás Castro Holanda",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Rodrigo Jucá Holanda",
+      "responsavel_email": "rjhfisio@gmail.com",
+      "responsavel_telefone": "91991149494",
+      "chave": "email:rjhfisio@gmail.com"
+    },
+    {
+      "turma": "Baú da Inês III",
+      "aluno": "Gabriel Mendes Brilhante",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Adriana da Cunha Mendes Brilhante",
+      "responsavel_email": "mendesdrica@yahoo.com.br",
+      "responsavel_telefone": "91981121907",
+      "chave": "email:mendesdrica@yahoo.com.br"
+    },
+    {
+      "turma": "Baú da Inês III",
+      "aluno": "Joaquim Rodrigues Nylander Arrais Cruz",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Lorena Rodrigues Nylander Arrais Cruz",
+      "responsavel_email": "lorenanylander@hotmail.com",
+      "responsavel_telefone": "91999832166",
+      "chave": "email:lorenanylander@hotmail.com"
+    },
+    {
+      "turma": "Baú da Inês III",
+      "aluno": "Joaquim Rodrigues Nylander Arrais Cruz",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Albyno Francisco Arrais Cruz",
+      "responsavel_email": "albynocruz@gmail.com",
+      "responsavel_telefone": "91988141846",
+      "chave": "email:albynocruz@gmail.com"
+    },
+    {
+      "turma": "Baú da Inês III",
+      "aluno": "Maria Cecília Mota Ferreira",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Ericson Ferreira da Silveira",
+      "responsavel_email": "ericsonguitar@hotmail.com",
+      "responsavel_telefone": "91982047239",
+      "chave": "email:ericsonguitar@hotmail.com"
+    },
+    {
+      "turma": "Baú do Miguel I",
+      "aluno": "Gael Seráfico de Assis Carvalho Caldas",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Ísis di Paula Seráfico de Assis Carvalho Caldas",
+      "responsavel_email": "isisserafico@gmail.com",
+      "responsavel_telefone": "91981397940",
+      "chave": "email:isisserafico@gmail.com"
+    },
+    {
+      "turma": "Baú do Miguel III",
+      "aluno": "Gabriel Pires Henrique",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Renata de Castro Pires Henrique",
+      "responsavel_email": "renatinhacpires@hotmail.com",
+      "responsavel_telefone": "",
+      "chave": "email:renatinhacpires@hotmail.com"
+    },
+    {
+      "turma": "Baú do Miguel III",
+      "aluno": "Gabriel Pires Henrique",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Pedro Luis Henrique",
+      "responsavel_email": "pl1990@hotmail.com",
+      "responsavel_telefone": "",
+      "chave": "email:pl1990@hotmail.com"
+    },
+    {
+      "turma": "Baú do Miguel III",
+      "aluno": "Bento Gomes Farias Cohen",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Renata Gomes Farias Cohén",
+      "responsavel_email": "renatagomesfarias@hotmail.com",
+      "responsavel_telefone": "91982256491",
+      "chave": "email:renatagomesfarias@hotmail.com"
+    },
+    {
+      "turma": "Baú do Miguel III",
+      "aluno": "Bento Gomes Farias Cohen",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Thiago Santos Cohén",
+      "responsavel_email": "thiagosantoscohen@gmail.com",
+      "responsavel_telefone": "91982061087",
+      "chave": "email:thiagosantoscohen@gmail.com"
+    },
+    {
+      "turma": "Baú do Miguel III",
+      "aluno": "João Miguel Tavernard de Luca Danin",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Tainá Tavernard de Luca Danin",
+      "responsavel_email": "arq.taina.tavernard@gmail.com",
+      "responsavel_telefone": "",
+      "chave": "email:arq.taina.tavernard@gmail.com"
+    },
+    {
+      "turma": "Baú do Miguel III",
+      "aluno": "João Miguel Tavernard de Luca Danin",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Ícaro Gabriel da Silva Danin",
+      "responsavel_email": "icarodanin@gmail.com",
+      "responsavel_telefone": "91985642979",
+      "chave": "email:icarodanin@gmail.com"
+    },
+    {
+      "turma": "Baú do Miguel III",
+      "aluno": "Eva Mourão Falcão",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Thaysa Paixão Mourão",
+      "responsavel_email": "thaysa.pmourao@gmail.com",
+      "responsavel_telefone": "91981353778",
+      "chave": "email:thaysa.pmourao@gmail.com"
+    },
+    {
+      "turma": "Baú do Miguel III",
+      "aluno": "Eva Mourão Falcão",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Victor Antônio da Silva Falcão",
+      "responsavel_email": "victorfalcao18@hotmail.com",
+      "responsavel_telefone": "91981747216",
+      "chave": "email:victorfalcao18@hotmail.com"
+    },
+    {
+      "turma": "Baú do Miguel III",
+      "aluno": "Maria Clara Pimentel Borges Leal",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Yasmin Pinheiro Pimentel",
+      "responsavel_email": "",
+      "responsavel_telefone": "",
+      "chave": "name:yasminpinheiropimentel"
+    },
+    {
+      "turma": "Baú do Miguel III",
+      "aluno": "Maria Clara Pimentel Borges Leal",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Daniel Santos Borges Leal",
+      "responsavel_email": "danielleal94@gmail.com",
+      "responsavel_telefone": "91991684986",
+      "chave": "email:danielleal94@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico I",
+      "aluno": "Benício dos santos Flexa",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Evandro Sérgio Flexa de Sousa Junior",
+      "responsavel_email": "saoresantosadv@gmail.com",
+      "responsavel_telefone": "91981846120",
+      "chave": "email:saoresantosadv@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico I",
+      "aluno": "Rafael Chacon",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Beatriz Porpino do Rosário Chacon",
+      "responsavel_email": "rosariobeatriz24@gmail.com",
+      "responsavel_telefone": "91988951292",
+      "chave": "email:rosariobeatriz24@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico I",
+      "aluno": "Rafael Chacon",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Victor Hugo Chacon Britto",
+      "responsavel_email": "vhchacon@gmail.com",
+      "responsavel_telefone": "91988357663",
+      "chave": "email:vhchacon@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico I",
+      "aluno": "Maria Teresa Tourinho Serique",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Brunna Tourinho Serique",
+      "responsavel_email": "brunnatourinho@gmail.com",
+      "responsavel_telefone": "91991471508",
+      "chave": "email:brunnatourinho@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico I",
+      "aluno": "Maria Teresa Tourinho Serique",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Igor Dias Serique",
+      "responsavel_email": "brunnatourinho@gmail.com",
+      "responsavel_telefone": "91996157708",
+      "chave": "email:brunnatourinho@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico I",
+      "aluno": "Joaquim Ferreira Nascimento",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Cibele Braga Ferreira Nascimento",
+      "responsavel_email": "cibeleferreiranascimento.to@gmail.com",
+      "responsavel_telefone": "91982285900",
+      "chave": "email:cibeleferreiranascimento.to@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico I",
+      "aluno": "Joaquim Ferreira Nascimento",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Eder Augusto Magalhaes Nascimento",
+      "responsavel_email": "ederaug@yahoo.com.br",
+      "responsavel_telefone": "91988618520",
+      "chave": "email:ederaug@yahoo.com.br"
+    },
+    {
+      "turma": "Baú do Nico I",
+      "aluno": "Antônio Pinheiro Bitar",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Eva Pinheiro Bitar Garcia",
+      "responsavel_email": "eva_pinheiro@yahoo.com.br",
+      "responsavel_telefone": "91981497634",
+      "chave": "email:eva_pinheiro@yahoo.com.br"
+    },
+    {
+      "turma": "Baú do Nico I",
+      "aluno": "Antônio Pinheiro Bitar",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "André Luis Bitar de Lima Garcia",
+      "responsavel_email": "andre.bitar@silveiraathias.com.br",
+      "responsavel_telefone": "91981442019",
+      "chave": "email:andre.bitar@silveiraathias.com.br"
+    },
+    {
+      "turma": "Baú do Nico I",
+      "aluno": "Rafael Furtado Silva",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Isadora Furtado de Sousa Silva",
+      "responsavel_email": "isafurtados@hotmail.com",
+      "responsavel_telefone": "91982608364",
+      "chave": "email:isafurtados@hotmail.com"
+    },
+    {
+      "turma": "Baú do Nico I",
+      "aluno": "Rafael Furtado Silva",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Arthur Vinicius Cardoso Silva",
+      "responsavel_email": "arthurvcsilva@yahoo.com.br",
+      "responsavel_telefone": "91983130022",
+      "chave": "email:arthurvcsilva@yahoo.com.br"
+    },
+    {
+      "turma": "Baú do Nico I",
+      "aluno": "Laura Ayumi Sano Dias",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Isami Sousa Sano",
+      "responsavel_email": "isami_sano@hotmail.com",
+      "responsavel_telefone": "",
+      "chave": "email:isami_sano@hotmail.com"
+    },
+    {
+      "turma": "Baú do Nico I",
+      "aluno": "Laura Ayumi Sano Dias",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Antonio Carlos Duarte Dias Junior",
+      "responsavel_email": "antoniodiasjr@hotmail.com",
+      "responsavel_telefone": "91982222222",
+      "chave": "email:antoniodiasjr@hotmail.com"
+    },
+    {
+      "turma": "Baú do Nico I",
+      "aluno": "Leo Nascimento Barbosa Gonçalves",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Izabel Cristina Nascimento Barbosa",
+      "responsavel_email": "izabelnascdermato@gmail.com",
+      "responsavel_telefone": "91982222222",
+      "chave": "email:izabelnascdermato@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico I",
+      "aluno": "Leo Nascimento Barbosa Gonçalves",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Thiago Barbosa Gonçalves",
+      "responsavel_email": "thiago.ba@hotmail.com",
+      "responsavel_telefone": "",
+      "chave": "email:thiago.ba@hotmail.com"
+    },
+    {
+      "turma": "Baú do Nico I",
+      "aluno": "João Miguel Girard Nunes",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Jéssica Bentes Girard",
+      "responsavel_email": "jessicagirardcontabil@gmail.com",
+      "responsavel_telefone": "91981864585",
+      "chave": "email:jessicagirardcontabil@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico I",
+      "aluno": "João Miguel Girard Nunes",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Michel de Oliveira Nunes",
+      "responsavel_email": "micheln_1@hotmail.com",
+      "responsavel_telefone": "91982352585",
+      "chave": "email:micheln_1@hotmail.com"
+    },
+    {
+      "turma": "Baú do Nico I",
+      "aluno": "Helena Cunha de Melo",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Mayka Caroline Cunha de Melo",
+      "responsavel_email": "maykaaps@gmail.com",
+      "responsavel_telefone": "91991082650",
+      "chave": "email:maykaaps@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico I",
+      "aluno": "Helena Cunha de Melo",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Arthur Conrado de Melo Neto",
+      "responsavel_email": "maykaaps@gmail.com",
+      "responsavel_telefone": "91988363309",
+      "chave": "email:maykaaps@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico I",
+      "aluno": "Ana Catarina Moreira Guilhon",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Monica Alvares Moreira Guilhon",
+      "responsavel_email": "alvares.monica@gmail.com",
+      "responsavel_telefone": "91991928686",
+      "chave": "email:alvares.monica@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico I",
+      "aluno": "Ana Catarina Moreira Guilhon",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Danilo William Pinheiro Guilhon",
+      "responsavel_email": "daniloporte@gmail.com",
+      "responsavel_telefone": "91981348955",
+      "chave": "email:daniloporte@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico II",
+      "aluno": "Matias de Andrade Solyno",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Carolina Magalhães Souza Solyno",
+      "responsavel_email": "solyno.carolina@gmail.com",
+      "responsavel_telefone": "91982490057",
+      "chave": "email:solyno.carolina@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico II",
+      "aluno": "Laura Gomes Ferri",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Adryane Christina Gomes Ferri",
+      "responsavel_email": "adryanecg@gmail.com",
+      "responsavel_telefone": "91982675575",
+      "chave": "email:adryanecg@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico II",
+      "aluno": "Laura Gomes Ferri",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "William Pereira Ferri",
+      "responsavel_email": "william-ferri@homail.com",
+      "responsavel_telefone": "91985037013",
+      "chave": "email:william-ferri@homail.com"
+    },
+    {
+      "turma": "Baú do Nico II",
+      "aluno": "Maria Eva Pereira Ribeiro",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Ana Caroline Tavares Pereira",
+      "responsavel_email": "",
+      "responsavel_telefone": "91984157259",
+      "chave": "name_phone:anacarolinetavarespereira|91984157259"
+    },
+    {
+      "turma": "Baú do Nico II",
+      "aluno": "Maria Eva Pereira Ribeiro",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Bernardino Noronha Ribeiro",
+      "responsavel_email": "",
+      "responsavel_telefone": "91985609322",
+      "chave": "name_phone:bernardinonoronharibeiro|91985609322"
+    },
+    {
+      "turma": "Baú do Nico II",
+      "aluno": "João Vicente Pilar Pandini",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Ana Luiza Pilar Mendes",
+      "responsavel_email": "nalu.pilar@outlook.com",
+      "responsavel_telefone": "",
+      "chave": "email:nalu.pilar@outlook.com"
+    },
+    {
+      "turma": "Baú do Nico II",
+      "aluno": "João Vicente Pilar Pandini",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Sidney Freitas Pandini",
+      "responsavel_email": "sfpandini@gmail.com",
+      "responsavel_telefone": "",
+      "chave": "email:sfpandini@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico II",
+      "aluno": "Maria Eduarda Pantoja Maués Ramos",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Bianca Pantoja Gonçalves Maués",
+      "responsavel_email": "pgonbianca@gmail.com",
+      "responsavel_telefone": "91988547841",
+      "chave": "email:pgonbianca@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico II",
+      "aluno": "Maria Eduarda Pantoja Maués Ramos",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Antonio Alberto Maués Ramos",
+      "responsavel_email": "albertoamr93@gmail.com",
+      "responsavel_telefone": "91982763733",
+      "chave": "email:albertoamr93@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico II",
+      "aluno": "Lia Wojtyla Sobral Santos da Costa",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Bruna Nunes Santos da Costa",
+      "responsavel_email": "bruna.sobral@hotmail.com",
+      "responsavel_telefone": "91981133659",
+      "chave": "email:bruna.sobral@hotmail.com"
+    },
+    {
+      "turma": "Baú do Nico II",
+      "aluno": "Lia Wojtyla Sobral Santos da Costa",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Cauê da Costa Barroso",
+      "responsavel_email": "caue_8@hotmail.com",
+      "responsavel_telefone": "91982427801",
+      "chave": "email:caue_8@hotmail.com"
+    },
+    {
+      "turma": "Baú do Nico II",
+      "aluno": "Mateus Rocha de Moura",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Caroline Rocha da Rocha",
+      "responsavel_email": "fta_caroline@hotmail.com",
+      "responsavel_telefone": "91984631677",
+      "chave": "email:fta_caroline@hotmail.com"
+    },
+    {
+      "turma": "Baú do Nico II",
+      "aluno": "Mateus Rocha de Moura",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Danilo Augusto Santos de Moura",
+      "responsavel_email": "mouradanilo@hotmail.com",
+      "responsavel_telefone": "91984263375",
+      "chave": "email:mouradanilo@hotmail.com"
+    },
+    {
+      "turma": "Baú do Nico II",
+      "aluno": "José Gaia Paixão",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Hingrid Gaia Velasco Paixão",
+      "responsavel_email": "hingridgaia@yahoo.com.br",
+      "responsavel_telefone": "91982218561",
+      "chave": "email:hingridgaia@yahoo.com.br"
+    },
+    {
+      "turma": "Baú do Nico II",
+      "aluno": "José Gaia Paixão",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Flavio Costa Paixão",
+      "responsavel_email": "flaviopaixao@gmail.com",
+      "responsavel_telefone": "91983144611",
+      "chave": "email:flaviopaixao@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico II",
+      "aluno": "Maria Isis Leão Siqueira",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Lidiane dos Anjos Leão Siqueira",
+      "responsavel_email": "lidileao8@hotmail.com",
+      "responsavel_telefone": "91984104354",
+      "chave": "email:lidileao8@hotmail.com"
+    },
+    {
+      "turma": "Baú do Nico II",
+      "aluno": "Maria Isis Leão Siqueira",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Rômulo Ricardo Coelho Siqueira",
+      "responsavel_email": "odonto_rr@hotmail.com",
+      "responsavel_telefone": "91981988152",
+      "chave": "email:odonto_rr@hotmail.com"
+    },
+    {
+      "turma": "Baú do Nico II",
+      "aluno": "Isabel Emi Saito de Oliveira Paiva",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Lorena Tie Saito de Oliveira Paiva",
+      "responsavel_email": "lorena_tie@hotmail.com",
+      "responsavel_telefone": "91987028118",
+      "chave": "email:lorena_tie@hotmail.com"
+    },
+    {
+      "turma": "Baú do Nico II",
+      "aluno": "Isabel Emi Saito de Oliveira Paiva",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Douglas Oliveira Paiva",
+      "responsavel_email": "dougpaiva85@gmail.com",
+      "responsavel_telefone": "91981254429",
+      "chave": "email:dougpaiva85@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico II",
+      "aluno": "Davi Moreira Silva",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Luana Menezes Moreira Silva",
+      "responsavel_email": "luanamenezesmoreira@yahoo.com.br",
+      "responsavel_telefone": "91988012334",
+      "chave": "email:luanamenezesmoreira@yahoo.com.br"
+    },
+    {
+      "turma": "Baú do Nico II",
+      "aluno": "Davi Moreira Silva",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Lucas Darlysson de Araujo Silva",
+      "responsavel_email": "lucasarteunicaplanejados@gmail.com",
+      "responsavel_telefone": "91984642031",
+      "chave": "email:lucasarteunicaplanejados@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico II",
+      "aluno": "Maria Aurora Acacio Meireles",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "victoria maria acácio meireles",
+      "responsavel_email": "",
+      "responsavel_telefone": "91984144046",
+      "chave": "name_phone:victoriamariaacaciomeireles|91984144046"
+    },
+    {
+      "turma": "Baú do Nico II",
+      "aluno": "Maria Aurora Acacio Meireles",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Filipe meireles xavier",
+      "responsavel_email": "",
+      "responsavel_telefone": "91984780780",
+      "chave": "name_phone:filipemeirelesxavier|91984780780"
+    },
+    {
+      "turma": "Baú do Nico III",
+      "aluno": "Maria Laura Suzuki Caetano de Andrade",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Paulo Teixeira de Andrade Neto",
+      "responsavel_email": "",
+      "responsavel_telefone": "",
+      "chave": "name:pauloteixeiradeandradeneto"
+    },
+    {
+      "turma": "Baú do Nico III",
+      "aluno": "Miguel Almeida Pessoa",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Bárbara Abreu Almeida Pessoa",
+      "responsavel_email": "",
+      "responsavel_telefone": "91981120636",
+      "chave": "name_phone:barbaraabreualmeidapessoa|91981120636"
+    },
+    {
+      "turma": "Baú do Nico III",
+      "aluno": "Miguel Almeida Pessoa",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Márcio Jorge de Araújo Pessoa Filho",
+      "responsavel_email": "",
+      "responsavel_telefone": "91982173073",
+      "chave": "name_phone:marciojorgedearaujopessoafilho|91982173073"
+    },
+    {
+      "turma": "Baú do Nico III",
+      "aluno": "João Francisco Mota Ferreira",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Luciana Serra da Silva Mota",
+      "responsavel_email": "lssmota@gmail.com",
+      "responsavel_telefone": "91982081663",
+      "chave": "email:lssmota@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico III",
+      "aluno": "João Francisco Mota Ferreira",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Ericson Ferreira da Silveira",
+      "responsavel_email": "ericsonguitar@hotmail.com",
+      "responsavel_telefone": "91982047239",
+      "chave": "email:ericsonguitar@hotmail.com"
+    },
+    {
+      "turma": "Baú do Nico III",
+      "aluno": "Olivia Rocha de Souza Raiol",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Nayara Rocha de Souza Raiol",
+      "responsavel_email": "nayara.rochaph@gmail.com",
+      "responsavel_telefone": "",
+      "chave": "email:nayara.rochaph@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico III",
+      "aluno": "Olivia Rocha de Souza Raiol",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Francisco de Assis da Silva Raiol",
+      "responsavel_email": "assis-raiol@hotmail.com",
+      "responsavel_telefone": "",
+      "chave": "email:assis-raiol@hotmail.com"
+    },
+    {
+      "turma": "Baú do Nico III",
+      "aluno": "Isabel Lira Negrão",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Paloma Benoliel Lira",
+      "responsavel_email": "",
+      "responsavel_telefone": "55919162540",
+      "chave": "name_phone:palomabenoliellira|55919162540"
+    },
+    {
+      "turma": "Baú do Nico III",
+      "aluno": "Isabel Lira Negrão",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Fabio Costa Negrão",
+      "responsavel_email": "",
+      "responsavel_telefone": "",
+      "chave": "name:fabiocostanegrao"
+    },
+    {
+      "turma": "Baú do Nico III",
+      "aluno": "Agnes Soares Ribeiro",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Raimunda Tandara Soares Feio",
+      "responsavel_email": "soareslandara@gmail.com",
+      "responsavel_telefone": "",
+      "chave": "email:soareslandara@gmail.com"
+    },
+    {
+      "turma": "Baú do Nico III",
+      "aluno": "Agnes Soares Ribeiro",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Bruno Neri Ribeiro",
+      "responsavel_email": "",
+      "responsavel_telefone": "",
+      "chave": "name:brunoneriribeiro"
+    },
+    {
+      "turma": "Baú do Nico III",
+      "aluno": "Rafaela Lisbôa de Mendonça",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Rita de Cássia Lisbôa de Mendonça",
+      "responsavel_email": "rita_lisboa@hotmail.com",
+      "responsavel_telefone": "",
+      "chave": "email:rita_lisboa@hotmail.com"
+    },
+    {
+      "turma": "Baú do Nico III",
+      "aluno": "Rafaela Lisbôa de Mendonça",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Leonardo Silva de Mendonça",
+      "responsavel_email": "mendonca-leo@hotmail.com",
+      "responsavel_telefone": "91992162525",
+      "chave": "email:mendonca-leo@hotmail.com"
+    },
+    {
+      "turma": "Baú do Nico III",
+      "aluno": "Rafael Sovano Guimarães",
+      "responsavel_tipo": "MAE",
+      "responsavel_nome": "Roseana Beltrão da Silva Sovano Guimarães",
+      "responsavel_email": "roseana_sovano@hotmail.com",
+      "responsavel_telefone": "91992665804",
+      "chave": "email:roseana_sovano@hotmail.com"
+    },
+    {
+      "turma": "Baú do Nico III",
+      "aluno": "Rafael Sovano Guimarães",
+      "responsavel_tipo": "PAI",
+      "responsavel_nome": "Douglas Magno Guimarães",
+      "responsavel_email": "douglasmagnoguimaraes@gmail.com",
+      "responsavel_telefone": "91984866556",
+      "chave": "email:douglasmagnoguimaraes@gmail.com"
+    }
+  ]
+}

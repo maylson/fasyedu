@@ -1,7 +1,7 @@
 ﻿import Link from "next/link";
 import { ModuleShell } from "@/components/module-shell";
 import { getUserContext } from "@/lib/app-context";
-import { updatePlanningPreferencesAction, updateSchoolLlmSettingsAction } from "@/lib/actions/settings";
+import { updateFamilyPortalSettingsAction, updatePlanningPreferencesAction, updateSchoolLlmSettingsAction } from "@/lib/actions/settings";
 
 type PedagogicoPageProps = {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
@@ -16,7 +16,9 @@ export default async function PedagogicoPage({ searchParams }: PedagogicoPagePro
 
   const { data: school } = await supabase
     .from("schools")
-    .select("id, planning_pillars_enabled, llm_enabled, llm_provider, llm_model, llm_base_url, llm_prompt_template")
+    .select(
+      "id, planning_pillars_enabled, student_agenda_enabled, llm_enabled, llm_provider, llm_model, llm_base_url, llm_prompt_template",
+    )
     .eq("id", activeSchoolId)
     .maybeSingle();
 
@@ -59,6 +61,29 @@ export default async function PedagogicoPage({ searchParams }: PedagogicoPagePro
         <div>
           <button type="submit" className="fasy-btn-primary px-4 py-2 text-sm">
             Salvar preferências pedagógicas
+          </button>
+        </div>
+      </form>
+
+      <form action={updateFamilyPortalSettingsAction} className="grid gap-4 rounded-2xl border border-[var(--line)] bg-white p-4">
+        <h3 className="text-base font-semibold text-[var(--brand-blue)]">Agenda da família</h3>
+
+        <label className="flex items-start gap-3">
+          <input
+            type="checkbox"
+            name="student_agenda_enabled"
+            defaultChecked={Boolean(school?.student_agenda_enabled)}
+            className="mt-1 h-4 w-4 rounded border-[var(--line)]"
+          />
+          <span className="text-sm">
+            <strong className="block text-[var(--brand-blue)]">Habilitar menu Agenda (com conteúdos)</strong>
+            Pais e alunos visualizam aulas, conteúdos, tarefas e eventos da semana em um único menu.
+          </span>
+        </label>
+
+        <div>
+          <button type="submit" className="fasy-btn-primary px-4 py-2 text-sm">
+            Salvar configurações da agenda
           </button>
         </div>
       </form>

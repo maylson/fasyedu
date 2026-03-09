@@ -58,6 +58,8 @@ function getRoleView(roles: string[]) {
   if (roles.includes("DIRECAO")) return "DIRECAO";
   if (roles.includes("COORDENACAO")) return "COORDENACAO";
   if (roles.includes("PROFESSOR")) return "PROFESSOR";
+  if (roles.includes("PAI")) return "PAI";
+  if (roles.includes("ALUNO")) return "ALUNO";
   return "GERAL";
 }
 
@@ -268,6 +270,126 @@ export default async function DashboardPage() {
                 );
               })
             )}
+          </div>
+        </section>
+      </ModuleShell>
+    );
+  }
+
+  if (roleView === "PAI" || roleView === "ALUNO") {
+    let studentIds: string[] = [];
+    if (roleView === "ALUNO") {
+      const { data: ownStudents } = await supabase
+        .from("students")
+        .select("id")
+        .eq("school_id", activeSchoolId)
+        .eq("user_id", user.id);
+      studentIds = ownStudents?.map((row) => row.id) ?? [];
+    } else {
+      const { data: guardians } = await supabase
+        .from("guardians")
+        .select("id")
+        .eq("school_id", activeSchoolId)
+        .eq("user_id", user.id);
+      const guardianIds = guardians?.map((row) => row.id) ?? [];
+      if (guardianIds.length > 0) {
+        const { data: linkedStudents } = await supabase
+          .from("student_guardians")
+          .select("student_id")
+          .eq("school_id", activeSchoolId)
+          .in("guardian_id", guardianIds);
+        studentIds = linkedStudents?.map((row) => row.student_id) ?? [];
+      }
+    }
+
+    const uniqueStudentIds = Array.from(new Set(studentIds));
+    if (uniqueStudentIds.length === 0) {
+      return (
+        <ModuleShell title="Dashboard" description="Painel da família">
+          <p className="rounded-xl border border-[var(--line)] bg-[var(--panel-soft)] p-4 text-sm">
+            Nenhum aluno vinculado foi encontrado para este usuário.
+          </p>
+        </ModuleShell>
+      );
+    }
+
+    const enrollmentsResult = await supabase
+      .from("enrollments")
+      .select("student_id, class_id, classes(name)")
+      .eq("school_id", activeSchoolId)
+      .eq("status", "ATIVA")
+      .in("student_id", uniqueStudentIds);
+
+    const enrollments = (enrollmentsResult.data ?? []) as Array<{
+      student_id: string;
+      class_id: string;
+      classes?: { name?: string } | Array<{ name?: string }>;
+    }>;
+    const classIds = Array.from(new Set(enrollments.map((item) => item.class_id)));
+
+    const schedulesResult =
+      classIds.length > 0
+        ? await supabase
+            .from("class_schedules")
+            .select("id, day_of_week, class_id")
+            .eq("school_id", activeSchoolId)
+            .eq("entry_type", "AULA")
+            .in("class_id", classIds)
+        : { data: [], error: null };
+
+    const schedules = (schedulesResult.data ?? []) as Array<{ id: string; day_of_week: number; class_id: string }>;
+    const expectedKeys = schedules.map((schedule) => {
+      const lessonDate = getDateOnly(addDays(weekStart, schedule.day_of_week - 1));
+      return `${schedule.id}-${lessonDate}`;
+    });
+    const scheduleIds = schedules.map((item) => item.id);
+
+    const plansResult =
+      scheduleIds.length > 0
+        ? await supabase
+            .from("lesson_plans")
+            .select("class_schedule_id, lesson_date, home_activities, status")
+            .eq("school_id", activeSchoolId)
+            .in("class_schedule_id", scheduleIds)
+            .eq("status", "APPROVED")
+            .gte("lesson_date", weekStartIso)
+            .lte("lesson_date", weekEndIso)
+        : { data: [], error: null };
+
+    const plans = (plansResult.data ?? []) as Array<{
+      class_schedule_id: string | null;
+      lesson_date: string | null;
+      home_activities: string | null;
+    }>;
+
+    const planKeys = new Set(
+      plans
+        .filter((item) => item.class_schedule_id && item.lesson_date)
+        .map((item) => `${item.class_schedule_id}-${item.lesson_date}`),
+    );
+    const withHomework = plans.filter((item) => item.home_activities && item.home_activities.trim()).length;
+
+    return (
+      <ModuleShell title="Dashboard" description="Resumo da semana da família">
+        <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+          {card("Alunos vinculados", uniqueStudentIds.length)}
+          {card("Aulas da semana", expectedKeys.length)}
+          {card("Aulas com conteúdo", planKeys.size, `${formatPct(planKeys.size, expectedKeys.length)} de cobertura`)}
+          {card("Atividades em casa", withHomework)}
+        </div>
+
+        <section className="rounded-2xl border border-[var(--line)] bg-white p-4">
+          <h3 className="text-sm font-semibold text-[var(--brand-blue)]">Atalhos</h3>
+          <div className="mt-3 flex flex-wrap gap-2">
+            <Link href="/agenda" className="rounded-lg border border-[var(--line)] px-3 py-2 text-sm hover:bg-[var(--panel-soft)]">
+              Abrir Agenda da semana
+            </Link>
+            <Link href="/mural" className="rounded-lg border border-[var(--line)] px-3 py-2 text-sm hover:bg-[var(--panel-soft)]">
+              Mural
+            </Link>
+            <Link href="/calendario" className="rounded-lg border border-[var(--line)] px-3 py-2 text-sm hover:bg-[var(--panel-soft)]">
+              Calendário
+            </Link>
           </div>
         </section>
       </ModuleShell>

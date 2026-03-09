@@ -122,6 +122,28 @@ export async function updatePlanningPreferencesAction(formData: FormData) {
   redirect(`/configuracoes/pedagogico?success=${encodeURIComponent("Preferências pedagógicas atualizadas com sucesso.")}`);
 }
 
+export async function updateFamilyPortalSettingsAction(formData: FormData) {
+  const { supabase, schoolId } = await getDirectionContext();
+  const agendaEnabled = String(formData.get("student_agenda_enabled") ?? "") === "on";
+
+  const { error } = await supabase
+    .from("schools")
+    .update({
+      parent_contents_enabled: agendaEnabled,
+      student_agenda_enabled: agendaEnabled,
+    })
+    .eq("id", schoolId);
+
+  if (error) {
+    redirect(`/configuracoes/pedagogico?error=${encodeURIComponent(error.message)}`);
+  }
+
+  revalidatePath("/configuracoes/pedagogico");
+  revalidatePath("/agenda");
+  revalidatePath("/dashboard");
+  redirect(`/configuracoes/pedagogico?success=${encodeURIComponent("Configurações da agenda da família atualizadas com sucesso.")}`);
+}
+
 export async function updateSchoolLlmSettingsAction(formData: FormData) {
   const { supabase, schoolId } = await getDirectionContext();
   const llmEnabled = String(formData.get("llm_enabled") ?? "") === "on";

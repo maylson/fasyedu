@@ -35,6 +35,8 @@ export async function updateSession(request: NextRequest) {
     "/disciplinas",
     "/matriculas",
     "/planejamento",
+    "/conteudos",
+    "/agenda",
     "/avaliacoes",
     "/calendario",
     "/mural",

@@ -9,6 +9,8 @@ import {
 import { getUserContext } from "@/lib/app-context";
 import { getWeekdayLabel, WEEKDAY_OPTIONS } from "@/lib/constants";
 
+export const dynamic = "force-dynamic";
+
 type HorariosPageProps = {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 };
@@ -17,21 +19,25 @@ export default async function HorariosPage({ searchParams }: HorariosPageProps) 
   const { supabase, activeSchoolId, roles } = await getUserContext();
   const params = await searchParams;
   const selectedClassId = typeof params.class_id === "string" ? params.class_id : "";
+  const effectiveClassId = selectedClassId || "";
   const editScheduleId = typeof params.edit_schedule_id === "string" ? params.edit_schedule_id : "";
   const deleteScheduleId = typeof params.delete_schedule_id === "string" ? params.delete_schedule_id : "";
   const error = typeof params.error === "string" ? params.error : null;
   const canManageSchedules = roles.includes("DIRECAO") || roles.includes("COORDENACAO");
 
+  const schedulesQuery = supabase
+    .from("class_schedules")
+    .select("id, class_id, class_subject_id, teacher_id, entry_type, title, day_of_week, starts_at, ends_at")
+    .eq("school_id", activeSchoolId)
+    .order("day_of_week")
+    .order("starts_at")
+    .limit(5000);
+
   const [classesResult, classSubjectsResult, teachersResult, schedulesResult] = await Promise.all([
     supabase.from("classes").select("id, name, stage").eq("school_id", activeSchoolId).limit(300),
     supabase.from("class_subjects").select("id, class_id, subjects(name)").eq("school_id", activeSchoolId),
     supabase.from("teachers").select("id, full_name").eq("school_id", activeSchoolId).order("full_name"),
-    supabase
-      .from("class_schedules")
-      .select("id, class_id, class_subject_id, teacher_id, entry_type, title, day_of_week, starts_at, ends_at")
-      .eq("school_id", activeSchoolId)
-      .order("day_of_week")
-      .order("starts_at"),
+    (effectiveClassId ? schedulesQuery.eq("class_id", effectiveClassId) : schedulesQuery),
   ]);
 
   const classes = (classesResult.data ?? []) as Array<{ id: string; name: string; stage: string }>;
@@ -67,7 +73,6 @@ export default async function HorariosPage({ searchParams }: HorariosPageProps) 
     ends_at: string;
   }>;
 
-  const effectiveClassId = selectedClassId || "";
   const subjectsOfClass = classSubjects.filter((item) => item.class_id === effectiveClassId);
   const schedulesOfClass = schedules.filter((item) => item.class_id === effectiveClassId);
   const hasSaturdayOrSundayClass = schedulesOfClass.some((entry) => entry.day_of_week === 6 || entry.day_of_week === 7);
