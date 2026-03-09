@@ -1,3 +1,4 @@
+﻿import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { SubmitButton } from "@/components/submit-button";
@@ -24,11 +25,17 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
   return (
     <main className="fasy-grid fasy-aurora relative flex min-h-screen items-center justify-center overflow-hidden p-4">
       <section className="w-full max-w-4xl rounded-3xl border border-[var(--line)] bg-[var(--surface)] shadow-[0_24px_70px_rgba(8,33,63,0.22)]">
-        <div className="grid md:grid-cols-2">
-          <div className="fasy-dark-panel rounded-l-3xl p-10">
-            <p className="text-xs tracking-[0.18em] uppercase text-cyan-100">FASY</p>
-            <h1 className="mt-3 text-3xl font-semibold leading-tight text-[var(--brand-ice)]">Formative Assessment System</h1>
-            <p className="mt-4 text-sm text-cyan-100">Gestão escolar e pedagógica multiescola com acompanhamento de aprendizagem.</p>
+        <div className="grid md:grid-cols-[minmax(340px,420px)_1fr]">
+          <div className="relative overflow-hidden rounded-l-3xl">
+            <Image
+              src="/fasy-login-brand.jpg"
+              alt="Logomarca do FASY"
+              width={768}
+              height={960}
+              sizes="(min-width: 768px) 420px, 100vw"
+              className="h-full w-full object-cover"
+              priority
+            />
           </div>
 
           <div className="p-8 md:p-10">
@@ -64,3 +71,4 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
     </main>
   );
 }
+
