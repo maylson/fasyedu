@@ -13,6 +13,7 @@ export default async function AnoLetivoPage({ searchParams }: AnoLetivoPageProps
   const error = typeof params.error === "string" ? params.error : null;
   const success = typeof params.success === "string" ? params.success : null;
   const isDirection = roles.includes("DIRECAO") || roles.includes("SUPPORT");
+  const isSupport = roles.includes("SUPPORT");
 
   const { data: schoolYears } = await supabase
     .from("school_years")
@@ -34,9 +35,11 @@ export default async function AnoLetivoPage({ searchParams }: AnoLetivoPageProps
     <ModuleShell title="Configurações · Ano Letivo" description="Defina e ative o ano letivo da escola">
       <div className="flex flex-wrap items-center gap-2">
         <span className="rounded-lg border border-[var(--line)] bg-[var(--panel-soft)] px-3 py-1 text-sm text-[var(--brand-blue)]">Ano letivo</span>
-        <Link href="/configuracoes/pedagogico" className="rounded-lg border border-[var(--line)] px-3 py-1 text-sm hover:bg-[var(--panel-soft)]">
-          Pedagógico
-        </Link>
+        {isSupport ? (
+          <Link href="/configuracoes/pedagogico" className="rounded-lg border border-[var(--line)] px-3 py-1 text-sm hover:bg-[var(--panel-soft)]">
+            Pedagógico
+          </Link>
+        ) : null}
       </div>
 
       {error ? <p className="rounded-xl border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-700">{error}</p> : null}

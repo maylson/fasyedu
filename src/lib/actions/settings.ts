@@ -19,6 +19,7 @@ async function getDirectionContext() {
   const { data: memberships, error } = await supabase
     .from("user_school_roles")
     .select("school_id, role")
+    .eq("user_id", user.id)
     .eq("is_active", true);
 
   if (error) {
@@ -57,6 +58,7 @@ async function getSupportContext() {
   const { data: memberships, error } = await supabase
     .from("user_school_roles")
     .select("school_id, role")
+    .eq("user_id", user.id)
     .eq("is_active", true);
 
   if (error) {

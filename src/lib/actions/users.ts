@@ -13,33 +13,6 @@ function hasManagementRole(roles: UserRole[]) {
   return roles.some((role) => MANAGEMENT_ROLES.includes(role));
 }
 
-async function findExistingAuthUserIdByEmail(
-  admin: ReturnType<typeof createAdminClient>,
-  email: string,
-) {
-  const normalized = email.trim().toLowerCase();
-  let page = 1;
-  const perPage = 200;
-
-  while (page <= 20) {
-    const { data, error } = await admin.auth.admin.listUsers({ page, perPage });
-    if (error) {
-      throw new Error(error.message);
-    }
-
-    const users = data?.users ?? [];
-    const found = users.find((item) => (item.email ?? "").trim().toLowerCase() === normalized);
-    if (found?.id) {
-      return found.id;
-    }
-
-    if (users.length < perPage) break;
-    page += 1;
-  }
-
-  return null;
-}
-
 async function getUserManagementContext() {
   const supabase = await createClient();
   const {
@@ -53,6 +26,7 @@ async function getUserManagementContext() {
   const { data: memberships, error } = await supabase
     .from("user_school_roles")
     .select("school_id, role")
+    .eq("user_id", user.id)
     .eq("is_active", true);
 
   if (error) {
@@ -91,6 +65,7 @@ async function getDirectionContext() {
   const { data: memberships, error } = await supabase
     .from("user_school_roles")
     .select("school_id, role")
+    .eq("user_id", user.id)
     .eq("is_active", true);
 
   if (error) {
@@ -144,7 +119,6 @@ export async function createUserWithRolesAction(formData: FormData) {
       redirect(`/usuarios?error=${encodeURIComponent("Selecione ao menos um perfil para o usuário.")}`);
     }
 
-    let targetUserId: string | null = null;
     const createResult = await admin.auth.admin.createUser({
       email,
       password,
@@ -155,21 +129,17 @@ export async function createUserWithRolesAction(formData: FormData) {
     if (createResult.error) {
       const errorMessage = createResult.error.message.toLowerCase();
       if (errorMessage.includes("already")) {
-        const existingUserId = await findExistingAuthUserIdByEmail(admin, email);
-        if (!existingUserId) {
-          redirect(`/usuarios?error=${encodeURIComponent("Não foi possível localizar o usuário existente.")}`);
-        }
-        targetUserId = existingUserId;
+        redirect(
+          `/usuarios?error=${encodeURIComponent(
+            "Já existe um usuário com esse e-mail. Use a edição de usuário para ajustar os perfis.",
+          )}`,
+        );
       } else {
         redirect(`/usuarios?error=${encodeURIComponent(createResult.error.message)}`);
       }
-    } else {
-      targetUserId = createResult.data.user.id;
     }
 
-    if (!targetUserId) {
-      redirect(`/usuarios?error=${encodeURIComponent("Falha ao resolver o usuário criado.")}`);
-    }
+    const targetUserId = createResult.data.user.id;
 
     const { error: profileError } = await admin.from("user_profiles").upsert({
       id: targetUserId,

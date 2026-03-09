@@ -62,6 +62,7 @@ export async function updateSession(request: NextRequest) {
     const { data: memberships } = await supabase
       .from("user_school_roles")
       .select("school_id, role")
+      .eq("user_id", user.id)
       .eq("is_active", true);
 
     const activeSchoolCookie = request.cookies.get("active_school_id")?.value;

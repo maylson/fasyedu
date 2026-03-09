@@ -22,6 +22,7 @@ export async function getUserContext() {
   const { data: memberships, error } = await supabase
     .from("user_school_roles")
     .select("school_id, role, schools(id, name)")
+    .eq("user_id", user.id)
     .eq("is_active", true);
 
   if (error) {

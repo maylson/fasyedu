@@ -281,6 +281,7 @@ async function getActiveSchoolContext() {
   const { data: memberships } = await supabase
     .from("user_school_roles")
     .select("school_id")
+    .eq("user_id", user.id)
     .eq("is_active", true);
 
   if (!memberships || memberships.length === 0) return null;
