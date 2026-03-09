@@ -1,4 +1,4 @@
-import { ModuleShell } from "@/components/module-shell";
+﻿import { ModuleShell } from "@/components/module-shell";
 import { createUserWithRolesAction, updateUserByDirectionAction } from "@/lib/actions/users";
 import { getUserContext } from "@/lib/app-context";
 import { ROLE_OPTIONS } from "@/lib/constants";
@@ -13,7 +13,7 @@ export default async function UsuariosPage({ searchParams }: UsuariosPageProps) 
   const error = typeof params.error === "string" ? params.error : null;
   const success = typeof params.success === "string" ? params.success : null;
   const editUserId = typeof params.edit_user_id === "string" ? params.edit_user_id : "";
-  const canEditOthers = roles.includes("DIRECAO");
+  const canEditOthers = roles.includes("DIRECAO") || roles.includes("SUPPORT");
 
   const { data } = await supabase
     .from("user_school_roles")
@@ -62,7 +62,7 @@ export default async function UsuariosPage({ searchParams }: UsuariosPageProps) 
   const userToEdit = canEditOthers ? users.find((item) => item.userId === editUserId) : undefined;
 
   return (
-    <ModuleShell title="Usuários e Perfis" description="Criação de usuários e gestão de múltiplos papéis por escola">
+    <ModuleShell title="UsuÃ¡rios e Perfis" description="CriaÃ§Ã£o de usuÃ¡rios e gestÃ£o de mÃºltiplos papÃ©is por escola">
       {error ? <p className="rounded-xl border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-700">{error}</p> : null}
       {success ? (
         <p className="rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm text-emerald-700">{success}</p>
@@ -72,7 +72,7 @@ export default async function UsuariosPage({ searchParams }: UsuariosPageProps) 
         <input name="full_name" required placeholder="Nome completo" className="fasy-input" />
         <input name="phone" placeholder="Telefone (opcional)" className="fasy-input" />
         <input name="email" type="email" required placeholder="E-mail" className="fasy-input" />
-        <input name="password" type="password" required placeholder="Senha inicial (mínimo 8)" className="fasy-input" />
+        <input name="password" type="password" required placeholder="Senha inicial (mÃ­nimo 8)" className="fasy-input" />
 
         <fieldset className="md:col-span-2 rounded-xl border border-[var(--line)] p-3">
           <legend className="px-2 text-xs font-semibold text-[var(--muted)]">Perfis de acesso</legend>
@@ -88,7 +88,7 @@ export default async function UsuariosPage({ searchParams }: UsuariosPageProps) 
 
         <div className="md:col-span-2">
           <button type="submit" className="fasy-btn-primary px-4 py-2 text-sm">
-            Criar usuário
+            Criar usuÃ¡rio
           </button>
         </div>
       </form>
@@ -100,7 +100,7 @@ export default async function UsuariosPage({ searchParams }: UsuariosPageProps) 
               <th className="px-4 py-3">Nome</th>
               <th className="px-4 py-3">Perfis ativos</th>
               <th className="px-4 py-3">Telefone</th>
-              {canEditOthers ? <th className="px-4 py-3">Ações</th> : null}
+              {canEditOthers ? <th className="px-4 py-3">AÃ§Ãµes</th> : null}
             </tr>
           </thead>
           <tbody>
@@ -131,9 +131,9 @@ export default async function UsuariosPage({ searchParams }: UsuariosPageProps) 
         userToEdit ? (
           <div className="space-y-3">
             <div className="flex items-center justify-between">
-              <h3 className="text-sm font-semibold text-[var(--brand-blue)]">Edição de usuário (Direção)</h3>
+              <h3 className="text-sm font-semibold text-[var(--brand-blue)]">EdiÃ§Ã£o de usuÃ¡rio (DireÃ§Ã£o)</h3>
               <a href="/usuarios" className="rounded-lg border border-[var(--line)] px-2 py-1 text-xs hover:bg-[var(--panel-soft)]">
-                Fechar edição
+                Fechar ediÃ§Ã£o
               </a>
             </div>
             <form action={updateUserByDirectionAction} className="grid gap-3 rounded-2xl border border-[var(--line)] bg-white p-4 md:grid-cols-2">
@@ -153,21 +153,22 @@ export default async function UsuariosPage({ searchParams }: UsuariosPageProps) 
               </fieldset>
               <div className="md:col-span-2">
                 <button type="submit" className="fasy-btn-primary px-4 py-2 text-sm">
-                  Salvar alterações
+                  Salvar alteraÃ§Ãµes
                 </button>
               </div>
             </form>
           </div>
         ) : (
           <p className="rounded-xl border border-[var(--line)] bg-[var(--panel-soft)] px-3 py-2 text-sm text-[var(--muted)]">
-            Clique em <strong>Editar</strong> na tabela para atualizar um usuário específico.
+            Clique em <strong>Editar</strong> na tabela para atualizar um usuÃ¡rio especÃ­fico.
           </p>
         )
       ) : (
         <p className="rounded-xl border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-700">
-          Somente o perfil DIREÇÃO pode editar outros usuários.
+          Somente o perfil DIREÃ‡ÃƒO pode editar outros usuÃ¡rios.
         </p>
       )}
     </ModuleShell>
   );
 }
+

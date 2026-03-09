@@ -1,4 +1,4 @@
-import { ModuleShell } from "@/components/module-shell";
+﻿import { ModuleShell } from "@/components/module-shell";
 import { SubmitButton } from "@/components/submit-button";
 import { createEnrollmentAction, deleteEnrollmentAction, updateEnrollmentAction } from "@/lib/actions/academic";
 import { getUserContext } from "@/lib/app-context";
@@ -36,10 +36,10 @@ function asSingle<T>(value: T | T[] | null | undefined): T | null {
 
 function formatStage(stage?: string) {
   if (!stage) return "-";
-  if (stage === "EDUCACAO_INFANTIL") return "Educação Infantil";
+  if (stage === "EDUCACAO_INFANTIL") return "EducaÃ§Ã£o Infantil";
   if (stage === "FUNDAMENTAL_1") return "Fundamental 1";
   if (stage === "FUNDAMENTAL_2") return "Fundamental 2";
-  if (stage === "ENSINO_MEDIO") return "Ensino Médio";
+  if (stage === "ENSINO_MEDIO") return "Ensino MÃ©dio";
   if (stage === "CURSO_LIVRE") return "Curso Livre";
   return stage;
 }
@@ -50,7 +50,7 @@ export default async function MatriculasPage({ searchParams }: MatriculasPagePro
   const error = typeof params.error === "string" ? params.error : null;
   const success = typeof params.success === "string" ? params.success : null;
 
-  const canManage = roles.includes("DIRECAO") || roles.includes("COORDENACAO") || roles.includes("SECRETARIA");
+  const canManage = roles.includes("SUPPORT") || roles.includes("DIRECAO") || roles.includes("COORDENACAO") || roles.includes("SECRETARIA");
 
   const [studentsResult, classesResult, enrollmentsResult] = await Promise.all([
     supabase
@@ -76,13 +76,13 @@ export default async function MatriculasPage({ searchParams }: MatriculasPagePro
   const enrollments = (enrollmentsResult.data ?? []) as EnrollmentRow[];
 
   return (
-    <ModuleShell title="Matrículas" description="Controle completo de matrículas por turma e ano letivo">
+    <ModuleShell title="MatrÃ­culas" description="Controle completo de matrÃ­culas por turma e ano letivo">
       {error ? <p className="rounded-xl border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-700">{error}</p> : null}
       {success ? <p className="rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm text-emerald-700">{success}</p> : null}
 
       {canManage ? (
         <section className="rounded-2xl border border-[var(--line)] bg-white p-4">
-          <h3 className="text-sm font-semibold text-[var(--brand-blue)]">Nova matrícula</h3>
+          <h3 className="text-sm font-semibold text-[var(--brand-blue)]">Nova matrÃ­cula</h3>
           <form action={createEnrollmentAction} className="mt-3 grid gap-3 md:grid-cols-4">
             <select name="student_id" className="fasy-input md:col-span-2" required defaultValue="">
               <option value="" disabled>
@@ -90,7 +90,7 @@ export default async function MatriculasPage({ searchParams }: MatriculasPagePro
               </option>
               {students.map((student) => (
                 <option key={student.id} value={student.id}>
-                  {student.full_name} · {student.registration_code}
+                  {student.full_name} Â· {student.registration_code}
                 </option>
               ))}
             </select>
@@ -101,7 +101,7 @@ export default async function MatriculasPage({ searchParams }: MatriculasPagePro
               </option>
               {classes.map((classItem) => (
                 <option key={classItem.id} value={classItem.id}>
-                  {classItem.name} · {formatStage(classItem.stage)}
+                  {classItem.name} Â· {formatStage(classItem.stage)}
                 </option>
               ))}
             </select>
@@ -110,7 +110,7 @@ export default async function MatriculasPage({ searchParams }: MatriculasPagePro
 
             <div className="md:col-span-3">
               <SubmitButton className="fasy-btn-primary px-4 py-2 text-sm" pendingLabel="Salvando...">
-                Cadastrar matrícula
+                Cadastrar matrÃ­cula
               </SubmitButton>
             </div>
           </form>
@@ -125,10 +125,10 @@ export default async function MatriculasPage({ searchParams }: MatriculasPagePro
                 <th className="px-4 py-3">Aluno</th>
                 <th className="px-4 py-3">Turma</th>
                 <th className="px-4 py-3">Etapa</th>
-                <th className="px-4 py-3">Data da matrícula</th>
+                <th className="px-4 py-3">Data da matrÃ­cula</th>
                 <th className="px-4 py-3">Status</th>
                 <th className="px-4 py-3">Cancelada em</th>
-                {canManage ? <th className="px-4 py-3">Ações</th> : null}
+                {canManage ? <th className="px-4 py-3">AÃ§Ãµes</th> : null}
               </tr>
             </thead>
             <tbody>
@@ -154,7 +154,7 @@ export default async function MatriculasPage({ searchParams }: MatriculasPagePro
                             <select name="status" defaultValue={row.status} className="rounded-lg border border-[var(--line)] bg-white px-2 py-1 text-xs">
                               <option value="ATIVA">ATIVA</option>
                               <option value="TRANCADA">TRANCADA</option>
-                              <option value="CONCLUIDA">CONCLUÍDA</option>
+                              <option value="CONCLUIDA">CONCLUÃDA</option>
                               <option value="CANCELADA">CANCELADA</option>
                             </select>
                             <input
@@ -183,7 +183,7 @@ export default async function MatriculasPage({ searchParams }: MatriculasPagePro
               {enrollments.length === 0 ? (
                 <tr>
                   <td className="px-4 py-3 text-[var(--muted)]" colSpan={canManage ? 7 : 6}>
-                    Nenhuma matrícula cadastrada.
+                    Nenhuma matrÃ­cula cadastrada.
                   </td>
                 </tr>
               ) : null}
@@ -194,3 +194,5 @@ export default async function MatriculasPage({ searchParams }: MatriculasPagePro
     </ModuleShell>
   );
 }
+
+

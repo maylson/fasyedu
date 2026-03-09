@@ -37,7 +37,7 @@ export default async function AgendaPage({ searchParams }: AgendaPageProps) {
     );
   }
 
-  const canAccess = roles.includes("PAI") || roles.includes("ALUNO");
+  const canAccess = roles.includes("SUPPORT") || roles.includes("PAI") || roles.includes("ALUNO");
   if (!canAccess) {
     return (
       <ModuleShell title="Agenda" description="Semana atual do aluno">
@@ -318,4 +318,5 @@ export default async function AgendaPage({ searchParams }: AgendaPageProps) {
     </ModuleShell>
   );
 }
+
 

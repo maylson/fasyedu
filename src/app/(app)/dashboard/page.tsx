@@ -55,6 +55,7 @@ function getWeekStart(date = new Date()) {
 }
 
 function getRoleView(roles: string[]) {
+  if (roles.includes("SUPPORT")) return "DIRECAO";
   if (roles.includes("DIRECAO")) return "DIRECAO";
   if (roles.includes("COORDENACAO")) return "COORDENACAO";
   if (roles.includes("PROFESSOR")) return "PROFESSOR";

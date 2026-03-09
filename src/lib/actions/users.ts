@@ -1,4 +1,4 @@
-"use server";
+﻿"use server";
 
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
@@ -6,7 +6,7 @@ import { createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { ROLE_OPTIONS, type UserRole } from "@/lib/constants";
 
-const MANAGEMENT_ROLES: UserRole[] = ["DIRECAO", "COORDENACAO", "SECRETARIA"];
+const MANAGEMENT_ROLES: UserRole[] = ["SUPPORT", "DIRECAO", "COORDENACAO", "SECRETARIA"];
 
 function hasManagementRole(roles: UserRole[]) {
   return roles.some((role) => MANAGEMENT_ROLES.includes(role));
@@ -19,7 +19,7 @@ async function getUserManagementContext() {
   } = await supabase.auth.getUser();
 
   if (!user) {
-    throw new Error("Usuário não autenticado.");
+    throw new Error("UsuÃ¡rio nÃ£o autenticado.");
   }
 
   const { data: memberships, error } = await supabase
@@ -44,7 +44,7 @@ async function getUserManagementContext() {
     .map((item) => item.role as UserRole);
 
   if (!hasManagementRole(roles)) {
-    throw new Error("Sem permissão para criar usuários.");
+    throw new Error("Sem permissÃ£o para criar usuÃ¡rios.");
   }
 
   return { schoolId: activeMembership.school_id, creatorUserId: user.id };
@@ -57,7 +57,7 @@ async function getDirectionContext() {
   } = await supabase.auth.getUser();
 
   if (!user) {
-    throw new Error("Usuário não autenticado.");
+    throw new Error("UsuÃ¡rio nÃ£o autenticado.");
   }
 
   const { data: memberships, error } = await supabase
@@ -81,8 +81,8 @@ async function getDirectionContext() {
     .filter((item) => item.school_id === activeMembership.school_id)
     .map((item) => item.role as UserRole);
 
-  if (!schoolRoles.includes("DIRECAO")) {
-    throw new Error("Apenas o perfil DIREÇÃO pode editar outros usuários.");
+  if (!schoolRoles.includes("DIRECAO") && !schoolRoles.includes("SUPPORT")) {
+    throw new Error("Apenas o perfil DIREÃ‡ÃƒO pode editar outros usuÃ¡rios.");
   }
 
   return { schoolId: activeMembership.school_id };
@@ -97,19 +97,23 @@ export async function createUserWithRolesAction(formData: FormData) {
     const email = String(formData.get("email") ?? "").trim().toLowerCase();
     const password = String(formData.get("password") ?? "").trim();
     const phone = String(formData.get("phone") ?? "").trim();
-    const selectedRoles = formData
+    const rawSelectedRoles = formData
       .getAll("roles")
-      .map((value) => String(value))
-      .filter((role): role is UserRole => ROLE_OPTIONS.includes(role as UserRole));
+      .map((value) => String(value).trim());
+    if (rawSelectedRoles.includes("SUPPORT")) {
+      redirect(`/usuarios?error=${encodeURIComponent("A role SUPPORT é interna e não pode ser atribuída por esta interface.")}`);
+    }
+    const selectedRoles = rawSelectedRoles
+      .filter((role): role is (typeof ROLE_OPTIONS)[number] => ROLE_OPTIONS.includes(role as (typeof ROLE_OPTIONS)[number]));
 
     if (!fullName || !email || !password) {
-      redirect(`/usuarios?error=${encodeURIComponent("Nome, e-mail e senha são obrigatórios.")}`);
+      redirect(`/usuarios?error=${encodeURIComponent("Nome, e-mail e senha sÃ£o obrigatÃ³rios.")}`);
     }
     if (password.length < 8) {
-      redirect(`/usuarios?error=${encodeURIComponent("A senha deve ter no mínimo 8 caracteres.")}`);
+      redirect(`/usuarios?error=${encodeURIComponent("A senha deve ter no mÃ­nimo 8 caracteres.")}`);
     }
     if (selectedRoles.length === 0) {
-      redirect(`/usuarios?error=${encodeURIComponent("Selecione ao menos um perfil para o usuário.")}`);
+      redirect(`/usuarios?error=${encodeURIComponent("Selecione ao menos um perfil para o usuÃ¡rio.")}`);
     }
 
     let targetUserId: string | null = null;
@@ -125,7 +129,7 @@ export async function createUserWithRolesAction(formData: FormData) {
       if (errorMessage.includes("already")) {
         const { data: existingUser, error: existingError } = await admin.schema("auth").from("users").select("id").eq("email", email).maybeSingle();
         if (existingError || !existingUser?.id) {
-          redirect(`/usuarios?error=${encodeURIComponent("Não foi possível localizar o usuário existente.")}`);
+          redirect(`/usuarios?error=${encodeURIComponent("NÃ£o foi possÃ­vel localizar o usuÃ¡rio existente.")}`);
         }
         targetUserId = existingUser.id;
       } else {
@@ -136,7 +140,7 @@ export async function createUserWithRolesAction(formData: FormData) {
     }
 
     if (!targetUserId) {
-      redirect(`/usuarios?error=${encodeURIComponent("Falha ao resolver o usuário criado.")}`);
+      redirect(`/usuarios?error=${encodeURIComponent("Falha ao resolver o usuÃ¡rio criado.")}`);
     }
 
     const { error: profileError } = await admin.from("user_profiles").upsert({
@@ -178,11 +182,11 @@ export async function createUserWithRolesAction(formData: FormData) {
       }
     }
   } catch (error) {
-    const message = error instanceof Error ? error.message : "Erro inesperado ao criar usuário.";
+    const message = error instanceof Error ? error.message : "Erro inesperado ao criar usuÃ¡rio.";
     redirect(`/usuarios?error=${encodeURIComponent(message)}`);
   }
 
-  redirect(`/usuarios?success=${encodeURIComponent("Usuário criado e vinculado com sucesso.")}`);
+  redirect(`/usuarios?success=${encodeURIComponent("UsuÃ¡rio criado e vinculado com sucesso.")}`);
 }
 
 export async function updateUserByDirectionAction(formData: FormData) {
@@ -193,16 +197,20 @@ export async function updateUserByDirectionAction(formData: FormData) {
     const targetUserId = String(formData.get("target_user_id") ?? "").trim();
     const fullName = String(formData.get("full_name") ?? "").trim();
     const phone = String(formData.get("phone") ?? "").trim();
-    const selectedRoles = formData
+    const rawSelectedRoles = formData
       .getAll("roles")
-      .map((value) => String(value))
-      .filter((role): role is UserRole => ROLE_OPTIONS.includes(role as UserRole));
+      .map((value) => String(value).trim());
+    if (rawSelectedRoles.includes("SUPPORT")) {
+      redirect(`/usuarios?error=${encodeURIComponent("A role SUPPORT é interna e não pode ser atribuída por esta interface.")}`);
+    }
+    const selectedRoles = rawSelectedRoles
+      .filter((role): role is (typeof ROLE_OPTIONS)[number] => ROLE_OPTIONS.includes(role as (typeof ROLE_OPTIONS)[number]));
 
     if (!targetUserId) {
-      redirect(`/usuarios?error=${encodeURIComponent("Usuário alvo inválido.")}`);
+      redirect(`/usuarios?error=${encodeURIComponent("UsuÃ¡rio alvo invÃ¡lido.")}`);
     }
     if (!fullName) {
-      redirect(`/usuarios?error=${encodeURIComponent("Nome completo é obrigatório.")}`);
+      redirect(`/usuarios?error=${encodeURIComponent("Nome completo Ã© obrigatÃ³rio.")}`);
     }
     if (selectedRoles.length === 0) {
       redirect(`/usuarios?error=${encodeURIComponent("Selecione ao menos um perfil ativo.")}`);
@@ -269,9 +277,11 @@ export async function updateUserByDirectionAction(formData: FormData) {
       }
     }
   } catch (error) {
-    const message = error instanceof Error ? error.message : "Erro inesperado ao editar usuário.";
+    const message = error instanceof Error ? error.message : "Erro inesperado ao editar usuÃ¡rio.";
     redirect(`/usuarios?error=${encodeURIComponent(message)}`);
   }
 
-  redirect(`/usuarios?success=${encodeURIComponent("Usuário atualizado com sucesso.")}`);
+  redirect(`/usuarios?success=${encodeURIComponent("UsuÃ¡rio atualizado com sucesso.")}`);
 }
+
+

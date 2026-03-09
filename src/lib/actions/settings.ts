@@ -37,8 +37,46 @@ async function getDirectionContext() {
     .filter((item) => item.school_id === activeMembership.school_id)
     .map((item) => item.role as UserRole);
 
-  if (!roles.includes("DIRECAO")) {
+  if (!roles.includes("DIRECAO") && !roles.includes("SUPPORT")) {
     throw new Error("Apenas Direção pode alterar configurações.");
+  }
+
+  return { supabase, schoolId: activeMembership.school_id };
+}
+
+async function getSupportContext() {
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  if (!user) {
+    redirect("/login");
+  }
+
+  const { data: memberships, error } = await supabase
+    .from("user_school_roles")
+    .select("school_id, role")
+    .eq("is_active", true);
+
+  if (error) {
+    throw new Error(error.message);
+  }
+
+  const cookieStore = await cookies();
+  const activeSchoolCookie = cookieStore.get("active_school_id")?.value;
+  const activeMembership = memberships.find((item) => item.school_id === activeSchoolCookie) ?? memberships[0];
+
+  if (!activeMembership) {
+    throw new Error("Nenhuma escola ativa encontrada.");
+  }
+
+  const roles = memberships
+    .filter((item) => item.school_id === activeMembership.school_id)
+    .map((item) => item.role as UserRole);
+
+  if (!roles.includes("SUPPORT")) {
+    throw new Error("Somente SUPPORT pode alterar configurações pedagógicas.");
   }
 
   return { supabase, schoolId: activeMembership.school_id };
@@ -105,7 +143,7 @@ export async function activateSchoolYearAction(formData: FormData) {
 }
 
 export async function updatePlanningPreferencesAction(formData: FormData) {
-  const { supabase, schoolId } = await getDirectionContext();
+  const { supabase, schoolId } = await getSupportContext();
   const planningPillarsEnabled = String(formData.get("planning_pillars_enabled") ?? "") === "on";
 
   const { error } = await supabase
@@ -123,7 +161,7 @@ export async function updatePlanningPreferencesAction(formData: FormData) {
 }
 
 export async function updateFamilyPortalSettingsAction(formData: FormData) {
-  const { supabase, schoolId } = await getDirectionContext();
+  const { supabase, schoolId } = await getSupportContext();
   const agendaEnabled = String(formData.get("student_agenda_enabled") ?? "") === "on";
 
   const { error } = await supabase
@@ -145,7 +183,7 @@ export async function updateFamilyPortalSettingsAction(formData: FormData) {
 }
 
 export async function updateSchoolLlmSettingsAction(formData: FormData) {
-  const { supabase, schoolId } = await getDirectionContext();
+  const { supabase, schoolId } = await getSupportContext();
   const llmEnabled = String(formData.get("llm_enabled") ?? "") === "on";
   const llmProvider = String(formData.get("llm_provider") ?? "OPENAI").trim().toUpperCase();
   const llmModel = String(formData.get("llm_model") ?? "").trim();
@@ -182,3 +220,4 @@ export async function updateSchoolLlmSettingsAction(formData: FormData) {
   revalidatePath("/planejamento");
   redirect(`/configuracoes/pedagogico?success=${encodeURIComponent("Configurações de IA atualizadas com sucesso.")}`);
 }
+

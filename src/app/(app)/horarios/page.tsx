@@ -23,7 +23,7 @@ export default async function HorariosPage({ searchParams }: HorariosPageProps) 
   const editScheduleId = typeof params.edit_schedule_id === "string" ? params.edit_schedule_id : "";
   const deleteScheduleId = typeof params.delete_schedule_id === "string" ? params.delete_schedule_id : "";
   const error = typeof params.error === "string" ? params.error : null;
-  const canManageSchedules = roles.includes("DIRECAO") || roles.includes("COORDENACAO");
+  const canManageSchedules = roles.includes("SUPPORT") || roles.includes("DIRECAO") || roles.includes("COORDENACAO");
 
   const schedulesQuery = supabase
     .from("class_schedules")
@@ -314,3 +314,4 @@ export default async function HorariosPage({ searchParams }: HorariosPageProps) 
     </ModuleShell>
   );
 }
+

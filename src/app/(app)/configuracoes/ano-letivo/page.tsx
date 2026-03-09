@@ -12,7 +12,7 @@ export default async function AnoLetivoPage({ searchParams }: AnoLetivoPageProps
   const params = await searchParams;
   const error = typeof params.error === "string" ? params.error : null;
   const success = typeof params.success === "string" ? params.success : null;
-  const isDirection = roles.includes("DIRECAO");
+  const isDirection = roles.includes("DIRECAO") || roles.includes("SUPPORT");
 
   const { data: schoolYears } = await supabase
     .from("school_years")
@@ -99,3 +99,4 @@ export default async function AnoLetivoPage({ searchParams }: AnoLetivoPageProps
     </ModuleShell>
   );
 }
+

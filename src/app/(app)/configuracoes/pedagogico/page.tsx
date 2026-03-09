@@ -12,7 +12,7 @@ export default async function PedagogicoPage({ searchParams }: PedagogicoPagePro
   const params = await searchParams;
   const error = typeof params.error === "string" ? params.error : null;
   const success = typeof params.success === "string" ? params.success : null;
-  const isDirection = roles.includes("DIRECAO");
+  const isSupport = roles.includes("SUPPORT");
 
   const { data: school } = await supabase
     .from("schools")
@@ -22,11 +22,11 @@ export default async function PedagogicoPage({ searchParams }: PedagogicoPagePro
     .eq("id", activeSchoolId)
     .maybeSingle();
 
-  if (!isDirection) {
+  if (!isSupport) {
     return (
       <ModuleShell title="Configurações · Pedagógico" description="Parâmetros pedagógicos da escola">
         <p className="rounded-xl border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-700">
-          Somente a Direção pode alterar configurações pedagógicas.
+          Somente a role SUPPORT pode visualizar e alterar configurações pedagógicas.
         </p>
       </ModuleShell>
     );
@@ -140,3 +140,4 @@ export default async function PedagogicoPage({ searchParams }: PedagogicoPagePro
     </ModuleShell>
   );
 }
+

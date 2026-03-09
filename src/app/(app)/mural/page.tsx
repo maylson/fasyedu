@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { ModuleShell } from "@/components/module-shell";
 import { SubmitButton } from "@/components/submit-button";
 import {
@@ -78,15 +78,15 @@ type FeedItem =
 
 const EVENT_TYPE_LABELS: Record<EventRow["event_type"], string> = {
   FERIADO: "Feriado",
-  COMEMORACAO: "Comemoração",
-  PROGRAMACAO: "Programação",
+  COMEMORACAO: "ComemoraÃ§Ã£o",
+  PROGRAMACAO: "ProgramaÃ§Ã£o",
 };
 
 const STAGE_LABELS: Record<EducationStage, string> = {
-  EDUCACAO_INFANTIL: "Educação Infantil",
+  EDUCACAO_INFANTIL: "EducaÃ§Ã£o Infantil",
   FUNDAMENTAL_1: "Fundamental 1",
   FUNDAMENTAL_2: "Fundamental 2",
-  ENSINO_MEDIO: "Ensino Médio",
+  ENSINO_MEDIO: "Ensino MÃ©dio",
   CURSO_LIVRE: "Curso Livre",
 };
 
@@ -107,15 +107,16 @@ function getEventTypeCardStyles(type: EventRow["event_type"]) {
 
 function isStaff(roles: UserRole[]) {
   return roles.some((role) =>
-    ["DIRECAO", "COORDENACAO", "SECRETARIA", "PROFESSOR"].includes(role),
+    ["SUPPORT", "DIRECAO", "COORDENACAO", "SECRETARIA", "PROFESSOR"].includes(role),
   );
 }
 
 function canManageMural(roles: UserRole[]) {
-  return roles.includes("DIRECAO") || roles.includes("COORDENACAO");
+  return roles.includes("SUPPORT") || roles.includes("DIRECAO") || roles.includes("COORDENACAO");
 }
 
 function canSeeAnnouncement(audience: string, roles: UserRole[]) {
+  if (roles.includes("SUPPORT")) return true;
   if (audience === "TODOS") return true;
   if (audience === "STAFF") return isStaff(roles);
   if (audience === "PROFESSORES") return roles.includes("PROFESSOR");
@@ -165,7 +166,7 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
     return (
       <ModuleShell
         title="Mural"
-        description="Timeline de avisos, recados e eventos do calendário"
+        description="Timeline de avisos, recados e eventos do calendÃ¡rio"
       >
         <p className="rounded-xl border border-[var(--line)] bg-[var(--panel-soft)] p-4 text-sm">
           Nenhuma escola ativa para exibir o mural.
@@ -349,7 +350,7 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
   return (
     <ModuleShell
       title="Mural"
-      description="Timeline de avisos, recados e eventos do calendário"
+      description="Timeline de avisos, recados e eventos do calendÃ¡rio"
     >
       {error ? (
         <p className="rounded-xl border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-700">
@@ -373,7 +374,7 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
                 href="/mural"
                 className="rounded-lg border border-[var(--line)] bg-white px-3 py-1 text-xs hover:bg-[var(--panel-soft)]"
               >
-                Cancelar edição
+                Cancelar ediÃ§Ã£o
               </Link>
             ) : null}
           </div>
@@ -388,7 +389,7 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
               <input
                 name="title"
                 className="fasy-input"
-                placeholder="Título do aviso"
+                placeholder="TÃ­tulo do aviso"
                 defaultValue={announcementToEdit?.title ?? ""}
                 required
               />
@@ -413,7 +414,7 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
             <textarea
               name="message"
               className="fasy-input min-h-24"
-              placeholder="Descrição / recado"
+              placeholder="DescriÃ§Ã£o / recado"
               defaultValue={announcementToEdit?.message ?? ""}
               required
             />
@@ -445,7 +446,7 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
                 className="fasy-btn-primary px-4 py-2 text-sm"
                 pendingLabel={announcementToEdit ? "Salvando..." : "Publicando..."}
               >
-                {announcementToEdit ? "Salvar alterações" : "Publicar aviso"}
+                {announcementToEdit ? "Salvar alteraÃ§Ãµes" : "Publicar aviso"}
               </SubmitButton>
             </div>
           </form>
@@ -456,7 +457,7 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
         <div className="pointer-events-none absolute bottom-1 left-[13px] top-1 w-px bg-[var(--line)]" />
         {feed.length === 0 ? (
           <p className="rounded-xl border border-[var(--line)] bg-[var(--panel-soft)] p-4 text-sm text-[var(--muted)]">
-            Nenhum item no mural para este período.
+            Nenhum item no mural para este perÃ­odo.
           </p>
         ) : (
           feed.map((item) => (
@@ -475,7 +476,7 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
                     {item.title}
                   </h3>
                   <p className="mt-1 text-xs text-[var(--muted)]">
-                    {new Date(item.date).toLocaleDateString("pt-BR")} ·{" "}
+                    {new Date(item.date).toLocaleDateString("pt-BR")} Â·{" "}
                     {new Date(item.date).toLocaleTimeString("pt-BR", {
                       hour: "2-digit",
                       minute: "2-digit",
@@ -485,7 +486,7 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
                 {item.kind === "announcement" ? (
                   <div className="flex flex-wrap items-center gap-2">
                     <span className="rounded-full border border-[var(--line)] bg-[var(--panel-soft)] px-2 py-0.5 text-[10px]">
-                      Aviso · {audienceLabel(item.audience)}
+                      Aviso Â· {audienceLabel(item.audience)}
                     </span>
                     {item.isPinned ? (
                       <span className="rounded-full bg-[var(--accent)] px-2 py-0.5 text-[10px] font-semibold text-[#113c66]">
@@ -498,7 +499,7 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
                     <span
                       className={`rounded-full border px-2 py-0.5 text-[10px] ${getEventTypeCardStyles(item.eventType)}`}
                     >
-                      Evento · {EVENT_TYPE_LABELS[item.eventType]}
+                      Evento Â· {EVENT_TYPE_LABELS[item.eventType]}
                     </span>
                     {item.isAdministrative ? (
                       <span className="rounded-full border border-slate-300 bg-slate-100 px-2 py-0.5 text-[10px] text-slate-700">
@@ -549,7 +550,7 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
                     <iframe
                       src={`${item.attachmentUrl}#toolbar=0&navpanes=0&scrollbar=0&page=1`}
                       className="h-56 w-full rounded-xl border border-[var(--line)]"
-                      title={item.attachmentName ?? "Pré-visualização do PDF"}
+                      title={item.attachmentName ?? "PrÃ©-visualizaÃ§Ã£o do PDF"}
                     />
                   ) : null}
                   <a
@@ -579,7 +580,7 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
                           className="rounded-lg border border-rose-200 bg-rose-50 px-2 py-1 text-xs text-rose-700 hover:bg-rose-100"
                           pendingLabel="Excluindo..."
                         >
-                          Confirmar exclusão
+                          Confirmar exclusÃ£o
                         </SubmitButton>
                       </form>
                       <Link
@@ -606,3 +607,4 @@ export default async function MuralPage({ searchParams }: MuralPageProps) {
     </ModuleShell>
   );
 }
+

@@ -1,3 +1,13 @@
+export const SYSTEM_ROLE_OPTIONS = [
+  "SUPPORT",
+  "DIRECAO",
+  "COORDENACAO",
+  "PROFESSOR",
+  "SECRETARIA",
+  "PAI",
+  "ALUNO",
+] as const;
+
 export const ROLE_OPTIONS = [
   "DIRECAO",
   "COORDENACAO",
@@ -7,7 +17,7 @@ export const ROLE_OPTIONS = [
   "ALUNO",
 ] as const;
 
-export type UserRole = (typeof ROLE_OPTIONS)[number];
+export type UserRole = (typeof SYSTEM_ROLE_OPTIONS)[number];
 
 export const STAGE_OPTIONS = [
   "EDUCACAO_INFANTIL",

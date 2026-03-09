@@ -13,7 +13,7 @@ function asSingle<T>(value: T | T[] | null | undefined): T | null {
 }
 
 function isStaff(roles: UserRole[]) {
-  return roles.some((role) => ["DIRECAO", "COORDENACAO", "SECRETARIA", "PROFESSOR"].includes(role));
+  return roles.some((role) => ["SUPPORT", "DIRECAO", "COORDENACAO", "SECRETARIA", "PROFESSOR"].includes(role));
 }
 
 export default async function AlunoFichaPage({ params }: StudentPageProps) {

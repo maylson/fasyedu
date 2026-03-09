@@ -34,7 +34,7 @@ function addDays(date: Date, days: number) {
 
 export default async function PlanejamentoPage({ searchParams }: PlanejamentoPageProps) {
   const { supabase, activeSchoolId, user, roles } = await getUserContext();
-  const isProfessor = roles.includes("PROFESSOR");
+  const isProfessor = roles.includes("PROFESSOR") || roles.includes("SUPPORT");
   const params = await searchParams;
   const requestedWeek = typeof params.week === "string" ? params.week : undefined;
   const initialOpenScheduleId = typeof params.open_schedule_id === "string" ? params.open_schedule_id : "";
@@ -303,4 +303,5 @@ export default async function PlanejamentoPage({ searchParams }: PlanejamentoPag
     </ModuleShell>
   );
 }
+
 

@@ -35,7 +35,7 @@ function addDays(date: Date, days: number) {
 
 export default async function CoordenacaoPage({ searchParams }: CoordenacaoPageProps) {
   const { supabase, activeSchoolId, roles } = await getUserContext();
-  const canAccess = roles.includes("DIRECAO") || roles.includes("COORDENACAO");
+  const canAccess = roles.includes("SUPPORT") || roles.includes("DIRECAO") || roles.includes("COORDENACAO");
   const params = await searchParams;
   const selectedClassId = typeof params.class_id === "string" ? params.class_id : "";
   const requestedWeek = typeof params.week === "string" ? params.week : undefined;
@@ -326,3 +326,4 @@ export default async function CoordenacaoPage({ searchParams }: CoordenacaoPageP
     </ModuleShell>
   );
 }
+

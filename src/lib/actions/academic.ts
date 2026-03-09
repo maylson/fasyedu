@@ -7,10 +7,10 @@ import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
 import type { UserRole } from "@/lib/constants";
 
-const SCHOOL_MANAGEMENT_ROLES: UserRole[] = ["DIRECAO", "COORDENACAO", "SECRETARIA"];
-const ACADEMIC_ROLES: UserRole[] = ["DIRECAO", "COORDENACAO", "PROFESSOR"];
-const REVIEW_ROLES: UserRole[] = ["DIRECAO", "COORDENACAO"];
-const SCHEDULE_MANAGEMENT_ROLES: UserRole[] = ["DIRECAO", "COORDENACAO"];
+const SCHOOL_MANAGEMENT_ROLES: UserRole[] = ["SUPPORT", "DIRECAO", "COORDENACAO", "SECRETARIA"];
+const ACADEMIC_ROLES: UserRole[] = ["SUPPORT", "DIRECAO", "COORDENACAO", "PROFESSOR"];
+const REVIEW_ROLES: UserRole[] = ["SUPPORT", "DIRECAO", "COORDENACAO"];
+const SCHEDULE_MANAGEMENT_ROLES: UserRole[] = ["SUPPORT", "DIRECAO", "COORDENACAO"];
 
 type LessonPlanStatus = "DRAFT" | "UNDER_REVIEW" | "APPROVED" | "REJECTED" | "HUMAN_REVIEW";
 
@@ -25,6 +25,7 @@ const EVENT_ATTACHMENTS_BUCKET = "event-attachments";
 const ANNOUNCEMENT_ATTACHMENTS_BUCKET = "announcement-attachments";
 
 function hasAnyRole(userRoles: UserRole[], allowedRoles: UserRole[]) {
+  if (userRoles.includes("SUPPORT")) return true;
   return userRoles.some((role) => allowedRoles.includes(role));
 }
 
@@ -1646,4 +1647,5 @@ export async function deleteLessonPlanResourceAction(formData: FormData) {
 
   revalidatePath("/planejamento");
 }
+
 

@@ -87,8 +87,8 @@ export default async function CalendarioPage({ searchParams }: CalendarioPagePro
     );
   }
 
-  const canManage = roles.includes("DIRECAO") || roles.includes("COORDENACAO") || roles.includes("SECRETARIA");
-  const isStaff = roles.some((role) => ["DIRECAO", "COORDENACAO", "SECRETARIA", "PROFESSOR"].includes(role));
+  const canManage = roles.includes("SUPPORT") || roles.includes("DIRECAO") || roles.includes("COORDENACAO") || roles.includes("SECRETARIA");
+  const isStaff = roles.some((role) => ["SUPPORT", "DIRECAO", "COORDENACAO", "SECRETARIA", "PROFESSOR"].includes(role));
 
   const monthParam = typeof params.month === "string" ? params.month : undefined;
   const eventTypeRaw = typeof params.event_type === "string" ? params.event_type : "ALL";
@@ -353,3 +353,5 @@ export default async function CalendarioPage({ searchParams }: CalendarioPagePro
     </ModuleShell>
   );
 }
+
+

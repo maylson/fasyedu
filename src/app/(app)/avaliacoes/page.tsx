@@ -1,4 +1,4 @@
-import { ModuleShell } from "@/components/module-shell";
+﻿import { ModuleShell } from "@/components/module-shell";
 import { SubmitButton } from "@/components/submit-button";
 import { createAssessmentAction, createAssessmentItemAction, upsertGradeAction } from "@/lib/actions/academic";
 import { getUserContext } from "@/lib/app-context";
@@ -64,7 +64,7 @@ export default async function AvaliacoesPage({ searchParams }: AvaliacoesPagePro
   const error = typeof params.error === "string" ? params.error : null;
   const success = typeof params.success === "string" ? params.success : null;
 
-  const canManage = roles.includes("DIRECAO") || roles.includes("COORDENACAO") || roles.includes("PROFESSOR");
+  const canManage = roles.includes("SUPPORT") || roles.includes("DIRECAO") || roles.includes("COORDENACAO") || roles.includes("PROFESSOR");
 
   const [classSubjectsResult, assessmentsResult, itemsResult, enrollmentsResult, gradesResult] = await Promise.all([
     supabase
@@ -162,7 +162,7 @@ export default async function AvaliacoesPage({ searchParams }: AvaliacoesPagePro
                   const subjectRef = asSingle(row.subjects);
                   return (
                     <option key={row.id} value={row.id}>
-                      {(classRef?.name ?? "Turma")} · {(subjectRef?.name ?? "Disciplina")}
+                      {(classRef?.name ?? "Turma")} Â· {(subjectRef?.name ?? "Disciplina")}
                     </option>
                   );
                 })}
@@ -187,7 +187,7 @@ export default async function AvaliacoesPage({ searchParams }: AvaliacoesPagePro
                   const subjectRef = asSingle(classSubject?.subjects);
                   return (
                     <option key={row.id} value={row.id}>
-                      {row.title} · {(classRef?.name ?? "Turma")} · {(subjectRef?.name ?? "Disciplina")}
+                      {row.title} Â· {(classRef?.name ?? "Turma")} Â· {(subjectRef?.name ?? "Disciplina")}
                     </option>
                   );
                 })}
@@ -208,7 +208,7 @@ export default async function AvaliacoesPage({ searchParams }: AvaliacoesPagePro
                 <option value="" disabled>Selecione o item</option>
                 {items.map((row) => (
                   <option key={row.id} value={row.id}>
-                    {row.title} · max {row.max_score}
+                    {row.title} Â· max {row.max_score}
                   </option>
                 ))}
               </select>
@@ -219,7 +219,7 @@ export default async function AvaliacoesPage({ searchParams }: AvaliacoesPagePro
                   const classRef = asSingle(row.classes);
                   return (
                     <option key={row.id} value={row.id}>
-                      {(studentRef?.full_name ?? "Aluno")} · {(classRef?.name ?? "Turma")}
+                      {(studentRef?.full_name ?? "Aluno")} Â· {(classRef?.name ?? "Turma")}
                     </option>
                   );
                 })}
@@ -292,3 +292,5 @@ export default async function AvaliacoesPage({ searchParams }: AvaliacoesPagePro
     </ModuleShell>
   );
 }
+
+

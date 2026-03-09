@@ -22,7 +22,7 @@ export type NavItemDef = {
   allowedRoles: UserRole[];
 };
 
-const ALL_ROLES: UserRole[] = ["DIRECAO", "COORDENACAO", "SECRETARIA", "PROFESSOR", "PAI", "ALUNO"];
+const ALL_ROLES: UserRole[] = ["SUPPORT", "DIRECAO", "COORDENACAO", "SECRETARIA", "PROFESSOR", "PAI", "ALUNO"];
 
 export const NAV_ITEMS: NavItemDef[] = [
   { href: "/dashboard", label: "Dashboard", icon: "dashboard", allowedRoles: ALL_ROLES },
@@ -43,10 +43,16 @@ export const NAV_ITEMS: NavItemDef[] = [
 ];
 
 export function getAllowedNavItems(roles: UserRole[]) {
+  if (roles.includes("SUPPORT")) {
+    return NAV_ITEMS;
+  }
   return NAV_ITEMS.filter((item) => item.allowedRoles.some((role) => roles.includes(role)));
 }
 
 export function isPathAllowedForRoles(pathname: string, roles: UserRole[]) {
+  if (roles.includes("SUPPORT")) {
+    return true;
+  }
   const matched = NAV_ITEMS.find((item) => pathname === item.href || pathname.startsWith(`${item.href}/`));
   if (!matched) return true;
   return matched.allowedRoles.some((role) => roles.includes(role));
