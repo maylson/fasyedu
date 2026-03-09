@@ -2,6 +2,7 @@
 
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
+import { isRedirectError } from "next/dist/client/components/redirect-error";
 import { createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { ROLE_OPTIONS, type UserRole } from "@/lib/constants";
@@ -182,6 +183,9 @@ export async function createUserWithRolesAction(formData: FormData) {
       }
     }
   } catch (error) {
+    if (isRedirectError(error)) {
+      throw error;
+    }
     const message = error instanceof Error ? error.message : "Erro inesperado ao criar usuÃ¡rio.";
     redirect(`/usuarios?error=${encodeURIComponent(message)}`);
   }
@@ -277,6 +281,9 @@ export async function updateUserByDirectionAction(formData: FormData) {
       }
     }
   } catch (error) {
+    if (isRedirectError(error)) {
+      throw error;
+    }
     const message = error instanceof Error ? error.message : "Erro inesperado ao editar usuÃ¡rio.";
     redirect(`/usuarios?error=${encodeURIComponent(message)}`);
   }

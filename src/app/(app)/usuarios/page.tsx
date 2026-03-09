@@ -62,7 +62,7 @@ export default async function UsuariosPage({ searchParams }: UsuariosPageProps) 
   const userToEdit = canEditOthers ? users.find((item) => item.userId === editUserId) : undefined;
 
   return (
-    <ModuleShell title="UsuÃ¡rios e Perfis" description="CriaÃ§Ã£o de usuÃ¡rios e gestÃ£o de mÃºltiplos papÃ©is por escola">
+    <ModuleShell title="Usuários e Perfis" description="Criação de usuários e gestão de múltiplos papéis por escola">
       {error ? <p className="rounded-xl border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-700">{error}</p> : null}
       {success ? (
         <p className="rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm text-emerald-700">{success}</p>
@@ -88,7 +88,7 @@ export default async function UsuariosPage({ searchParams }: UsuariosPageProps) 
 
         <div className="md:col-span-2">
           <button type="submit" className="fasy-btn-primary px-4 py-2 text-sm">
-            Criar usuÃ¡rio
+            Criar usuário
           </button>
         </div>
       </form>
@@ -100,7 +100,7 @@ export default async function UsuariosPage({ searchParams }: UsuariosPageProps) 
               <th className="px-4 py-3">Nome</th>
               <th className="px-4 py-3">Perfis ativos</th>
               <th className="px-4 py-3">Telefone</th>
-              {canEditOthers ? <th className="px-4 py-3">AÃ§Ãµes</th> : null}
+              {canEditOthers ? <th className="px-4 py-3">Ações</th> : null}
             </tr>
           </thead>
           <tbody>
@@ -131,7 +131,7 @@ export default async function UsuariosPage({ searchParams }: UsuariosPageProps) 
         userToEdit ? (
           <div className="space-y-3">
             <div className="flex items-center justify-between">
-              <h3 className="text-sm font-semibold text-[var(--brand-blue)]">EdiÃ§Ã£o de usuÃ¡rio (DireÃ§Ã£o)</h3>
+              <h3 className="text-sm font-semibold text-[var(--brand-blue)]">Edição de usuário (Direção)</h3>
               <a href="/usuarios" className="rounded-lg border border-[var(--line)] px-2 py-1 text-xs hover:bg-[var(--panel-soft)]">
                 Fechar ediÃ§Ã£o
               </a>
@@ -153,22 +153,23 @@ export default async function UsuariosPage({ searchParams }: UsuariosPageProps) 
               </fieldset>
               <div className="md:col-span-2">
                 <button type="submit" className="fasy-btn-primary px-4 py-2 text-sm">
-                  Salvar alteraÃ§Ãµes
+                  Salvar alterações
                 </button>
               </div>
             </form>
           </div>
         ) : (
           <p className="rounded-xl border border-[var(--line)] bg-[var(--panel-soft)] px-3 py-2 text-sm text-[var(--muted)]">
-            Clique em <strong>Editar</strong> na tabela para atualizar um usuÃ¡rio especÃ­fico.
+            Clique em <strong>Editar</strong> na tabela para atualizar um usuário específico.
           </p>
         )
       ) : (
         <p className="rounded-xl border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-700">
-          Somente o perfil DIREÃ‡ÃƒO pode editar outros usuÃ¡rios.
+          Somente o perfil DIREÇÃO pode editar outros usuários.
         </p>
       )}
     </ModuleShell>
   );
 }
+
 
