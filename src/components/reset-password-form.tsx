@@ -1,10 +1,9 @@
-"use client";
+﻿"use client";
 
-import { FormEvent, useMemo, useState } from "react";
+import { FormEvent, useState } from "react";
 import { createClient } from "@/lib/supabase/client";
 
 export function ResetPasswordForm() {
-  const supabase = useMemo(() => createClient(), []);
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "error" | "success">("idle");
@@ -26,6 +25,7 @@ export function ResetPasswordForm() {
     }
 
     setStatus("loading");
+    const supabase = createClient();
     const { error } = await supabase.auth.updateUser({ password });
 
     if (error) {
