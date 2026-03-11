@@ -1441,12 +1441,53 @@ export async function deleteLessonPlanAction(formData: FormData) {
   if (!id) throw new Error("Planejamento inválido.");
 
   const canReview = hasAnyRole(roles, REVIEW_ROLES);
-  let query = supabase.from("lesson_plans").delete().eq("id", id).eq("school_id", schoolId);
+  const { data: plan, error: planError } = await supabase
+    .from("lesson_plans")
+    .select("id, class_schedule_id")
+    .eq("id", id)
+    .eq("school_id", schoolId)
+    .maybeSingle();
+
+  if (planError) throw new Error(planError.message);
+  if (!plan) throw new Error("Planejamento não encontrado para exclusão.");
+
   if (!canReview) {
-    query = query.eq("created_by", userId);
+    if (!plan.class_schedule_id) {
+      throw new Error("Planejamento sem horário vinculado não pode ser excluído por este perfil.");
+    }
+    const { data: teacher, error: teacherError } = await supabase
+      .from("teachers")
+      .select("id")
+      .eq("school_id", schoolId)
+      .eq("user_id", userId)
+      .maybeSingle();
+
+    if (teacherError) throw new Error(teacherError.message);
+    if (!teacher?.id) throw new Error("Usuário professor não vinculado para exclusão de planejamento.");
+
+    const { data: schedule, error: scheduleError } = await supabase
+      .from("class_schedules")
+      .select("id, teacher_id")
+      .eq("id", plan.class_schedule_id)
+      .eq("school_id", schoolId)
+      .maybeSingle();
+
+    if (scheduleError) throw new Error(scheduleError.message);
+    if (!schedule || schedule.teacher_id !== teacher.id) {
+      throw new Error("Sem permissão para excluir planejamento deste horário.");
+    }
   }
-  const { error } = await query;
+
+  const { data: deleted, error } = await supabase
+    .from("lesson_plans")
+    .delete()
+    .eq("id", id)
+    .eq("school_id", schoolId)
+    .select("id")
+    .maybeSingle();
+
   if (error) throw new Error(error.message);
+  if (!deleted?.id) throw new Error("Não foi possível confirmar a exclusão do planejamento.");
 
   revalidatePath("/planejamento");
   revalidatePath("/coordenacao");
