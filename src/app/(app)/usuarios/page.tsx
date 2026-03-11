@@ -1,6 +1,7 @@
 ﻿import { ModuleShell } from "@/components/module-shell";
 import { createUserWithRolesAction, updateUserByDirectionAction } from "@/lib/actions/users";
 import { getUserContext } from "@/lib/app-context";
+import { createAdminClient } from "@/lib/supabase/admin";
 import { ROLE_OPTIONS } from "@/lib/constants";
 
 type UsuariosPageProps = {
@@ -92,6 +93,13 @@ export default async function UsuariosPage({ searchParams }: UsuariosPageProps) 
   const endIndex = startIndex + pageSize;
   const usersPage = filteredUsers.slice(startIndex, endIndex);
   const userToEdit = canEditOthers ? filteredUsers.find((item) => item.userId === editUserId) : undefined;
+  let userToEditEmail = "";
+
+  if (canEditOthers && userToEdit) {
+    const admin = createAdminClient();
+    const { data: authUser } = await admin.auth.admin.getUserById(userToEdit.userId);
+    userToEditEmail = authUser.user?.email ?? "";
+  }
 
   const buildPageHref = (nextPage: number) => {
     const next = new URLSearchParams();
@@ -231,6 +239,7 @@ export default async function UsuariosPage({ searchParams }: UsuariosPageProps) 
               <input type="hidden" name="target_user_id" value={userToEdit.userId} />
               <input name="full_name" defaultValue={userToEdit.fullName} required className="fasy-input" />
               <input name="phone" defaultValue={userToEdit.phone} placeholder="Telefone" className="fasy-input" />
+              <input name="email" type="email" required defaultValue={userToEditEmail} placeholder="E-mail" className="fasy-input md:col-span-2" />
               <fieldset className="md:col-span-2 rounded-xl border border-[var(--line)] p-3">
                 <legend className="px-2 text-xs font-semibold text-[var(--muted)]">Perfis ativos</legend>
                 <div className="mt-2 grid gap-2 md:grid-cols-3">

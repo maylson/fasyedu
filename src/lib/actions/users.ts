@@ -100,6 +100,7 @@ export async function createUserWithRolesAction(formData: FormData) {
     const email = String(formData.get("email") ?? "").trim().toLowerCase();
     const password = String(formData.get("password") ?? "").trim();
     const phone = String(formData.get("phone") ?? "").trim();
+    const email = String(formData.get("email") ?? "").trim().toLowerCase();
     const rawSelectedRoles = formData
       .getAll("roles")
       .map((value) => String(value).trim());
@@ -140,6 +141,25 @@ export async function createUserWithRolesAction(formData: FormData) {
     }
 
     const targetUserId = createResult.data.user.id;
+
+    const { data: currentAuthUser, error: currentAuthUserError } = await admin.auth.admin.getUserById(targetUserId);
+    if (currentAuthUserError) {
+      redirect(`/usuarios?error=${encodeURIComponent(currentAuthUserError.message)}`);
+    }
+
+    const currentEmail = (currentAuthUser.user?.email ?? "").trim().toLowerCase();
+    if (currentEmail !== email) {
+      const { error: authUpdateError } = await admin.auth.admin.updateUserById(targetUserId, {
+        email,
+        email_confirm: true,
+      });
+      if (authUpdateError) {
+        const friendly = authUpdateError.message.toLowerCase().includes("already")
+          ? "Este e-mail já está em uso por outro usuário."
+          : authUpdateError.message;
+        redirect(`/usuarios?error=${encodeURIComponent(friendly)}`);
+      }
+    }
 
     const { error: profileError } = await admin.from("user_profiles").upsert({
       id: targetUserId,
@@ -198,6 +218,7 @@ export async function updateUserByDirectionAction(formData: FormData) {
     const targetUserId = String(formData.get("target_user_id") ?? "").trim();
     const fullName = String(formData.get("full_name") ?? "").trim();
     const phone = String(formData.get("phone") ?? "").trim();
+    const email = String(formData.get("email") ?? "").trim().toLowerCase();
     const rawSelectedRoles = formData
       .getAll("roles")
       .map((value) => String(value).trim());
@@ -213,8 +234,30 @@ export async function updateUserByDirectionAction(formData: FormData) {
     if (!fullName) {
       redirect(`/usuarios?error=${encodeURIComponent("Nome completo é obrigatório.")}`);
     }
+    if (!email) {
+      redirect(`/usuarios?error=${encodeURIComponent("E-mail é obrigatório.")}`);
+    }
     if (selectedRoles.length === 0) {
       redirect(`/usuarios?error=${encodeURIComponent("Selecione ao menos um perfil ativo.")}`);
+    }
+
+    const { data: currentAuthUser, error: currentAuthUserError } = await admin.auth.admin.getUserById(targetUserId);
+    if (currentAuthUserError) {
+      redirect(`/usuarios?error=${encodeURIComponent(currentAuthUserError.message)}`);
+    }
+
+    const currentEmail = (currentAuthUser.user?.email ?? "").trim().toLowerCase();
+    if (currentEmail !== email) {
+      const { error: authUpdateError } = await admin.auth.admin.updateUserById(targetUserId, {
+        email,
+        email_confirm: true,
+      });
+      if (authUpdateError) {
+        const friendly = authUpdateError.message.toLowerCase().includes("already")
+          ? "Este e-mail já está em uso por outro usuário."
+          : authUpdateError.message;
+        redirect(`/usuarios?error=${encodeURIComponent(friendly)}`);
+      }
     }
 
     const { error: profileError } = await admin.from("user_profiles").upsert({
