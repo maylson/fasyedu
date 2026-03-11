@@ -100,7 +100,6 @@ export async function createUserWithRolesAction(formData: FormData) {
     const email = String(formData.get("email") ?? "").trim().toLowerCase();
     const password = String(formData.get("password") ?? "").trim();
     const phone = String(formData.get("phone") ?? "").trim();
-    const email = String(formData.get("email") ?? "").trim().toLowerCase();
     const rawSelectedRoles = formData
       .getAll("roles")
       .map((value) => String(value).trim());
