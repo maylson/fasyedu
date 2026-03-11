@@ -245,7 +245,8 @@ export default async function CoordenacaoPage({ searchParams }: CoordenacaoPageP
       .eq("school_id", activeSchoolId)
       .eq("entry_type", "AULA")
       .order("day_of_week")
-      .order("starts_at");
+      .order("starts_at")
+      .limit(10000);
 
     const allSchedules = (allSchedulesResult.data ?? []) as Array<{
       id: string;
