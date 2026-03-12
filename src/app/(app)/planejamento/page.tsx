@@ -1,7 +1,7 @@
 import { ModuleShell } from "@/components/module-shell";
 import { PlanningWeekGrid } from "@/components/planning-week-grid";
 import { getUserContext } from "@/lib/app-context";
-import { WEEKDAY_OPTIONS } from "@/lib/constants";
+import { getWeekdayLabel, WEEKDAY_OPTIONS } from "@/lib/constants";
 
 type PlanejamentoPageProps = {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
@@ -48,9 +48,9 @@ export default async function PlanejamentoPage({ searchParams }: PlanejamentoPag
 
   if (!isProfessor) {
     return (
-      <ModuleShell title="Planejamento de Aulas" description="Calend·rio semanal de planejamento do professor">
+      <ModuleShell title="Planejamento de Aulas" description="Calend√°rio semanal de planejamento do professor">
         <p className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">
-          Esta ·rea È exclusiva para o perfil Professor.
+          Esta √°rea √© exclusiva para o perfil Professor.
         </p>
       </ModuleShell>
     );
@@ -65,9 +65,9 @@ export default async function PlanejamentoPage({ searchParams }: PlanejamentoPag
 
   if (!teacher) {
     return (
-      <ModuleShell title="Planejamento de Aulas" description="Calend·rio semanal de planejamento">
+      <ModuleShell title="Planejamento de Aulas" description="Calend√°rio semanal de planejamento">
         <p className="rounded-xl border border-[var(--line)] bg-[var(--panel-soft)] p-4 text-sm">
-          Seu usu·rio n„o est· vinculado a um cadastro de professor nesta escola.
+          Seu usu√°rio n√£o est√° vinculado a um cadastro de professor nesta escola.
         </p>
       </ModuleShell>
     );
@@ -243,7 +243,7 @@ export default async function PlanejamentoPage({ searchParams }: PlanejamentoPag
     .sort((a, b) => a.className.localeCompare(b.className, "pt-BR"));
 
   return (
-    <ModuleShell title="Planejamento de Aulas" description="Calend·rio semanal de planejamento do professor">
+    <ModuleShell title="Planejamento de Aulas" description="Calend√°rio semanal de planejamento do professor">
       <div id="planning-grid-zone" className="relative">
         <div
           data-loading-overlay
