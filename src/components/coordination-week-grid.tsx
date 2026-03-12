@@ -52,13 +52,10 @@ type CoordinationWeekGridProps = {
   timeSlots: string[];
   entries: CoordinationEntry[];
   showPillars: boolean;
-  duplicateTargets: Array<{
-    scheduleId: string;
+  duplicateClassTargets: Array<{
     classId: string;
     className: string;
     classSeries: string | null;
-    dayOfWeek: number;
-    label: string;
   }>;
   duplicateDateMin: string | null;
   duplicateDateMax: string | null;
@@ -136,7 +133,7 @@ export function CoordinationWeekGrid({
   timeSlots,
   entries,
   showPillars,
-  duplicateTargets,
+  duplicateClassTargets,
   duplicateDateMin,
   duplicateDateMax,
 }: CoordinationWeekGridProps) {
@@ -154,6 +151,11 @@ export function CoordinationWeekGrid({
   const [duplicateTargetClassId, setDuplicateTargetClassId] = useState<string>("");
   const [duplicateTargetScheduleId, setDuplicateTargetScheduleId] = useState<string>("");
   const [duplicateTargetDate, setDuplicateTargetDate] = useState<string>("");
+  const [duplicateScheduleTargets, setDuplicateScheduleTargets] = useState<
+    Array<{ scheduleId: string; classId: string; dayOfWeek: number; label: string }>
+  >([]);
+  const [duplicateScheduleTargetsLoading, setDuplicateScheduleTargetsLoading] = useState(false);
+  const [duplicateScheduleTargetsError, setDuplicateScheduleTargetsError] = useState<string | null>(null);
   const highlightTimeoutRef = useRef<number | null>(null);
 
   useEffect(() => {
@@ -205,30 +207,29 @@ export function CoordinationWeekGrid({
     () => effectiveEntries.find((entry) => `${entry.scheduleId}-${entry.lessonDate}` === activeKey) ?? null,
     [activeKey, effectiveEntries],
   );
-  const eligibleDuplicateTargets = useMemo(() => {
-    if (!duplicateSource) return [];
-    return duplicateTargets.filter((item) => {
-      if (item.scheduleId === duplicateSource.scheduleId) return false;
-      if (!duplicateSource.classSeries) return true;
-      return item.classSeries === duplicateSource.classSeries;
-    });
-  }, [duplicateSource, duplicateTargets]);
-
   const eligibleTargetClasses = useMemo(() => {
-    const map = new Map<string, { classId: string; className: string }>();
-    for (const target of eligibleDuplicateTargets) {
-      if (!map.has(target.classId)) {
-        map.set(target.classId, { classId: target.classId, className: target.className });
-      }
-    }
-    return Array.from(map.values()).sort((a, b) => a.className.localeCompare(b.className, "pt-BR"));
-  }, [eligibleDuplicateTargets]);
+    if (!duplicateSource) return [];
+    return duplicateClassTargets
+      .filter((target) => {
+        if (!duplicateSource.classSeries) return true;
+        return target.classSeries === duplicateSource.classSeries;
+      })
+      .sort((a, b) => a.className.localeCompare(b.className, "pt-BR"))
+      .map((item) => ({ classId: item.classId, className: item.className }));
+  }, [duplicateClassTargets, duplicateSource]);
 
   const effectiveTargetClassId =
     duplicateTargetClassId && eligibleTargetClasses.some((item) => item.classId === duplicateTargetClassId)
       ? duplicateTargetClassId
       : "";
-  const visibleScheduleTargets = eligibleDuplicateTargets.filter((item) => item.classId === effectiveTargetClassId);
+  const visibleScheduleTargets = useMemo(
+    () =>
+      duplicateScheduleTargets.filter((item) => {
+        if (!duplicateSource) return true;
+        return item.scheduleId !== duplicateSource.scheduleId;
+      }),
+    [duplicateScheduleTargets, duplicateSource],
+  );
   const effectiveTargetScheduleId =
     duplicateTargetScheduleId && visibleScheduleTargets.some((item) => item.scheduleId === duplicateTargetScheduleId)
       ? duplicateTargetScheduleId
@@ -237,6 +238,43 @@ export function CoordinationWeekGrid({
   const duplicateDateWeekday = isoWeekdayFromDateInput(duplicateTargetDate);
   const isDuplicateDateCompatible =
     !selectedTargetSchedule || !duplicateDateWeekday ? true : duplicateDateWeekday === selectedTargetSchedule.dayOfWeek;
+
+  useEffect(() => {
+    async function loadTargetsByClass() {
+      if (!duplicateSource || !effectiveTargetClassId) {
+        setDuplicateScheduleTargets([]);
+        setDuplicateScheduleTargetsError(null);
+        setDuplicateScheduleTargetsLoading(false);
+        return;
+      }
+
+      setDuplicateScheduleTargetsLoading(true);
+      setDuplicateScheduleTargetsError(null);
+      setDuplicateScheduleTargets([]);
+      setDuplicateTargetScheduleId("");
+
+      try {
+        const response = await fetch(`/api/schedule-targets?class_id=${encodeURIComponent(effectiveTargetClassId)}`);
+        const result = (await response.json()) as {
+          targets?: Array<{ scheduleId: string; classId: string; dayOfWeek: number; label: string }>;
+          error?: string;
+        };
+
+        if (!response.ok) {
+          throw new Error(result.error || "Não foi possível carregar horários da turma de destino.");
+        }
+
+        setDuplicateScheduleTargets(result.targets ?? []);
+      } catch (error) {
+        const message = error instanceof Error ? error.message : "Falha ao carregar horários da turma.";
+        setDuplicateScheduleTargetsError(message);
+      } finally {
+        setDuplicateScheduleTargetsLoading(false);
+      }
+    }
+
+    void loadTargetsByClass();
+  }, [duplicateSource, effectiveTargetClassId]);
 
   const modalFormId = activeEntry ? `coord-plan-form-${activeEntry.scheduleId}-${activeEntry.lessonDate}` : "coord-plan-form";
 
@@ -396,6 +434,9 @@ export function CoordinationWeekGrid({
                                       setDuplicateTargetClassId("");
                                       setDuplicateTargetScheduleId("");
                                       setDuplicateTargetDate(entry.lessonDate);
+                                      setDuplicateScheduleTargets([]);
+                                      setDuplicateScheduleTargetsError(null);
+                                      setDuplicateScheduleTargetsLoading(false);
                                     }}
                                     className="rounded-lg border border-[var(--line)] bg-white px-2 py-1 text-[11px] hover:bg-[var(--panel-soft)]"
                                   >
@@ -599,9 +640,14 @@ export function CoordinationWeekGrid({
                   onChange={(event) => setDuplicateTargetScheduleId(event.currentTarget.value)}
                   className="fasy-input"
                   required
+                  disabled={!effectiveTargetClassId || duplicateScheduleTargetsLoading}
                 >
                   <option value="" disabled>
-                    Selecione o destino
+                    {duplicateScheduleTargetsLoading
+                      ? "Carregando horários..."
+                      : !effectiveTargetClassId
+                        ? "Selecione a turma primeiro"
+                        : "Selecione o destino"}
                   </option>
                   {visibleScheduleTargets.map((item) => (
                     <option key={`coord-dup-target-${item.scheduleId}`} value={item.scheduleId}>
@@ -609,6 +655,9 @@ export function CoordinationWeekGrid({
                     </option>
                   ))}
                 </select>
+                {duplicateScheduleTargetsError ? (
+                  <p className="text-xs text-rose-700">{duplicateScheduleTargetsError}</p>
+                ) : null}
               </label>
               <label className="grid gap-1 text-sm">
                 <span className="font-medium">Data de destino</span>

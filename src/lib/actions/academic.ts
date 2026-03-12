@@ -1269,6 +1269,7 @@ export async function createClassScheduleAction(formData: FormData) {
   revalidatePath("/horarios");
   revalidatePath("/planejamento");
   revalidatePath("/coordenacao");
+  redirect(`/horarios?class_id=${encodeURIComponent(classId)}`);
 }
 
 export async function updateClassScheduleAction(formData: FormData) {

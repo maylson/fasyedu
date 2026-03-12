@@ -56,8 +56,8 @@ export default async function CoordenacaoPage({ searchParams }: CoordenacaoPageP
     );
   }
 
-  const classesResult = await supabase.from("classes").select("id, name, stage").eq("school_id", activeSchoolId).limit(500);
-  const classes = (classesResult.data ?? []) as Array<{ id: string; name: string; stage: string }>;
+  const classesResult = await supabase.from("classes").select("id, name, stage, series").eq("school_id", activeSchoolId).limit(500);
+  const classes = (classesResult.data ?? []) as Array<{ id: string; name: string; stage: string; series: string | null }>;
 
   const classStageOrder = new Map<string, number>([
     ["EDUCACAO_INFANTIL", 0],
@@ -115,12 +115,9 @@ export default async function CoordenacaoPage({ searchParams }: CoordenacaoPageP
   let days: Array<{ value: number; label: string; lessonDate: string }> = [];
   let timeSlots: string[] = [];
   let duplicateTargets: Array<{
-    scheduleId: string;
     classId: string;
     className: string;
     classSeries: string | null;
-    dayOfWeek: number;
-    label: string;
   }> = [];
 
   if (selectedClassId) {
@@ -237,43 +234,11 @@ export default async function CoordenacaoPage({ searchParams }: CoordenacaoPageP
       a.localeCompare(b, "pt-BR"),
     );
 
-    const allSchedulesResult = await supabase
-      .from("class_schedules")
-      .select(
-        "id, class_id, day_of_week, starts_at, classes(id,name,series), teachers(full_name), class_subjects(subjects(name))",
-      )
-      .eq("school_id", activeSchoolId)
-      .eq("entry_type", "AULA")
-      .order("day_of_week")
-      .order("starts_at")
-      .limit(10000);
-
-    const allSchedules = (allSchedulesResult.data ?? []) as Array<{
-      id: string;
-      class_id: string;
-      day_of_week: number;
-      starts_at: string;
-      classes?: { id?: string; name?: string; series?: string | null } | Array<{ id?: string; name?: string; series?: string | null }>;
-      teachers?: { full_name?: string } | Array<{ full_name?: string }>;
-      class_subjects?:
-        | { subjects?: { name?: string } | Array<{ name?: string }> }
-        | Array<{ subjects?: { name?: string } | Array<{ name?: string }> }>;
-    }>;
-
-    duplicateTargets = allSchedules.map((schedule) => {
-      const classInfo = Array.isArray(schedule.classes) ? schedule.classes[0] : schedule.classes;
-      const classSubject = Array.isArray(schedule.class_subjects) ? schedule.class_subjects[0] : schedule.class_subjects;
-      const subjectName = Array.isArray(classSubject?.subjects) ? classSubject?.subjects[0]?.name : classSubject?.subjects?.name;
-      const weekdayLabel = getWeekdayLabel(schedule.day_of_week);
-      return {
-        scheduleId: schedule.id,
-        classId: classInfo?.id ?? schedule.class_id,
-        className: classInfo?.name ?? "Turma",
-        classSeries: classInfo?.series ?? null,
-        dayOfWeek: schedule.day_of_week,
-        label: `${weekdayLabel} · ${schedule.starts_at.slice(0, 5)} · ${subjectName ?? "Disciplina"}`,
-      };
-    });
+    duplicateTargets = classesSorted.map((item) => ({
+      classId: item.id,
+      className: item.name,
+      classSeries: (item as { series?: string | null }).series ?? null,
+    }));
   }
 
   return (
@@ -318,7 +283,7 @@ export default async function CoordenacaoPage({ searchParams }: CoordenacaoPageP
             timeSlots={timeSlots}
             entries={entries}
             showPillars={Boolean(schoolSettings?.planning_pillars_enabled)}
-            duplicateTargets={duplicateTargets}
+            duplicateClassTargets={duplicateTargets}
             duplicateDateMin={activeSchoolYear?.starts_at ?? null}
             duplicateDateMax={activeSchoolYear?.ends_at ?? null}
           />

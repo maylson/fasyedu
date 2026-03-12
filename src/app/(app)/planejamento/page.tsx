@@ -1,7 +1,7 @@
-ï»¿import { ModuleShell } from "@/components/module-shell";
+import { ModuleShell } from "@/components/module-shell";
 import { PlanningWeekGrid } from "@/components/planning-week-grid";
 import { getUserContext } from "@/lib/app-context";
-import { getWeekdayLabel, WEEKDAY_OPTIONS } from "@/lib/constants";
+import { WEEKDAY_OPTIONS } from "@/lib/constants";
 
 type PlanejamentoPageProps = {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
@@ -48,9 +48,9 @@ export default async function PlanejamentoPage({ searchParams }: PlanejamentoPag
 
   if (!isProfessor) {
     return (
-      <ModuleShell title="Planejamento de Aulas" description="CalendÃ¡rio semanal de planejamento do professor">
+      <ModuleShell title="Planejamento de Aulas" description="Calendário semanal de planejamento do professor">
         <p className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">
-          Esta Ã¡rea Ã© exclusiva para o perfil Professor.
+          Esta área é exclusiva para o perfil Professor.
         </p>
       </ModuleShell>
     );
@@ -65,9 +65,9 @@ export default async function PlanejamentoPage({ searchParams }: PlanejamentoPag
 
   if (!teacher) {
     return (
-      <ModuleShell title="Planejamento de Aulas" description="CalendÃ¡rio semanal de planejamento">
+      <ModuleShell title="Planejamento de Aulas" description="Calendário semanal de planejamento">
         <p className="rounded-xl border border-[var(--line)] bg-[var(--panel-soft)] p-4 text-sm">
-          Seu usuÃ¡rio nÃ£o estÃ¡ vinculado a um cadastro de professor nesta escola.
+          Seu usuário não está vinculado a um cadastro de professor nesta escola.
         </p>
       </ModuleShell>
     );
@@ -85,7 +85,7 @@ export default async function PlanejamentoPage({ searchParams }: PlanejamentoPag
     .eq("is_active", true)
     .maybeSingle();
 
-  const [schedulesResult, plansResult] = await Promise.all([
+  const [schedulesResult, plansResult, classesResult] = await Promise.all([
     supabase
       .from("class_schedules")
       .select("id, class_id, class_subject_id, day_of_week, starts_at, ends_at, classes(id,name,series), class_subjects(subjects(name))")
@@ -101,6 +101,7 @@ export default async function PlanejamentoPage({ searchParams }: PlanejamentoPag
       .eq("school_id", activeSchoolId)
       .gte("lesson_date", weekStartIso)
       .lte("lesson_date", weekEndIso),
+    supabase.from("classes").select("id, name, series").eq("school_id", activeSchoolId).limit(500),
   ]);
 
   const schedules = (schedulesResult.data ?? []) as Array<{
@@ -233,45 +234,16 @@ export default async function PlanejamentoPage({ searchParams }: PlanejamentoPag
     a.localeCompare(b, "pt-BR"),
   );
 
-  const allSchedulesResult = await supabase
-    .from("class_schedules")
-    .select("id, class_id, day_of_week, starts_at, classes(id,name,series), class_subjects(subjects(name))")
-    .eq("school_id", activeSchoolId)
-    .eq("entry_type", "AULA")
-    .order("day_of_week")
-    .order("starts_at")
-    .limit(10000);
-
-  const allSchedules = (allSchedulesResult.data ?? []) as Array<{
-    id: string;
-    class_id: string;
-    day_of_week: number;
-    starts_at: string;
-    classes?: { id?: string; name?: string; series?: string | null } | Array<{ id?: string; name?: string; series?: string | null }>;
-    class_subjects?:
-      | { subjects?: { name?: string } | Array<{ name?: string }> }
-      | Array<{ subjects?: { name?: string } | Array<{ name?: string }> }>;
-  }>;
-
-  const duplicateTargets = allSchedules.map((schedule) => {
-    const className = Array.isArray(schedule.classes) ? schedule.classes[0]?.name : schedule.classes?.name;
-    const classId = Array.isArray(schedule.classes) ? schedule.classes[0]?.id : schedule.classes?.id;
-    const classSeries = Array.isArray(schedule.classes) ? schedule.classes[0]?.series : schedule.classes?.series;
-    const classSubject = Array.isArray(schedule.class_subjects) ? schedule.class_subjects[0] : schedule.class_subjects;
-    const subjectName = Array.isArray(classSubject?.subjects) ? classSubject?.subjects[0]?.name : classSubject?.subjects?.name;
-    const weekdayLabel = getWeekdayLabel(schedule.day_of_week);
-    return {
-      scheduleId: schedule.id,
-      classId: classId ?? schedule.class_id,
-      className: className ?? "Turma",
-      classSeries: classSeries ?? null,
-      dayOfWeek: schedule.day_of_week,
-      label: `${weekdayLabel} Â· ${schedule.starts_at.slice(0, 5)} Â· ${subjectName ?? "Disciplina"}`,
-    };
-  });
+  const duplicateClassTargets = ((classesResult.data ?? []) as Array<{ id: string; name: string; series: string | null }>)
+    .map((item) => ({
+      classId: item.id,
+      className: item.name,
+      classSeries: item.series ?? null,
+    }))
+    .sort((a, b) => a.className.localeCompare(b.className, "pt-BR"));
 
   return (
-    <ModuleShell title="Planejamento de Aulas" description="CalendÃ¡rio semanal de planejamento do professor">
+    <ModuleShell title="Planejamento de Aulas" description="Calendário semanal de planejamento do professor">
       <div id="planning-grid-zone" className="relative">
         <div
           data-loading-overlay
@@ -294,7 +266,7 @@ export default async function PlanejamentoPage({ searchParams }: PlanejamentoPag
           timeSlots={timeSlots}
           entries={entries}
           showPillars={Boolean(schoolSettings?.planning_pillars_enabled)}
-          duplicateTargets={duplicateTargets}
+          duplicateClassTargets={duplicateClassTargets}
           duplicateDateMin={activeSchoolYear?.starts_at ?? null}
           duplicateDateMax={activeSchoolYear?.ends_at ?? null}
           initialOpenScheduleId={initialOpenScheduleId}
