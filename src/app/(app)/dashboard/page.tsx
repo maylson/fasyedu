@@ -430,15 +430,30 @@ export default async function DashboardPage() {
       scheduleIds.length > 0
         ? await supabase
             .from("lesson_plans")
-            .select("id, class_schedule_id, lesson_date, status")
+            .select("id, class_schedule_id, lesson_date, status, updated_at, created_at")
             .eq("school_id", activeSchoolId)
             .in("class_schedule_id", scheduleIds)
             .gte("lesson_date", weekStartIso)
             .lte("lesson_date", weekEndIso)
         : { data: [], error: null };
 
-    const plans = (plansResult.data ?? []) as LessonPlanRow[];
+    const reviewQueueResult =
+      scheduleIds.length > 0
+        ? await supabase
+            .from("lesson_plans")
+            .select("id, class_schedule_id, lesson_date, status, updated_at, created_at")
+            .eq("school_id", activeSchoolId)
+            .in("class_schedule_id", scheduleIds)
+            .in("status", ["HUMAN_REVIEW", "UNDER_REVIEW"])
+        : { data: [], error: null };
+
+    const plans = (plansResult.data ?? []) as Array<
+      LessonPlanRow & { updated_at?: string | null; created_at?: string | null }
+    >;
     const uniquePlans = uniqueByKey(plans, (item) => `${item.class_schedule_id}-${item.lesson_date}`);
+    const reviewQueueRows = (reviewQueueResult.data ?? []) as Array<
+      LessonPlanRow & { updated_at?: string | null; created_at?: string | null }
+    >;
     const scheduleMetaById = new Map(
       schedules.map((schedule) => {
         const classRef = Array.isArray(schedule.classes) ? schedule.classes[0] : schedule.classes;
@@ -474,8 +489,14 @@ export default async function DashboardPage() {
     const missingCount = expectedCount - plannedCount;
     const underReviewCount = uniquePlans.filter((plan) => plan.status === "HUMAN_REVIEW" || plan.status === "UNDER_REVIEW").length;
     const rejectedCount = uniquePlans.filter((plan) => plan.status === "REJECTED").length;
-    const humanReviewPlans = uniquePlans
-      .filter((plan) => plan.status === "HUMAN_REVIEW" || plan.status === "UNDER_REVIEW")
+    const humanReviewPlans = uniqueByKey(
+      reviewQueueRows.sort((a, b) => {
+        const aRef = a.updated_at ?? a.created_at ?? "";
+        const bRef = b.updated_at ?? b.created_at ?? "";
+        return bRef.localeCompare(aRef, "pt-BR");
+      }),
+      (item) => `${item.class_schedule_id}-${item.lesson_date}`,
+    )
       .filter((plan) => plan.class_schedule_id && plan.lesson_date)
       .sort((a, b) => (a.lesson_date ?? "").localeCompare(b.lesson_date ?? "", "pt-BR"));
 
@@ -536,10 +557,10 @@ export default async function DashboardPage() {
         </div>
 
         <section className="rounded-2xl border border-[var(--line)] bg-white p-4">
-          <h3 className="text-sm font-semibold text-[var(--brand-blue)]">Aulas em revisão humana</h3>
+          <h3 className="text-sm font-semibold text-[var(--brand-blue)]">Aulas em revisão</h3>
           <div className="mt-3 space-y-2">
             {humanReviewPlans.length === 0 ? (
-              <p className="text-sm text-[var(--muted)]">Sem aulas pendentes de revisão humana nesta semana.</p>
+              <p className="text-sm text-[var(--muted)]">Sem aulas pendentes de revisão no momento.</p>
             ) : (
               humanReviewPlans.map((plan) => {
                 const scheduleId = plan.class_schedule_id as string;
