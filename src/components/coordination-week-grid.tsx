@@ -477,6 +477,7 @@ export function CoordinationWeekGrid({
                                 <p className="text-xs font-semibold">{entry.subjectName}</p>
                                 <span className="rounded-full bg-white px-2 py-0.5 text-[10px] font-medium text-[var(--brand-blue)]">{getStatusLabel(status)}</span>
                               </div>
+                              <p className="text-xs text-[var(--muted)]">{entry.className}</p>
                               <p className="text-xs text-[var(--muted)]">{entry.teacherName}</p>
                               <p className="text-xs text-[var(--brand-blue)]">
                                 {entry.startsAt.slice(0, 5)} - {entry.endsAt.slice(0, 5)}

@@ -89,6 +89,20 @@ function uniqueByKey<T>(items: T[], getKey: (item: T) => string) {
   });
 }
 
+async function fetchAllRows<T>(query: any, pageSize = 1000) {
+  const rows: T[] = [];
+  let from = 0;
+  while (true) {
+    const { data, error } = await query.range(from, from + pageSize - 1);
+    if (error) throw new Error(error.message);
+    const chunk = data ?? [];
+    rows.push(...chunk);
+    if (chunk.length < pageSize) break;
+    from += pageSize;
+  }
+  return rows;
+}
+
 function sanitizeFeedbackHtml(input: string) {
   if (!input) return "";
   return input
@@ -142,16 +156,18 @@ export default async function DashboardPage() {
       );
     }
 
-    const schedulesResult = await supabase
+    const schedules = await fetchAllRows(
+      supabase
       .from("class_schedules")
       .select("id, day_of_week, starts_at, classes(name), class_subjects(subjects(name))")
       .eq("school_id", activeSchoolId)
       .eq("teacher_id", teacher.id)
       .eq("entry_type", "AULA")
       .order("day_of_week")
-      .order("starts_at");
+      .order("starts_at"),
+    );
 
-    const schedules = (schedulesResult.data ?? []) as Array<{
+    const typedSchedules = schedules as Array<{
       id: string;
       day_of_week: number;
       starts_at: string;
@@ -163,7 +179,7 @@ export default async function DashboardPage() {
     }>;
 
     const scheduleMetaById = new Map(
-      schedules.map((schedule) => {
+      typedSchedules.map((schedule) => {
         const classRef = Array.isArray(schedule.classes) ? schedule.classes[0] : schedule.classes;
         const classSubjectRef = Array.isArray(schedule.class_subjects) ? schedule.class_subjects[0] : schedule.class_subjects;
         const subjectRef = Array.isArray(classSubjectRef?.subjects) ? classSubjectRef?.subjects[0] : classSubjectRef?.subjects;
@@ -178,7 +194,7 @@ export default async function DashboardPage() {
       }),
     );
 
-    const scheduleIds = schedules.map((item) => item.id);
+    const scheduleIds = typedSchedules.map((item) => item.id);
     const plansResult =
       scheduleIds.length > 0
         ? await supabase
@@ -197,7 +213,7 @@ export default async function DashboardPage() {
       planBySlot.set(`${plan.class_schedule_id}-${plan.lesson_date}`, plan);
     });
 
-    const expectedSlots = schedules.map((schedule) => {
+    const expectedSlots = typedSchedules.map((schedule) => {
       const lessonDate = getDateOnly(addDays(weekStart, schedule.day_of_week - 1));
       return `${schedule.id}-${lessonDate}`;
     });
@@ -328,17 +344,19 @@ export default async function DashboardPage() {
     }>;
     const classIds = Array.from(new Set(enrollments.map((item) => item.class_id)));
 
-    const schedulesResult =
+    const schedulesRows =
       classIds.length > 0
-        ? await supabase
+        ? await fetchAllRows(
+            supabase
             .from("class_schedules")
             .select("id, day_of_week, class_id")
             .eq("school_id", activeSchoolId)
             .eq("entry_type", "AULA")
             .in("class_id", classIds)
-        : { data: [], error: null };
+          )
+        : [];
 
-    const schedules = (schedulesResult.data ?? []) as Array<{ id: string; day_of_week: number; class_id: string }>;
+    const schedules = schedulesRows as Array<{ id: string; day_of_week: number; class_id: string }>;
     const expectedKeys = schedules.map((schedule) => {
       const lessonDate = getDateOnly(addDays(weekStart, schedule.day_of_week - 1));
       return `${schedule.id}-${lessonDate}`;
@@ -398,13 +416,15 @@ export default async function DashboardPage() {
   }
 
   if (roleView === "COORDENACAO") {
-    const schedulesResult = await supabase
+    const schedulesRows = await fetchAllRows(
+      supabase
       .from("class_schedules")
       .select("id, day_of_week, starts_at, teacher_id, classes(name), teachers(full_name), class_subjects(subjects(name))")
       .eq("school_id", activeSchoolId)
-      .eq("entry_type", "AULA");
+      .eq("entry_type", "AULA"),
+    );
 
-    const schedules = (schedulesResult.data ?? []) as ScheduleRow[];
+    const schedules = schedulesRows as ScheduleRow[];
     const scheduleIds = schedules.map((item) => item.id);
     const plansResult =
       scheduleIds.length > 0
@@ -550,13 +570,15 @@ export default async function DashboardPage() {
   }
 
   if (roleView === "DIRECAO") {
-    const schedulesResult = await supabase
+    const schedulesRows = await fetchAllRows(
+      supabase
       .from("class_schedules")
       .select("id, day_of_week")
       .eq("school_id", activeSchoolId)
-      .eq("entry_type", "AULA");
+      .eq("entry_type", "AULA"),
+    );
 
-    const schedules = (schedulesResult.data ?? []) as Array<{ id: string; day_of_week: number }>;
+    const schedules = schedulesRows as Array<{ id: string; day_of_week: number }>;
     const scheduleIds = schedules.map((item) => item.id);
 
     const [plansCurrentResult, plansPreviousResult] = await Promise.all([
