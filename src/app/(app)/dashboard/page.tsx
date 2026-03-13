@@ -419,6 +419,24 @@ export default async function DashboardPage() {
 
     const plans = (plansResult.data ?? []) as LessonPlanRow[];
     const uniquePlans = uniqueByKey(plans, (item) => `${item.class_schedule_id}-${item.lesson_date}`);
+    const scheduleMetaById = new Map(
+      schedules.map((schedule) => {
+        const classRef = Array.isArray(schedule.classes) ? schedule.classes[0] : schedule.classes;
+        const teacherRef = Array.isArray(schedule.teachers) ? schedule.teachers[0] : schedule.teachers;
+        const classSubjectRef = Array.isArray(schedule.class_subjects) ? schedule.class_subjects[0] : schedule.class_subjects;
+        const subjectRef = Array.isArray(classSubjectRef?.subjects) ? classSubjectRef?.subjects[0] : classSubjectRef?.subjects;
+        return [
+          schedule.id,
+          {
+            classId: schedule.class_id,
+            className: classRef?.name ?? "Turma",
+            teacherName: teacherRef?.full_name ?? "Professor",
+            subjectName: subjectRef?.name ?? "Disciplina",
+            startsAt: schedule.starts_at,
+          },
+        ] as const;
+      }),
+    );
 
     const planBySlot = new Set(
       uniquePlans
@@ -436,6 +454,10 @@ export default async function DashboardPage() {
     const missingCount = expectedCount - plannedCount;
     const underReviewCount = uniquePlans.filter((plan) => plan.status === "HUMAN_REVIEW" || plan.status === "UNDER_REVIEW").length;
     const rejectedCount = uniquePlans.filter((plan) => plan.status === "REJECTED").length;
+    const humanReviewPlans = uniquePlans
+      .filter((plan) => plan.status === "HUMAN_REVIEW" || plan.status === "UNDER_REVIEW")
+      .filter((plan) => plan.class_schedule_id && plan.lesson_date)
+      .sort((a, b) => (a.lesson_date ?? "").localeCompare(b.lesson_date ?? "", "pt-BR"));
 
     const teacherTotals = new Map<string, { teacherName: string; expected: number; planned: number }>();
     for (const schedule of schedules) {
@@ -492,6 +514,37 @@ export default async function DashboardPage() {
             </div>
           </section>
         </div>
+
+        <section className="rounded-2xl border border-[var(--line)] bg-white p-4">
+          <h3 className="text-sm font-semibold text-[var(--brand-blue)]">Aulas em revisão humana</h3>
+          <div className="mt-3 space-y-2">
+            {humanReviewPlans.length === 0 ? (
+              <p className="text-sm text-[var(--muted)]">Sem aulas pendentes de revisão humana nesta semana.</p>
+            ) : (
+              humanReviewPlans.map((plan) => {
+                const scheduleId = plan.class_schedule_id as string;
+                const lessonDate = plan.lesson_date as string;
+                const meta = scheduleMetaById.get(scheduleId);
+                if (!meta) return null;
+                const weekIso = getDateOnly(getWeekStart(new Date(`${lessonDate}T12:00:00`)));
+                return (
+                  <Link
+                    key={plan.id}
+                    href={`/coordenacao?class_id=${encodeURIComponent(meta.classId)}&week=${encodeURIComponent(weekIso)}`}
+                    className="block rounded-xl border border-[var(--line)] bg-[var(--panel-soft)] p-3 transition hover:border-[var(--primary)] hover:bg-white"
+                  >
+                    <p className="text-sm font-medium text-[var(--brand-blue)]">
+                      {meta.className} · {meta.subjectName}
+                    </p>
+                    <p className="mt-1 text-xs text-[var(--muted)]">
+                      {new Date(`${lessonDate}T12:00:00`).toLocaleDateString("pt-BR")} · {meta.startsAt.slice(0, 5)} · {meta.teacherName}
+                    </p>
+                  </Link>
+                );
+              })
+            )}
+          </div>
+        </section>
       </ModuleShell>
     );
   }
