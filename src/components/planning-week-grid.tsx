@@ -64,6 +64,8 @@ type PlanningWeekGridProps = {
   weekEndIso: string;
   previousWeekIso: string;
   nextWeekIso: string;
+  previousMonthIso: string;
+  nextMonthIso: string;
   teacherName: string;
   days: PlanningDay[];
   timeSlots: string[];
@@ -207,6 +209,8 @@ export function PlanningWeekGrid({
   weekEndIso,
   previousWeekIso,
   nextWeekIso,
+  previousMonthIso,
+  nextMonthIso,
   teacherName,
   days,
   timeSlots,
@@ -415,12 +419,13 @@ export function PlanningWeekGrid({
   const modalBackgroundStatus = (isDirty ? "DRAFT" : displayedStatus) || savedStatus;
 
   function openModal(entry: PlanningEntry) {
+    const initialFeedback = entry.plan.ai_feedback ?? "";
     setActiveKey(`${entry.scheduleId}-${entry.lessonDate}`);
     setWizardStatus(null);
-    setWizardText(entry.plan.ai_feedback ?? "");
-    latestWizardFeedbackRef.current = entry.plan.ai_feedback ?? "";
+    setWizardText(initialFeedback);
+    latestWizardFeedbackRef.current = initialFeedback;
     setWizardError(null);
-    setShowWizardPanel(false);
+    setShowWizardPanel(initialFeedback.trim().length > 0);
     setIsDirty(false);
     const initialStatus = normalizePersistedStatus(entry.plan.status);
     setSubmitStatus(initialStatus);
@@ -573,6 +578,13 @@ export function PlanningWeekGrid({
         </p>
         <div className="flex items-center gap-2">
           <Link
+            href={`/planejamento?week=${previousMonthIso}`}
+            onClick={() => showLoadingOverlay("planning-grid-zone")}
+            className="rounded-lg border border-[var(--line)] px-3 py-1 text-sm hover:bg-[var(--panel-soft)]"
+          >
+            Mês anterior
+          </Link>
+          <Link
             href={`/planejamento?week=${previousWeekIso}`}
             onClick={() => showLoadingOverlay("planning-grid-zone")}
             className="rounded-lg border border-[var(--line)] px-3 py-1 text-sm hover:bg-[var(--panel-soft)]"
@@ -585,7 +597,14 @@ export function PlanningWeekGrid({
             onClick={() => showLoadingOverlay("planning-grid-zone")}
             className="rounded-lg border border-[var(--line)] px-3 py-1 text-sm hover:bg-[var(--panel-soft)]"
           >
-            Proxima semana
+            Próxima semana
+          </Link>
+          <Link
+            href={`/planejamento?week=${nextMonthIso}`}
+            onClick={() => showLoadingOverlay("planning-grid-zone")}
+            className="rounded-lg border border-[var(--line)] px-3 py-1 text-sm hover:bg-[var(--panel-soft)]"
+          >
+            Próximo mês
           </Link>
         </div>
       </div>

@@ -1,0 +1,9 @@
+{
+  "generated_at": "2026-03-13T03:36:32.381Z",
+  "source_file": "c:/Users/Maylson/Desktop/lectures-old-system.json",
+  "total_candidates": 465,
+  "total_validated_for_delete": 465,
+  "total_blocked_invalid_match": 0,
+  "deleted_rows": 465,
+  "preview_file": "generated_schedules\\legacy_import_plans_delete_preview.json"
+}

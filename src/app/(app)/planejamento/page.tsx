@@ -32,6 +32,12 @@ function addDays(date: Date, days: number) {
   return next;
 }
 
+function addMonths(date: Date, months: number) {
+  const next = new Date(date);
+  next.setMonth(next.getMonth() + months);
+  return next;
+}
+
 export default async function PlanejamentoPage({ searchParams }: PlanejamentoPageProps) {
   const { supabase, activeSchoolId, user, roles } = await getUserContext();
   const isProfessor = roles.includes("PROFESSOR") || roles.includes("SUPPORT");
@@ -45,6 +51,8 @@ export default async function PlanejamentoPage({ searchParams }: PlanejamentoPag
   const weekEndIso = getDateOnly(addDays(weekStart, 6));
   const previousWeekIso = getDateOnly(addDays(weekStart, -7));
   const nextWeekIso = getDateOnly(addDays(weekStart, 7));
+  const previousMonthIso = getDateOnly(getWeekStart(getDateOnly(addMonths(weekStart, -1))));
+  const nextMonthIso = getDateOnly(getWeekStart(getDateOnly(addMonths(weekStart, 1))));
 
   if (!isProfessor) {
     return (
@@ -261,6 +269,8 @@ export default async function PlanejamentoPage({ searchParams }: PlanejamentoPag
         weekEndIso={weekEndIso}
         previousWeekIso={previousWeekIso}
         nextWeekIso={nextWeekIso}
+        previousMonthIso={previousMonthIso}
+        nextMonthIso={nextMonthIso}
         teacherName={teacher.full_name}
         days={days}
           timeSlots={timeSlots}

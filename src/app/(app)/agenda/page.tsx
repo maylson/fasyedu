@@ -11,6 +11,12 @@ type AgendaPageProps = {
 type EventType = "FERIADO" | "COMEMORACAO" | "PROGRAMACAO";
 type AgendaFilter = "ALL" | "AULAS" | "TAREFAS" | "EVENTOS";
 
+function addMonths(date: Date, months: number) {
+  const next = new Date(date);
+  next.setMonth(next.getMonth() + months);
+  return next;
+}
+
 function weekLink(week: string, studentId: string, filter: AgendaFilter) {
   const params = new URLSearchParams();
   params.set("week", week);
@@ -80,6 +86,8 @@ export default async function AgendaPage({ searchParams }: AgendaPageProps) {
   const weekEndIso = getDateOnly(addDays(weekStart, 6));
   const previousWeekIso = getDateOnly(addDays(weekStart, -7));
   const nextWeekIso = getDateOnly(addDays(weekStart, 7));
+  const previousMonthIso = getDateOnly(getWeekStart(getDateOnly(addMonths(weekStart, -1))));
+  const nextMonthIso = getDateOnly(getWeekStart(getDateOnly(addMonths(weekStart, 1))));
 
   const filterParam = typeof params.filter === "string" ? params.filter : "ALL";
   const filter: AgendaFilter = ["ALL", "AULAS", "TAREFAS", "EVENTOS"].includes(filterParam)
@@ -262,7 +270,7 @@ export default async function AgendaPage({ searchParams }: AgendaPageProps) {
 
   return (
     <ModuleShell title="Agenda" description="Aulas, conteúdos, tarefas e eventos da semana">
-      <form method="get" className="grid gap-3 rounded-2xl border border-[var(--line)] bg-white p-4 md:grid-cols-[1fr_auto_auto_auto_auto] md:items-center">
+      <form method="get" className="grid gap-3 rounded-2xl border border-[var(--line)] bg-white p-4 md:grid-cols-[1fr_auto_auto_auto_auto_auto_auto] md:items-center">
         <ClassSelectAutoSubmit
           name="student_id"
           defaultValue={selectedStudent.studentId}
@@ -280,9 +288,15 @@ export default async function AgendaPage({ searchParams }: AgendaPageProps) {
         <Link href={weekLink(previousWeekIso, selectedStudent.studentId, filter)} className="rounded-lg border border-[var(--line)] px-3 py-2 text-sm hover:bg-[var(--panel-soft)]">
           Semana anterior
         </Link>
+        <Link href={weekLink(previousMonthIso, selectedStudent.studentId, filter)} className="rounded-lg border border-[var(--line)] px-3 py-2 text-sm hover:bg-[var(--panel-soft)]">
+          Mês anterior
+        </Link>
         <span className="rounded-lg bg-[var(--panel-soft)] px-3 py-2 text-sm text-[var(--brand-blue)]">{new Date(`${weekStartIso}T12:00:00`).toLocaleDateString("pt-BR")}</span>
         <Link href={weekLink(nextWeekIso, selectedStudent.studentId, filter)} className="rounded-lg border border-[var(--line)] px-3 py-2 text-sm hover:bg-[var(--panel-soft)]">
           Próxima semana
+        </Link>
+        <Link href={weekLink(nextMonthIso, selectedStudent.studentId, filter)} className="rounded-lg border border-[var(--line)] px-3 py-2 text-sm hover:bg-[var(--panel-soft)]">
+          Próximo mês
         </Link>
         <input type="hidden" name="week" value={weekStartIso} />
       </form>

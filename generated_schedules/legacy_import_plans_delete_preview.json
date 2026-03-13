@@ -1,0 +1,4195 @@
+{
+  "generated_at": "2026-03-13T03:36:31.236Z",
+  "source_file": "c:/Users/Maylson/Desktop/lectures-old-system.json",
+  "total_candidates": 465,
+  "total_validated_for_delete": 465,
+  "total_blocked_invalid_match": 0,
+  "rows_to_delete": [
+    {
+      "id": "8a75e3e9-fd86-4eeb-a987-f259274f93df",
+      "title": "Importação legado #39245",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "16bde2b6-8442-4413-900e-3fe32a7d4470",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39245,
+      "valid_source_match": true
+    },
+    {
+      "id": "1958b9cd-3ff3-45b9-bb14-58dff9e07250",
+      "title": "Importação legado #38977",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "b502d6f6-2995-41bb-a2ee-bcbc4c29b9eb",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38977,
+      "valid_source_match": true
+    },
+    {
+      "id": "76f948ad-6d74-4a57-85f4-60cee27a3c74",
+      "title": "Importação legado #38976",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "457bf365-eded-4953-b693-5aece978766a",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38976,
+      "valid_source_match": true
+    },
+    {
+      "id": "deccb5c9-8e88-4eb5-8944-455b28af26ba",
+      "title": "Importação legado #38975",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "efabef5e-07de-4b3b-8b6d-f3b027634660",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38975,
+      "valid_source_match": true
+    },
+    {
+      "id": "23088ad3-ffe3-4cfc-bda5-5685dd56455f",
+      "title": "Importação legado #39112",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "121f81c2-85fd-48b1-a099-802d8a69c958",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39112,
+      "valid_source_match": true
+    },
+    {
+      "id": "c0df494c-386b-47d9-acdb-72c0621bf673",
+      "title": "Importação legado #39206",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "672f1960-5a11-40c1-9d35-b15cae1523d4",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39206,
+      "valid_source_match": true
+    },
+    {
+      "id": "0011bff2-a714-4f75-8d76-362daff34312",
+      "title": "Importação legado #39205",
+      "lesson_date": "2026-03-20",
+      "class_schedule_id": "f8b4e67a-b537-41d9-ba05-8aa229201016",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39205,
+      "valid_source_match": true
+    },
+    {
+      "id": "1d58b881-385a-4f07-9659-2f279b54c8c2",
+      "title": "Importação legado #39227",
+      "lesson_date": "2026-03-20",
+      "class_schedule_id": "91d65bbc-0b88-4578-bb3d-b24f867fb68c",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39227,
+      "valid_source_match": true
+    },
+    {
+      "id": "054d6c00-799f-41d1-bddf-5965e6175475",
+      "title": "Importação legado #39226",
+      "lesson_date": "2026-03-20",
+      "class_schedule_id": "4c2572f5-79b3-414a-b5fc-57036f30ba71",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39226,
+      "valid_source_match": true
+    },
+    {
+      "id": "189180f9-6719-4fed-852e-9c6960919ab2",
+      "title": "Importação legado #39225",
+      "lesson_date": "2026-03-19",
+      "class_schedule_id": "12837951-dbfb-42bf-9fc9-f05a238bf4bd",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39225,
+      "valid_source_match": true
+    },
+    {
+      "id": "442753e7-76e8-48f8-8f53-c4c4b61a6c4b",
+      "title": "Importação legado #39172",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "d2a0f750-53cd-4ba0-98c8-09551465199c",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39172,
+      "valid_source_match": true
+    },
+    {
+      "id": "1ac68d18-5bcb-4edc-8c88-c06333870aea",
+      "title": "Importação legado #39217",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "dcb8b4ba-0fbc-44ea-a47b-6f1ccc03c26a",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39217,
+      "valid_source_match": true
+    },
+    {
+      "id": "4d686d77-dc36-41d3-96ab-14564b8bb732",
+      "title": "Importação legado #39216",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "e1f28437-cb93-4045-bbc8-7c475433f24a",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39216,
+      "valid_source_match": true
+    },
+    {
+      "id": "e41aefb0-80a0-4f57-999e-4ec3064452ba",
+      "title": "Importação legado #39215",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "24dde72c-d05e-43f8-ad96-b22ae95e2f02",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39215,
+      "valid_source_match": true
+    },
+    {
+      "id": "491f464f-5865-4c05-b035-f6ec947be6fb",
+      "title": "Importação legado #39214",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "1d4a2954-223b-4327-b72c-b76f51f952a3",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39214,
+      "valid_source_match": true
+    },
+    {
+      "id": "8399f17d-e5b2-4a3a-bb15-5cbe4ade59f6",
+      "title": "Importação legado #39213",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "df47dcba-4bbd-4338-acb2-b38be0914650",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39213,
+      "valid_source_match": true
+    },
+    {
+      "id": "b6a27c16-b3b8-4ea3-9642-51801be64fb1",
+      "title": "Importação legado #39212",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "c3da7b30-c06e-4cba-80b2-b5edbddcad47",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39212,
+      "valid_source_match": true
+    },
+    {
+      "id": "fafa0656-18f1-4350-a5c7-bf354d73159b",
+      "title": "Importação legado #39211",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "b96895e0-2ce8-4fc3-96d7-861c24a4661b",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39211,
+      "valid_source_match": true
+    },
+    {
+      "id": "d80bf460-2f48-401f-825d-e1b6a806403f",
+      "title": "Importação legado #39210",
+      "lesson_date": "2026-03-19",
+      "class_schedule_id": "e4197c32-8e07-4b0c-96b0-f7e1d49b36f3",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39210,
+      "valid_source_match": true
+    },
+    {
+      "id": "380c08d7-f166-4466-908c-b6f6c9687444",
+      "title": "Importação legado #39208",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "e4197c32-8e07-4b0c-96b0-f7e1d49b36f3",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39208,
+      "valid_source_match": true
+    },
+    {
+      "id": "0b0a647d-3d99-4819-b90e-d2a790b4fbb9",
+      "title": "Importação legado #39207",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "a9cf21ab-0b8d-4770-a7d3-8ff35819afde",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39207,
+      "valid_source_match": true
+    },
+    {
+      "id": "6521bf3c-c992-42a0-8fdd-e9d526381197",
+      "title": "Importação legado #39296",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "efbbb9e4-6c76-45d7-8ae7-b8594efe0a4e",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39296,
+      "valid_source_match": true
+    },
+    {
+      "id": "194c27a3-da3a-4213-8bd1-a01c46c46dea",
+      "title": "Importação legado #39295",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "83f1de6d-bc33-479e-93a1-141b40525637",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39295,
+      "valid_source_match": true
+    },
+    {
+      "id": "f2a87803-e465-4897-b0ff-6f648b021064",
+      "title": "Importação legado #39288",
+      "lesson_date": "2026-03-20",
+      "class_schedule_id": "2894c4d0-62da-4df5-a82e-bad70b7e7348",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39288,
+      "valid_source_match": true
+    },
+    {
+      "id": "b721c597-75fb-4d0e-90f0-826631566819",
+      "title": "Importação legado #39287",
+      "lesson_date": "2026-03-18",
+      "class_schedule_id": "8a4febb5-de00-4bfc-8b92-644a14fcc709",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39287,
+      "valid_source_match": true
+    },
+    {
+      "id": "10cfd792-a4c9-4e60-8387-8a90ef85cebb",
+      "title": "Importação legado #39285",
+      "lesson_date": "2026-03-18",
+      "class_schedule_id": "86f03d91-fe3b-4669-854b-c4cba57529f3",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39285,
+      "valid_source_match": true
+    },
+    {
+      "id": "709b7952-c801-4874-86c2-0fe1586f1148",
+      "title": "Importação legado #39284",
+      "lesson_date": "2026-03-20",
+      "class_schedule_id": "1e2fb31f-6a5a-45a6-b45a-238d962601db",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39284,
+      "valid_source_match": true
+    },
+    {
+      "id": "aed7b5df-3bb4-489a-a6e8-df778794d3e8",
+      "title": "Importação legado #39283",
+      "lesson_date": "2026-03-18",
+      "class_schedule_id": "9a8824d4-d712-456e-842f-e0f14385ef42",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39283,
+      "valid_source_match": true
+    },
+    {
+      "id": "2b387d76-af32-433d-81fb-bbce7f80b81d",
+      "title": "Importação legado #39282",
+      "lesson_date": "2026-03-18",
+      "class_schedule_id": "aa6a7bb9-ec49-4868-8684-076bcf277225",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39282,
+      "valid_source_match": true
+    },
+    {
+      "id": "372691f5-d713-4fe3-acd4-bd49d20a0c77",
+      "title": "Importação legado #39279",
+      "lesson_date": "2026-03-17",
+      "class_schedule_id": "c862a1f5-b3a1-48e3-9648-4dcf23c4d143",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39279,
+      "valid_source_match": true
+    },
+    {
+      "id": "cfd74d3b-6b9a-4d4f-b2b4-4350abe7fcf6",
+      "title": "Importação legado #39277",
+      "lesson_date": "2026-03-17",
+      "class_schedule_id": "7f51d434-6ec1-4efb-98c5-1db30a30bf4b",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39277,
+      "valid_source_match": true
+    },
+    {
+      "id": "94d007cb-8119-4ed5-8cbc-cea20db0b044",
+      "title": "Importação legado #39276",
+      "lesson_date": "2026-03-16",
+      "class_schedule_id": "334ebfec-b106-406c-84ed-772b1f1d09d1",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39276,
+      "valid_source_match": true
+    },
+    {
+      "id": "d1386833-e261-4977-8e87-12322a936893",
+      "title": "Importação legado #39204",
+      "lesson_date": "2026-03-18",
+      "class_schedule_id": "2c10fe7f-f26a-4dbc-9185-c15af41bdbdc",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39204,
+      "valid_source_match": true
+    },
+    {
+      "id": "c383323b-2b9c-42ae-889e-c6e54fbd3fb3",
+      "title": "Importação legado #39275",
+      "lesson_date": "2026-03-16",
+      "class_schedule_id": "940cfc6c-215d-4731-adf6-cdb34ae08466",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39275,
+      "valid_source_match": true
+    },
+    {
+      "id": "2c5067aa-c16a-432e-a14e-273e643a6e4a",
+      "title": "Importação legado #39274",
+      "lesson_date": "2026-03-19",
+      "class_schedule_id": "b3815137-9d4b-4c2e-8923-46af83bff179",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39274,
+      "valid_source_match": true
+    },
+    {
+      "id": "6f560f32-e517-4ad8-a273-e4f069ad86b2",
+      "title": "Importação legado #39273",
+      "lesson_date": "2026-03-16",
+      "class_schedule_id": "01bdc8e5-f7cf-4fcb-8129-b3f690d38721",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39273,
+      "valid_source_match": true
+    },
+    {
+      "id": "e22f88cb-e5ab-49cf-bd99-3258c429894e",
+      "title": "Importação legado #38974",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "e6abc4b0-6f84-4572-9e89-1b699a531438",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38974,
+      "valid_source_match": true
+    },
+    {
+      "id": "5910d524-be42-4117-91e4-798e7274acc7",
+      "title": "Importação legado #39248",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "685d97af-8ff1-4cda-840d-9d714fbfffa9",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39248,
+      "valid_source_match": true
+    },
+    {
+      "id": "0b4fe3db-dbee-4b15-a956-23d3c1986cae",
+      "title": "Importação legado #39294",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "398df94e-b71d-487d-b4e4-cb1a923069d4",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39294,
+      "valid_source_match": true
+    },
+    {
+      "id": "ff15435f-5eb8-4012-8df6-aefaad2a234d",
+      "title": "Importação legado #39293",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "c9dc2cdd-4fb1-4ae9-9da7-917c5a59974d",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39293,
+      "valid_source_match": true
+    },
+    {
+      "id": "5d1ada84-092d-42af-8118-777f65c57b44",
+      "title": "Importação legado #39292",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "c937b66f-83d8-4fb5-8a43-c2789b1f50c6",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39292,
+      "valid_source_match": true
+    },
+    {
+      "id": "49ce2a16-e243-44c4-a90a-5962fcb52f66",
+      "title": "Importação legado #39291",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "2bf071ba-ac8b-410f-8032-709f7f9cae1f",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39291,
+      "valid_source_match": true
+    },
+    {
+      "id": "86966814-268b-4d82-b291-6ba2b8fad54d",
+      "title": "Importação legado #39272",
+      "lesson_date": "2026-03-20",
+      "class_schedule_id": "132cffab-48f7-42c8-9b36-f70b8ecd5fae",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39272,
+      "valid_source_match": true
+    },
+    {
+      "id": "537444bd-f704-437d-ad46-a8fcda8f838e",
+      "title": "Importação legado #39271",
+      "lesson_date": "2026-03-19",
+      "class_schedule_id": "d30d4ad9-371d-406d-95f7-9c3ace1e08bb",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39271,
+      "valid_source_match": true
+    },
+    {
+      "id": "a0f139b8-1d01-47ee-b36b-3e78878b9792",
+      "title": "Importação legado #39270",
+      "lesson_date": "2026-03-17",
+      "class_schedule_id": "e0e01ef5-eebb-4b7f-a4ef-14984c5550d2",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39270,
+      "valid_source_match": true
+    },
+    {
+      "id": "c49a527c-2b9f-45f6-a712-15c793e7ec93",
+      "title": "Importação legado #39269",
+      "lesson_date": "2026-03-18",
+      "class_schedule_id": "61ce2226-6021-494a-b8e5-5aa3d15bb2e3",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39269,
+      "valid_source_match": true
+    },
+    {
+      "id": "11e9cfb4-cc90-43e5-8337-395af20de310",
+      "title": "Importação legado #39267",
+      "lesson_date": "2026-03-16",
+      "class_schedule_id": "f76afabf-521c-4beb-bc24-2ac7dc636590",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39267,
+      "valid_source_match": true
+    },
+    {
+      "id": "37848c6d-2989-4c98-a562-359bea547fb2",
+      "title": "Importação legado #39265",
+      "lesson_date": "2026-03-23",
+      "class_schedule_id": "986ee3da-c291-4f37-94e7-64936a3c7305",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39265,
+      "valid_source_match": true
+    },
+    {
+      "id": "44bbe8e2-b520-4fe4-9e06-b57cb2eca97e",
+      "title": "Importação legado #39264",
+      "lesson_date": "2026-03-27",
+      "class_schedule_id": "5f17ce83-374f-428e-90fc-37bc6d9fdc48",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39264,
+      "valid_source_match": true
+    },
+    {
+      "id": "99cd84db-d614-4aa1-8851-d869c7ce46b3",
+      "title": "Importação legado #39263",
+      "lesson_date": "2026-03-26",
+      "class_schedule_id": "fc25ce58-eb03-4ea4-8468-ca0c4407e733",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39263,
+      "valid_source_match": true
+    },
+    {
+      "id": "e4e76f18-bf72-4d39-a9e4-c6a14430e281",
+      "title": "Importação legado #39262",
+      "lesson_date": "2026-03-25",
+      "class_schedule_id": "c3f25a6b-442f-4a79-86c5-89dfe8491757",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39262,
+      "valid_source_match": true
+    },
+    {
+      "id": "715a2932-cb9f-4d9d-b4ff-e6ce26b7b1f1",
+      "title": "Importação legado #39261",
+      "lesson_date": "2026-03-24",
+      "class_schedule_id": "a45e9bac-21d3-4937-933d-c17a7d55c29e",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39261,
+      "valid_source_match": true
+    },
+    {
+      "id": "d8f9bcb3-d989-4a01-960a-6622be739f16",
+      "title": "Importação legado #39260",
+      "lesson_date": "2026-03-23",
+      "class_schedule_id": "d2ded1b6-7f52-43d1-89ae-5bbecf80fc7d",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39260,
+      "valid_source_match": true
+    },
+    {
+      "id": "4988dc45-ed3c-4f5b-95c5-d6fd3c555d90",
+      "title": "Importação legado #39253",
+      "lesson_date": "2026-03-27",
+      "class_schedule_id": "c362d735-6393-4ac2-9e90-da74a1f75a49",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39253,
+      "valid_source_match": true
+    },
+    {
+      "id": "c0dea1a9-e1a1-4efb-bde0-8acc757cc49c",
+      "title": "Importação legado #39252",
+      "lesson_date": "2026-03-26",
+      "class_schedule_id": "b18eb070-e753-41a7-a58d-ce387c2ae885",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39252,
+      "valid_source_match": true
+    },
+    {
+      "id": "dc1d13f1-41fb-434d-bc2a-906028ea06fd",
+      "title": "Importação legado #39251",
+      "lesson_date": "2026-03-25",
+      "class_schedule_id": "fe68b70c-3adb-4ead-ae93-f417b7e9df2b",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39251,
+      "valid_source_match": true
+    },
+    {
+      "id": "bae0e006-ea6a-4fab-9791-e6495c7e74b7",
+      "title": "Importação legado #39250",
+      "lesson_date": "2026-03-24",
+      "class_schedule_id": "76274efd-5755-46aa-b4c7-c84b23639677",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39250,
+      "valid_source_match": true
+    },
+    {
+      "id": "0aab40ed-cd72-4d9c-8dae-0075ac66bb57",
+      "title": "Importação legado #39249",
+      "lesson_date": "2026-03-23",
+      "class_schedule_id": "99cbd4fe-03c7-4cc2-a4ff-1e350013c622",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39249,
+      "valid_source_match": true
+    },
+    {
+      "id": "2dcfe90b-0e4c-4b61-8c1b-6f642dc4a93b",
+      "title": "Importação legado #38973",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "fd2468ab-b847-4740-8b91-c214564e48bf",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38973,
+      "valid_source_match": true
+    },
+    {
+      "id": "41acce05-7215-4745-ac4f-d606cd67a128",
+      "title": "Importação legado #39256",
+      "lesson_date": "2026-03-24",
+      "class_schedule_id": "97badc85-33c1-4000-affa-9d70bf581b20",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39256,
+      "valid_source_match": true
+    },
+    {
+      "id": "a34ee377-af1b-42b2-95f0-e2d41e96b157",
+      "title": "Importação legado #39255",
+      "lesson_date": "2026-03-23",
+      "class_schedule_id": "ca4503b4-24ae-472a-afa0-7951a8f464c6",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39255,
+      "valid_source_match": true
+    },
+    {
+      "id": "9bdf0311-b31f-40f1-815a-6ed00e6e5483",
+      "title": "Importação legado #39239",
+      "lesson_date": "2026-03-19",
+      "class_schedule_id": "b6ad44d5-4d20-41a8-b568-63d80fdb8083",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39239,
+      "valid_source_match": true
+    },
+    {
+      "id": "eaf9bad6-e99e-4f1e-981d-caf60f7a8bac",
+      "title": "Importação legado #39238",
+      "lesson_date": "2026-03-18",
+      "class_schedule_id": "eea148c6-897c-4fa7-b6fb-1261fa4bae49",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39238,
+      "valid_source_match": true
+    },
+    {
+      "id": "c8bdb4dd-b3ce-4f56-afd4-617fd352618c",
+      "title": "Importação legado #39237",
+      "lesson_date": "2026-03-20",
+      "class_schedule_id": "b6eb2053-7ddf-4983-b83b-f1f7b2d1b367",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39237,
+      "valid_source_match": true
+    },
+    {
+      "id": "5bbf181d-da79-45bf-a6ba-14b33784641b",
+      "title": "Importação legado #38771",
+      "lesson_date": "2026-03-04",
+      "class_schedule_id": "f51dd267-c7c0-4804-a309-bd542833aa17",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38771,
+      "valid_source_match": true
+    },
+    {
+      "id": "7c79b5ac-6b63-477a-925b-74474a929791",
+      "title": "Importação legado #39234",
+      "lesson_date": "2026-03-18",
+      "class_schedule_id": "f1a8d562-3fab-4c67-a207-b0aa731cb14d",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39234,
+      "valid_source_match": true
+    },
+    {
+      "id": "5624c480-ca32-4539-be23-411c6b1bde4b",
+      "title": "Importação legado #39232",
+      "lesson_date": "2026-03-19",
+      "class_schedule_id": "fc62212c-f579-4e97-812f-7c0b8e1679b0",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39232,
+      "valid_source_match": true
+    },
+    {
+      "id": "882d587d-177c-4cd8-a4b9-d6be96696215",
+      "title": "Importação legado #39231",
+      "lesson_date": "2026-03-18",
+      "class_schedule_id": "be22f56a-46d9-4500-b33d-1c13d7a0255a",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39231,
+      "valid_source_match": true
+    },
+    {
+      "id": "4f83263b-4ae7-4458-a0e9-a721d5c985ba",
+      "title": "Importação legado #39224",
+      "lesson_date": "2026-03-18",
+      "class_schedule_id": "e5b369a5-f2b7-4c66-b684-1d145e0e12d3",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39224,
+      "valid_source_match": true
+    },
+    {
+      "id": "f2abf5f4-6a79-4afd-996b-ae7618b2792b",
+      "title": "Importação legado #39223",
+      "lesson_date": "2026-03-17",
+      "class_schedule_id": "ac871e42-9e4d-4b8b-8bb0-82b986667727",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39223,
+      "valid_source_match": true
+    },
+    {
+      "id": "acd8088f-b7ff-4de4-b002-6fa670d68789",
+      "title": "Importação legado #39222",
+      "lesson_date": "2026-03-16",
+      "class_schedule_id": "0e9f581b-3c27-4e7f-8f69-c1aa22784ef2",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39222,
+      "valid_source_match": true
+    },
+    {
+      "id": "e9d6edc0-f7f0-4629-abcc-12bef4e8b3a1",
+      "title": "Importação legado #39221",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "12837951-dbfb-42bf-9fc9-f05a238bf4bd",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39221,
+      "valid_source_match": true
+    },
+    {
+      "id": "e3820edf-785d-4c1f-92f1-589f7da7ba5e",
+      "title": "Importação legado #39220",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "e5b369a5-f2b7-4c66-b684-1d145e0e12d3",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39220,
+      "valid_source_match": true
+    },
+    {
+      "id": "0c3460d1-468a-44a2-ae52-ad7ff61235c0",
+      "title": "Importação legado #39219",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "0e9f581b-3c27-4e7f-8f69-c1aa22784ef2",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39219,
+      "valid_source_match": true
+    },
+    {
+      "id": "e541417d-e9c6-4969-9748-3ac98c90fe91",
+      "title": "Importação legado #39218",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "868b66cd-94f3-45e8-af38-e3cf1b12e00d",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39218,
+      "valid_source_match": true
+    },
+    {
+      "id": "7f1096f9-6de7-4aee-bc7b-a8e2c86efca7",
+      "title": "Importação legado #39203",
+      "lesson_date": "2026-03-19",
+      "class_schedule_id": "17f7003a-8459-414e-9709-4afe56c67d2c",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39203,
+      "valid_source_match": true
+    },
+    {
+      "id": "873b9b8d-8781-45f9-abe8-7e978b8a283e",
+      "title": "Importação legado #39193",
+      "lesson_date": "2026-03-20",
+      "class_schedule_id": "f5d56b8a-feaf-4677-8df2-f8d0728cc8a2",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39193,
+      "valid_source_match": true
+    },
+    {
+      "id": "97a06109-9711-4944-aac3-607cc4223ec0",
+      "title": "Importação legado #39126",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "d21de66a-ddaf-4e16-be97-d982623dd8d2",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39126,
+      "valid_source_match": true
+    },
+    {
+      "id": "d493ee01-21e8-44b9-aeef-a03e11c45956",
+      "title": "Importação legado #39201",
+      "lesson_date": "2026-03-19",
+      "class_schedule_id": "e948d406-8de3-44c5-93a9-2ee905563782",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39201,
+      "valid_source_match": true
+    },
+    {
+      "id": "b1bb711d-c771-4b0b-828b-dd12e873f4d7",
+      "title": "Importação legado #39200",
+      "lesson_date": "2026-03-18",
+      "class_schedule_id": "26c6d270-5f4a-4943-a313-837937cb0cc3",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39200,
+      "valid_source_match": true
+    },
+    {
+      "id": "1fad93a5-68c1-4b0f-be3f-e5a22864d82e",
+      "title": "Importação legado #39199",
+      "lesson_date": "2026-03-17",
+      "class_schedule_id": "b2275b8d-af8b-40b7-b88e-fd3a993be019",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39199,
+      "valid_source_match": true
+    },
+    {
+      "id": "6970beaa-3fa4-49f3-8a3d-634098a9faa1",
+      "title": "Importação legado #39198",
+      "lesson_date": "2026-03-16",
+      "class_schedule_id": "f7e15f7c-c004-4249-844b-06e98978e5d1",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39198,
+      "valid_source_match": true
+    },
+    {
+      "id": "6d75929b-90c3-4fc4-8399-0de3be3d1c1a",
+      "title": "Importação legado #39196",
+      "lesson_date": "2026-03-18",
+      "class_schedule_id": "54a032e2-41c4-446d-a1d7-db0e4200d5a8",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39196,
+      "valid_source_match": true
+    },
+    {
+      "id": "f70d7a5c-b1b1-454a-a7a3-12ac8f220ae8",
+      "title": "Importação legado #39194",
+      "lesson_date": "2026-03-16",
+      "class_schedule_id": "0e245418-ce9b-4fe2-962b-91f5a4cd68cd",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39194,
+      "valid_source_match": true
+    },
+    {
+      "id": "555a7197-56c5-4a78-8400-3c0f1d8cdff1",
+      "title": "Importação legado #39192",
+      "lesson_date": "2026-03-19",
+      "class_schedule_id": "4a1519af-faf3-47d7-86e5-af14da93d94c",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39192,
+      "valid_source_match": true
+    },
+    {
+      "id": "7e0728db-42a9-4972-b805-a9244ac89831",
+      "title": "Importação legado #39191",
+      "lesson_date": "2026-03-18",
+      "class_schedule_id": "cc906944-56de-416f-8fad-b030f9b4d628",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39191,
+      "valid_source_match": true
+    },
+    {
+      "id": "5df196bf-95c4-4e04-ac7e-6918beb6d501",
+      "title": "Importação legado #39190",
+      "lesson_date": "2026-03-17",
+      "class_schedule_id": "21983445-5256-459f-b57b-91193ef89384",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39190,
+      "valid_source_match": true
+    },
+    {
+      "id": "6b4fd65b-70dc-4e15-b3ff-63ca6d67793f",
+      "title": "Importação legado #39189",
+      "lesson_date": "2026-03-16",
+      "class_schedule_id": "130c37c2-0c4b-495e-948c-be83510952dc",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39189,
+      "valid_source_match": true
+    },
+    {
+      "id": "2684c628-623a-414c-ba66-50d07c960e06",
+      "title": "Importação legado #39188",
+      "lesson_date": "2026-03-20",
+      "class_schedule_id": "2693b781-b170-4865-a5ab-90399a78395f",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39188,
+      "valid_source_match": true
+    },
+    {
+      "id": "00a71daa-d78c-4d0b-a56f-af8905e52572",
+      "title": "Importação legado #39187",
+      "lesson_date": "2026-03-19",
+      "class_schedule_id": "5a95b473-2ee2-4795-8905-4d6f5b8bace6",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39187,
+      "valid_source_match": true
+    },
+    {
+      "id": "4f287819-1fcf-47f6-8843-8f2913e96846",
+      "title": "Importação legado #39186",
+      "lesson_date": "2026-03-18",
+      "class_schedule_id": "07e612b9-28c2-4c53-8a92-920412aae511",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39186,
+      "valid_source_match": true
+    },
+    {
+      "id": "44387c58-87f9-43cb-b4b9-6f6984c01f65",
+      "title": "Importação legado #39185",
+      "lesson_date": "2026-03-17",
+      "class_schedule_id": "98deb197-43fb-4d81-8069-d58f68730d23",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39185,
+      "valid_source_match": true
+    },
+    {
+      "id": "bf422dee-23fd-42b4-a2a6-403a1361be48",
+      "title": "Importação legado #39184",
+      "lesson_date": "2026-03-16",
+      "class_schedule_id": "0649ff61-eeea-4692-b242-d35d52d18f69",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39184,
+      "valid_source_match": true
+    },
+    {
+      "id": "daf8184b-3fcd-4ff7-8189-5ab8e3874379",
+      "title": "Importação legado #39179",
+      "lesson_date": "2026-03-20",
+      "class_schedule_id": "4ff03fd1-462e-43be-a9fe-8573db4c1425",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39179,
+      "valid_source_match": true
+    },
+    {
+      "id": "fe08a059-7a2c-4fdd-af1e-9b8d5a9ab34a",
+      "title": "Importação legado #39178",
+      "lesson_date": "2026-03-19",
+      "class_schedule_id": "d1f5478a-0496-4d53-b3bf-2e2cac39db34",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39178,
+      "valid_source_match": true
+    },
+    {
+      "id": "7d9d9d66-4ab2-4965-b253-dd9af6f5b0c0",
+      "title": "Importação legado #39177",
+      "lesson_date": "2026-03-18",
+      "class_schedule_id": "9c7ed0d6-f509-4802-ac9d-5fb2b993ac11",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39177,
+      "valid_source_match": true
+    },
+    {
+      "id": "cf43bb64-fb5c-47f3-968d-6ff2e9e0919f",
+      "title": "Importação legado #39176",
+      "lesson_date": "2026-03-17",
+      "class_schedule_id": "23a307d1-aada-48d2-852f-5e7e153ee9e4",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39176,
+      "valid_source_match": true
+    },
+    {
+      "id": "9442bf6a-c56c-4a0d-89cb-53b801d56438",
+      "title": "Importação legado #39174",
+      "lesson_date": "2026-03-16",
+      "class_schedule_id": "89706411-c12e-470e-800d-d967ce7ee9d0",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39174,
+      "valid_source_match": true
+    },
+    {
+      "id": "37a00077-870e-421b-9868-d34f5e3fbeb0",
+      "title": "Importação legado #39168",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "88fd59b4-5359-4c0f-a1b6-207e02273e22",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39168,
+      "valid_source_match": true
+    },
+    {
+      "id": "62c0f755-03d3-4844-91c1-13a087c4c5bd",
+      "title": "Importação legado #39154",
+      "lesson_date": "2026-03-30",
+      "class_schedule_id": "668829d6-5824-40a7-80e7-3c8dd9e3f6e2",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39154,
+      "valid_source_match": true
+    },
+    {
+      "id": "cd76b8b9-3fc5-41de-9c8b-b9cf3b71ba4e",
+      "title": "Importação legado #39125",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "50bc877c-1eeb-4b08-bbfc-c263d1883e95",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39125,
+      "valid_source_match": true
+    },
+    {
+      "id": "5eb6fe3e-08f3-4b2e-91e8-b223e6476aa7",
+      "title": "Importação legado #39183",
+      "lesson_date": "2026-03-20",
+      "class_schedule_id": "a37167e2-e1e1-4ec8-a687-e5cf931429e6",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39183,
+      "valid_source_match": true
+    },
+    {
+      "id": "7c4cf8f4-3e2b-41bc-84c5-adb21122f8e4",
+      "title": "Importação legado #39153",
+      "lesson_date": "2026-03-23",
+      "class_schedule_id": "668829d6-5824-40a7-80e7-3c8dd9e3f6e2",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39153,
+      "valid_source_match": true
+    },
+    {
+      "id": "eca06a0d-1ae4-40ee-8e68-95e0004bd868",
+      "title": "Importação legado #39151",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "668829d6-5824-40a7-80e7-3c8dd9e3f6e2",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39151,
+      "valid_source_match": true
+    },
+    {
+      "id": "6d4b4097-183c-4116-94c2-dacd02427d19",
+      "title": "Importação legado #39150",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "fbdb8603-347f-4ca6-9415-d13e18c75e8f",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39150,
+      "valid_source_match": true
+    },
+    {
+      "id": "dcc384f3-3f8a-433d-bc20-319a6237e93e",
+      "title": "Importação legado #39149",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "88c74260-bc01-46c7-9cc2-9f2ec2748afd",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39149,
+      "valid_source_match": true
+    },
+    {
+      "id": "1b68a38b-6cc3-4b05-af34-9cbd0d1f9175",
+      "title": "Importação legado #39148",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "f09c7ab4-c5ba-46f5-9c21-3f47f770d2f9",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39148,
+      "valid_source_match": true
+    },
+    {
+      "id": "b7370bdc-a95c-4f9f-b77d-e702b88aec11",
+      "title": "Importação legado #39147",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "02473858-22be-43a9-bb40-9d4ec5a34106",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39147,
+      "valid_source_match": true
+    },
+    {
+      "id": "d4c3b3e8-8aa7-49cc-ba83-e40c088ac26c",
+      "title": "Importação legado #39146",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "6d8d65f0-10f7-4a07-b74a-4bc39218cdea",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39146,
+      "valid_source_match": true
+    },
+    {
+      "id": "f77858d7-8c1a-4051-acfd-1c4da2d2afa4",
+      "title": "Importação legado #39145",
+      "lesson_date": "2026-03-04",
+      "class_schedule_id": "9fc0b144-1fa8-4523-b630-848cf5dfd142",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39145,
+      "valid_source_match": true
+    },
+    {
+      "id": "b4b40ca5-3c61-4b54-8fe7-7df4b065cd70",
+      "title": "Importação legado #39135",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "1ee465bc-c384-472e-9f50-147d5c019bda",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39135,
+      "valid_source_match": true
+    },
+    {
+      "id": "9005614f-c577-4ae4-87a1-2b996b762746",
+      "title": "Importação legado #39134",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "eae0557d-505f-4812-b138-b146f1320a0e",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39134,
+      "valid_source_match": true
+    },
+    {
+      "id": "177b3bfb-8d05-4bbc-b9c5-489d6252fb44",
+      "title": "Importação legado #39124",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "9a54caa8-e28f-41ca-844e-9dbad67362c6",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39124,
+      "valid_source_match": true
+    },
+    {
+      "id": "d8240e38-8077-4318-82b4-aeb83c54ee1d",
+      "title": "Importação legado #38729",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "99336599-33a2-43c2-815d-de573e208701",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38729,
+      "valid_source_match": true
+    },
+    {
+      "id": "4b4cb499-b6ac-4fec-9603-4cd3d66e1d2d",
+      "title": "Importação legado #39140",
+      "lesson_date": "2026-03-06",
+      "class_schedule_id": "b097da1f-7b57-4df1-ab38-9ae87912e33a",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39140,
+      "valid_source_match": true
+    },
+    {
+      "id": "3e33c43f-a2a7-48bd-9004-ba7e18cf2291",
+      "title": "Importação legado #39138",
+      "lesson_date": "2026-03-05",
+      "class_schedule_id": "685d97af-8ff1-4cda-840d-9d714fbfffa9",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39138,
+      "valid_source_match": true
+    },
+    {
+      "id": "a6baa418-7ced-42dd-9933-80b0863393cd",
+      "title": "Importação legado #39133",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "21429e30-4983-45b1-9040-d7a67c453582",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39133,
+      "valid_source_match": true
+    },
+    {
+      "id": "4a36a00c-9a52-433b-8f03-a5882d703e08",
+      "title": "Importação legado #39132",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "d782e395-07f0-4a5d-9000-09a0b6478961",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39132,
+      "valid_source_match": true
+    },
+    {
+      "id": "c562e41f-7672-491a-ad09-4badeacd9b2f",
+      "title": "Importação legado #39131",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "885e2e83-364a-4184-bf9f-2637c005808a",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39131,
+      "valid_source_match": true
+    },
+    {
+      "id": "935197cc-0de5-48dd-ac5f-b77e2a4f18b1",
+      "title": "Importação legado #39130",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "cfb2a4fb-0bb6-48e9-8d8a-67e9e01b8c4e",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39130,
+      "valid_source_match": true
+    },
+    {
+      "id": "b7cba916-072c-4783-8456-1442fcc20f83",
+      "title": "Importação legado #39128",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "6538aac5-5c1c-4dd8-919d-890344d187b6",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39128,
+      "valid_source_match": true
+    },
+    {
+      "id": "f87706aa-5d9b-41e7-af0d-4d761abec697",
+      "title": "Importação legado #38728",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "5692b960-cb72-4e95-ae39-13b909e26d94",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38728,
+      "valid_source_match": true
+    },
+    {
+      "id": "2f7a67a2-e83f-4c95-bc6f-2520da8a9ee4",
+      "title": "Importação legado #39120",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "7eaee1f3-8818-441c-af7f-b7159f86d305",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39120,
+      "valid_source_match": true
+    },
+    {
+      "id": "fd9b4572-2efa-4f8c-be4c-ca140361ce2a",
+      "title": "Importação legado #39119",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "df8bdcef-1920-4cc9-8cc3-be3837692f02",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39119,
+      "valid_source_match": true
+    },
+    {
+      "id": "204d8ac7-39e4-481f-96a7-fbf7107601dc",
+      "title": "Importação legado #39118",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "4eeb240e-d2ca-4acd-8479-6b361613bf5f",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39118,
+      "valid_source_match": true
+    },
+    {
+      "id": "ecc82a23-06cc-412c-8d6a-00f3bd918ffe",
+      "title": "Importação legado #39116",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "c5398014-adb7-4928-a816-bdb66212c59c",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39116,
+      "valid_source_match": true
+    },
+    {
+      "id": "90fc54d3-a79d-4805-8e0c-c87c7b90df9d",
+      "title": "Importação legado #39115",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "a30ea00f-7aae-408e-8e7c-02aeb1a3e658",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39115,
+      "valid_source_match": true
+    },
+    {
+      "id": "e0864638-d349-49fe-a050-6fabffdaf034",
+      "title": "Importação legado #39113",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "d73fa12b-8d9f-47ef-a347-62832c3f1812",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39113,
+      "valid_source_match": true
+    },
+    {
+      "id": "9428bf55-f5f2-4c9e-8893-6c5620e435b6",
+      "title": "Importação legado #39110",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "98c34676-e746-4d82-a989-57b8e78d08b1",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39110,
+      "valid_source_match": true
+    },
+    {
+      "id": "efdb48cf-20f4-40a6-86c6-5d6fda4036df",
+      "title": "Importação legado #39109",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "178b98fc-a8f7-4991-9e1a-a3bf4f323dc8",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39109,
+      "valid_source_match": true
+    },
+    {
+      "id": "4c5de82e-ed04-433a-b49d-e756ff062bb0",
+      "title": "Importação legado #39102",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "0d27ee73-a5ff-4432-845d-3638c7b89493",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39102,
+      "valid_source_match": true
+    },
+    {
+      "id": "d4d5e972-d525-4b95-81b4-51969ecc26d1",
+      "title": "Importação legado #39101",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "a572401b-a4aa-45a8-a210-c90433af7851",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39101,
+      "valid_source_match": true
+    },
+    {
+      "id": "294fcc48-1bc4-486d-8f93-e283ed42964f",
+      "title": "Importação legado #39100",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "ccebf797-f456-440d-b553-9298731cf7fe",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39100,
+      "valid_source_match": true
+    },
+    {
+      "id": "334706e5-5022-4341-ab19-4901e90c4d5f",
+      "title": "Importação legado #39099",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "57f41124-5b60-403c-be27-941809cc42b1",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39099,
+      "valid_source_match": true
+    },
+    {
+      "id": "b43d9dc3-9f9a-462c-8ce4-89e457ca5c51",
+      "title": "Importação legado #39021",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "5e5b92bb-f9a3-48db-912e-b3141351cc99",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39021,
+      "valid_source_match": true
+    },
+    {
+      "id": "d117d030-1a38-4ab5-b006-1e33f00689fe",
+      "title": "Importação legado #39098",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "2064b60d-d48c-4752-baed-733ea3e474cf",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39098,
+      "valid_source_match": true
+    },
+    {
+      "id": "8f173358-1890-460d-8e52-dbbe0607dc4a",
+      "title": "Importação legado #39095",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "d2865cee-fb66-46b0-b25a-f40754e8a4ed",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39095,
+      "valid_source_match": true
+    },
+    {
+      "id": "ede3d62a-9826-4e65-8bc0-e1989317c955",
+      "title": "Importação legado #39094",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "b70ed8fe-b9ff-4be4-aa24-bc79bc0a25bc",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39094,
+      "valid_source_match": true
+    },
+    {
+      "id": "3252fe8c-db9e-44b0-a835-997d276287d4",
+      "title": "Importação legado #39093",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "3c530370-efbf-47a4-8349-4ad8848bd250",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39093,
+      "valid_source_match": true
+    },
+    {
+      "id": "d60e2468-2111-4236-82f1-201ea4ede63d",
+      "title": "Importação legado #39092",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "40b3db5c-9055-4684-90e5-6b70a418eb23",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39092,
+      "valid_source_match": true
+    },
+    {
+      "id": "7f968e4c-765a-4612-8335-931baa007f12",
+      "title": "Importação legado #39091",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "967608b3-b3ee-4435-af7b-a0738a33010d",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39091,
+      "valid_source_match": true
+    },
+    {
+      "id": "7ca236b0-5c93-4fbe-a0f0-cced629fcccd",
+      "title": "Importação legado #38770",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "af2e88a0-af6f-44c0-958d-61cec51afe79",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38770,
+      "valid_source_match": true
+    },
+    {
+      "id": "86cd5eda-76d3-4e6b-94a6-987d4f938394",
+      "title": "Importação legado #39090",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "8e6b1a62-dee3-4dcb-af43-286b91d36352",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39090,
+      "valid_source_match": true
+    },
+    {
+      "id": "3444846a-f605-49d9-933c-05617655454e",
+      "title": "Importação legado #39089",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "9e09f05b-a7b4-4e1e-af00-1b9f7d808ce2",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39089,
+      "valid_source_match": true
+    },
+    {
+      "id": "27b369aa-8e4e-4a8a-aa21-24027531a5a1",
+      "title": "Importação legado #39088",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "b28014c0-b309-4180-bccd-164c6f47e641",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39088,
+      "valid_source_match": true
+    },
+    {
+      "id": "2fb60c00-ca99-4a75-8054-c2aa8942eebc",
+      "title": "Importação legado #39087",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "941e2056-f0f5-45dc-b400-70c00325a84f",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39087,
+      "valid_source_match": true
+    },
+    {
+      "id": "f695f709-ef2d-43ca-9fa1-4d3d193ed163",
+      "title": "Importação legado #39086",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "604340e5-633b-4d40-afdb-d240ef2f5a6a",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39086,
+      "valid_source_match": true
+    },
+    {
+      "id": "f8fc24b9-d83f-451c-9abc-8324abb85549",
+      "title": "Importação legado #39018",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "fa75ccaf-8433-421b-a44a-08008d0be794",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39018,
+      "valid_source_match": true
+    },
+    {
+      "id": "103567a7-0660-4ddb-b483-0556ba0adfb9",
+      "title": "Importação legado #38773",
+      "lesson_date": "2026-03-06",
+      "class_schedule_id": "260b7a42-eda3-4cd7-bf4d-3b2d04b287ba",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38773,
+      "valid_source_match": true
+    },
+    {
+      "id": "f57d0239-ce38-4528-ae66-5704b4040d48",
+      "title": "Importação legado #39085",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "195a3d48-63e7-4665-9d77-e6f09de801f0",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39085,
+      "valid_source_match": true
+    },
+    {
+      "id": "554a0e09-efd5-42cf-8ebe-f368404a0753",
+      "title": "Importação legado #39084",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "58897519-0776-4455-9986-ee008c47251e",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39084,
+      "valid_source_match": true
+    },
+    {
+      "id": "859f492d-d540-4979-97a7-ce0af19063c7",
+      "title": "Importação legado #39083",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "4c564f2a-9272-45c0-9a0e-c65f061bf21c",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39083,
+      "valid_source_match": true
+    },
+    {
+      "id": "c8d54d83-89e2-403c-ab62-6cd0fee588a1",
+      "title": "Importação legado #39082",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "6d6e8038-f89c-4e61-b1d6-c4aa137e3537",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39082,
+      "valid_source_match": true
+    },
+    {
+      "id": "f2c0aa17-70c3-4a6d-8f5f-883c5690b325",
+      "title": "Importação legado #39017",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "b3fc66a9-9cc1-4f59-9444-d534275fee54",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39017,
+      "valid_source_match": true
+    },
+    {
+      "id": "2e64f77e-e98b-42f1-abca-a1378f1789ce",
+      "title": "Importação legado #39016",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "7cc38072-7c15-4fd8-9342-da75848136e2",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39016,
+      "valid_source_match": true
+    },
+    {
+      "id": "c3cf39d7-e440-4f01-924f-64efe2717485",
+      "title": "Importação legado #39081",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "aa66e617-f6f4-4353-80e3-0b875c549f8e",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39081,
+      "valid_source_match": true
+    },
+    {
+      "id": "6edb0c1b-809f-456b-808a-7bea706c3f1c",
+      "title": "Importação legado #39080",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "06ee56c4-a995-4827-ae9d-39aa558cc723",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39080,
+      "valid_source_match": true
+    },
+    {
+      "id": "ca0c91b5-1b7e-4d6a-8e89-af2142c976b8",
+      "title": "Importação legado #39079",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "3ce7b49b-d98b-40af-9832-8b8d7a7e7037",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39079,
+      "valid_source_match": true
+    },
+    {
+      "id": "3aec2835-aa32-43dd-b681-91f168337557",
+      "title": "Importação legado #39078",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "672db571-fac0-44c7-b084-7e1d0ab62a21",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39078,
+      "valid_source_match": true
+    },
+    {
+      "id": "0794f542-fd7d-4f8a-9fbd-70e68ac4f29c",
+      "title": "Importação legado #39014",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "0d0f3f06-8816-4d2e-9449-836fb4af53b5",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39014,
+      "valid_source_match": true
+    },
+    {
+      "id": "58586ac4-291d-408f-8806-bcb27eca0f75",
+      "title": "Importação legado #39013",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "4c06f143-b85f-4d12-a813-030df3905aec",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39013,
+      "valid_source_match": true
+    },
+    {
+      "id": "de47026d-d2bc-4909-940b-099cad09e68f",
+      "title": "Importação legado #39077",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "23a95dea-959c-4420-b6a1-02249e55ce21",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39077,
+      "valid_source_match": true
+    },
+    {
+      "id": "9eae1093-78a5-4783-ae29-002a9d2c20db",
+      "title": "Importação legado #39076",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "b11ea51f-ea62-4971-b07b-4861e717adf2",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39076,
+      "valid_source_match": true
+    },
+    {
+      "id": "7da9f5f8-50e8-495f-9009-9a58c7ca14f1",
+      "title": "Importação legado #39075",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "efcf4637-fa2c-4b19-948e-7db8df9e35bc",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39075,
+      "valid_source_match": true
+    },
+    {
+      "id": "5aade3ac-11f1-48bd-8229-9e4e34d85a13",
+      "title": "Importação legado #39066",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "a2e29111-f312-40d5-b170-f8c77a63ae20",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39066,
+      "valid_source_match": true
+    },
+    {
+      "id": "042c02cf-0cc7-45e3-8b82-b54e472f90b2",
+      "title": "Importação legado #39012",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "eccdab57-eb54-4d47-b2da-6d6f6f1a0032",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39012,
+      "valid_source_match": true
+    },
+    {
+      "id": "4606f330-fdd4-4c6b-bb84-1509b4d7b860",
+      "title": "Importação legado #39062",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "a6c2dca1-983a-4dcc-9644-8dadbd54a26e",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39062,
+      "valid_source_match": true
+    },
+    {
+      "id": "b9fc4ccb-7b45-409c-b364-ac28aaf21854",
+      "title": "Importação legado #39061",
+      "lesson_date": "2026-03-06",
+      "class_schedule_id": "604340e5-633b-4d40-afdb-d240ef2f5a6a",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39061,
+      "valid_source_match": true
+    },
+    {
+      "id": "d68937be-db5d-4aa5-876e-f1a0b2e5c3a3",
+      "title": "Importação legado #39060",
+      "lesson_date": "2026-03-05",
+      "class_schedule_id": "195a3d48-63e7-4665-9d77-e6f09de801f0",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39060,
+      "valid_source_match": true
+    },
+    {
+      "id": "d8664cf4-a5ab-4d62-b43a-e984ba15de7f",
+      "title": "Importação legado #39059",
+      "lesson_date": "2026-03-04",
+      "class_schedule_id": "58897519-0776-4455-9986-ee008c47251e",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39059,
+      "valid_source_match": true
+    },
+    {
+      "id": "cd66957f-f385-4e1f-a2b3-0e3be927a23d",
+      "title": "Importação legado #38946",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "5cc551e7-9331-42fd-8e68-d34aaf9bc1e8",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38946,
+      "valid_source_match": true
+    },
+    {
+      "id": "f4a10d4e-f259-43ad-9ae7-e65f4532ac35",
+      "title": "Importação legado #39058",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "4c564f2a-9272-45c0-9a0e-c65f061bf21c",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39058,
+      "valid_source_match": true
+    },
+    {
+      "id": "a38f7f6a-75d4-4b22-925d-946c760588dd",
+      "title": "Importação legado #39057",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "a6c2dca1-983a-4dcc-9644-8dadbd54a26e",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39057,
+      "valid_source_match": true
+    },
+    {
+      "id": "c8388b56-33cd-4d07-b111-e9ed0bf7f8ed",
+      "title": "Importação legado #39056",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "6be649b2-1f67-4dc6-914a-e82267bea290",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39056,
+      "valid_source_match": true
+    },
+    {
+      "id": "7db59d41-354a-4014-a160-593d7c0e23b9",
+      "title": "Importação legado #39055",
+      "lesson_date": "2026-03-06",
+      "class_schedule_id": "6d6e8038-f89c-4e61-b1d6-c4aa137e3537",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39055,
+      "valid_source_match": true
+    },
+    {
+      "id": "6a0e2cf9-28e3-4fe2-9c0b-a95e4754a1eb",
+      "title": "Importação legado #39008",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "c7680a90-cad0-4f3f-9993-f4017ab2b421",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 39008,
+      "valid_source_match": true
+    },
+    {
+      "id": "86e86ac6-fc47-44a8-925f-a5db3a616e33",
+      "title": "Importação legado #39054",
+      "lesson_date": "2026-03-05",
+      "class_schedule_id": "aa66e617-f6f4-4353-80e3-0b875c549f8e",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39054,
+      "valid_source_match": true
+    },
+    {
+      "id": "a000012c-77a5-4b85-837d-a9a8e3ad4414",
+      "title": "Importação legado #39053",
+      "lesson_date": "2026-03-04",
+      "class_schedule_id": "06ee56c4-a995-4827-ae9d-39aa558cc723",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39053,
+      "valid_source_match": true
+    },
+    {
+      "id": "214d39a1-2fb4-469a-a41c-c48266127405",
+      "title": "Importação legado #39052",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "3ce7b49b-d98b-40af-9832-8b8d7a7e7037",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39052,
+      "valid_source_match": true
+    },
+    {
+      "id": "0c9b0f40-af13-4128-b0da-68c7779d3da6",
+      "title": "Importação legado #39051",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "6be649b2-1f67-4dc6-914a-e82267bea290",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39051,
+      "valid_source_match": true
+    },
+    {
+      "id": "c0559571-7bb1-4a65-80e6-3acae7dc1a90",
+      "title": "Importação legado #38980",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "4384f4b2-d93e-4380-bbff-6f7b584f3df9",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38980,
+      "valid_source_match": true
+    },
+    {
+      "id": "91d6bb94-b2d1-432b-89c1-e075b79bb42f",
+      "title": "Importação legado #39049",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "02be5cbb-e3dd-4010-a1de-b45de2071cc5",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39049,
+      "valid_source_match": true
+    },
+    {
+      "id": "746028dd-3eb2-4b4b-b32e-509667c84341",
+      "title": "Importação legado #39048",
+      "lesson_date": "2026-03-06",
+      "class_schedule_id": "672db571-fac0-44c7-b084-7e1d0ab62a21",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39048,
+      "valid_source_match": true
+    },
+    {
+      "id": "a3a7fe83-3584-4749-b629-f52e356cd4c4",
+      "title": "Importação legado #39047",
+      "lesson_date": "2026-03-05",
+      "class_schedule_id": "23a95dea-959c-4420-b6a1-02249e55ce21",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39047,
+      "valid_source_match": true
+    },
+    {
+      "id": "5b4dc69d-f657-4de7-87c8-5d894a80327d",
+      "title": "Importação legado #39046",
+      "lesson_date": "2026-03-04",
+      "class_schedule_id": "b11ea51f-ea62-4971-b07b-4861e717adf2",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39046,
+      "valid_source_match": true
+    },
+    {
+      "id": "0d3127df-bbd8-49bd-8938-40cba59f3f1b",
+      "title": "Importação legado #38978",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "fcadb360-7cae-4607-8fe0-2d4ccbae4c02",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38978,
+      "valid_source_match": true
+    },
+    {
+      "id": "9ddad364-46ea-401f-a91e-e6dc684996d6",
+      "title": "Importação legado #39045",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "efcf4637-fa2c-4b19-948e-7db8df9e35bc",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39045,
+      "valid_source_match": true
+    },
+    {
+      "id": "ac9a7336-efde-46f6-8dbf-8126530e6601",
+      "title": "Importação legado #39031",
+      "lesson_date": "2026-03-06",
+      "class_schedule_id": "a2e29111-f312-40d5-b170-f8c77a63ae20",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39031,
+      "valid_source_match": true
+    },
+    {
+      "id": "9dd404f3-8253-4154-8ff9-86a08a0138e7",
+      "title": "Importação legado #39026",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "02be5cbb-e3dd-4010-a1de-b45de2071cc5",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39026,
+      "valid_source_match": true
+    },
+    {
+      "id": "01c2d3dc-3160-4d42-94b7-1d6e1eebc4dd",
+      "title": "Importação legado #39024",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "72f62e4c-779b-447e-92d3-7acc0abf88d8",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39024,
+      "valid_source_match": true
+    },
+    {
+      "id": "a530a823-4b07-4a74-8812-e740d681d40c",
+      "title": "Importação legado #39023",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "5bd2aa08-ca1e-4845-983b-252c499230e1",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39023,
+      "valid_source_match": true
+    },
+    {
+      "id": "72580267-24a6-4430-9a3d-787efc6878c4",
+      "title": "Importação legado #39022",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "fbdc851a-4761-429e-9b68-4ba63e8ef651",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39022,
+      "valid_source_match": true
+    },
+    {
+      "id": "74ca0372-47f9-4d00-b63e-4794e998d2a5",
+      "title": "Importação legado #39005",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "41ef901c-8b54-430e-b596-dd78fd13dd3f",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 39005,
+      "valid_source_match": true
+    },
+    {
+      "id": "a85e11a6-d70d-4ef4-ad3a-7c7cf517198b",
+      "title": "Importação legado #39000",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "05bcd4c7-9409-4b9b-8084-fb530a9ca13e",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 39000,
+      "valid_source_match": true
+    },
+    {
+      "id": "f8559ba6-cdda-4aab-9f16-00166afebccf",
+      "title": "Importação legado #38999",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "6ea4e671-dec4-45d8-8306-f70590c3c055",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38999,
+      "valid_source_match": true
+    },
+    {
+      "id": "55b7952b-af9c-49b5-b01c-857255ea915d",
+      "title": "Importação legado #38997",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "bce1e20d-21c1-49f8-a702-5d23ab122b52",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38997,
+      "valid_source_match": true
+    },
+    {
+      "id": "6dd0310f-0d69-4ae1-972f-f28a54f03095",
+      "title": "Importação legado #38995",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "030d5f30-06c4-48be-bb59-62e16da7285d",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38995,
+      "valid_source_match": true
+    },
+    {
+      "id": "b6eaa27c-fbaa-4ae0-a4b6-0f62200ef6fb",
+      "title": "Importação legado #38984",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "88d59b50-ca1d-4ae6-95ab-d04881d37f88",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38984,
+      "valid_source_match": true
+    },
+    {
+      "id": "f9ffb637-3c51-4756-8d65-9acd0dd4f850",
+      "title": "Importação legado #38983",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "0c2853b5-229d-4587-8559-4e7737ac62ab",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38983,
+      "valid_source_match": true
+    },
+    {
+      "id": "76be4c1d-329d-4bdf-875a-3d1c1b1d2b5c",
+      "title": "Importação legado #38982",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "51d62b39-aeef-4a26-97fa-f209a6ef6fd3",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38982,
+      "valid_source_match": true
+    },
+    {
+      "id": "409e7224-058a-4ea1-804e-698a04ec6094",
+      "title": "Importação legado #38965",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "45907ad2-896e-4b46-bf17-1bd1f8fecf82",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38965,
+      "valid_source_match": true
+    },
+    {
+      "id": "235ea8a5-6328-46c2-b091-cb63a85b1b55",
+      "title": "Importação legado #38971",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "65332d9b-519d-4d18-94b5-41676609bccb",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38971,
+      "valid_source_match": true
+    },
+    {
+      "id": "fcfaa47e-4090-40c6-abf3-16b0b5ea69b9",
+      "title": "Importação legado #38970",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "fdb950d5-f110-4c3e-bb53-f2bd822d925a",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38970,
+      "valid_source_match": true
+    },
+    {
+      "id": "d0a37af1-cdef-4d5d-b2be-5d2306847372",
+      "title": "Importação legado #38969",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "73d029be-8774-42ee-b312-f4c9787c5cc0",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38969,
+      "valid_source_match": true
+    },
+    {
+      "id": "8d5e0a6f-9a97-4ae0-8aed-80fd70c49d29",
+      "title": "Importação legado #38968",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "04daac07-1d08-4213-9cbb-ef46a7df11b1",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38968,
+      "valid_source_match": true
+    },
+    {
+      "id": "bd92866f-aec7-469c-a237-b3c82f858f2e",
+      "title": "Importação legado #38967",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "e9de9c56-ce36-477d-907c-0c4e8891329b",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38967,
+      "valid_source_match": true
+    },
+    {
+      "id": "c6313dc5-aee7-4b8d-8593-bdd3bbba5863",
+      "title": "Importação legado #38963",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "e63b501a-2e7e-4cc5-aa69-7449337cadf4",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38963,
+      "valid_source_match": true
+    },
+    {
+      "id": "50698de4-f90f-4d3d-b7f5-7a8c04711220",
+      "title": "Importação legado #38962",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "b7b08b0e-1ac4-4672-88c3-61a1e034293b",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38962,
+      "valid_source_match": true
+    },
+    {
+      "id": "68f0342a-a6f5-49f9-aee7-e63e85b584ab",
+      "title": "Importação legado #38961",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "54401665-3852-4a72-8cb4-4d10c249f40e",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38961,
+      "valid_source_match": true
+    },
+    {
+      "id": "d439a8ac-8a5b-4e66-8443-5dcc6534e94c",
+      "title": "Importação legado #38959",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "29d10ddc-15f4-48b4-a867-6aeaa6c10901",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38959,
+      "valid_source_match": true
+    },
+    {
+      "id": "b6f153f5-dc71-4370-82aa-ba9c1a55674f",
+      "title": "Importação legado #38958",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "6abfebe7-3af8-44f3-81ce-3035d01472ae",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38958,
+      "valid_source_match": true
+    },
+    {
+      "id": "fed84eb4-6a84-41a6-98be-2145637a5a61",
+      "title": "Importação legado #38955",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "6364dc19-bd41-4090-8490-3d88a3912010",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38955,
+      "valid_source_match": true
+    },
+    {
+      "id": "6ee139f0-db81-4be2-841c-f9ed5c53b976",
+      "title": "Importação legado #38954",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "90fb475b-a9e0-4a0c-bec5-606271f7b5f8",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38954,
+      "valid_source_match": true
+    },
+    {
+      "id": "63aaa28f-baaa-4041-9ba6-12b6ad93a2a7",
+      "title": "Importação legado #38953",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "2a2532d2-b27e-4f6f-b2e8-be81ddf7d696",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38953,
+      "valid_source_match": true
+    },
+    {
+      "id": "ce0f667e-6e53-432c-abeb-8372b43c7aa6",
+      "title": "Importação legado #38940",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "3aab7a78-7af3-4323-a8e3-c1e87f1b7869",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38940,
+      "valid_source_match": true
+    },
+    {
+      "id": "de814e39-3353-41de-979d-da2fcfd87ac0",
+      "title": "Importação legado #38927",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "65873f0e-61ab-43e5-876d-b84511dbb942",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38927,
+      "valid_source_match": true
+    },
+    {
+      "id": "ea6bd97c-511b-4480-a5d9-298c66739a2f",
+      "title": "Importação legado #38926",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "73efbb1f-d609-43d2-8473-3f2e5ee521ae",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38926,
+      "valid_source_match": true
+    },
+    {
+      "id": "9f1efdf6-01f5-464a-857d-b77cc202be2e",
+      "title": "Importação legado #38925",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "7b7388e5-ccb5-4ef1-8132-958107cd3eef",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38925,
+      "valid_source_match": true
+    },
+    {
+      "id": "a5e9b855-4cdb-4be7-ba35-23af36677f5c",
+      "title": "Importação legado #38924",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "b4619183-ad24-438a-910a-7102e9235e79",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38924,
+      "valid_source_match": true
+    },
+    {
+      "id": "5ede7c83-9e32-4f24-928f-a9e482c017c9",
+      "title": "Importação legado #38923",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "95dc8c5a-3209-4a69-b331-4bcce3c3def9",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38923,
+      "valid_source_match": true
+    },
+    {
+      "id": "fa0736bc-6bf2-4028-b70c-de58e9965557",
+      "title": "Importação legado #38922",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "722ff8cb-84ec-4f98-b1d1-c8277ef2fd6f",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38922,
+      "valid_source_match": true
+    },
+    {
+      "id": "8be970a7-0970-4ff1-9e05-104361888e05",
+      "title": "Importação legado #38920",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "6e902f59-f486-4a90-8626-7b464a19c204",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38920,
+      "valid_source_match": true
+    },
+    {
+      "id": "7bc82b3d-f940-44aa-b190-5374e2413f13",
+      "title": "Importação legado #38919",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "4ec6beb9-0689-4ec4-b65e-8c4c59ed3eaf",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38919,
+      "valid_source_match": true
+    },
+    {
+      "id": "47543527-01c6-4eeb-90fa-a0bfdfd6b644",
+      "title": "Importação legado #38918",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "4177cb9a-7e3c-4306-80e5-8ec5bf427515",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38918,
+      "valid_source_match": true
+    },
+    {
+      "id": "1e5004d2-fd6a-4081-8c21-7b9c3d1cc6df",
+      "title": "Importação legado #38917",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "cb315fb5-6231-4c9c-8b4f-ce6a64087500",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38917,
+      "valid_source_match": true
+    },
+    {
+      "id": "c130dd65-1d7c-4a03-8792-c49a6ccdfa6e",
+      "title": "Importação legado #38911",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "ab6fdec9-bd21-4678-9e4b-82dbfa2d610a",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38911,
+      "valid_source_match": true
+    },
+    {
+      "id": "f3ddef53-7f9c-4731-99e1-4106bf552ae4",
+      "title": "Importação legado #38910",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "ab429ed3-c4ae-4b8d-9345-0e71a8935a46",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38910,
+      "valid_source_match": true
+    },
+    {
+      "id": "f1553d57-5c5c-499e-abc4-bc300bd59050",
+      "title": "Importação legado #38906",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "14549c06-4f57-4908-8db6-b7b3b5940975",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38906,
+      "valid_source_match": true
+    },
+    {
+      "id": "c46dd08a-acbd-4657-bf8e-c382bdbd0ba2",
+      "title": "Importação legado #38852",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "d9b91a7f-284d-4b93-9fa0-55b0670cad0a",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38852,
+      "valid_source_match": true
+    },
+    {
+      "id": "41df034a-ae10-4468-8e64-41fdf1bf85b3",
+      "title": "Importação legado #38907",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "b553adc9-fd65-4f59-b5e9-ea355cc0144e",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38907,
+      "valid_source_match": true
+    },
+    {
+      "id": "bc10fdd1-0c7b-4a3f-a6be-ec95f0324cb6",
+      "title": "Importação legado #38905",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "7373f862-29f7-48c2-9240-8bb58ae49769",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38905,
+      "valid_source_match": true
+    },
+    {
+      "id": "1302c2f5-9bd8-4ca5-ac83-16573ed66c9d",
+      "title": "Importação legado #38904",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "0fe9636c-0226-4ab3-8b98-1f6a1393586b",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38904,
+      "valid_source_match": true
+    },
+    {
+      "id": "5b7beab6-a728-458e-be78-28e2e5f5a06d",
+      "title": "Importação legado #38903",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "9fcf32ef-9510-4518-ae7e-6f21c7ac2e53",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38903,
+      "valid_source_match": true
+    },
+    {
+      "id": "517ce21c-f3f1-4bea-8ef5-3768afe7d129",
+      "title": "Importação legado #38902",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "5aa27981-7a2c-4dba-92f9-82901c60ca16",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38902,
+      "valid_source_match": true
+    },
+    {
+      "id": "2cf396df-ed72-49a2-9743-c32835c673b5",
+      "title": "Importação legado #38851",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "49e6da2c-fd35-46a7-b116-387cb5ae37b0",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38851,
+      "valid_source_match": true
+    },
+    {
+      "id": "ea90c569-d496-4d29-b84a-8f5d6e5c0a94",
+      "title": "Importação legado #38898",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "4db63f47-995e-40dc-9637-19a9c9baf87b",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38898,
+      "valid_source_match": true
+    },
+    {
+      "id": "56b5d880-e37f-4039-b381-563607b01ee3",
+      "title": "Importação legado #38896",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "868b66cd-94f3-45e8-af38-e3cf1b12e00d",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38896,
+      "valid_source_match": true
+    },
+    {
+      "id": "e75d0d2a-c488-4963-bd1d-fe341b3d6bb8",
+      "title": "Importação legado #38895",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "dcb8b4ba-0fbc-44ea-a47b-6f1ccc03c26a",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38895,
+      "valid_source_match": true
+    },
+    {
+      "id": "d0e6067a-de67-46ab-91f8-b18a6de5337f",
+      "title": "Importação legado #38894",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "e1f28437-cb93-4045-bbc8-7c475433f24a",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38894,
+      "valid_source_match": true
+    },
+    {
+      "id": "cb6fdae3-cea7-4054-b646-8088fcf09267",
+      "title": "Importação legado #38899",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "7f729106-537c-4be4-a6b4-91cb452cbbd1",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38899,
+      "valid_source_match": true
+    },
+    {
+      "id": "d3bfe6b7-a4d2-4482-9ea2-327cef6d31ce",
+      "title": "Importação legado #38897",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "615e964e-3e2d-4c58-a8fa-59993dd46cc2",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38897,
+      "valid_source_match": true
+    },
+    {
+      "id": "171d9e54-4e54-43bd-897a-65f82ff63f4c",
+      "title": "Importação legado #38880",
+      "lesson_date": "2026-02-06",
+      "class_schedule_id": "a2e29111-f312-40d5-b170-f8c77a63ae20",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38880,
+      "valid_source_match": true
+    },
+    {
+      "id": "08f1c870-db6d-4e8d-8e6e-5057855ce095",
+      "title": "Importação legado #38875",
+      "lesson_date": "2026-02-09",
+      "class_schedule_id": "a6c2dca1-983a-4dcc-9644-8dadbd54a26e",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38875,
+      "valid_source_match": true
+    },
+    {
+      "id": "79b9d9f3-d1d0-4b30-8e53-210b1e5e715d",
+      "title": "Importação legado #38874",
+      "lesson_date": "2026-02-09",
+      "class_schedule_id": "6be649b2-1f67-4dc6-914a-e82267bea290",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38874,
+      "valid_source_match": true
+    },
+    {
+      "id": "3e2dace0-9532-483f-b96b-1dbae2dedd13",
+      "title": "Importação legado #38873",
+      "lesson_date": "2026-02-09",
+      "class_schedule_id": "02be5cbb-e3dd-4010-a1de-b45de2071cc5",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38873,
+      "valid_source_match": true
+    },
+    {
+      "id": "3815d700-d60e-4ccf-84e7-b4683b654f76",
+      "title": "Importação legado #38850",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "35887919-f3de-408d-8984-faaec4951cd5",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38850,
+      "valid_source_match": true
+    },
+    {
+      "id": "49d124bb-bcda-4394-8dcf-d178c14380ab",
+      "title": "Importação legado #38872",
+      "lesson_date": "2026-02-06",
+      "class_schedule_id": "6d6e8038-f89c-4e61-b1d6-c4aa137e3537",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38872,
+      "valid_source_match": true
+    },
+    {
+      "id": "11dcbd86-bcf4-45ac-8930-cb80092bc8b9",
+      "title": "Importação legado #38871",
+      "lesson_date": "2026-02-05",
+      "class_schedule_id": "aa66e617-f6f4-4353-80e3-0b875c549f8e",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38871,
+      "valid_source_match": true
+    },
+    {
+      "id": "a9a74b4b-11e3-403b-ae81-a7ff4b174e2d",
+      "title": "Importação legado #38870",
+      "lesson_date": "2026-02-04",
+      "class_schedule_id": "06ee56c4-a995-4827-ae9d-39aa558cc723",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38870,
+      "valid_source_match": true
+    },
+    {
+      "id": "ac907833-bc30-42cb-b8d1-b37b32e0415b",
+      "title": "Importação legado #38869",
+      "lesson_date": "2026-02-03",
+      "class_schedule_id": "3ce7b49b-d98b-40af-9832-8b8d7a7e7037",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38869,
+      "valid_source_match": true
+    },
+    {
+      "id": "ec121f09-dc36-4d4a-8e9b-45d3acb8f7d3",
+      "title": "Importação legado #38810",
+      "lesson_date": "2026-02-23",
+      "class_schedule_id": "c576ed30-719c-4b20-847d-a59ec8b08b16",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38810,
+      "valid_source_match": true
+    },
+    {
+      "id": "6b87f503-0af5-4145-9fb3-724eeb6d8458",
+      "title": "Importação legado #38807",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "a05afcec-728c-4c02-9b90-695155d5f323",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38807,
+      "valid_source_match": true
+    },
+    {
+      "id": "3b34dee8-9e86-4aae-8b78-bba73e5387b1",
+      "title": "Importação legado #38868",
+      "lesson_date": "2026-02-02",
+      "class_schedule_id": "6be649b2-1f67-4dc6-914a-e82267bea290",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38868,
+      "valid_source_match": true
+    },
+    {
+      "id": "d23cfe76-4dc1-4e2a-861c-6b6f96721fc2",
+      "title": "Importação legado #38867",
+      "lesson_date": "2026-02-06",
+      "class_schedule_id": "604340e5-633b-4d40-afdb-d240ef2f5a6a",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38867,
+      "valid_source_match": true
+    },
+    {
+      "id": "e0e140a8-4da1-44fc-ab26-ffe6b4f2d50b",
+      "title": "Importação legado #38866",
+      "lesson_date": "2026-02-05",
+      "class_schedule_id": "195a3d48-63e7-4665-9d77-e6f09de801f0",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38866,
+      "valid_source_match": true
+    },
+    {
+      "id": "f6f4e0e3-cbfd-4420-a685-17e6968d3a38",
+      "title": "Importação legado #38865",
+      "lesson_date": "2026-02-04",
+      "class_schedule_id": "58897519-0776-4455-9986-ee008c47251e",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38865,
+      "valid_source_match": true
+    },
+    {
+      "id": "6e1848c2-fdb7-4391-86e8-6c139a11f45f",
+      "title": "Importação legado #38806",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "bfef3b23-f3c1-4f86-8b84-06025c0ff060",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38806,
+      "valid_source_match": true
+    },
+    {
+      "id": "51a8620b-08fc-44d8-8ab9-917fa5bd9143",
+      "title": "Importação legado #38772",
+      "lesson_date": "2026-03-05",
+      "class_schedule_id": "196ec04e-1b7f-4ac5-b1c1-d61d7fbda16e",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38772,
+      "valid_source_match": true
+    },
+    {
+      "id": "4d357b6e-3b8c-4a56-a1ad-eb287be5d057",
+      "title": "Importação legado #38864",
+      "lesson_date": "2026-02-03",
+      "class_schedule_id": "4c564f2a-9272-45c0-9a0e-c65f061bf21c",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38864,
+      "valid_source_match": true
+    },
+    {
+      "id": "281c1641-fe48-4f41-9304-2e26ae02cf63",
+      "title": "Importação legado #38863",
+      "lesson_date": "2026-02-02",
+      "class_schedule_id": "a6c2dca1-983a-4dcc-9644-8dadbd54a26e",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38863,
+      "valid_source_match": true
+    },
+    {
+      "id": "38187860-cc97-4dd1-84f7-a8322df78a8e",
+      "title": "Importação legado #38859",
+      "lesson_date": "2026-02-06",
+      "class_schedule_id": "672db571-fac0-44c7-b084-7e1d0ab62a21",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38859,
+      "valid_source_match": true
+    },
+    {
+      "id": "7f82a9b8-9b1e-45f3-a985-a329f6315de7",
+      "title": "Importação legado #38858",
+      "lesson_date": "2026-02-05",
+      "class_schedule_id": "23a95dea-959c-4420-b6a1-02249e55ce21",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38858,
+      "valid_source_match": true
+    },
+    {
+      "id": "d4f3c8dd-1907-419c-9478-dee2ea634df6",
+      "title": "Importação legado #38795",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "9e98bd89-ac4d-4b6e-a6f8-a34bbe2d297b",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38795,
+      "valid_source_match": true
+    },
+    {
+      "id": "88269303-3f6c-4e9d-a49a-88329b827085",
+      "title": "Importação legado #38857",
+      "lesson_date": "2026-02-04",
+      "class_schedule_id": "b11ea51f-ea62-4971-b07b-4861e717adf2",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38857,
+      "valid_source_match": true
+    },
+    {
+      "id": "37627432-50e6-40a9-9d2f-2e339b4c0857",
+      "title": "Importação legado #38856",
+      "lesson_date": "2026-02-03",
+      "class_schedule_id": "efcf4637-fa2c-4b19-948e-7db8df9e35bc",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38856,
+      "valid_source_match": true
+    },
+    {
+      "id": "23004abe-69ae-4952-88c6-a74287ccbe73",
+      "title": "Importação legado #38855",
+      "lesson_date": "2026-02-02",
+      "class_schedule_id": "02be5cbb-e3dd-4010-a1de-b45de2071cc5",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38855,
+      "valid_source_match": true
+    },
+    {
+      "id": "b78250db-d7d9-4888-9c0a-5acae23c48bb",
+      "title": "Importação legado #38854",
+      "lesson_date": "2026-02-23",
+      "class_schedule_id": "02be5cbb-e3dd-4010-a1de-b45de2071cc5",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38854,
+      "valid_source_match": true
+    },
+    {
+      "id": "3f792275-2659-4c67-9889-b078cd7b56a6",
+      "title": "Importação legado #38853",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "e56423af-28a7-4fe7-8066-c1e575d3bd90",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38853,
+      "valid_source_match": true
+    },
+    {
+      "id": "0a91e531-b9d9-4450-a504-c3ef22e2eb2e",
+      "title": "Importação legado #38836",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "82ef2fed-1815-4c1a-a95f-991517ea5d2f",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38836,
+      "valid_source_match": true
+    },
+    {
+      "id": "abc5481e-4c54-435f-84ec-7084fc1950bf",
+      "title": "Importação legado #38831",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "5e45aa2a-ae1e-4bf8-b277-709b15130251",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38831,
+      "valid_source_match": true
+    },
+    {
+      "id": "e356f5d6-1ffc-4aa3-a510-3dcc5586fdd5",
+      "title": "Importação legado #38826",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "0f00d7ff-a9a4-4e8f-bf86-ffa6b1c67dd0",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38826,
+      "valid_source_match": true
+    },
+    {
+      "id": "2a0c1171-70fd-474c-9243-4e72ce8bdef0",
+      "title": "Importação legado #38822",
+      "lesson_date": "2026-02-26",
+      "class_schedule_id": "685d97af-8ff1-4cda-840d-9d714fbfffa9",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38822,
+      "valid_source_match": true
+    },
+    {
+      "id": "89a3e7df-9ab5-40a5-b463-0de152aee6df",
+      "title": "Importação legado #38819",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "b6677e99-a6df-4c9c-8a48-2b475588b4f8",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38819,
+      "valid_source_match": true
+    },
+    {
+      "id": "3d64aa9d-9778-4b28-a1b8-1425158f1e79",
+      "title": "Importação legado #38814",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "bb8b2afb-f67d-4c9e-9895-17e57118004b",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38814,
+      "valid_source_match": true
+    },
+    {
+      "id": "87411103-433e-4a60-8f84-3a5c142808c0",
+      "title": "Importação legado #38812",
+      "lesson_date": "2026-02-27",
+      "class_schedule_id": "b097da1f-7b57-4df1-ab38-9ae87912e33a",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38812,
+      "valid_source_match": true
+    },
+    {
+      "id": "91b92877-e192-455d-9716-acfb2d85a802",
+      "title": "Importação legado #38811",
+      "lesson_date": "2026-02-24",
+      "class_schedule_id": "16bde2b6-8442-4413-900e-3fe32a7d4470",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38811,
+      "valid_source_match": true
+    },
+    {
+      "id": "2e067b41-a5e5-4890-8b4b-53ab0f8f861d",
+      "title": "Importação legado #38820",
+      "lesson_date": "2026-02-25",
+      "class_schedule_id": "9fc0b144-1fa8-4523-b630-848cf5dfd142",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38820,
+      "valid_source_match": true
+    },
+    {
+      "id": "5c02833b-7ff9-4776-9835-c098710e1634",
+      "title": "Importação legado #38805",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "49b25cc6-686a-4028-9873-ec17d6d58499",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38805,
+      "valid_source_match": true
+    },
+    {
+      "id": "93b5ccc8-e2cc-432a-84e0-23d474cd602f",
+      "title": "Importação legado #38804",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "10561fd5-f43e-4607-a3d7-8ba6712b5c60",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38804,
+      "valid_source_match": true
+    },
+    {
+      "id": "7d817d0a-5bf0-48f2-abc6-911b207ddd54",
+      "title": "Importação legado #38803",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "294fd881-8e74-44f7-adba-de51eb95381a",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38803,
+      "valid_source_match": true
+    },
+    {
+      "id": "ba25732b-802c-4e8d-ab1a-b2983d815758",
+      "title": "Importação legado #38802",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "09a0e834-d524-4aa8-a5e6-cb5777fbac1d",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38802,
+      "valid_source_match": true
+    },
+    {
+      "id": "83cbb3e1-b38c-49de-9def-246427ded49b",
+      "title": "Importação legado #38801",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "44eba951-75c0-4315-8d73-3d08aaeafde6",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38801,
+      "valid_source_match": true
+    },
+    {
+      "id": "dbe617ad-60e6-48c4-8aa6-c3942c7c49d4",
+      "title": "Importação legado #38794",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "42c0fdcb-6dbb-4427-b304-c685eec37518",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38794,
+      "valid_source_match": true
+    },
+    {
+      "id": "a1fe09de-b5e0-4694-9347-63b50699ee79",
+      "title": "Importação legado #38800",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "ba729153-716a-43e7-a525-d58f1602cab1",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38800,
+      "valid_source_match": true
+    },
+    {
+      "id": "e9d6ec88-d5db-4ecc-9003-7ec7c0167604",
+      "title": "Importação legado #38799",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "9a1fb80c-933c-4b3c-bbb8-b7e930c536a5",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38799,
+      "valid_source_match": true
+    },
+    {
+      "id": "6a097ef6-a433-4cd4-b523-13478a1c6df2",
+      "title": "Importação legado #38798",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "7a349c21-fd12-41df-b0ac-7823a37d8c4c",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38798,
+      "valid_source_match": true
+    },
+    {
+      "id": "50228f55-3859-416e-a120-fa8980d4d6f7",
+      "title": "Importação legado #38797",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "c3e0ad61-82a6-4caa-982b-8717bed77b3c",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38797,
+      "valid_source_match": true
+    },
+    {
+      "id": "27548466-4508-42af-8017-ed598ef32190",
+      "title": "Importação legado #38796",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "346d6b61-4740-4437-b4b0-4bad2fa83eda",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38796,
+      "valid_source_match": true
+    },
+    {
+      "id": "210c9f54-f9cc-4e92-b047-92ade1ad7f62",
+      "title": "Importação legado #38792",
+      "lesson_date": "2026-03-06",
+      "class_schedule_id": "14c9aa45-86e3-4459-bda3-b38cc564a2a2",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38792,
+      "valid_source_match": true
+    },
+    {
+      "id": "2420e17d-b910-4e22-85d5-3eaa07a65aab",
+      "title": "Importação legado #38791",
+      "lesson_date": "2026-03-05",
+      "class_schedule_id": "12c26bb7-6ae4-41e6-968a-4b82e02c323d",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38791,
+      "valid_source_match": true
+    },
+    {
+      "id": "0e67f48b-53f8-40b8-ad3c-fa61dab8b2cb",
+      "title": "Importação legado #38790",
+      "lesson_date": "2026-03-04",
+      "class_schedule_id": "e39aded4-48cf-4412-bb69-eac3e516dc7a",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38790,
+      "valid_source_match": true
+    },
+    {
+      "id": "5811072f-b0e7-4338-a3b0-c1ff054bec0a",
+      "title": "Importação legado #38789",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "19262119-06b9-470b-a6d5-a7268b2e3c3f",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38789,
+      "valid_source_match": true
+    },
+    {
+      "id": "184cfd31-c738-44e1-9b3e-4bbe998b5da3",
+      "title": "Importação legado #38788",
+      "lesson_date": "2026-03-06",
+      "class_schedule_id": "ada1e02b-d37a-491c-aba9-d867fb86489d",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38788,
+      "valid_source_match": true
+    },
+    {
+      "id": "7538bd0e-b444-43a8-8aab-dd8d920e220c",
+      "title": "Importação legado #38787",
+      "lesson_date": "2026-03-05",
+      "class_schedule_id": "422b2805-1f81-403e-bb16-e11ac4b7ef55",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38787,
+      "valid_source_match": true
+    },
+    {
+      "id": "7d7f2070-231e-48be-b0c2-e7ef12100874",
+      "title": "Importação legado #38786",
+      "lesson_date": "2026-03-04",
+      "class_schedule_id": "a1cc375b-065d-4cbd-b96a-a217142b23d5",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38786,
+      "valid_source_match": true
+    },
+    {
+      "id": "4370e222-491b-447e-8518-1c0430b9446f",
+      "title": "Importação legado #38785",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "6f0defb1-5d6d-4e06-a997-2ea9141798cc",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38785,
+      "valid_source_match": true
+    },
+    {
+      "id": "775f4db9-36d3-4d81-b5fc-222c3fb85c0d",
+      "title": "Importação legado #38784",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "32d2c848-f713-4e2d-a589-f8d259d00314",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38784,
+      "valid_source_match": true
+    },
+    {
+      "id": "0db9fee2-3056-4c93-a599-7328dd7fa090",
+      "title": "Importação legado #38783",
+      "lesson_date": "2026-03-06",
+      "class_schedule_id": "6d199aa6-9306-4fee-8d99-45374d315604",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38783,
+      "valid_source_match": true
+    },
+    {
+      "id": "324557e3-460a-4851-a036-06257152d809",
+      "title": "Importação legado #38782",
+      "lesson_date": "2026-03-04",
+      "class_schedule_id": "61890eb3-e336-449e-8ac0-575b386d38a2",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38782,
+      "valid_source_match": true
+    },
+    {
+      "id": "60d6c577-330c-42b2-9c53-67934937e8ca",
+      "title": "Importação legado #38781",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "8dcdcf80-a89e-4f7e-89a2-017842f10c69",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38781,
+      "valid_source_match": true
+    },
+    {
+      "id": "00b2f844-48bd-42a4-8417-66c6cf4eb40c",
+      "title": "Importação legado #38780",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "89c0cbfe-4b02-40eb-8887-84a4f60e9ece",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38780,
+      "valid_source_match": true
+    },
+    {
+      "id": "3d5714c3-43ec-4351-8d59-15cfdd567536",
+      "title": "Importação legado #38778",
+      "lesson_date": "2026-03-06",
+      "class_schedule_id": "202f5324-0ccf-46c3-aa69-2058c598f5aa",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38778,
+      "valid_source_match": true
+    },
+    {
+      "id": "64078d34-85b0-453a-8586-4696e293cff0",
+      "title": "Importação legado #38777",
+      "lesson_date": "2026-03-05",
+      "class_schedule_id": "8dcd4ed4-972a-495f-807d-b939c8708462",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38777,
+      "valid_source_match": true
+    },
+    {
+      "id": "54fdb46d-b71c-4ddb-b1fd-11fac4c05e21",
+      "title": "Importação legado #38776",
+      "lesson_date": "2026-03-04",
+      "class_schedule_id": "4e46d65b-068e-4b7c-82ba-413a25942a03",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38776,
+      "valid_source_match": true
+    },
+    {
+      "id": "8f974a48-fc8d-4ab8-88a0-60bde32d8353",
+      "title": "Importação legado #38775",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "0666ae01-b422-4f81-84ea-46decc2e978d",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38775,
+      "valid_source_match": true
+    },
+    {
+      "id": "723536d7-2b8a-4b36-ae87-a85b37adcedb",
+      "title": "Importação legado #38774",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "0cbe368c-8da5-4dcf-9035-14bf0b1fb908",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38774,
+      "valid_source_match": true
+    },
+    {
+      "id": "dcef128d-02f5-44ca-80e0-6d71a34bec51",
+      "title": "Importação legado #38769",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "a9600212-6c7b-4bd1-a78b-6fa640c365ad",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38769,
+      "valid_source_match": true
+    },
+    {
+      "id": "603c95d3-a841-4a94-a8dd-d5ac1b3ee207",
+      "title": "Importação legado #38764",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "11e82d18-6278-429a-83f3-962e4f9f1867",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38764,
+      "valid_source_match": true
+    },
+    {
+      "id": "6a78d82e-e3d8-440e-9526-619bfe1f8c05",
+      "title": "Importação legado #38763",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "cd0b6dce-7681-46f0-8b11-05b1d7427cc1",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38763,
+      "valid_source_match": true
+    },
+    {
+      "id": "289fdeae-9ecf-4211-9acc-95474b6ffab7",
+      "title": "Importação legado #38762",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "80823362-235b-4d71-bbd2-769070d48180",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38762,
+      "valid_source_match": true
+    },
+    {
+      "id": "a6ae3c5f-7cbd-4b74-b7ce-6716cc911d91",
+      "title": "Importação legado #38761",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "12db8dab-5abf-4feb-8543-842bfb7e6693",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38761,
+      "valid_source_match": true
+    },
+    {
+      "id": "ad44e07c-12dc-4a0d-b515-ee4da49bc5d5",
+      "title": "Importação legado #38760",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "d035cf57-844e-4cc1-b141-ad014312377c",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38760,
+      "valid_source_match": true
+    },
+    {
+      "id": "e0c1a469-4d82-4317-bdc5-42057771579a",
+      "title": "Importação legado #38759",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "6e473eda-fc65-44ec-a3f5-0bc92e253832",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38759,
+      "valid_source_match": true
+    },
+    {
+      "id": "dfc02f5f-e5c1-4802-ab1e-09cbb1e93f0d",
+      "title": "Importação legado #38758",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "c2d736d5-fb56-4e9c-a271-0ef0d4a9c565",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38758,
+      "valid_source_match": true
+    },
+    {
+      "id": "d0b20dca-4df7-4fde-84f7-6341daccbcff",
+      "title": "Importação legado #38757",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "8327b30e-8243-4f2b-be47-8583ca14d2de",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38757,
+      "valid_source_match": true
+    },
+    {
+      "id": "0614508f-6dbb-4017-833f-a70f5785ced2",
+      "title": "Importação legado #38756",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "e1f85f8f-75ab-4a8a-a7a1-f6b7192409bb",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38756,
+      "valid_source_match": true
+    },
+    {
+      "id": "de07c62d-c415-45a8-b4e6-ca42b026bc20",
+      "title": "Importação legado #38755",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "761cc2f9-c1a2-48f9-9931-3d199f8c02ba",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38755,
+      "valid_source_match": true
+    },
+    {
+      "id": "002660fe-33ab-4ee1-b95e-b46a8ee3ec88",
+      "title": "Importação legado #38754",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "81ee74b7-9cf2-4a3a-8976-2c99d26c84e2",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38754,
+      "valid_source_match": true
+    },
+    {
+      "id": "5b9b4b06-faaf-4ab5-9275-a85be1de8055",
+      "title": "Importação legado #38753",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "1acedc85-f4da-4e99-b189-8d69f480e94c",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38753,
+      "valid_source_match": true
+    },
+    {
+      "id": "2a026d8d-bb4a-401c-9d58-ece86d7d194c",
+      "title": "Importação legado #38752",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "232894ae-93bb-4053-a775-01e017bf9430",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38752,
+      "valid_source_match": true
+    },
+    {
+      "id": "7363e059-62d0-47db-ae5b-6f310f70ed40",
+      "title": "Importação legado #38751",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "ee7d4eb5-d514-4159-9620-1485aa0b531c",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38751,
+      "valid_source_match": true
+    },
+    {
+      "id": "2224ec98-6523-4432-ae27-c5c32a359635",
+      "title": "Importação legado #38750",
+      "lesson_date": "2026-03-10",
+      "class_schedule_id": "a28078d5-e93d-4e69-937b-d86dfba96cfa",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38750,
+      "valid_source_match": true
+    },
+    {
+      "id": "ff77e21f-c88c-465a-861d-4737eeb389c4",
+      "title": "Importação legado #38748",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "fc6ef89c-2198-4423-9dd5-11464bbd3964",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38748,
+      "valid_source_match": true
+    },
+    {
+      "id": "40d0d3be-3aad-437a-a739-3310574c32e3",
+      "title": "Importação legado #38747",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "5465078c-e339-4bdd-8eb4-c795d5f19f9d",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38747,
+      "valid_source_match": true
+    },
+    {
+      "id": "2b49b5d1-71cd-4e56-9dda-280546d5a812",
+      "title": "Importação legado #38746",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "152c4724-ce93-4813-983e-4ee69680ff8a",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38746,
+      "valid_source_match": true
+    },
+    {
+      "id": "f75e35b6-b65c-4c6d-a6f9-77f32f96e8e6",
+      "title": "Importação legado #38734",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "98c1d4d5-ae4d-4e6c-9db4-2e58e61d68e3",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38734,
+      "valid_source_match": true
+    },
+    {
+      "id": "e22ef6a3-c76d-4539-b956-954b8a826cfb",
+      "title": "Importação legado #38733",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "fcadb360-7cae-4607-8fe0-2d4ccbae4c02",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38733,
+      "valid_source_match": true
+    },
+    {
+      "id": "ff187019-31de-4639-8088-fbd65539f90f",
+      "title": "Importação legado #38736",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "39f4bab8-969a-42a7-a88c-681f980d3492",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38736,
+      "valid_source_match": true
+    },
+    {
+      "id": "b6724177-3a3b-4dc2-9ba5-4e3319d416d5",
+      "title": "Importação legado #38735",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "4384f4b2-d93e-4380-bbff-6f7b584f3df9",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38735,
+      "valid_source_match": true
+    },
+    {
+      "id": "b5d79b56-7ec2-48d0-a943-cd04bc4efc4e",
+      "title": "Importação legado #38727",
+      "lesson_date": "2026-03-05",
+      "class_schedule_id": "98bbf2ec-3c62-4734-8843-67f09a532b73",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38727,
+      "valid_source_match": true
+    },
+    {
+      "id": "dde4e9a8-ce77-4837-ae30-87132aea0827",
+      "title": "Importação legado #38726",
+      "lesson_date": "2026-03-06",
+      "class_schedule_id": "ef3ea5bf-8558-4245-a810-c2b2c5520f95",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38726,
+      "valid_source_match": true
+    },
+    {
+      "id": "73d56fc9-06e0-4838-b902-5d913ac07c22",
+      "title": "Importação legado #38725",
+      "lesson_date": "2026-03-06",
+      "class_schedule_id": "30a69bae-2a41-4ddf-ad60-a91e00d61dd7",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38725,
+      "valid_source_match": true
+    },
+    {
+      "id": "ca8923fa-1f43-48c0-a36b-51a914782563",
+      "title": "Importação legado #38724",
+      "lesson_date": "2026-03-06",
+      "class_schedule_id": "19809f48-5076-49b7-8a0f-702ebf4804d8",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38724,
+      "valid_source_match": true
+    },
+    {
+      "id": "9f872daf-4999-4343-9e92-f738ab0f7c79",
+      "title": "Importação legado #38722",
+      "lesson_date": "2026-03-05",
+      "class_schedule_id": "68ed5b22-c8f5-498b-8d54-d1837a7f9687",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38722,
+      "valid_source_match": true
+    },
+    {
+      "id": "d9d606d4-cc6b-4002-9fdc-264ad9573133",
+      "title": "Importação legado #38721",
+      "lesson_date": "2026-03-05",
+      "class_schedule_id": "85463a55-15e1-43fb-828f-0ed943d69a87",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38721,
+      "valid_source_match": true
+    },
+    {
+      "id": "5af2c401-d592-4856-aa72-3c51907e68f9",
+      "title": "Importação legado #38718",
+      "lesson_date": "2026-03-05",
+      "class_schedule_id": "31c87969-a504-4201-aeef-3d712c5e9761",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38718,
+      "valid_source_match": true
+    },
+    {
+      "id": "53e4cead-e461-4657-944b-5d7e01a4b255",
+      "title": "Importação legado #38714",
+      "lesson_date": "2026-03-04",
+      "class_schedule_id": "9e6f7e11-ad78-4bdf-a482-0fec327f8abc",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38714,
+      "valid_source_match": true
+    },
+    {
+      "id": "c55966d5-75ea-4b9c-a4e9-c3744409ed74",
+      "title": "Importação legado #38713",
+      "lesson_date": "2026-03-04",
+      "class_schedule_id": "9bfaeddd-f59b-4c50-b185-440488d450a3",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38713,
+      "valid_source_match": true
+    },
+    {
+      "id": "9ee9a8d6-3130-4893-bf5e-db3350e04f82",
+      "title": "Importação legado #38697",
+      "lesson_date": "2026-03-05",
+      "class_schedule_id": "c3da7b30-c06e-4cba-80b2-b5edbddcad47",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38697,
+      "valid_source_match": true
+    },
+    {
+      "id": "95b847e1-5653-48b9-8a85-6bcfdf186b49",
+      "title": "Importação legado #38719",
+      "lesson_date": "2026-03-04",
+      "class_schedule_id": "457bf365-eded-4953-b693-5aece978766a",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38719,
+      "valid_source_match": true
+    },
+    {
+      "id": "a72961a9-8135-4086-a0a6-ad91de08365e",
+      "title": "Importação legado #38717",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "efabef5e-07de-4b3b-8b6d-f3b027634660",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38717,
+      "valid_source_match": true
+    },
+    {
+      "id": "2be976d7-94b3-4b73-8ba5-3e805421dcb5",
+      "title": "Importação legado #38716",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "e6abc4b0-6f84-4572-9e89-1b699a531438",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38716,
+      "valid_source_match": true
+    },
+    {
+      "id": "bdba6cfe-5a47-4a67-96da-a6368063eeff",
+      "title": "Importação legado #38715",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "fd2468ab-b847-4740-8b91-c214564e48bf",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38715,
+      "valid_source_match": true
+    },
+    {
+      "id": "35eaf89b-901e-48ea-a4b9-635a69e4e07c",
+      "title": "Importação legado #38712",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "955e26af-0386-4306-ae51-3e7a0004e70b",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38712,
+      "valid_source_match": true
+    },
+    {
+      "id": "17341e92-dc88-4e94-b67b-485d6cbe409b",
+      "title": "Importação legado #38711",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "f9e864eb-094b-4db0-8068-14f67111dd48",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38711,
+      "valid_source_match": true
+    },
+    {
+      "id": "ce784c96-5cbf-46cd-a320-12db687bea51",
+      "title": "Importação legado #38709",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "b8babb3c-80b8-457d-aea2-fcd528b08578",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38709,
+      "valid_source_match": true
+    },
+    {
+      "id": "c7013f82-839b-4b95-a0c3-eeb7d8e375a0",
+      "title": "Importação legado #38708",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "a478233c-1e31-4336-8826-247053b5178e",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38708,
+      "valid_source_match": true
+    },
+    {
+      "id": "783feb8f-c18b-4267-9581-25a214ef1a36",
+      "title": "Importação legado #38707",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "db0caa22-75d0-4fcd-a438-a7b9033f5679",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38707,
+      "valid_source_match": true
+    },
+    {
+      "id": "134dd7af-ff37-4e5a-bfd4-ce76e0d57aa8",
+      "title": "Importação legado #38696",
+      "lesson_date": "2026-03-05",
+      "class_schedule_id": "b96895e0-2ce8-4fc3-96d7-861c24a4661b",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38696,
+      "valid_source_match": true
+    },
+    {
+      "id": "c9ac231f-7de7-46ad-ad3a-fd655500b3a4",
+      "title": "Importação legado #38705",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "7c55f54f-d9a2-499a-bc68-feff1d8b0ad1",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38705,
+      "valid_source_match": true
+    },
+    {
+      "id": "0c63aee6-40c5-4531-8a24-8eae2527f85e",
+      "title": "Importação legado #38704",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "f8b2d8c7-bcfa-464a-8e99-ca75be2419f9",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38704,
+      "valid_source_match": true
+    },
+    {
+      "id": "5ccfe0d4-fb9c-471e-b64a-05c880ac74c0",
+      "title": "Importação legado #38701",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "53550197-c3a8-41ad-9766-815d7332b47e",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38701,
+      "valid_source_match": true
+    },
+    {
+      "id": "a58dc5ff-60f5-4b6d-aa4b-fe1c7f986444",
+      "title": "Importação legado #38700",
+      "lesson_date": "2026-03-06",
+      "class_schedule_id": "1d4a2954-223b-4327-b72c-b76f51f952a3",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38700,
+      "valid_source_match": true
+    },
+    {
+      "id": "fcbadd78-4ebd-46d2-a2b6-182ba42389d8",
+      "title": "Importação legado #38699",
+      "lesson_date": "2026-03-06",
+      "class_schedule_id": "24dde72c-d05e-43f8-ad96-b22ae95e2f02",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38699,
+      "valid_source_match": true
+    },
+    {
+      "id": "b4e35b02-b159-485f-a011-fe0a073540ed",
+      "title": "Importação legado #38698",
+      "lesson_date": "2026-03-06",
+      "class_schedule_id": "df47dcba-4bbd-4338-acb2-b38be0914650",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38698,
+      "valid_source_match": true
+    },
+    {
+      "id": "bdf46104-cf6d-4e01-b948-322318a9b31d",
+      "title": "Importação legado #38695",
+      "lesson_date": "2026-03-05",
+      "class_schedule_id": "e4197c32-8e07-4b0c-96b0-f7e1d49b36f3",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38695,
+      "valid_source_match": true
+    },
+    {
+      "id": "a70e731b-a189-40aa-910d-d9f1b49fc538",
+      "title": "Importação legado #38694",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "a9cf21ab-0b8d-4770-a7d3-8ff35819afde",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38694,
+      "valid_source_match": true
+    },
+    {
+      "id": "e9d185fd-efbe-4e8b-92d0-28e69ae312a6",
+      "title": "Importação legado #38693",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "672f1960-5a11-40c1-9d35-b15cae1523d4",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38693,
+      "valid_source_match": true
+    },
+    {
+      "id": "d32d8cf0-1c45-4003-ae95-a4b3d211a196",
+      "title": "Importação legado #38692",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "72f62e4c-779b-447e-92d3-7acc0abf88d8",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38692,
+      "valid_source_match": true
+    },
+    {
+      "id": "fd547e1b-2c30-4516-9094-21a36414844a",
+      "title": "Importação legado #38691",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "5bd2aa08-ca1e-4845-983b-252c499230e1",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38691,
+      "valid_source_match": true
+    },
+    {
+      "id": "317816eb-9bd4-4bba-bf1c-2aa02f9a000e",
+      "title": "Importação legado #38690",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "fbdc851a-4761-429e-9b68-4ba63e8ef651",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38690,
+      "valid_source_match": true
+    },
+    {
+      "id": "f0bfd39a-1bb9-4d0e-b1d3-88a567fec478",
+      "title": "Importação legado #38689",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "6abfebe7-3af8-44f3-81ce-3035d01472ae",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38689,
+      "valid_source_match": true
+    },
+    {
+      "id": "8c2998ed-ef69-4978-86e7-00acf89a6353",
+      "title": "Importação legado #38688",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "5e5b92bb-f9a3-48db-912e-b3141351cc99",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38688,
+      "valid_source_match": true
+    },
+    {
+      "id": "edc661a7-30fa-4faa-8019-ae3617eb41f0",
+      "title": "Importação legado #38686",
+      "lesson_date": "2026-02-23",
+      "class_schedule_id": "6abfebe7-3af8-44f3-81ce-3035d01472ae",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38686,
+      "valid_source_match": true
+    },
+    {
+      "id": "95a88445-1df2-4d08-b889-ab9c92ca1704",
+      "title": "Importação legado #38685",
+      "lesson_date": "2026-02-23",
+      "class_schedule_id": "5e5b92bb-f9a3-48db-912e-b3141351cc99",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38685,
+      "valid_source_match": true
+    },
+    {
+      "id": "365a7dcb-9354-4a26-a86d-70bcfb99bcde",
+      "title": "Importação legado #38684",
+      "lesson_date": "2026-03-06",
+      "class_schedule_id": "5c7c5668-7ca1-4d76-a250-a1b9ed370971",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38684,
+      "valid_source_match": true
+    },
+    {
+      "id": "b4370bd5-ac0b-41ba-b700-55edffb77530",
+      "title": "Importação legado #38683",
+      "lesson_date": "2026-03-06",
+      "class_schedule_id": "ec30e10e-b4a8-422d-bf13-5af1049fe89d",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38683,
+      "valid_source_match": true
+    },
+    {
+      "id": "13872074-bcb7-4ef7-9301-495f08aa3762",
+      "title": "Importação legado #38682",
+      "lesson_date": "2026-03-06",
+      "class_schedule_id": "624fcc10-9df4-4e2f-a64a-c9bc198378cb",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38682,
+      "valid_source_match": true
+    },
+    {
+      "id": "fb7f3025-b8a8-4955-bd99-93a3064ed51a",
+      "title": "Importação legado #38680",
+      "lesson_date": "2026-03-05",
+      "class_schedule_id": "cd83f4ac-1e57-423b-a5f3-ae2ae879cb17",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38680,
+      "valid_source_match": true
+    },
+    {
+      "id": "ee05e85e-e80c-449d-abfe-c65cf6b9f102",
+      "title": "Importação legado #38678",
+      "lesson_date": "2026-03-05",
+      "class_schedule_id": "ee719d61-6630-4f31-b369-eeee74a6de4d",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38678,
+      "valid_source_match": true
+    },
+    {
+      "id": "29e2c46c-ce52-4c68-8115-b5adb75e7909",
+      "title": "Importação legado #38677",
+      "lesson_date": "2026-03-04",
+      "class_schedule_id": "dbe76b5a-bd8e-45dd-bd56-59bb9102748c",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38677,
+      "valid_source_match": true
+    },
+    {
+      "id": "2b438a91-e5a3-49c2-afa6-e7bd0711686f",
+      "title": "Importação legado #38676",
+      "lesson_date": "2026-03-04",
+      "class_schedule_id": "c10d4e86-3873-4f05-b329-4ba91617cedd",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38676,
+      "valid_source_match": true
+    },
+    {
+      "id": "a3a680e8-5944-480c-8943-d38506f8a92a",
+      "title": "Importação legado #38675",
+      "lesson_date": "2026-03-04",
+      "class_schedule_id": "717dc8c0-9bf5-47f2-b3c1-24199c81094e",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38675,
+      "valid_source_match": true
+    },
+    {
+      "id": "00dec965-a375-4183-ac30-1b7fa1976cdf",
+      "title": "Importação legado #39108",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "178b98fc-a8f7-4991-9e1a-a3bf4f323dc8",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39108,
+      "valid_source_match": true
+    },
+    {
+      "id": "d173270c-323e-44d7-9ab9-eea27c876434",
+      "title": "Importação legado #38674",
+      "lesson_date": "2026-03-04",
+      "class_schedule_id": "d39cd9b1-7f50-4c17-8fbe-20bf3b1d5625",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38674,
+      "valid_source_match": true
+    },
+    {
+      "id": "dade3ccf-673f-43ff-9822-94672c5e19a4",
+      "title": "Importação legado #38673",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "59d5ddc2-ee57-4367-8211-fd63778a8301",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38673,
+      "valid_source_match": true
+    },
+    {
+      "id": "7d089d8a-6ff9-4ab9-9adf-a1803bdaf974",
+      "title": "Importação legado #38671",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "36a01032-aa95-4093-beb0-82dee301d526",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38671,
+      "valid_source_match": true
+    },
+    {
+      "id": "ba7394d5-090f-4aff-820a-0b0dafd23bd7",
+      "title": "Importação legado #38668",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "3e79f024-8b86-4606-875d-7189b4bd7533",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38668,
+      "valid_source_match": true
+    },
+    {
+      "id": "6c749126-b595-464d-ada6-a334e970abc4",
+      "title": "Importação legado #38665",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "6dc39fe5-9c30-42ec-993e-990a0718fd7b",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38665,
+      "valid_source_match": true
+    },
+    {
+      "id": "846ec9a7-6e13-4502-ab14-71c007b0a4cc",
+      "title": "Importação legado #38662",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "eb74ea10-1e49-40db-8d14-533e399a81a3",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38662,
+      "valid_source_match": true
+    },
+    {
+      "id": "3b242480-f871-4690-a6a8-012e7de5a292",
+      "title": "Importação legado #38649",
+      "lesson_date": "2026-03-06",
+      "class_schedule_id": "a7b25531-469b-4d03-a23f-1d2ce017a0e6",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38649,
+      "valid_source_match": true
+    },
+    {
+      "id": "0acaea68-3637-4b57-b82f-419883b52d0f",
+      "title": "Importação legado #38648",
+      "lesson_date": "2026-03-05",
+      "class_schedule_id": "62ee10cf-d636-4640-a678-a28c8e579aee",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38648,
+      "valid_source_match": true
+    },
+    {
+      "id": "bda3be6d-a4b6-4b24-8c47-ea0e5083fb7e",
+      "title": "Importação legado #38647",
+      "lesson_date": "2026-03-04",
+      "class_schedule_id": "0f8be5b0-cf3b-4126-b3ec-bfe923206100",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38647,
+      "valid_source_match": true
+    },
+    {
+      "id": "668dd4af-6be6-4d80-ba8d-08fc74811472",
+      "title": "Importação legado #38646",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "c3a2ef56-eca7-46d3-a930-73a18419cb20",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38646,
+      "valid_source_match": true
+    },
+    {
+      "id": "c18eb1ec-4823-42d7-8abd-7b04d15b2c8a",
+      "title": "Importação legado #38642",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "af9ce784-5671-4803-90e6-7b574ed921ec",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38642,
+      "valid_source_match": true
+    },
+    {
+      "id": "86c019dd-c2e1-4ae6-93c4-019d73a12640",
+      "title": "Importação legado #38607",
+      "lesson_date": "2026-02-11",
+      "class_schedule_id": "1458b38c-afc8-4457-9bf3-95b4ed745bdb",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38607,
+      "valid_source_match": true
+    },
+    {
+      "id": "1fbd27be-e172-4fd5-8a63-46259f58d8a4",
+      "title": "Importação legado #38636",
+      "lesson_date": "2026-02-19",
+      "class_schedule_id": "5fe9346b-ad44-4bb6-a7ea-9a0214eda40f",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38636,
+      "valid_source_match": true
+    },
+    {
+      "id": "bfe267a4-ff62-4a7a-b905-0ee5330a2a26",
+      "title": "Importação legado #38633",
+      "lesson_date": "2026-02-20",
+      "class_schedule_id": "65d766d5-2b8f-4844-bfdd-7cca2e6b467e",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38633,
+      "valid_source_match": true
+    },
+    {
+      "id": "8886b308-a358-41e9-8c6f-f7f7f191e61a",
+      "title": "Importação legado #38632",
+      "lesson_date": "2026-02-19",
+      "class_schedule_id": "a3991b75-93ef-47cf-a090-b0db24a7fe9d",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38632,
+      "valid_source_match": true
+    },
+    {
+      "id": "403a155e-50bd-4404-8866-71d63ed882a8",
+      "title": "Importação legado #38629",
+      "lesson_date": "2026-02-20",
+      "class_schedule_id": "efb86fea-f3fb-4f82-9a65-74a484a87a88",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38629,
+      "valid_source_match": true
+    },
+    {
+      "id": "fcddc82a-2803-4959-bcf7-7d74ee823b2f",
+      "title": "Importação legado #38628",
+      "lesson_date": "2026-02-19",
+      "class_schedule_id": "0de34062-32c7-439a-b40a-e38ab35f459e",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38628,
+      "valid_source_match": true
+    },
+    {
+      "id": "61f75061-eab0-4236-b7f4-ceab923708e7",
+      "title": "Importação legado #38627",
+      "lesson_date": "2026-02-20",
+      "class_schedule_id": "b097da1f-7b57-4df1-ab38-9ae87912e33a",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38627,
+      "valid_source_match": true
+    },
+    {
+      "id": "8be09077-2527-481f-9fd8-1384991d0294",
+      "title": "Importação legado #38626",
+      "lesson_date": "2026-02-19",
+      "class_schedule_id": "685d97af-8ff1-4cda-840d-9d714fbfffa9",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38626,
+      "valid_source_match": true
+    },
+    {
+      "id": "4a2c95a5-3a0a-46ad-9049-1337d5a74e8d",
+      "title": "Importação legado #38623",
+      "lesson_date": "2026-02-11",
+      "class_schedule_id": "6bd96305-1241-4c08-a250-7bdc242827e4",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38623,
+      "valid_source_match": true
+    },
+    {
+      "id": "5525675c-a984-411a-9869-dfdb58ebab5b",
+      "title": "Importação legado #38617",
+      "lesson_date": "2026-02-19",
+      "class_schedule_id": "ee7d4eb5-d514-4159-9620-1485aa0b531c",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38617,
+      "valid_source_match": true
+    },
+    {
+      "id": "9abbd7b6-0a74-4766-8427-318a5d671768",
+      "title": "Importação legado #38616",
+      "lesson_date": "2026-02-19",
+      "class_schedule_id": "c2d736d5-fb56-4e9c-a271-0ef0d4a9c565",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38616,
+      "valid_source_match": true
+    },
+    {
+      "id": "ef46ef12-23c3-49ce-891e-181bf1481809",
+      "title": "Importação legado #38615",
+      "lesson_date": "2026-02-19",
+      "class_schedule_id": "81ee74b7-9cf2-4a3a-8976-2c99d26c84e2",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38615,
+      "valid_source_match": true
+    },
+    {
+      "id": "6e9d9182-3109-4c0e-b52b-0670b4638653",
+      "title": "Importação legado #38611",
+      "lesson_date": "2026-02-13",
+      "class_schedule_id": "29927e06-6064-4dac-b149-17278e8072d2",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38611,
+      "valid_source_match": true
+    },
+    {
+      "id": "3137902a-36d2-47fe-80f8-c32ecda2f9c9",
+      "title": "Importação legado #38610",
+      "lesson_date": "2026-02-13",
+      "class_schedule_id": "efb86fea-f3fb-4f82-9a65-74a484a87a88",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38610,
+      "valid_source_match": true
+    },
+    {
+      "id": "433675fe-e14b-47a2-a3b9-58ef45c7e117",
+      "title": "Importação legado #38609",
+      "lesson_date": "2026-02-13",
+      "class_schedule_id": "b097da1f-7b57-4df1-ab38-9ae87912e33a",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38609,
+      "valid_source_match": true
+    },
+    {
+      "id": "eba1c413-df6c-4a81-92a7-4456a21a1f67",
+      "title": "Importação legado #38605",
+      "lesson_date": "2026-02-11",
+      "class_schedule_id": "8be12a51-689c-4710-b6d6-9bf58f8859fb",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38605,
+      "valid_source_match": true
+    },
+    {
+      "id": "ca2be83d-d744-4877-9599-941da74b583f",
+      "title": "Importação legado #38603",
+      "lesson_date": "2026-02-11",
+      "class_schedule_id": "9fc0b144-1fa8-4523-b630-848cf5dfd142",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38603,
+      "valid_source_match": true
+    },
+    {
+      "id": "a3dfc432-e546-4750-b404-af1fc9750780",
+      "title": "Importação legado #38604",
+      "lesson_date": "2026-02-12",
+      "class_schedule_id": "685d97af-8ff1-4cda-840d-9d714fbfffa9",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38604,
+      "valid_source_match": true
+    },
+    {
+      "id": "9d4493a5-fadf-474a-af72-211e084b73be",
+      "title": "Importação legado #38602",
+      "lesson_date": "2026-02-10",
+      "class_schedule_id": "a8542226-f4bf-482a-997d-337bf7e8e2ac",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38602,
+      "valid_source_match": true
+    },
+    {
+      "id": "250ca9ba-a4df-400c-b237-c7b6d1ce69a6",
+      "title": "Importação legado #38601",
+      "lesson_date": "2026-02-10",
+      "class_schedule_id": "55c8060d-01c4-46a2-b383-4603f0966705",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38601,
+      "valid_source_match": true
+    },
+    {
+      "id": "614ac3d3-740a-4f29-baa5-ad8a7eff21cb",
+      "title": "Importação legado #38600",
+      "lesson_date": "2026-02-10",
+      "class_schedule_id": "16bde2b6-8442-4413-900e-3fe32a7d4470",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38600,
+      "valid_source_match": true
+    },
+    {
+      "id": "2b7368d2-6cf4-4060-949a-f2277f75b900",
+      "title": "Importação legado #38598",
+      "lesson_date": "2026-02-09",
+      "class_schedule_id": "c576ed30-719c-4b20-847d-a59ec8b08b16",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38598,
+      "valid_source_match": true
+    },
+    {
+      "id": "a225242f-df95-4e6b-b133-f73fb0b6bb46",
+      "title": "Importação legado #38597",
+      "lesson_date": "2026-02-09",
+      "class_schedule_id": "9dcfbdb9-c8ba-417e-b6a1-a49987edcdfe",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38597,
+      "valid_source_match": true
+    },
+    {
+      "id": "ddea8f63-c318-41f2-8809-28a30c2a0fe2",
+      "title": "Importação legado #38599",
+      "lesson_date": "2026-02-09",
+      "class_schedule_id": "ca8955fc-9718-4db1-8ef0-252639501743",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38599,
+      "valid_source_match": true
+    },
+    {
+      "id": "0d6a1aef-8ec6-4552-880a-cb89fe1cafbd",
+      "title": "Importação legado #38541",
+      "lesson_date": "2026-01-28",
+      "class_schedule_id": "1458b38c-afc8-4457-9bf3-95b4ed745bdb",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38541,
+      "valid_source_match": true
+    },
+    {
+      "id": "8b8d3bf4-7fbe-422f-a3f2-ee663f7a2a7e",
+      "title": "Importação legado #38530",
+      "lesson_date": "2026-01-22",
+      "class_schedule_id": "0b12928d-7f21-4c87-b6f3-2738bfdbca04",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38530,
+      "valid_source_match": true
+    },
+    {
+      "id": "8f279bd8-86fd-43b1-84fa-4763c8b1df75",
+      "title": "Importação legado #38528",
+      "lesson_date": "2026-01-23",
+      "class_schedule_id": "eeece824-64e2-4ea3-9739-62df4c19601f",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38528,
+      "valid_source_match": true
+    },
+    {
+      "id": "ceab6ef7-a123-44cd-a715-a163b6b473cf",
+      "title": "Importação legado #38540",
+      "lesson_date": "2026-01-27",
+      "class_schedule_id": "a8542226-f4bf-482a-997d-337bf7e8e2ac",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38540,
+      "valid_source_match": true
+    },
+    {
+      "id": "54539cf5-f2e5-4eab-929d-6b1d7f771dbb",
+      "title": "Importação legado #38533",
+      "lesson_date": "2026-01-26",
+      "class_schedule_id": "9dcfbdb9-c8ba-417e-b6a1-a49987edcdfe",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38533,
+      "valid_source_match": true
+    },
+    {
+      "id": "894a5b55-cf5a-43be-aede-9d3cf3498c6f",
+      "title": "Importação legado #38524",
+      "lesson_date": "2026-01-21",
+      "class_schedule_id": "f1a8d562-3fab-4c67-a207-b0aa731cb14d",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38524,
+      "valid_source_match": true
+    },
+    {
+      "id": "d5a74a91-686b-4d39-b476-49509a186b6f",
+      "title": "Importação legado #38520",
+      "lesson_date": "2026-01-20",
+      "class_schedule_id": "72f62e4c-779b-447e-92d3-7acc0abf88d8",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38520,
+      "valid_source_match": true
+    },
+    {
+      "id": "e66a2446-c2d5-4ab5-9ced-599413ec8f5a",
+      "title": "Importação legado #38521",
+      "lesson_date": "2026-01-20",
+      "class_schedule_id": "e6abc4b0-6f84-4572-9e89-1b699a531438",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38521,
+      "valid_source_match": true
+    },
+    {
+      "id": "d0df703b-6b76-4aa5-9221-b923c3bc82e8",
+      "title": "Importação legado #38523",
+      "lesson_date": "2026-01-21",
+      "class_schedule_id": "9bfaeddd-f59b-4c50-b185-440488d450a3",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38523,
+      "valid_source_match": true
+    },
+    {
+      "id": "3d387fb9-8a86-47ba-bdeb-a6f45c90f2a2",
+      "title": "Importação legado #38517",
+      "lesson_date": "2026-01-20",
+      "class_schedule_id": "55cfb536-404f-4ffb-bf26-985ee97abe15",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38517,
+      "valid_source_match": true
+    },
+    {
+      "id": "407adfbc-8fd0-4204-9158-0943ccd07fe2",
+      "title": "Importação legado #38506",
+      "lesson_date": "2026-01-28",
+      "class_schedule_id": "627e5df7-8751-453a-867f-ce44885370cf",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38506,
+      "valid_source_match": true
+    },
+    {
+      "id": "f33292ee-469c-4229-ae03-480d66590651",
+      "title": "Importação legado #38503",
+      "lesson_date": "2026-01-13",
+      "class_schedule_id": "348f0d68-a994-4290-a54b-80bb4377c96c",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38503,
+      "valid_source_match": true
+    },
+    {
+      "id": "4dc42b5f-2553-4c77-a4c2-5eb8bcf85874",
+      "title": "Importação legado #39278",
+      "lesson_date": "2026-03-17",
+      "class_schedule_id": "af8991f9-9879-415f-87d8-132560ac4001",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39278,
+      "valid_source_match": true
+    },
+    {
+      "id": "d573ad3d-affc-4f62-b74b-01ab408cb3ac",
+      "title": "Importação legado #39152",
+      "lesson_date": "2026-03-16",
+      "class_schedule_id": "668829d6-5824-40a7-80e7-3c8dd9e3f6e2",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39152,
+      "valid_source_match": true
+    },
+    {
+      "id": "bee5a0a3-cf09-4f7c-b005-a7c183970ce1",
+      "title": "Importação legado #39247",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "9fc0b144-1fa8-4523-b630-848cf5dfd142",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39247,
+      "valid_source_match": true
+    },
+    {
+      "id": "38098064-1d74-4872-a9fa-c7be897b4c19",
+      "title": "Importação legado #39228",
+      "lesson_date": "2026-03-16",
+      "class_schedule_id": "2f5b4066-4885-408b-9868-911006507a27",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39228,
+      "valid_source_match": true
+    },
+    {
+      "id": "ea70a4a4-3576-4d94-8881-58348fb05f36",
+      "title": "Importação legado #39290",
+      "lesson_date": "2026-03-20",
+      "class_schedule_id": "9532a9e4-b629-4ab2-be42-8c241014aecb",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39290,
+      "valid_source_match": true
+    },
+    {
+      "id": "3d56aba5-ad12-426c-bbf2-d38790bee9d2",
+      "title": "Importação legado #39240",
+      "lesson_date": "2026-03-16",
+      "class_schedule_id": "7f22932b-fa22-423d-9b63-c8a8fe156567",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39240,
+      "valid_source_match": true
+    },
+    {
+      "id": "aeb64f9a-8381-4b43-9181-dba20848a8d0",
+      "title": "Importação legado #39144",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "16bde2b6-8442-4413-900e-3fe32a7d4470",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39144,
+      "valid_source_match": true
+    },
+    {
+      "id": "2c750a5d-6f6b-4538-8e9d-af857f45ad5f",
+      "title": "Importação legado #38981",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "39f4bab8-969a-42a7-a88c-681f980d3492",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38981,
+      "valid_source_match": true
+    },
+    {
+      "id": "0a4023f2-5e99-42ea-a28e-1fb00bf3e646",
+      "title": "Importação legado #38608",
+      "lesson_date": "2026-02-12",
+      "class_schedule_id": "0de34062-32c7-439a-b40a-e38ab35f459e",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38608,
+      "valid_source_match": true
+    },
+    {
+      "id": "44c4c536-d561-42bc-b000-1535e9341fec",
+      "title": "Importação legado #38542",
+      "lesson_date": "2026-01-29",
+      "class_schedule_id": "5fe9346b-ad44-4bb6-a7ea-9a0214eda40f",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38542,
+      "valid_source_match": true
+    },
+    {
+      "id": "11c06a61-1e45-480b-81ca-dfd559d3fa47",
+      "title": "Importação legado #39244",
+      "lesson_date": "2026-03-20",
+      "class_schedule_id": "0e6497a2-8d48-4403-a95e-fe0c1e3b93b4",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39244,
+      "valid_source_match": true
+    },
+    {
+      "id": "cd817a62-aa27-4f49-9205-43d815e7aaf8",
+      "title": "Importação legado #39242",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "c576ed30-719c-4b20-847d-a59ec8b08b16",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39242,
+      "valid_source_match": true
+    },
+    {
+      "id": "5857d6d1-11b6-4178-a0a6-4fc2361f989c",
+      "title": "Importação legado #39241",
+      "lesson_date": "2026-03-20",
+      "class_schedule_id": "ba71e9dd-a22d-42c3-adb9-b8de4cd79a3e",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39241,
+      "valid_source_match": true
+    },
+    {
+      "id": "83eb86f0-50ec-4e92-a1a5-66e9504fd87a",
+      "title": "Importação legado #39236",
+      "lesson_date": "2026-03-19",
+      "class_schedule_id": "080e18d8-450b-4343-b6cd-be39d883190e",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39236,
+      "valid_source_match": true
+    },
+    {
+      "id": "ef2d2518-d38d-4ddc-ac89-5e5e4885251a",
+      "title": "Importação legado #39230",
+      "lesson_date": "2026-03-17",
+      "class_schedule_id": "9c916d12-5be7-429c-a072-b6d346eb6886",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39230,
+      "valid_source_match": true
+    },
+    {
+      "id": "2110524b-80ad-43e8-869b-a5518e63fd9a",
+      "title": "Importação legado #39229",
+      "lesson_date": "2026-03-17",
+      "class_schedule_id": "c50cd3e5-b60d-4483-879b-66f37a071ee4",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39229,
+      "valid_source_match": true
+    },
+    {
+      "id": "a3cd4959-7de1-4a01-b64e-bafa3dd4d746",
+      "title": "Importação legado #39289",
+      "lesson_date": "2026-03-19",
+      "class_schedule_id": "6718b87e-5889-4139-bd64-75a57341bac0",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39289,
+      "valid_source_match": true
+    },
+    {
+      "id": "927e3cb8-c342-4ca0-a2b1-6cbc14e856fa",
+      "title": "Importação legado #39258",
+      "lesson_date": "2026-03-26",
+      "class_schedule_id": "fc555e55-6330-4f78-a68d-be9e7f38c331",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39258,
+      "valid_source_match": true
+    },
+    {
+      "id": "50a9f654-10be-4344-bb3d-23dba453dd52",
+      "title": "Importação legado #39233",
+      "lesson_date": "2026-03-16",
+      "class_schedule_id": "c0b9e8f3-ebbd-49a7-be1e-16ac8f710ee8",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39233,
+      "valid_source_match": true
+    },
+    {
+      "id": "c0569bcd-f88d-4bc2-b074-0c19e79c9771",
+      "title": "Importação legado #38921",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "107265de-b20f-4c0c-aad0-d7d621e36d7a",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38921,
+      "valid_source_match": true
+    },
+    {
+      "id": "5484ba4c-2e4c-4124-aea3-9266c687761a",
+      "title": "Importação legado #38900",
+      "lesson_date": "2026-03-12",
+      "class_schedule_id": "437a748c-85ad-491e-88e1-6e41122e4da8",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38900,
+      "valid_source_match": true
+    },
+    {
+      "id": "891bfa03-d55f-460e-a133-586e2e51e1ab",
+      "title": "Importação legado #39257",
+      "lesson_date": "2026-03-25",
+      "class_schedule_id": "f75cb4cd-69bc-41ab-a418-3f7e6fd7985f",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39257,
+      "valid_source_match": true
+    },
+    {
+      "id": "3b9c6f29-3896-4cd0-9b12-0e7b23109381",
+      "title": "Importação legado #38979",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "98c1d4d5-ae4d-4e6c-9db4-2e58e61d68e3",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38979,
+      "valid_source_match": true
+    },
+    {
+      "id": "8649c288-e0e0-4f21-af80-8ddfb6b0cd9b",
+      "title": "Importação legado #38901",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "c7229d49-a18f-497b-b963-2b573114047c",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38901,
+      "valid_source_match": true
+    },
+    {
+      "id": "255f2bd7-15ab-4c00-af67-079f3d49f354",
+      "title": "Importação legado #38841",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "c576ed30-719c-4b20-847d-a59ec8b08b16",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38841,
+      "valid_source_match": true
+    },
+    {
+      "id": "c176f091-b57c-4ac4-b591-ed181a9e7aec",
+      "title": "Importação legado #38706",
+      "lesson_date": "2026-03-02",
+      "class_schedule_id": "0f7358c3-8811-4f02-b905-57e632fd9fd8",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38706,
+      "valid_source_match": true
+    },
+    {
+      "id": "209129b4-7a56-40db-9bc7-2409d2e3210e",
+      "title": "Importação legado #39235",
+      "lesson_date": "2026-03-19",
+      "class_schedule_id": "469c72e0-94e2-4cfe-9242-5d1867f6158c",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39235,
+      "valid_source_match": true
+    },
+    {
+      "id": "274c296f-7eca-46e4-ac14-b1edb4a7fbbf",
+      "title": "Importação legado #39010",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "980e705d-eca5-4303-84a8-2d36bef6ad72",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 39010,
+      "valid_source_match": true
+    },
+    {
+      "id": "90a5c77a-7732-455f-8cb3-972a7fc90214",
+      "title": "Importação legado #38793",
+      "lesson_date": "2026-03-09",
+      "class_schedule_id": "a578239b-dc78-41a9-a1a1-79c956db12d5",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38793,
+      "valid_source_match": true
+    },
+    {
+      "id": "77bf5e2e-2346-40db-b78b-26d4a1fa8e1e",
+      "title": "Importação legado #38737",
+      "lesson_date": "2026-01-20",
+      "class_schedule_id": "722ff8cb-84ec-4f98-b1d1-c8277ef2fd6f",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38737,
+      "valid_source_match": true
+    },
+    {
+      "id": "fd75c7af-733d-4d3a-95cf-a068e8011e8d",
+      "title": "Importação legado #38637",
+      "lesson_date": "2026-02-20",
+      "class_schedule_id": "29927e06-6064-4dac-b149-17278e8072d2",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38637,
+      "valid_source_match": true
+    },
+    {
+      "id": "8b0e5f2d-ac59-4090-bdcb-b24d7fce7d6a",
+      "title": "Importação legado #38606",
+      "lesson_date": "2026-02-12",
+      "class_schedule_id": "5fe9346b-ad44-4bb6-a7ea-9a0214eda40f",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38606,
+      "valid_source_match": true
+    },
+    {
+      "id": "bf1aeed5-3079-4887-a3ec-38831ebbea4d",
+      "title": "Importação legado #39202",
+      "lesson_date": "2026-03-20",
+      "class_schedule_id": "985071ca-6893-4ccc-a142-71382daba017",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39202,
+      "valid_source_match": true
+    },
+    {
+      "id": "c1e81036-a6b4-4a1b-8a61-f54f5fe8027d",
+      "title": "Importação legado #38909",
+      "lesson_date": "2026-03-11",
+      "class_schedule_id": "230e7645-c024-41ea-b195-a27ac2efbdcf",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38909,
+      "valid_source_match": true
+    },
+    {
+      "id": "38092fb9-32a0-417e-97af-d540e4f18842",
+      "title": "Importação legado #38723",
+      "lesson_date": "2026-03-06",
+      "class_schedule_id": "eeece824-64e2-4ea3-9739-62df4c19601f",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38723,
+      "valid_source_match": true
+    },
+    {
+      "id": "f7479a33-94f4-45fe-b431-19349749f27d",
+      "title": "Importação legado #38720",
+      "lesson_date": "2026-03-04",
+      "class_schedule_id": "b502d6f6-2995-41bb-a2ee-bcbc4c29b9eb",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38720,
+      "valid_source_match": true
+    },
+    {
+      "id": "1cb76c43-5873-4f8a-9bde-b0778bb4b6ad",
+      "title": "Importação legado #38710",
+      "lesson_date": "2026-03-03",
+      "class_schedule_id": "55cfb536-404f-4ffb-bf26-985ee97abe15",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38710,
+      "valid_source_match": true
+    },
+    {
+      "id": "c0a30792-4e5c-4408-bb4c-69c957d017a7",
+      "title": "Importação legado #38614",
+      "lesson_date": "2026-02-09",
+      "class_schedule_id": "130d68fd-8f1f-413f-b207-8219a98dd4aa",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38614,
+      "valid_source_match": true
+    },
+    {
+      "id": "cd50c69e-4295-4661-bad7-055210674d27",
+      "title": "Importação legado #38527",
+      "lesson_date": "2026-01-22",
+      "class_schedule_id": "98bbf2ec-3c62-4734-8843-67f09a532b73",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38527,
+      "valid_source_match": true
+    },
+    {
+      "id": "4e182660-a94f-4d87-8018-d56d58c666af",
+      "title": "Importação legado #39197",
+      "lesson_date": "2026-03-19",
+      "class_schedule_id": "6cb71089-94f9-4f6b-a897-63f48987ad90",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39197,
+      "valid_source_match": true
+    },
+    {
+      "id": "ba5c9287-1541-4b87-9cce-2bef6db88f1a",
+      "title": "Importação legado #38526",
+      "lesson_date": "2026-01-22",
+      "class_schedule_id": "68ed5b22-c8f5-498b-8d54-d1837a7f9687",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38526,
+      "valid_source_match": true
+    },
+    {
+      "id": "f2791f3e-5b5c-4973-a7e1-cc1117fffae2",
+      "title": "Importação legado #38525",
+      "lesson_date": "2026-01-22",
+      "class_schedule_id": "f09c7ab4-c5ba-46f5-9c21-3f47f770d2f9",
+      "created_at": "2026-03-13T02:38:15.415568+00:00",
+      "lectureid": 38525,
+      "valid_source_match": true
+    },
+    {
+      "id": "3c3b080f-4e55-4da9-a8e1-5c1d200af4b7",
+      "title": "Importação legado #39259",
+      "lesson_date": "2026-03-27",
+      "class_schedule_id": "e095ac13-aa1a-49b0-b11c-4200bd717d77",
+      "created_at": "2026-03-13T02:38:13.724056+00:00",
+      "lectureid": 39259,
+      "valid_source_match": true
+    },
+    {
+      "id": "c5d5b064-b6ed-4b25-badc-6a63c8f0714d",
+      "title": "Importação legado #38972",
+      "lesson_date": "2026-03-13",
+      "class_schedule_id": "e786a33f-709c-4d90-85a5-6fc7496b5865",
+      "created_at": "2026-03-13T02:38:14.402189+00:00",
+      "lectureid": 38972,
+      "valid_source_match": true
+    }
+  ],
+  "blocked_rows": []
+}

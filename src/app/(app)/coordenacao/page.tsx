@@ -33,6 +33,12 @@ function addDays(date: Date, days: number) {
   return next;
 }
 
+function addMonths(date: Date, months: number) {
+  const next = new Date(date);
+  next.setMonth(next.getMonth() + months);
+  return next;
+}
+
 export default async function CoordenacaoPage({ searchParams }: CoordenacaoPageProps) {
   const { supabase, activeSchoolId, roles } = await getUserContext();
   const canAccess = roles.includes("SUPPORT") || roles.includes("DIRECAO") || roles.includes("COORDENACAO");
@@ -45,6 +51,8 @@ export default async function CoordenacaoPage({ searchParams }: CoordenacaoPageP
   const weekEndIso = getDateOnly(addDays(weekStart, 6));
   const previousWeekIso = getDateOnly(addDays(weekStart, -7));
   const nextWeekIso = getDateOnly(addDays(weekStart, 7));
+  const previousMonthIso = getDateOnly(getWeekStart(getDateOnly(addMonths(weekStart, -1))));
+  const nextMonthIso = getDateOnly(getWeekStart(getDateOnly(addMonths(weekStart, 1))));
 
   if (!canAccess) {
     return (
@@ -279,6 +287,8 @@ export default async function CoordenacaoPage({ searchParams }: CoordenacaoPageP
             weekEndIso={weekEndIso}
             previousWeekIso={previousWeekIso}
             nextWeekIso={nextWeekIso}
+            previousMonthIso={previousMonthIso}
+            nextMonthIso={nextMonthIso}
             days={days}
             timeSlots={timeSlots}
             entries={entries}

@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-03-13T03:52:55.292Z",
+  "apply": true,
+  "input_file": "c:/Users/Maylson/Desktop/lectures-old-system3.json",
+  "school": {
+    "id": "d8f6b9cc-cfdd-43a6-b279-1e1f8ff8573c",
+    "name": "Colégio Mirante"
+  },
+  "stats": {
+    "source_rows": 729,
+    "prepared": 381,
+    "inserted": 379,
+    "skipped_existing": 2,
+    "unresolved_class": 16,
+    "unresolved_date": 0,
+    "unresolved_time": 0,
+    "unresolved_schedule": 229,
+    "unresolved_ambiguous": 103
+  }
+}

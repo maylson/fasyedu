@@ -1,0 +1,18 @@
+[
+  {
+    "lectureid": 38503,
+    "reason": "no_teacher_match",
+    "turma": "5º Ano A",
+    "professor": "Rilda Leal",
+    "componente": "Língua Portuguesa",
+    "data_aula": "2026-01-13",
+    "horario": "08:15",
+    "candidates": [
+      {
+        "schedule_id": "348f0d68-a994-4290-a54b-80bb4377c96c",
+        "subject": "Música",
+        "teacher": "Fernanda Calandrin e"
+      }
+    ]
+  }
+]

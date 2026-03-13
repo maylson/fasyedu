@@ -2,142 +2,145 @@
 
 ## Objetivo
 
-Consolidar o FASY como plataforma de gestao pedagogica multiescola para operacao real de escolas brasileiras, com foco em planejamento, acompanhamento e comunicacao.
+Consolidar o FASY como plataforma de gestão pedagógica multiescola para operação real de escolas brasileiras, com foco em planejamento, acompanhamento e comunicação.
 
 ## Horizonte e prioridade
 
-- Curto prazo: estabilizacao e fechamento de MVP operacional.
-- Medio prazo: escala multi-escola, analytics e fluxo academico completo.
-- Longo prazo: inteligencia pedagogica e governanca institucional.
+- Curto prazo: estabilização e fechamento do MVP operacional.
+- Médio prazo: escala multiescola, analytics e fluxo acadêmico completo.
+- Longo prazo: inteligência pedagógica e governança institucional.
 
 ---
 
-## Fase 1 - Estabilizacao do MVP (prioridade maxima)
+## Fase 1 - Estabilização do MVP (prioridade máxima)
 
 ### 1.1 Qualidade e confiabilidade
 
 - Corrigir encoding em toda a interface (pt-BR consistente).
-- Revisar mensagens de erro para linguagem de usuario final.
-- Cobertura minima de testes:
-  - acoes criticas (`academic.ts`, `users.ts`, `settings.ts`)
-  - fluxos de autenticao
-  - fluxo de planejamento + wizard
-- Hardening de validacoes server-side para todas as forms.
+- Revisar mensagens de erro para linguagem de usuário final.
+- Cobertura mínima de testes:
+  - ações críticas (`academic.ts`, `users.ts`, `settings.ts`);
+  - fluxos de autenticação;
+  - fluxo de planejamento + Wizard.
+- Hardening de validações server-side em todos os formulários.
 
 ### 1.2 Fluxos essenciais pendentes
 
-- Matriculas:
-  - cadastro/edicao/cancelamento (hoje esta majoritariamente listagem)
-  - regras por ano letivo/turma/vagas
-- Avaliacoes:
-  - criacao de avaliacao, itens, notas
-  - composicao de media e relatorios basicos
+- Matrículas:
+  - cadastro/edição/cancelamento;
+  - regras por ano letivo/turma/vagas.
+- Avaliações:
+  - criação de avaliação, itens e notas;
+  - composição de média e relatórios básicos.
 - Alunos e Pais:
-  - melhorar gestao de responsaveis e vinculos aluno-responsavel
-  - filtros e edicao completa
+  - gestão completa de responsáveis e vínculos;
+  - filtros, edição e ficha completa.
+- Migração de dados legados:
+  - importar planejamentos antigos com rastreabilidade;
+  - tratar pendências de mapeamento turma/horário/professor.
 
-### 1.3 Mural e calendario
+### 1.3 Mural e calendário
 
-- Edicao/exclusao de avisos no mural.
-- Confirmacoes visuais padronizadas em todas as acoes.
-- Melhorias de desempenho na timeline em volumes altos (paginacao/cursor).
+- Edição/exclusão de avisos no mural.
+- Confirmações visuais padronizadas em todas as ações.
+- Melhorias de desempenho na timeline em volumes altos (paginação/cursor).
 
-### Criterio de conclusao da fase
+### Critério de conclusão
 
-- Escola consegue operar ciclo semanal: horarios -> planejamento -> coordenacao -> comunicacao no mural, sem falhas criticas.
-
----
-
-## Fase 2 - Operacao academica completa
-
-### 2.1 Planejamento e coordenacao
-
-- Historico completo de versoes do plano de aula.
-- Trilhas de auditoria (quem alterou status, quando, motivo).
-- Fila de revisao com filtros por professor/turma/serie/status.
-- Painel de indicadores pedagogicos por turma/professor.
-
-### 2.2 Notas e avaliacao formativa
-
-- Rubricas e criterios por disciplina/turma.
-- Boletim por periodo.
-- Exportacao (PDF/CSV) para coordenacao e direcao.
-
-### 2.3 Experiencia de usuario
-
-- Melhorias responsivas mobile-first em telas operacionais densas.
-- Componentes padronizados de loading, feedback e confirmacao.
-- Acessibilidade (navegacao por teclado, contraste, foco).
-
-### Criterio de conclusao da fase
-
-- Operacao academica completa do periodo letivo dentro do sistema.
+- Escola consegue operar ciclo semanal (`horários -> planejamento -> coordenação -> comunicação`) sem falhas críticas.
 
 ---
 
-## Fase 3 - Escala multiescola e governanca
+## Fase 2 - Operação acadêmica completa
+
+### 2.1 Planejamento e coordenação
+
+- Histórico completo de versões do plano de aula.
+- Trilha de auditoria (quem alterou status, quando e motivo).
+- Fila de revisão com filtros por professor/turma/série/status.
+- Painel de indicadores pedagógicos por turma/professor.
+
+### 2.2 Notas e avaliação formativa
+
+- Rubricas e critérios por disciplina/turma.
+- Boletim por período.
+- Exportação (PDF/CSV) para coordenação e direção.
+
+### 2.3 Experiência de usuário
+
+- Melhorias responsivas mobile-first em telas densas.
+- Componentes padronizados de loading, feedback e confirmação.
+- Acessibilidade (teclado, contraste e foco).
+
+### Critério de conclusão
+
+- Operação acadêmica completa do período letivo dentro do sistema.
+
+---
+
+## Fase 3 - Escala multiescola e governança
 
 ### 3.1 Backoffice FASY
 
-- Gestao centralizada de escolas (onboarding, habilitacao de modulos, limites).
-- Parametros por escola:
-  - recursos pedagogicos
-  - politicas de IA
-  - templates institucionais
+- Gestão centralizada de escolas (onboarding, habilitação de módulos, limites).
+- Parâmetros por escola:
+  - recursos pedagógicos;
+  - políticas de IA;
+  - templates institucionais.
 
-### 3.2 Observabilidade e seguranca
+### 3.2 Observabilidade e segurança
 
-- Logs estruturados por modulo/acao.
+- Logs estruturados por módulo/ação.
 - Alertas de erro e disponibilidade.
-- Auditoria de acesso e eventos sensiveis.
-- Revisao de RLS e politicas para cenarios edge.
+- Auditoria de acesso e eventos sensíveis.
+- Revisão de RLS e políticas para cenários edge.
 
 ### 3.3 Performance
 
-- Paginacao em listas grandes.
+- Paginação em listas grandes.
 - Caching de consultas de dashboard.
-- Otimizacao de queries com indices orientados a uso real.
+- Otimização de queries com índices orientados ao uso real.
 
-### Criterio de conclusao da fase
+### Critério de conclusão
 
-- Operacao segura de multiplas escolas simultaneas com governanca central.
+- Operação segura de múltiplas escolas simultâneas com governança central.
 
 ---
 
-## Fase 4 - Inteligencia pedagogica
+## Fase 4 - Inteligência pedagógica
 
-### 4.1 IA aplicada com governanca
+### 4.1 IA aplicada com governança
 
 - Biblioteca de prompts versionada por escola.
-- Politicas de moderacao e trilha de decisoes de IA.
-- Score pedagogico explicavel por criterio.
+- Políticas de moderação e trilha de decisões de IA.
+- Score pedagógico explicável por critério.
 
-### 4.2 Insights e recomendacoes
+### 4.2 Insights e recomendações
 
-- Alertas de risco pedagogico por turma/professor.
-- Sugerir melhorias de planejamento com base em historico real.
-- Indicadores de aderencia curricular e cobertura de conteudo.
+- Alertas de risco pedagógico por turma/professor.
+- Sugestões de melhoria com base em histórico real.
+- Indicadores de aderência curricular e cobertura de conteúdo.
 
-### Criterio de conclusao da fase
+### Critério de conclusão
 
-- IA atuando como apoio estruturado, auditavel e util para decisao pedagogica.
+- IA atuando como apoio estruturado, auditável e útil para decisão pedagógica.
 
 ---
 
-## Backlog tecnico transversal
+## Backlog técnico transversal
 
 - Padronizar labels pt-BR em toda a UI.
-- Unificar design tokens e status colors.
-- Estruturar testes e2e (Playwright/Cypress).
+- Unificar design tokens e cores de status.
+- Estruturar testes E2E (Playwright/Cypress).
 - CI com lint + type-check + testes.
-- Seeds consistentes de dados para homologacao.
+- Seeds consistentes para homologação.
 
 ---
 
-## Ordem recomendada das proximas entregas (sprint imediato)
+## Próximas entregas recomendadas (sprint imediato)
 
-1. Corrigir encoding pt-BR + mensagens de erro.
-2. Fechar CRUD de matriculas.
-3. Fechar modulo de avaliacoes/notas.
-4. Adicionar edicao/exclusao de avisos no mural.
-5. Implementar testes dos fluxos criticos.
+1. Finalizar correção de encoding pt-BR e mensagens de erro.
+2. Fechar CRUD completo de matrículas.
+3. Fechar módulo de avaliações/notas.
+4. Consolidar migração dos planejamentos legados com validação de pendências.
+5. Implementar testes dos fluxos críticos.

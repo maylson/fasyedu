@@ -1,0 +1,3791 @@
+[
+  {
+    "lectureid": 39296,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano A",
+    "professor": "Rafaella Andrade",
+    "componente": "Inglês",
+    "data_aula": "2026-03-10",
+    "horario": "10:45",
+    "candidates": [
+      {
+        "schedule_id": "efbbb9e4-6c76-45d7-8ae7-b8594efe0a4e",
+        "subject": "Inglês",
+        "teacher": "Rafaella"
+      }
+    ]
+  },
+  {
+    "lectureid": 39295,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano B",
+    "professor": "Rafaella Andrade",
+    "componente": "Inglês",
+    "data_aula": "2026-03-10",
+    "horario": "10:00",
+    "candidates": [
+      {
+        "schedule_id": "83f1de6d-bc33-479e-93a1-141b40525637",
+        "subject": "Inglês",
+        "teacher": "Rafaella"
+      }
+    ]
+  },
+  {
+    "lectureid": 39294,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano C",
+    "professor": "Rafaella Andrade",
+    "componente": "Inglês",
+    "data_aula": "2026-03-10",
+    "horario": "09:15",
+    "candidates": [
+      {
+        "schedule_id": "398df94e-b71d-487d-b4e4-cb1a923069d4",
+        "subject": "Inglês",
+        "teacher": "Rafaella"
+      }
+    ]
+  },
+  {
+    "lectureid": 39293,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano A",
+    "professor": "Rafaella Andrade",
+    "componente": "Inglês",
+    "data_aula": "2026-03-09",
+    "horario": "11:30",
+    "candidates": [
+      {
+        "schedule_id": "c9dc2cdd-4fb1-4ae9-9da7-917c5a59974d",
+        "subject": "Inglês",
+        "teacher": "Rafaella"
+      }
+    ]
+  },
+  {
+    "lectureid": 39292,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano B",
+    "professor": "Rafaella Andrade",
+    "componente": "Inglês",
+    "data_aula": "2026-03-09",
+    "horario": "10:45",
+    "candidates": [
+      {
+        "schedule_id": "c937b66f-83d8-4fb5-8a43-c2789b1f50c6",
+        "subject": "Inglês",
+        "teacher": "Rafaella"
+      }
+    ]
+  },
+  {
+    "lectureid": 39291,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano C",
+    "professor": "Rafaella Andrade",
+    "componente": "Inglês",
+    "data_aula": "2026-03-09",
+    "horario": "10:00",
+    "candidates": [
+      {
+        "schedule_id": "2bf071ba-ac8b-410f-8032-709f7f9cae1f",
+        "subject": "Inglês",
+        "teacher": "Rafaella"
+      }
+    ]
+  },
+  {
+    "lectureid": 39290,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "1º Ano B",
+    "professor": "Keila Brito",
+    "componente": "Intensivo de Alfabetização / Leitura em Voz Alta",
+    "data_aula": "2026-03-20",
+    "horario": "10:45",
+    "candidates": [
+      {
+        "schedule_id": "9532a9e4-b629-4ab2-be42-8c241014aecb",
+        "subject": "Intensivo Alfabetização / Leitura em Voz Alta",
+        "teacher": "Keila Brito"
+      }
+    ]
+  },
+  {
+    "lectureid": 39289,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "1º Ano B",
+    "professor": "Keila Brito",
+    "componente": "Parque / Intensivo de Alfabetização",
+    "data_aula": "2026-03-19",
+    "horario": "11:30",
+    "candidates": [
+      {
+        "schedule_id": "6718b87e-5889-4139-bd64-75a57341bac0",
+        "subject": "Parque / Intensivo Alfabetização",
+        "teacher": "Keila Brito"
+      }
+    ]
+  },
+  {
+    "lectureid": 39271,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "1º Ano B",
+    "professor": "Keila Brito",
+    "componente": "Grupo Coloquial / Audição Musical / Psicomotricidade",
+    "data_aula": "2026-03-19",
+    "horario": "07:30",
+    "candidates": [
+      {
+        "schedule_id": "d30d4ad9-371d-406d-95f7-9c3ace1e08bb",
+        "subject": "Psicomotricidade",
+        "teacher": "Deborah Costa"
+      }
+    ]
+  },
+  {
+    "lectureid": 39266,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano C",
+    "professor": "Silviania Marruaz",
+    "componente": "Grupo Coloquial / Audição Musical / Psicomotricidade",
+    "data_aula": "2026-03-23",
+    "horario": "07:30",
+    "candidates": [
+      {
+        "schedule_id": "af9ce784-5671-4803-90e6-7b574ed921ec",
+        "subject": "Grupo Coloquial / Audição Musical / Psicomotricidade",
+        "teacher": "Anne Marruaz"
+      }
+    ]
+  },
+  {
+    "lectureid": 39246,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-03-10",
+    "horario": "09:20"
+  },
+  {
+    "lectureid": 39243,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-03-09",
+    "horario": "09:20"
+  },
+  {
+    "lectureid": 39234,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "2º Ano B",
+    "professor": "Ana Paula Leal",
+    "componente": "Matemática",
+    "data_aula": "2026-03-18",
+    "horario": "08:15",
+    "candidates": [
+      {
+        "schedule_id": "f1a8d562-3fab-4c67-a207-b0aa731cb14d",
+        "subject": "Grupo Coloquial / Audição Musical / Psicomotricidade",
+        "teacher": "Juliana Santana dos Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 39226,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "2º Ano A",
+    "professor": "Ana Paula Leal",
+    "componente": "Grupo Coloquial / Audição Musical / Psicomotricidade",
+    "data_aula": "2026-03-20",
+    "horario": "07:30",
+    "candidates": [
+      {
+        "schedule_id": "4c2572f5-79b3-414a-b5fc-57036f30ba71",
+        "subject": "Inglês",
+        "teacher": "Rafaella"
+      }
+    ]
+  },
+  {
+    "lectureid": 39223,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "2º Ano A",
+    "professor": "Ana Paula Leal",
+    "componente": "Grupo Coloquial / Audição Musical / Psicomotricidade",
+    "data_aula": "2026-03-17",
+    "horario": "07:30",
+    "candidates": [
+      {
+        "schedule_id": "ac871e42-9e4d-4b8b-8bb0-82b986667727",
+        "subject": "Inglês",
+        "teacher": "Rafaella"
+      }
+    ]
+  },
+  {
+    "lectureid": 39218,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "2º Ano C",
+    "professor": "Kaleb Lopes",
+    "componente": "Letramento Científico e Matemático",
+    "data_aula": "2026-03-09",
+    "horario": "10:00",
+    "candidates": [
+      {
+        "schedule_id": "868b66cd-94f3-45e8-af38-e3cf1b12e00d",
+        "subject": "Letramento Científico e Matemático",
+        "teacher": "Kalleb Lopes"
+      }
+    ]
+  },
+  {
+    "lectureid": 39217,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "2º Ano B",
+    "professor": "Kaleb Lopes",
+    "componente": "Letramento Científico e Matemático",
+    "data_aula": "2026-03-09",
+    "horario": "09:15",
+    "candidates": [
+      {
+        "schedule_id": "dcb8b4ba-0fbc-44ea-a47b-6f1ccc03c26a",
+        "subject": "Letramento Científico e Matemático",
+        "teacher": "Kalleb Lopes"
+      }
+    ]
+  },
+  {
+    "lectureid": 39216,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "2º Ano A",
+    "professor": "Kaleb Lopes",
+    "componente": "Letramento Científico e Matemático",
+    "data_aula": "2026-03-09",
+    "horario": "08:15",
+    "candidates": [
+      {
+        "schedule_id": "e1f28437-cb93-4045-bbc8-7c475433f24a",
+        "subject": "Letramento Científico e Matemático",
+        "teacher": "Kalleb Lopes"
+      }
+    ]
+  },
+  {
+    "lectureid": 39197,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "Baú da Clara I",
+    "professor": "Alcione Castilho",
+    "componente": "Acolhida",
+    "data_aula": "2026-03-19",
+    "horario": "07:40",
+    "candidates": [
+      {
+        "schedule_id": "6cb71089-94f9-4f6b-a897-63f48987ad90",
+        "subject": "Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes",
+        "teacher": "Alcione Castilho"
+      }
+    ]
+  },
+  {
+    "lectureid": 39196,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "Baú da Clara I",
+    "professor": "Alcione Castilho",
+    "componente": "Acolhida",
+    "data_aula": "2026-03-18",
+    "horario": "07:40",
+    "candidates": [
+      {
+        "schedule_id": "54a032e2-41c4-446d-a1d7-db0e4200d5a8",
+        "subject": "Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes",
+        "teacher": "Alcione Castilho"
+      }
+    ]
+  },
+  {
+    "lectureid": 39195,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "Baú da Clara I",
+    "professor": "Alcione Castilho",
+    "componente": "Acolhida",
+    "data_aula": "2026-03-17",
+    "horario": "07:40",
+    "candidates": [
+      {
+        "schedule_id": "0ccf4e1e-2e0d-467d-88c7-1f0332a5948b",
+        "subject": "Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes",
+        "teacher": "Alcione Castilho"
+      }
+    ]
+  },
+  {
+    "lectureid": 39194,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "Baú da Clara I",
+    "professor": "Alcione Castilho",
+    "componente": "Acolhida",
+    "data_aula": "2026-03-16",
+    "horario": "07:40",
+    "candidates": [
+      {
+        "schedule_id": "0e245418-ce9b-4fe2-962b-91f5a4cd68cd",
+        "subject": "Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes",
+        "teacher": "Alcione Castilho"
+      }
+    ]
+  },
+  {
+    "lectureid": 39183,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "Baú da Clara I",
+    "professor": "Alcione Castilho",
+    "componente": "Acolhida",
+    "data_aula": "2026-03-20",
+    "horario": "07:40",
+    "candidates": [
+      {
+        "schedule_id": "a37167e2-e1e1-4ec8-a687-e5cf931429e6",
+        "subject": "Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes",
+        "teacher": "Alcione Castilho"
+      }
+    ]
+  },
+  {
+    "lectureid": 39173,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-13",
+    "horario": "11:00"
+  },
+  {
+    "lectureid": 39171,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-27",
+    "horario": "09:30"
+  },
+  {
+    "lectureid": 39170,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-20",
+    "horario": "09:30"
+  },
+  {
+    "lectureid": 39169,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-11",
+    "horario": "11:00"
+  },
+  {
+    "lectureid": 39167,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-04-01",
+    "horario": "09:30"
+  },
+  {
+    "lectureid": 39166,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-25",
+    "horario": "09:30"
+  },
+  {
+    "lectureid": 39165,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-18",
+    "horario": "09:30"
+  },
+  {
+    "lectureid": 39164,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-13",
+    "horario": "09:30"
+  },
+  {
+    "lectureid": 39163,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-11",
+    "horario": "09:30"
+  },
+  {
+    "lectureid": 39162,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-30",
+    "horario": "11:00"
+  },
+  {
+    "lectureid": 39161,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-23",
+    "horario": "11:00"
+  },
+  {
+    "lectureid": 39160,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-16",
+    "horario": "11:00"
+  },
+  {
+    "lectureid": 39159,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-09",
+    "horario": "11:00"
+  },
+  {
+    "lectureid": 39158,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico II",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-30",
+    "horario": "10:30"
+  },
+  {
+    "lectureid": 39157,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico II",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-23",
+    "horario": "10:30"
+  },
+  {
+    "lectureid": 39156,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico II",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-16",
+    "horario": "10:30"
+  },
+  {
+    "lectureid": 39155,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico II",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-09",
+    "horario": "10:30"
+  },
+  {
+    "lectureid": 39143,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-03-05",
+    "horario": "09:20"
+  },
+  {
+    "lectureid": 39142,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-03-04",
+    "horario": "09:20"
+  },
+  {
+    "lectureid": 39141,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-03-03",
+    "horario": "09:20"
+  },
+  {
+    "lectureid": 39137,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-03-06",
+    "horario": "09:20"
+  },
+  {
+    "lectureid": 39136,
+    "reason": "schedule_not_found",
+    "turma": "3º Ano B",
+    "professor": "Maylson Gonçalves",
+    "componente": "Arte",
+    "data_aula": "2026-03-08",
+    "horario": "07:50"
+  },
+  {
+    "lectureid": 39131,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "1º Ano A",
+    "professor": "Luciana Cavalcante",
+    "componente": "Grupo Coloquial / Audição Musical / Psicomotricidade",
+    "data_aula": "2026-03-09",
+    "horario": "07:30",
+    "candidates": [
+      {
+        "schedule_id": "885e2e83-364a-4184-bf9f-2637c005808a",
+        "subject": "Psicomotricidade",
+        "teacher": "Deborah Costa"
+      }
+    ]
+  },
+  {
+    "lectureid": 39129,
+    "reason": "schedule_not_found",
+    "turma": "1º Ano A",
+    "professor": "Luciana Cavalcante",
+    "componente": "Matemática",
+    "data_aula": "2026-03-13",
+    "horario": "10:30"
+  },
+  {
+    "lectureid": 39127,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Inês III",
+    "professor": "Kelly da Silva",
+    "componente": "Estação de Aprendizagem",
+    "data_aula": "2026-03-13",
+    "horario": "09:10"
+  },
+  {
+    "lectureid": 39123,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Inês III",
+    "professor": "Kelly da Silva",
+    "componente": "Passeio de Aprendizagem",
+    "data_aula": "2026-03-13",
+    "horario": "09:30"
+  },
+  {
+    "lectureid": 39122,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Inês III",
+    "professor": "Kelly da Silva",
+    "componente": "Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua",
+    "data_aula": "2026-03-13",
+    "horario": "10:50"
+  },
+  {
+    "lectureid": 39121,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Inês III",
+    "professor": "Kelly da Silva",
+    "componente": "Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua",
+    "data_aula": "2026-03-12",
+    "horario": "10:50"
+  },
+  {
+    "lectureid": 39117,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Inês III",
+    "professor": "Kelly da Silva",
+    "componente": "Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical / Bits de Matemática",
+    "data_aula": "2026-03-13",
+    "horario": "07:40"
+  },
+  {
+    "lectureid": 39114,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Inês III",
+    "professor": "Kelly da Silva",
+    "componente": "Acolhida",
+    "data_aula": "2026-03-13",
+    "horario": "07:30"
+  },
+  {
+    "lectureid": 39107,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Leitura",
+    "data_aula": "2026-03-11",
+    "horario": "08:40"
+  },
+  {
+    "lectureid": 39106,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Leitura",
+    "data_aula": "2026-03-13",
+    "horario": "08:20"
+  },
+  {
+    "lectureid": 39105,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Grafomotricidade",
+    "data_aula": "2026-03-13",
+    "horario": "08:40"
+  },
+  {
+    "lectureid": 39104,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Grafomotricidade",
+    "data_aula": "2026-03-12",
+    "horario": "08:40"
+  },
+  {
+    "lectureid": 39103,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Grafomotricidade",
+    "data_aula": "2026-03-10",
+    "horario": "08:40"
+  },
+  {
+    "lectureid": 39097,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Inês III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade / Oração",
+    "data_aula": "2026-03-13",
+    "horario": "11:00"
+  },
+  {
+    "lectureid": 39096,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Inês III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade / Oração",
+    "data_aula": "2026-03-12",
+    "horario": "11:00"
+  },
+  {
+    "lectureid": 39092,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "Baú da Inês III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade / Oração",
+    "data_aula": "2026-03-09",
+    "horario": "08:00",
+    "candidates": [
+      {
+        "schedule_id": "40b3db5c-9055-4684-90e5-6b70a418eb23",
+        "subject": "Grupo Coloquial",
+        "teacher": "Kelly da Silva"
+      }
+    ]
+  },
+  {
+    "lectureid": 39091,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "Baú da Inês II",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-13",
+    "horario": "08:00",
+    "candidates": [
+      {
+        "schedule_id": "967608b3-b3ee-4435-af7b-a0738a33010d",
+        "subject": "Leitura em Voz Alta",
+        "teacher": "Bruna de Souza"
+      }
+    ]
+  },
+  {
+    "lectureid": 39089,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "Baú da Inês II",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-11",
+    "horario": "08:00",
+    "candidates": [
+      {
+        "schedule_id": "9e09f05b-a7b4-4e1e-af00-1b9f7d808ce2",
+        "subject": "Leitura em Voz Alta",
+        "teacher": "Keila Brito"
+      }
+    ]
+  },
+  {
+    "lectureid": 39088,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "Baú da Inês II",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-10",
+    "horario": "08:00",
+    "candidates": [
+      {
+        "schedule_id": "b28014c0-b309-4180-bccd-164c6f47e641",
+        "subject": "Leitura em Voz Alta",
+        "teacher": "Keila Brito"
+      }
+    ]
+  },
+  {
+    "lectureid": 39074,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-13",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 39073,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-12",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 39072,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-11",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 39071,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-10",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 39070,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-13",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 39069,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-12",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 39068,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-11",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 39067,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-10",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 39066,
+    "reason": "class_not_found",
+    "turma": "Bau do Miguel I"
+  },
+  {
+    "lectureid": 39065,
+    "reason": "class_not_found",
+    "turma": "Bau do Miguel I"
+  },
+  {
+    "lectureid": 39064,
+    "reason": "class_not_found",
+    "turma": "Bau do Miguel I"
+  },
+  {
+    "lectureid": 39063,
+    "reason": "class_not_found",
+    "turma": "Bau do Miguel I"
+  },
+  {
+    "lectureid": 39044,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-09",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 39043,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-06",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 39042,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-05",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 39041,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-04",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 39040,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-03",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 39039,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-02",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 39038,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-09",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 39037,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-06",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 39036,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-05",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 39035,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-04",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 39034,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-03",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 39033,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-03-02",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 39032,
+    "reason": "class_not_found",
+    "turma": "Bau do Miguel I"
+  },
+  {
+    "lectureid": 39031,
+    "reason": "class_not_found",
+    "turma": "Bau do Miguel I"
+  },
+  {
+    "lectureid": 39030,
+    "reason": "class_not_found",
+    "turma": "Bau do Miguel I"
+  },
+  {
+    "lectureid": 39029,
+    "reason": "class_not_found",
+    "turma": "Bau do Miguel I"
+  },
+  {
+    "lectureid": 39027,
+    "reason": "class_not_found",
+    "turma": "Bau do Miguel I"
+  },
+  {
+    "lectureid": 39025,
+    "reason": "class_not_found",
+    "turma": "Bau do Miguel I"
+  },
+  {
+    "lectureid": 39020,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Inês III",
+    "professor": "Kelly da Silva",
+    "componente": "Matemática Divertida",
+    "data_aula": "2026-03-13",
+    "horario": "10:20"
+  },
+  {
+    "lectureid": 39019,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Inês III",
+    "professor": "Kelly da Silva",
+    "componente": "Leitura",
+    "data_aula": "2026-03-12",
+    "horario": "10:20"
+  },
+  {
+    "lectureid": 39015,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Inês III",
+    "professor": "Kelly da Silva",
+    "componente": "Grafomotricidade",
+    "data_aula": "2026-03-12",
+    "horario": "09:30"
+  },
+  {
+    "lectureid": 39011,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Inês III",
+    "professor": "Kelly da Silva",
+    "componente": "Grupo Coloquial / Aprendendo com Jesus",
+    "data_aula": "2026-03-12",
+    "horario": "08:00"
+  },
+  {
+    "lectureid": 39004,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Inês III",
+    "professor": "Kelly da Silva",
+    "componente": "L. V. A.",
+    "data_aula": "2026-03-13",
+    "horario": "08:20"
+  },
+  {
+    "lectureid": 39003,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Inês III",
+    "professor": "Kelly da Silva",
+    "componente": "L. V. A.",
+    "data_aula": "2026-03-13",
+    "horario": "08:20"
+  },
+  {
+    "lectureid": 39002,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Inês III",
+    "professor": "Kelly da Silva",
+    "componente": "L. V. A.",
+    "data_aula": "2026-03-12",
+    "horario": "08:20"
+  },
+  {
+    "lectureid": 39001,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Inês III",
+    "professor": "Kelly da Silva",
+    "componente": "L. V. A.",
+    "data_aula": "2026-03-12",
+    "horario": "08:20"
+  },
+  {
+    "lectureid": 38999,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "Baú da Inês III",
+    "professor": "Kelly da Silva",
+    "componente": "L. V. A.",
+    "data_aula": "2026-03-11",
+    "horario": "08:20",
+    "candidates": [
+      {
+        "schedule_id": "6ea4e671-dec4-45d8-8306-f70590c3c055",
+        "subject": "Leitura em Voz Alta",
+        "teacher": "Kelly da Silva"
+      }
+    ]
+  },
+  {
+    "lectureid": 38998,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "Baú da Inês III",
+    "professor": "Kelly da Silva",
+    "componente": "L. V. A.",
+    "data_aula": "2026-03-11",
+    "horario": "08:20",
+    "candidates": [
+      {
+        "schedule_id": "6ea4e671-dec4-45d8-8306-f70590c3c055",
+        "subject": "Leitura em Voz Alta",
+        "teacher": "Kelly da Silva"
+      }
+    ]
+  },
+  {
+    "lectureid": 38997,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "Baú da Inês III",
+    "professor": "Kelly da Silva",
+    "componente": "L. V. A.",
+    "data_aula": "2026-03-10",
+    "horario": "08:20",
+    "candidates": [
+      {
+        "schedule_id": "bce1e20d-21c1-49f8-a702-5d23ab122b52",
+        "subject": "Leitura em Voz Alta",
+        "teacher": "Kelly da Silva"
+      }
+    ]
+  },
+  {
+    "lectureid": 38996,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "Baú da Inês III",
+    "professor": "Kelly da Silva",
+    "componente": "L. V. A.",
+    "data_aula": "2026-03-10",
+    "horario": "08:20",
+    "candidates": [
+      {
+        "schedule_id": "bce1e20d-21c1-49f8-a702-5d23ab122b52",
+        "subject": "Leitura em Voz Alta",
+        "teacher": "Kelly da Silva"
+      }
+    ]
+  },
+  {
+    "lectureid": 38995,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "Baú da Inês III",
+    "professor": "Kelly da Silva",
+    "componente": "L. V. A.",
+    "data_aula": "2026-03-09",
+    "horario": "08:20",
+    "candidates": [
+      {
+        "schedule_id": "030d5f30-06c4-48be-bb59-62e16da7285d",
+        "subject": "Leitura em Voz Alta",
+        "teacher": "Kelly da Silva"
+      }
+    ]
+  },
+  {
+    "lectureid": 38994,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "Baú da Inês III",
+    "professor": "Kelly da Silva",
+    "componente": "L. V. A.",
+    "data_aula": "2026-03-09",
+    "horario": "08:20",
+    "candidates": [
+      {
+        "schedule_id": "030d5f30-06c4-48be-bb59-62e16da7285d",
+        "subject": "Leitura em Voz Alta",
+        "teacher": "Kelly da Silva"
+      }
+    ]
+  },
+  {
+    "lectureid": 38992,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Acolhida",
+    "data_aula": "2026-03-12",
+    "horario": "11:00"
+  },
+  {
+    "lectureid": 38991,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Acolhida",
+    "data_aula": "2026-03-11",
+    "horario": "11:00"
+  },
+  {
+    "lectureid": 38990,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Matemática Divertida",
+    "data_aula": "2026-03-13",
+    "horario": "10:00"
+  },
+  {
+    "lectureid": 38989,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Matemática Divertida",
+    "data_aula": "2026-03-11",
+    "horario": "10:00"
+  },
+  {
+    "lectureid": 38988,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Estação de Aprendizagem",
+    "data_aula": "2026-03-12",
+    "horario": "08:20"
+  },
+  {
+    "lectureid": 38987,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Estação de Aprendizagem",
+    "data_aula": "2026-03-11",
+    "horario": "08:20"
+  },
+  {
+    "lectureid": 38986,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Grupo Coloquial",
+    "data_aula": "2026-03-11",
+    "horario": "08:00"
+  },
+  {
+    "lectureid": 38985,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Grupo Coloquial",
+    "data_aula": "2026-03-10",
+    "horario": "08:00"
+  },
+  {
+    "lectureid": 38981,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "5º Ano B",
+    "professor": "Gabriel Santos",
+    "componente": "Letras e Literatura",
+    "data_aula": "2026-03-09",
+    "horario": "10:45",
+    "candidates": [
+      {
+        "schedule_id": "39f4bab8-969a-42a7-a88c-681f980d3492",
+        "subject": "Letramento Literário",
+        "teacher": "Gabriel Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38980,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "5º Ano A",
+    "professor": "Gabriel Santos",
+    "componente": "Letras e Literatura",
+    "data_aula": "2026-03-09",
+    "horario": "10:00",
+    "candidates": [
+      {
+        "schedule_id": "4384f4b2-d93e-4380-bbff-6f7b584f3df9",
+        "subject": "Letramento Literário",
+        "teacher": "Gabriel Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38979,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "4º Ano A",
+    "professor": "Gabriel Santos",
+    "componente": "Letras e Literatura",
+    "data_aula": "2026-03-09",
+    "horario": "09:00",
+    "candidates": [
+      {
+        "schedule_id": "98c1d4d5-ae4d-4e6c-9db4-2e58e61d68e3",
+        "subject": "Letramento Literário",
+        "teacher": "Gabriel Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38978,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "4º Ano B",
+    "professor": "Gabriel Santos",
+    "componente": "Letras e Literatura",
+    "data_aula": "2026-03-09",
+    "horario": "08:15",
+    "candidates": [
+      {
+        "schedule_id": "fcadb360-7cae-4607-8fe0-2d4ccbae4c02",
+        "subject": "Letramento Literário",
+        "teacher": "Gabriel Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38977,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "3º Ano A",
+    "professor": "Gabriel Santos",
+    "componente": "Letras e Literatura",
+    "data_aula": "2026-03-11",
+    "horario": "11:30",
+    "candidates": [
+      {
+        "schedule_id": "b502d6f6-2995-41bb-a2ee-bcbc4c29b9eb",
+        "subject": "Letramento Literário",
+        "teacher": "Gabriel Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38976,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "3º Ano B",
+    "professor": "Gabriel Santos",
+    "componente": "Letras e Literatura",
+    "data_aula": "2026-03-11",
+    "horario": "10:45",
+    "candidates": [
+      {
+        "schedule_id": "457bf365-eded-4953-b693-5aece978766a",
+        "subject": "Letramento Literário",
+        "teacher": "Gabriel Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38975,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "2º Ano C",
+    "professor": "Gabriel Santos",
+    "componente": "Letras e Literatura",
+    "data_aula": "2026-03-10",
+    "horario": "10:45",
+    "candidates": [
+      {
+        "schedule_id": "efabef5e-07de-4b3b-8b6d-f3b027634660",
+        "subject": "Letramento Literário",
+        "teacher": "Gabriel Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38974,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "2º Ano B",
+    "professor": "Gabriel Santos",
+    "componente": "Letras e Literatura",
+    "data_aula": "2026-03-10",
+    "horario": "10:00",
+    "candidates": [
+      {
+        "schedule_id": "e6abc4b0-6f84-4572-9e89-1b699a531438",
+        "subject": "Letramento Literário",
+        "teacher": "Gabriel Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38973,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "2º Ano A",
+    "professor": "Gabriel Santos",
+    "componente": "Letras e Literatura",
+    "data_aula": "2026-03-10",
+    "horario": "09:15",
+    "candidates": [
+      {
+        "schedule_id": "fd2468ab-b847-4740-8b91-c214564e48bf",
+        "subject": "Letramento Literário",
+        "teacher": "Gabriel Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38972,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "Baú da Clara III",
+    "professor": "Kelly Figueira",
+    "componente": " L.V.A.",
+    "data_aula": "2026-03-13",
+    "horario": "08:40",
+    "candidates": [
+      {
+        "schedule_id": "e786a33f-709c-4d90-85a5-6fc7496b5865",
+        "subject": "Leitura em Voz Alta",
+        "teacher": "Kelly Figueira"
+      }
+    ]
+  },
+  {
+    "lectureid": 38971,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "Baú da Clara III",
+    "professor": "Kelly Figueira",
+    "componente": " L.V.A.",
+    "data_aula": "2026-03-12",
+    "horario": "08:40",
+    "candidates": [
+      {
+        "schedule_id": "65332d9b-519d-4d18-94b5-41676609bccb",
+        "subject": "Leitura em Voz Alta",
+        "teacher": "Kelly Figueira"
+      }
+    ]
+  },
+  {
+    "lectureid": 38970,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "Baú da Clara III",
+    "professor": "Kelly Figueira",
+    "componente": " L.V.A.",
+    "data_aula": "2026-03-11",
+    "horario": "08:40",
+    "candidates": [
+      {
+        "schedule_id": "fdb950d5-f110-4c3e-bb53-f2bd822d925a",
+        "subject": "Leitura em Voz Alta",
+        "teacher": "Kelly Figueira"
+      }
+    ]
+  },
+  {
+    "lectureid": 38969,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "Baú da Clara III",
+    "professor": "Kelly Figueira",
+    "componente": " L.V.A.",
+    "data_aula": "2026-03-10",
+    "horario": "08:40",
+    "candidates": [
+      {
+        "schedule_id": "73d029be-8774-42ee-b312-f4c9787c5cc0",
+        "subject": "Leitura em Voz Alta",
+        "teacher": "Kelly Figueira"
+      }
+    ]
+  },
+  {
+    "lectureid": 38968,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "Baú da Clara III",
+    "professor": "Kelly Figueira",
+    "componente": " L.V.A.",
+    "data_aula": "2026-03-09",
+    "horario": "08:40",
+    "candidates": [
+      {
+        "schedule_id": "04daac07-1d08-4213-9cbb-ef46a7df11b1",
+        "subject": "Leitura em Voz Alta",
+        "teacher": "Kelly Figueira"
+      }
+    ]
+  },
+  {
+    "lectureid": 38957,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Aprendendo com Jesus",
+    "data_aula": "2026-03-10",
+    "horario": "10:00"
+  },
+  {
+    "lectureid": 38956,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Grupo Coloquial",
+    "data_aula": "2026-03-12",
+    "horario": "08:00"
+  },
+  {
+    "lectureid": 38955,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "1º Ano A",
+    "professor": "Luciana Cavalcante",
+    "componente": "Parque / Intensivo de Alfabetização",
+    "data_aula": "2026-03-13",
+    "horario": "11:30",
+    "candidates": [
+      {
+        "schedule_id": "6364dc19-bd41-4090-8490-3d88a3912010",
+        "subject": "Intensivo Alfabetização / Leitura em Voz Alta",
+        "teacher": "Luciana Cavalcante"
+      }
+    ]
+  },
+  {
+    "lectureid": 38954,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "1º Ano A",
+    "professor": "Luciana Cavalcante",
+    "componente": "Parque / Intensivo de Alfabetização",
+    "data_aula": "2026-03-12",
+    "horario": "11:30",
+    "candidates": [
+      {
+        "schedule_id": "90fb475b-a9e0-4a0c-bec5-606271f7b5f8",
+        "subject": "Parque / Intensivo Alfabetização",
+        "teacher": "Luciana Cavalcante"
+      }
+    ]
+  },
+  {
+    "lectureid": 38952,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular",
+    "data_aula": "2026-03-13",
+    "horario": "11:10"
+  },
+  {
+    "lectureid": 38951,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular",
+    "data_aula": "2026-03-12",
+    "horario": "11:10"
+  },
+  {
+    "lectureid": 38950,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular",
+    "data_aula": "2026-03-11",
+    "horario": "11:10"
+  },
+  {
+    "lectureid": 38949,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Acolhida",
+    "data_aula": "2026-03-10",
+    "horario": "11:00"
+  },
+  {
+    "lectureid": 38948,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Acolhida",
+    "data_aula": "2026-03-09",
+    "horario": "11:00"
+  },
+  {
+    "lectureid": 38947,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular",
+    "data_aula": "2026-03-10",
+    "horario": "11:10"
+  },
+  {
+    "lectureid": 38946,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular",
+    "data_aula": "2026-03-09",
+    "horario": "11:10",
+    "candidates": [
+      {
+        "schedule_id": "5cc551e7-9331-42fd-8e68-d34aaf9bc1e8",
+        "subject": "Musicalização",
+        "teacher": "Ericson Ferreira"
+      }
+    ]
+  },
+  {
+    "lectureid": 38945,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Estação de Aprendizagem",
+    "data_aula": "2026-03-10",
+    "horario": "08:20"
+  },
+  {
+    "lectureid": 38944,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Oração e Atividade Lúdica",
+    "data_aula": "2026-03-13",
+    "horario": "11:20"
+  },
+  {
+    "lectureid": 38943,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Oração e Atividade Lúdica",
+    "data_aula": "2026-03-12",
+    "horario": "11:20"
+  },
+  {
+    "lectureid": 38942,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Oração e Atividade Lúdica",
+    "data_aula": "2026-03-11",
+    "horario": "11:20"
+  },
+  {
+    "lectureid": 38941,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Oração e Atividade Lúdica",
+    "data_aula": "2026-03-10",
+    "horario": "11:20"
+  },
+  {
+    "lectureid": 38939,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática",
+    "data_aula": "2026-03-13",
+    "horario": "07:40"
+  },
+  {
+    "lectureid": 38938,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática",
+    "data_aula": "2026-03-12",
+    "horario": "07:40"
+  },
+  {
+    "lectureid": 38937,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática",
+    "data_aula": "2026-03-11",
+    "horario": "07:40"
+  },
+  {
+    "lectureid": 38936,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática",
+    "data_aula": "2026-03-10",
+    "horario": "07:40"
+  },
+  {
+    "lectureid": 38934,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Acolhida",
+    "data_aula": "2026-03-13",
+    "horario": "07:30"
+  },
+  {
+    "lectureid": 38933,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Acolhida",
+    "data_aula": "2026-03-12",
+    "horario": "07:30"
+  },
+  {
+    "lectureid": 38932,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Acolhida",
+    "data_aula": "2026-03-11",
+    "horario": "07:30"
+  },
+  {
+    "lectureid": 38931,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Acolhida",
+    "data_aula": "2026-03-10",
+    "horario": "07:30"
+  },
+  {
+    "lectureid": 38930,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Oração e Atividade Lúdica",
+    "data_aula": "2026-03-09",
+    "horario": "11:20"
+  },
+  {
+    "lectureid": 38929,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular",
+    "data_aula": "2026-03-09",
+    "horario": "11:10",
+    "candidates": [
+      {
+        "schedule_id": "5cc551e7-9331-42fd-8e68-d34aaf9bc1e8",
+        "subject": "Musicalização",
+        "teacher": "Ericson Ferreira"
+      }
+    ]
+  },
+  {
+    "lectureid": 38928,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Suellen Tabosa",
+    "componente": "Matemática Divertida",
+    "data_aula": "2026-03-09",
+    "horario": "10:00"
+  },
+  {
+    "lectureid": 38924,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano C",
+    "professor": "Kaleb Lopes",
+    "componente": "Letramento Científico e Matemático",
+    "data_aula": "2026-03-03",
+    "horario": "10:00",
+    "candidates": [
+      {
+        "schedule_id": "b4619183-ad24-438a-910a-7102e9235e79",
+        "subject": "Letramento Científico e Matemático",
+        "teacher": "Kalleb Lopes"
+      }
+    ]
+  },
+  {
+    "lectureid": 38923,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano B",
+    "professor": "Kaleb Lopes",
+    "componente": "Letramento Científico e Matemático",
+    "data_aula": "2026-03-03",
+    "horario": "09:15",
+    "candidates": [
+      {
+        "schedule_id": "95dc8c5a-3209-4a69-b331-4bcce3c3def9",
+        "subject": "Letramento Científico e Matemático",
+        "teacher": "Kalleb Lopes"
+      }
+    ]
+  },
+  {
+    "lectureid": 38922,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano A",
+    "professor": "Kaleb Lopes",
+    "componente": "Letramento Científico e Matemático",
+    "data_aula": "2026-03-03",
+    "horario": "08:15",
+    "candidates": [
+      {
+        "schedule_id": "722ff8cb-84ec-4f98-b1d1-c8277ef2fd6f",
+        "subject": "Letramento Científico e Matemático",
+        "teacher": "Kalleb Lopes"
+      }
+    ]
+  },
+  {
+    "lectureid": 38915,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara III",
+    "professor": "Kelly Figueira",
+    "componente": "Acolhida",
+    "data_aula": "2026-03-13",
+    "horario": "10:35"
+  },
+  {
+    "lectureid": 38914,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara III",
+    "professor": "Kelly Figueira",
+    "componente": "Acolhida",
+    "data_aula": "2026-03-12",
+    "horario": "10:35"
+  },
+  {
+    "lectureid": 38913,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara III",
+    "professor": "Kelly Figueira",
+    "componente": "Acolhida",
+    "data_aula": "2026-03-11",
+    "horario": "10:35"
+  },
+  {
+    "lectureid": 38912,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara III",
+    "professor": "Kelly Figueira",
+    "componente": "Acolhida",
+    "data_aula": "2026-03-10",
+    "horario": "10:35"
+  },
+  {
+    "lectureid": 38896,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "2º Ano C",
+    "professor": "Kaleb Lopes",
+    "componente": "Letramento Científico e Matemático",
+    "data_aula": "2026-03-02",
+    "horario": "10:00",
+    "candidates": [
+      {
+        "schedule_id": "868b66cd-94f3-45e8-af38-e3cf1b12e00d",
+        "subject": "Letramento Científico e Matemático",
+        "teacher": "Kalleb Lopes"
+      }
+    ]
+  },
+  {
+    "lectureid": 38895,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "2º Ano B",
+    "professor": "Kaleb Lopes",
+    "componente": "Letramento Científico e Matemático",
+    "data_aula": "2026-03-02",
+    "horario": "09:15",
+    "candidates": [
+      {
+        "schedule_id": "dcb8b4ba-0fbc-44ea-a47b-6f1ccc03c26a",
+        "subject": "Letramento Científico e Matemático",
+        "teacher": "Kalleb Lopes"
+      }
+    ]
+  },
+  {
+    "lectureid": 38894,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "2º Ano A",
+    "professor": "Kaleb Lopes",
+    "componente": "Letramento Científico e Matemático",
+    "data_aula": "2026-03-02",
+    "horario": "08:15",
+    "candidates": [
+      {
+        "schedule_id": "e1f28437-cb93-4045-bbc8-7c475433f24a",
+        "subject": "Letramento Científico e Matemático",
+        "teacher": "Kalleb Lopes"
+      }
+    ]
+  },
+  {
+    "lectureid": 38893,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-02-09",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 38892,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-02-06",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 38891,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-02-05",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 38890,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-02-04",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 38889,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-02-03",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 38888,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-02-02",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 38887,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-02-09",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 38886,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-02-06",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 38885,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-02-05",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 38884,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-02-04",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 38883,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-02-03",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 38882,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel II",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-02-02",
+    "horario": "09:00"
+  },
+  {
+    "lectureid": 38881,
+    "reason": "class_not_found",
+    "turma": "Bau do Miguel I"
+  },
+  {
+    "lectureid": 38880,
+    "reason": "class_not_found",
+    "turma": "Bau do Miguel I"
+  },
+  {
+    "lectureid": 38879,
+    "reason": "class_not_found",
+    "turma": "Bau do Miguel I"
+  },
+  {
+    "lectureid": 38878,
+    "reason": "class_not_found",
+    "turma": "Bau do Miguel I"
+  },
+  {
+    "lectureid": 38877,
+    "reason": "class_not_found",
+    "turma": "Bau do Miguel I"
+  },
+  {
+    "lectureid": 38876,
+    "reason": "class_not_found",
+    "turma": "Bau do Miguel I"
+  },
+  {
+    "lectureid": 38862,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara I",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-02-02",
+    "horario": "09:30"
+  },
+  {
+    "lectureid": 38861,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-02-02",
+    "horario": "09:30"
+  },
+  {
+    "lectureid": 38860,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara III",
+    "professor": "Deborah Costa",
+    "componente": "Psicomotricidade",
+    "data_aula": "2026-02-02",
+    "horario": "09:30"
+  },
+  {
+    "lectureid": 38846,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-26",
+    "horario": "09:20"
+  },
+  {
+    "lectureid": 38845,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-27",
+    "horario": "09:20"
+  },
+  {
+    "lectureid": 38844,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-24",
+    "horario": "09:20"
+  },
+  {
+    "lectureid": 38843,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-23",
+    "horario": "09:20"
+  },
+  {
+    "lectureid": 38842,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-03-02",
+    "horario": "09:20"
+  },
+  {
+    "lectureid": 38840,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Oração e Atividade Lúdica",
+    "data_aula": "2026-03-13",
+    "horario": "11:25"
+  },
+  {
+    "lectureid": 38839,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Oração e Atividade Lúdica",
+    "data_aula": "2026-03-12",
+    "horario": "11:25"
+  },
+  {
+    "lectureid": 38838,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Oração e Atividade Lúdica",
+    "data_aula": "2026-03-11",
+    "horario": "11:25"
+  },
+  {
+    "lectureid": 38837,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Oração e Atividade Lúdica",
+    "data_aula": "2026-03-10",
+    "horario": "11:25"
+  },
+  {
+    "lectureid": 38835,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua",
+    "data_aula": "2026-03-13",
+    "horario": "11:05"
+  },
+  {
+    "lectureid": 38834,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua",
+    "data_aula": "2026-03-12",
+    "horario": "11:05"
+  },
+  {
+    "lectureid": 38833,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua",
+    "data_aula": "2026-03-11",
+    "horario": "11:05"
+  },
+  {
+    "lectureid": 38832,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua",
+    "data_aula": "2026-03-10",
+    "horario": "11:05"
+  },
+  {
+    "lectureid": 38830,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Motricidade Fina",
+    "data_aula": "2026-03-13",
+    "horario": "10:50"
+  },
+  {
+    "lectureid": 38829,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Motricidade Fina",
+    "data_aula": "2026-03-12",
+    "horario": "10:50"
+  },
+  {
+    "lectureid": 38828,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Acolhida",
+    "data_aula": "2026-03-11",
+    "horario": "10:50"
+  },
+  {
+    "lectureid": 38827,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Motricidade Fina",
+    "data_aula": "2026-03-10",
+    "horario": "10:50"
+  },
+  {
+    "lectureid": 38825,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Grupo Coloquial / Passeio de Aprendizagem",
+    "data_aula": "2026-03-13",
+    "horario": "10:00"
+  },
+  {
+    "lectureid": 38824,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Grupo Coloquial / Comunicação e Representação",
+    "data_aula": "2026-03-12",
+    "horario": "10:00"
+  },
+  {
+    "lectureid": 38823,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Grupo Coloquial / Conhecimento de Mundo",
+    "data_aula": "2026-03-11",
+    "horario": "10:00"
+  },
+  {
+    "lectureid": 38821,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Grupo Coloquial / Conhecimento de Si / Autonomia Pessoal",
+    "data_aula": "2026-03-10",
+    "horario": "10:00"
+  },
+  {
+    "lectureid": 38818,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Leitura em Voz Alta",
+    "data_aula": "2026-03-13",
+    "horario": "09:20"
+  },
+  {
+    "lectureid": 38817,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Leitura em Voz Alta",
+    "data_aula": "2026-03-12",
+    "horario": "09:20"
+  },
+  {
+    "lectureid": 38816,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Leitura em Voz Alta",
+    "data_aula": "2026-03-11",
+    "horario": "09:20"
+  },
+  {
+    "lectureid": 38815,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Leitura em Voz Alta",
+    "data_aula": "2026-03-10",
+    "horario": "09:20"
+  },
+  {
+    "lectureid": 38813,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Musicalização",
+    "data_aula": "2026-03-13",
+    "horario": "08:20"
+  },
+  {
+    "lectureid": 38809,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Estações de Aprendizagem",
+    "data_aula": "2026-03-12",
+    "horario": "08:20"
+  },
+  {
+    "lectureid": 38808,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Estações de Aprendizagem",
+    "data_aula": "2026-03-11",
+    "horario": "08:20"
+  },
+  {
+    "lectureid": 38749,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara III",
+    "professor": "Kelly Figueira",
+    "componente": "Acolhida",
+    "data_aula": "2026-03-09",
+    "horario": "10:35"
+  },
+  {
+    "lectureid": 38737,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano A",
+    "professor": "Kaleb Lopes",
+    "componente": "Letramento Científico e Matemático",
+    "data_aula": "2026-01-20",
+    "horario": "08:15",
+    "candidates": [
+      {
+        "schedule_id": "722ff8cb-84ec-4f98-b1d1-c8277ef2fd6f",
+        "subject": "Letramento Científico e Matemático",
+        "teacher": "Kalleb Lopes"
+      }
+    ]
+  },
+  {
+    "lectureid": 38736,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "5º Ano B",
+    "professor": "Gabriel Santos",
+    "componente": "Letras e Literatura",
+    "data_aula": "2026-03-02",
+    "horario": "10:45",
+    "candidates": [
+      {
+        "schedule_id": "39f4bab8-969a-42a7-a88c-681f980d3492",
+        "subject": "Letramento Literário",
+        "teacher": "Gabriel Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38735,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "5º Ano A",
+    "professor": "Gabriel Santos",
+    "componente": "Letras e Literatura",
+    "data_aula": "2026-03-02",
+    "horario": "10:00",
+    "candidates": [
+      {
+        "schedule_id": "4384f4b2-d93e-4380-bbff-6f7b584f3df9",
+        "subject": "Letramento Literário",
+        "teacher": "Gabriel Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38734,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "4º Ano A",
+    "professor": "Gabriel Santos",
+    "componente": "Letras e Literatura",
+    "data_aula": "2026-03-02",
+    "horario": "09:00",
+    "candidates": [
+      {
+        "schedule_id": "98c1d4d5-ae4d-4e6c-9db4-2e58e61d68e3",
+        "subject": "Letramento Literário",
+        "teacher": "Gabriel Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38733,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "4º Ano B",
+    "professor": "Gabriel Santos",
+    "componente": "Letras e Literatura",
+    "data_aula": "2026-03-02",
+    "horario": "08:15",
+    "candidates": [
+      {
+        "schedule_id": "fcadb360-7cae-4607-8fe0-2d4ccbae4c02",
+        "subject": "Letramento Literário",
+        "teacher": "Gabriel Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38732,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Acolhida",
+    "data_aula": "2026-03-13",
+    "horario": "07:30"
+  },
+  {
+    "lectureid": 38731,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Acolhida",
+    "data_aula": "2026-03-12",
+    "horario": "07:30"
+  },
+  {
+    "lectureid": 38730,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Lorena dos Santos",
+    "componente": "Acolhida",
+    "data_aula": "2026-03-11",
+    "horario": "07:30"
+  },
+  {
+    "lectureid": 38720,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "3º Ano A",
+    "professor": "Gabriel Santos",
+    "componente": "Letras e Literatura",
+    "data_aula": "2026-03-04",
+    "horario": "11:30",
+    "candidates": [
+      {
+        "schedule_id": "b502d6f6-2995-41bb-a2ee-bcbc4c29b9eb",
+        "subject": "Letramento Literário",
+        "teacher": "Gabriel Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38719,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "3º Ano B",
+    "professor": "Gabriel Santos",
+    "componente": "Letras e Literatura",
+    "data_aula": "2026-03-04",
+    "horario": "10:45",
+    "candidates": [
+      {
+        "schedule_id": "457bf365-eded-4953-b693-5aece978766a",
+        "subject": "Letramento Literário",
+        "teacher": "Gabriel Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38717,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "2º Ano C",
+    "professor": "Gabriel Santos",
+    "componente": "Letras e Literatura",
+    "data_aula": "2026-03-03",
+    "horario": "10:45",
+    "candidates": [
+      {
+        "schedule_id": "efabef5e-07de-4b3b-8b6d-f3b027634660",
+        "subject": "Letramento Literário",
+        "teacher": "Gabriel Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38716,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "2º Ano B",
+    "professor": "Gabriel Santos",
+    "componente": "Letras e Literatura",
+    "data_aula": "2026-03-03",
+    "horario": "10:00",
+    "candidates": [
+      {
+        "schedule_id": "e6abc4b0-6f84-4572-9e89-1b699a531438",
+        "subject": "Letramento Literário",
+        "teacher": "Gabriel Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38715,
+    "reason": "subject_mismatch_for_teacher",
+    "turma": "2º Ano A",
+    "professor": "Gabriel Santos",
+    "componente": "Letras e Literatura",
+    "data_aula": "2026-03-03",
+    "horario": "09:15",
+    "candidates": [
+      {
+        "schedule_id": "fd2468ab-b847-4740-8b91-c214564e48bf",
+        "subject": "Letramento Literário",
+        "teacher": "Gabriel Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38703,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "Baú da Inês II",
+    "professor": "Eduarda Morais",
+    "componente": "Inglês",
+    "data_aula": "2026-03-02",
+    "horario": "08:30",
+    "candidates": [
+      {
+        "schedule_id": "0cbe368c-8da5-4dcf-9035-14bf0b1fb908",
+        "subject": "Grupo Coloquial",
+        "teacher": "Bruna de Souza"
+      }
+    ]
+  },
+  {
+    "lectureid": 38702,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "Baú da Inês II",
+    "professor": "Eduarda Morais",
+    "componente": "Inglês",
+    "data_aula": "2026-03-02",
+    "horario": "08:30",
+    "candidates": [
+      {
+        "schedule_id": "0cbe368c-8da5-4dcf-9035-14bf0b1fb908",
+        "subject": "Grupo Coloquial",
+        "teacher": "Bruna de Souza"
+      }
+    ]
+  },
+  {
+    "lectureid": 38689,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "1º Ano A",
+    "professor": "Mônica Monteiro",
+    "componente": "Ensino Religioso",
+    "data_aula": "2026-03-02",
+    "horario": "10:00",
+    "candidates": [
+      {
+        "schedule_id": "6abfebe7-3af8-44f3-81ce-3035d01472ae",
+        "subject": "Matemática",
+        "teacher": "Luciana Cavalcante"
+      }
+    ]
+  },
+  {
+    "lectureid": 38687,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "1º Ano A",
+    "professor": "Mônica Monteiro",
+    "componente": "Ensino Religioso",
+    "data_aula": "2026-03-02",
+    "horario": "10:00",
+    "candidates": [
+      {
+        "schedule_id": "6abfebe7-3af8-44f3-81ce-3035d01472ae",
+        "subject": "Matemática",
+        "teacher": "Luciana Cavalcante"
+      }
+    ]
+  },
+  {
+    "lectureid": 38686,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "1º Ano A",
+    "professor": "Mônica Monteiro",
+    "componente": "Ensino Religioso",
+    "data_aula": "2026-02-23",
+    "horario": "10:00",
+    "candidates": [
+      {
+        "schedule_id": "6abfebe7-3af8-44f3-81ce-3035d01472ae",
+        "subject": "Matemática",
+        "teacher": "Luciana Cavalcante"
+      }
+    ]
+  },
+  {
+    "lectureid": 38684,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "1º Ano C",
+    "professor": "Silviania Marruaz",
+    "componente": "Intensivo de Alfabetização / Leitura em Voz Alta",
+    "data_aula": "2026-03-06",
+    "horario": "11:30",
+    "candidates": [
+      {
+        "schedule_id": "5c7c5668-7ca1-4d76-a250-a1b9ed370971",
+        "subject": "Parque / Intensivo Alfabetização",
+        "teacher": "Anne Marruaz"
+      }
+    ]
+  },
+  {
+    "lectureid": 38683,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano C",
+    "professor": "Silviania Marruaz",
+    "componente": "Língua Portuguesa",
+    "data_aula": "2026-03-06",
+    "horario": "09:15",
+    "candidates": [
+      {
+        "schedule_id": "ec30e10e-b4a8-422d-bf13-5af1049fe89d",
+        "subject": "Língua Portuguesa",
+        "teacher": "Anne Marruaz"
+      }
+    ]
+  },
+  {
+    "lectureid": 38682,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano C",
+    "professor": "Silviania Marruaz",
+    "componente": "Matemática",
+    "data_aula": "2026-03-06",
+    "horario": "08:15",
+    "candidates": [
+      {
+        "schedule_id": "624fcc10-9df4-4e2f-a64a-c9bc198378cb",
+        "subject": "Matemática",
+        "teacher": "Anne Marruaz"
+      }
+    ]
+  },
+  {
+    "lectureid": 38680,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "1º Ano C",
+    "professor": "Silviania Marruaz",
+    "componente": "Intensivo de Alfabetização / Leitura em Voz Alta",
+    "data_aula": "2026-03-05",
+    "horario": "09:15",
+    "candidates": [
+      {
+        "schedule_id": "cd83f4ac-1e57-423b-a5f3-ae2ae879cb17",
+        "subject": "Intensivo Alfabetização / Leitura em Voz Alta",
+        "teacher": "Anne Marruaz"
+      }
+    ]
+  },
+  {
+    "lectureid": 38678,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano C",
+    "professor": "Silviania Marruaz",
+    "componente": "Língua Portuguesa",
+    "data_aula": "2026-03-05",
+    "horario": "08:15",
+    "candidates": [
+      {
+        "schedule_id": "ee719d61-6630-4f31-b369-eeee74a6de4d",
+        "subject": "Língua Portuguesa",
+        "teacher": "Anne Marruaz"
+      }
+    ]
+  },
+  {
+    "lectureid": 38677,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano C",
+    "professor": "Silviania Marruaz",
+    "componente": "Língua Portuguesa",
+    "data_aula": "2026-03-04",
+    "horario": "11:30",
+    "candidates": [
+      {
+        "schedule_id": "dbe76b5a-bd8e-45dd-bd56-59bb9102748c",
+        "subject": "Língua Portuguesa",
+        "teacher": "Anne Marruaz"
+      }
+    ]
+  },
+  {
+    "lectureid": 38676,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano C",
+    "professor": "Silviania Marruaz",
+    "componente": "Língua Portuguesa",
+    "data_aula": "2026-03-04",
+    "horario": "10:45",
+    "candidates": [
+      {
+        "schedule_id": "c10d4e86-3873-4f05-b329-4ba91617cedd",
+        "subject": "Língua Portuguesa",
+        "teacher": "Anne Marruaz"
+      }
+    ]
+  },
+  {
+    "lectureid": 38675,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano C",
+    "professor": "Silviania Marruaz",
+    "componente": "Ciências",
+    "data_aula": "2026-03-04",
+    "horario": "10:00",
+    "candidates": [
+      {
+        "schedule_id": "717dc8c0-9bf5-47f2-b3c1-24199c81094e",
+        "subject": "Ciências",
+        "teacher": "Anne Marruaz"
+      }
+    ]
+  },
+  {
+    "lectureid": 38674,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano C",
+    "professor": "Silviania Marruaz",
+    "componente": "Matemática",
+    "data_aula": "2026-03-04",
+    "horario": "09:15",
+    "candidates": [
+      {
+        "schedule_id": "d39cd9b1-7f50-4c17-8fbe-20bf3b1d5625",
+        "subject": "Matemática",
+        "teacher": "Anne Marruaz"
+      }
+    ]
+  },
+  {
+    "lectureid": 38673,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano C",
+    "professor": "Silviania Marruaz",
+    "componente": "Arte",
+    "data_aula": "2026-03-03",
+    "horario": "11:30",
+    "candidates": [
+      {
+        "schedule_id": "59d5ddc2-ee57-4367-8211-fd63778a8301",
+        "subject": "Arte",
+        "teacher": "Anne Marruaz"
+      }
+    ]
+  },
+  {
+    "lectureid": 38671,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano C",
+    "professor": "Silviania Marruaz",
+    "componente": "Ciências",
+    "data_aula": "2026-03-03",
+    "horario": "10:45",
+    "candidates": [
+      {
+        "schedule_id": "36a01032-aa95-4093-beb0-82dee301d526",
+        "subject": "Ciências",
+        "teacher": "Anne Marruaz"
+      }
+    ]
+  },
+  {
+    "lectureid": 38668,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano C",
+    "professor": "Silviania Marruaz",
+    "componente": "Geografia",
+    "data_aula": "2026-03-03",
+    "horario": "08:15",
+    "candidates": [
+      {
+        "schedule_id": "3e79f024-8b86-4606-875d-7189b4bd7533",
+        "subject": "Geografia",
+        "teacher": "Anne Marruaz"
+      }
+    ]
+  },
+  {
+    "lectureid": 38665,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano C",
+    "professor": "Silviania Marruaz",
+    "componente": "História",
+    "data_aula": "2026-03-02",
+    "horario": "11:30",
+    "candidates": [
+      {
+        "schedule_id": "6dc39fe5-9c30-42ec-993e-990a0718fd7b",
+        "subject": "História",
+        "teacher": "Anne Marruaz"
+      }
+    ]
+  },
+  {
+    "lectureid": 38662,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano C",
+    "professor": "Silviania Marruaz",
+    "componente": "Matemática",
+    "data_aula": "2026-03-02",
+    "horario": "09:15",
+    "candidates": [
+      {
+        "schedule_id": "eb74ea10-1e49-40db-8d14-533e399a81a3",
+        "subject": "Matemática",
+        "teacher": "Anne Marruaz"
+      }
+    ]
+  },
+  {
+    "lectureid": 38649,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "1º Ano C",
+    "professor": "Silviania Marruaz",
+    "componente": "Grupo Coloquial / Audição Musical / Psicomotricidade",
+    "data_aula": "2026-03-06",
+    "horario": "07:30",
+    "candidates": [
+      {
+        "schedule_id": "a7b25531-469b-4d03-a23f-1d2ce017a0e6",
+        "subject": "Psicomotricidade",
+        "teacher": "Deborah Costa"
+      }
+    ]
+  },
+  {
+    "lectureid": 38648,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano C",
+    "professor": "Silviania Marruaz",
+    "componente": "Grupo Coloquial / Audição Musical / Psicomotricidade",
+    "data_aula": "2026-03-05",
+    "horario": "07:30",
+    "candidates": [
+      {
+        "schedule_id": "62ee10cf-d636-4640-a678-a28c8e579aee",
+        "subject": "Grupo Coloquial / Audição Musical / Psicomotricidade",
+        "teacher": "Anne Marruaz"
+      }
+    ]
+  },
+  {
+    "lectureid": 38647,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano C",
+    "professor": "Silviania Marruaz",
+    "componente": "Grupo Coloquial / Audição Musical / Psicomotricidade",
+    "data_aula": "2026-03-04",
+    "horario": "07:30",
+    "candidates": [
+      {
+        "schedule_id": "0f8be5b0-cf3b-4126-b3ec-bfe923206100",
+        "subject": "Grupo Coloquial / Audição Musical / Psicomotricidade",
+        "teacher": "Anne Marruaz"
+      }
+    ]
+  },
+  {
+    "lectureid": 38646,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano C",
+    "professor": "Silviania Marruaz",
+    "componente": "Grupo Coloquial / Audição Musical / Psicomotricidade",
+    "data_aula": "2026-03-03",
+    "horario": "07:30",
+    "candidates": [
+      {
+        "schedule_id": "c3a2ef56-eca7-46d3-a930-73a18419cb20",
+        "subject": "Grupo Coloquial / Audição Musical / Psicomotricidade",
+        "teacher": "Anne Marruaz"
+      }
+    ]
+  },
+  {
+    "lectureid": 38642,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "1º Ano C",
+    "professor": "Silviania Marruaz",
+    "componente": "Grupo Coloquial / Audição Musical / Psicomotricidade",
+    "data_aula": "2026-03-02",
+    "horario": "07:30",
+    "candidates": [
+      {
+        "schedule_id": "af9ce784-5671-4803-90e6-7b574ed921ec",
+        "subject": "Grupo Coloquial / Audição Musical / Psicomotricidade",
+        "teacher": "Anne Marruaz"
+      }
+    ]
+  },
+  {
+    "lectureid": 38635,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-20",
+    "horario": "10:20"
+  },
+  {
+    "lectureid": 38634,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-19",
+    "horario": "10:20"
+  },
+  {
+    "lectureid": 38631,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-20",
+    "horario": "09:20"
+  },
+  {
+    "lectureid": 38630,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-19",
+    "horario": "09:20"
+  },
+  {
+    "lectureid": 38624,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-11",
+    "horario": "10:20"
+  },
+  {
+    "lectureid": 38622,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-11",
+    "horario": "09:20"
+  },
+  {
+    "lectureid": 38621,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-10",
+    "horario": "10:20"
+  },
+  {
+    "lectureid": 38620,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico II",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-10",
+    "horario": "09:50"
+  },
+  {
+    "lectureid": 38619,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-10",
+    "horario": "09:20"
+  },
+  {
+    "lectureid": 38618,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara III",
+    "professor": "Kelly Figueira",
+    "componente": "Acolhida",
+    "data_aula": "2026-02-19",
+    "horario": "10:35"
+  },
+  {
+    "lectureid": 38613,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico II",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-09",
+    "horario": "09:50"
+  },
+  {
+    "lectureid": 38612,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-09",
+    "horario": "09:20"
+  },
+  {
+    "lectureid": 38596,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-06",
+    "horario": "08:00"
+  },
+  {
+    "lectureid": 38595,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-05",
+    "horario": "08:00"
+  },
+  {
+    "lectureid": 38594,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-04",
+    "horario": "08:00"
+  },
+  {
+    "lectureid": 38593,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-03",
+    "horario": "08:00"
+  },
+  {
+    "lectureid": 38592,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-02",
+    "horario": "08:00"
+  },
+  {
+    "lectureid": 38591,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-06",
+    "horario": "09:45"
+  },
+  {
+    "lectureid": 38590,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-05",
+    "horario": "09:45"
+  },
+  {
+    "lectureid": 38589,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-04",
+    "horario": "09:45"
+  },
+  {
+    "lectureid": 38588,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-03",
+    "horario": "09:45"
+  },
+  {
+    "lectureid": 38587,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-02-02",
+    "horario": "09:45"
+  },
+  {
+    "lectureid": 38586,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Aprendendo com Jesus",
+    "data_aula": "2026-02-04",
+    "horario": "10:20"
+  },
+  {
+    "lectureid": 38585,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Matemática Divertida",
+    "data_aula": "2026-02-06",
+    "horario": "10:20"
+  },
+  {
+    "lectureid": 38584,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Matemática Divertida",
+    "data_aula": "2026-02-03",
+    "horario": "10:20"
+  },
+  {
+    "lectureid": 38583,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Virtudes",
+    "data_aula": "2026-02-05",
+    "horario": "10:20"
+  },
+  {
+    "lectureid": 38582,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Matemática Divertida",
+    "data_aula": "2026-02-02",
+    "horario": "10:20"
+  },
+  {
+    "lectureid": 38581,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Leitura",
+    "data_aula": "2026-02-04",
+    "horario": "09:10"
+  },
+  {
+    "lectureid": 38580,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Leitura",
+    "data_aula": "2026-02-06",
+    "horario": "08:50"
+  },
+  {
+    "lectureid": 38579,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Grafomotricidade",
+    "data_aula": "2026-02-06",
+    "horario": "09:10"
+  },
+  {
+    "lectureid": 38578,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Grafomotricidade",
+    "data_aula": "2026-02-05",
+    "horario": "09:10"
+  },
+  {
+    "lectureid": 38577,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Grafomotricidade",
+    "data_aula": "2026-02-03",
+    "horario": "09:10"
+  },
+  {
+    "lectureid": 38576,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Estação de Aprendizagem",
+    "data_aula": "2026-02-05",
+    "horario": "08:50"
+  },
+  {
+    "lectureid": 38575,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Estação de Aprendizagem",
+    "data_aula": "2026-02-04",
+    "horario": "08:50"
+  },
+  {
+    "lectureid": 38574,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Estação de Aprendizagem",
+    "data_aula": "2026-02-03",
+    "horario": "08:50"
+  },
+  {
+    "lectureid": 38573,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Passeio de Aprendizagem",
+    "data_aula": "2026-02-06",
+    "horario": "08:30"
+  },
+  {
+    "lectureid": 38569,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Grupo Coloquial",
+    "data_aula": "2026-02-05",
+    "horario": "08:30"
+  },
+  {
+    "lectureid": 38568,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Grupo Coloquial",
+    "data_aula": "2026-02-04",
+    "horario": "08:30"
+  },
+  {
+    "lectureid": 38567,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Grupo Coloquial",
+    "data_aula": "2026-02-03",
+    "horario": "08:30"
+  },
+  {
+    "lectureid": 38566,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular",
+    "data_aula": "2026-02-06",
+    "horario": "10:00"
+  },
+  {
+    "lectureid": 38565,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular",
+    "data_aula": "2026-02-05",
+    "horario": "10:00"
+  },
+  {
+    "lectureid": 38564,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular",
+    "data_aula": "2026-02-04",
+    "horario": "10:00"
+  },
+  {
+    "lectureid": 38563,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular",
+    "data_aula": "2026-02-03",
+    "horario": "10:00"
+  },
+  {
+    "lectureid": 38562,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular",
+    "data_aula": "2026-02-02",
+    "horario": "09:10"
+  },
+  {
+    "lectureid": 38561,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Grupo Coloquial",
+    "data_aula": "2026-02-02",
+    "horario": "08:30"
+  },
+  {
+    "lectureid": 38560,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática",
+    "data_aula": "2026-02-06",
+    "horario": "07:40"
+  },
+  {
+    "lectureid": 38559,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática",
+    "data_aula": "2026-02-05",
+    "horario": "07:40"
+  },
+  {
+    "lectureid": 38558,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática",
+    "data_aula": "2026-02-04",
+    "horario": "07:40"
+  },
+  {
+    "lectureid": 38557,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática",
+    "data_aula": "2026-02-03",
+    "horario": "07:40"
+  },
+  {
+    "lectureid": 38556,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Acolhida",
+    "data_aula": "2026-02-06",
+    "horario": "07:30"
+  },
+  {
+    "lectureid": 38555,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Acolhida",
+    "data_aula": "2026-02-05",
+    "horario": "07:30"
+  },
+  {
+    "lectureid": 38554,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Acolhida",
+    "data_aula": "2026-02-04",
+    "horario": "07:30"
+  },
+  {
+    "lectureid": 38553,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Acolhida",
+    "data_aula": "2026-02-03",
+    "horario": "07:30"
+  },
+  {
+    "lectureid": 38552,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "L. V. A.",
+    "data_aula": "2026-02-06",
+    "horario": "10:50"
+  },
+  {
+    "lectureid": 38551,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "L. V. A.",
+    "data_aula": "2026-02-05",
+    "horario": "10:50"
+  },
+  {
+    "lectureid": 38550,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "L. V. A.",
+    "data_aula": "2026-02-04",
+    "horario": "10:50"
+  },
+  {
+    "lectureid": 38549,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "L. V. A.",
+    "data_aula": "2026-02-03",
+    "horario": "10:50"
+  },
+  {
+    "lectureid": 38548,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "L. V. A.",
+    "data_aula": "2026-02-02",
+    "horario": "10:50"
+  },
+  {
+    "lectureid": 38547,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular",
+    "data_aula": "2026-02-02",
+    "horario": "10:00"
+  },
+  {
+    "lectureid": 38546,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Grafomotricidade",
+    "data_aula": "2026-02-02",
+    "horario": "09:10"
+  },
+  {
+    "lectureid": 38545,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Estação de Aprendizagem",
+    "data_aula": "2026-02-02",
+    "horario": "08:50"
+  },
+  {
+    "lectureid": 38544,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Oração / Rotina do Dia / Calendário / Tempo / Chamada / Virtudes / Audição Musical e Bits de Matemática",
+    "data_aula": "2026-02-02",
+    "horario": "07:40"
+  },
+  {
+    "lectureid": 38543,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Acolhida",
+    "data_aula": "2026-02-02",
+    "horario": "07:30"
+  },
+  {
+    "lectureid": 38539,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara II",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-29",
+    "horario": "10:15"
+  },
+  {
+    "lectureid": 38538,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara II",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-28",
+    "horario": "10:15"
+  },
+  {
+    "lectureid": 38537,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara II",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-27",
+    "horario": "10:15"
+  },
+  {
+    "lectureid": 38536,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-29",
+    "horario": "09:45"
+  },
+  {
+    "lectureid": 38535,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-28",
+    "horario": "09:45"
+  },
+  {
+    "lectureid": 38534,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-27",
+    "horario": "09:45"
+  },
+  {
+    "lectureid": 38532,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara II",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-26",
+    "horario": "10:15"
+  },
+  {
+    "lectureid": 38531,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-26",
+    "horario": "09:45"
+  },
+  {
+    "lectureid": 38530,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "2º Ano B",
+    "professor": "Ana Paula Leal",
+    "componente": "Grupo Coloquial / Audição Musical",
+    "data_aula": "2026-01-22",
+    "horario": "07:30",
+    "candidates": [
+      {
+        "schedule_id": "0b12928d-7f21-4c87-b6f3-2738bfdbca04",
+        "subject": "Inglês",
+        "teacher": "Rafaella"
+      }
+    ]
+  },
+  {
+    "lectureid": 38528,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "2º Ano B",
+    "professor": "Ana Paula Leal",
+    "componente": "Grupo Coloquial / Audição Musical / Psicomotricidade",
+    "data_aula": "2026-01-23",
+    "horario": "07:30",
+    "candidates": [
+      {
+        "schedule_id": "eeece824-64e2-4ea3-9739-62df4c19601f",
+        "subject": "Grupo Coloquial / Audição Musical / Psicomotricidade",
+        "teacher": "Juliana Santana dos Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38527,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "2º Ano B",
+    "professor": "Ana Paula Leal",
+    "componente": "Língua Portuguesa",
+    "data_aula": "2026-01-22",
+    "horario": "11:30",
+    "candidates": [
+      {
+        "schedule_id": "98bbf2ec-3c62-4734-8843-67f09a532b73",
+        "subject": "Matemática",
+        "teacher": "Juliana Santana dos Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38526,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "2º Ano B",
+    "professor": "Ana Paula Leal",
+    "componente": "Língua Portuguesa",
+    "data_aula": "2026-01-22",
+    "horario": "10:45",
+    "candidates": [
+      {
+        "schedule_id": "68ed5b22-c8f5-498b-8d54-d1837a7f9687",
+        "subject": "Matemática",
+        "teacher": "Juliana Santana dos Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38525,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "2º Ano B",
+    "professor": "Ana Paula Leal",
+    "componente": "Língua Portuguesa",
+    "data_aula": "2026-01-22",
+    "horario": "09:15",
+    "candidates": [
+      {
+        "schedule_id": "f09c7ab4-c5ba-46f5-9c21-3f47f770d2f9",
+        "subject": "Educação Física",
+        "teacher": "Deborah Costa"
+      }
+    ]
+  },
+  {
+    "lectureid": 38524,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "2º Ano B",
+    "professor": "Ana Paula Leal",
+    "componente": "Matemática",
+    "data_aula": "2026-01-21",
+    "horario": "08:15",
+    "candidates": [
+      {
+        "schedule_id": "f1a8d562-3fab-4c67-a207-b0aa731cb14d",
+        "subject": "Grupo Coloquial / Audição Musical / Psicomotricidade",
+        "teacher": "Juliana Santana dos Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38523,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "2º Ano B",
+    "professor": "Ana Paula Leal",
+    "componente": "Matemática",
+    "data_aula": "2026-01-21",
+    "horario": "09:15",
+    "candidates": [
+      {
+        "schedule_id": "9bfaeddd-f59b-4c50-b185-440488d450a3",
+        "subject": "Língua Portuguesa",
+        "teacher": "Juliana Santana dos Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38522,
+    "reason": "schedule_not_found",
+    "turma": "2º Ano B",
+    "professor": "Ana Paula Leal",
+    "componente": "Matemática",
+    "data_aula": "2026-01-21",
+    "horario": "08:30"
+  },
+  {
+    "lectureid": 38521,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "2º Ano B",
+    "professor": "Ana Paula Leal",
+    "componente": "Língua Portuguesa",
+    "data_aula": "2026-01-20",
+    "horario": "10:00",
+    "candidates": [
+      {
+        "schedule_id": "e6abc4b0-6f84-4572-9e89-1b699a531438",
+        "subject": "Letramento Literário",
+        "teacher": "Gabriel Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38520,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "2º Ano B",
+    "professor": "Ana Paula Leal",
+    "componente": "Língua Portuguesa",
+    "data_aula": "2026-01-20",
+    "horario": "09:15",
+    "candidates": [
+      {
+        "schedule_id": "72f62e4c-779b-447e-92d3-7acc0abf88d8",
+        "subject": "Ensino Religioso",
+        "teacher": "Mônica Monteiro"
+      }
+    ]
+  },
+  {
+    "lectureid": 38519,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "2º Ano B",
+    "professor": "Ana Paula Leal",
+    "componente": "Língua Portuguesa",
+    "data_aula": "2026-01-20",
+    "horario": "09:15",
+    "candidates": [
+      {
+        "schedule_id": "72f62e4c-779b-447e-92d3-7acc0abf88d8",
+        "subject": "Ensino Religioso",
+        "teacher": "Mônica Monteiro"
+      }
+    ]
+  },
+  {
+    "lectureid": 38517,
+    "reason": "teacher_mismatch_for_subject",
+    "turma": "2º Ano B",
+    "professor": "Ana Paula Leal",
+    "componente": "Grupo Coloquial / Audição Musical / Psicomotricidade",
+    "data_aula": "2026-01-20",
+    "horario": "07:30",
+    "candidates": [
+      {
+        "schedule_id": "55cfb536-404f-4ffb-bf26-985ee97abe15",
+        "subject": "Grupo Coloquial / Audição Musical / Psicomotricidade",
+        "teacher": "Juliana Santana dos Santos"
+      }
+    ]
+  },
+  {
+    "lectureid": 38514,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-30",
+    "horario": "09:20"
+  },
+  {
+    "lectureid": 38513,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico II",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-30",
+    "horario": "08:25"
+  },
+  {
+    "lectureid": 38512,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-30",
+    "horario": "08:00"
+  },
+  {
+    "lectureid": 38511,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-29",
+    "horario": "09:20"
+  },
+  {
+    "lectureid": 38509,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico II",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-29",
+    "horario": "08:25"
+  },
+  {
+    "lectureid": 38508,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-29",
+    "horario": "08:00"
+  },
+  {
+    "lectureid": 38507,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico III",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-28",
+    "horario": "09:20"
+  },
+  {
+    "lectureid": 38506,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "Baú do Nico II",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-28",
+    "horario": "09:20",
+    "candidates": [
+      {
+        "schedule_id": "627e5df7-8751-453a-867f-ce44885370cf",
+        "subject": "Grupo Coloquial / Conhecimento de Mundo",
+        "teacher": "Gabriely Castro"
+      }
+    ]
+  },
+  {
+    "lectureid": 38505,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico II",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-28",
+    "horario": "08:25"
+  },
+  {
+    "lectureid": 38504,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-28",
+    "horario": "08:00"
+  },
+  {
+    "lectureid": 38503,
+    "reason": "no_exact_subject_teacher_match",
+    "turma": "5º Ano A",
+    "professor": "Rilda Leal",
+    "componente": "Língua Portuguesa",
+    "data_aula": "2026-01-13",
+    "horario": "08:15",
+    "candidates": [
+      {
+        "schedule_id": "348f0d68-a994-4290-a54b-80bb4377c96c",
+        "subject": "Música",
+        "teacher": "Fernanda Calandrin e"
+      }
+    ]
+  }
+]

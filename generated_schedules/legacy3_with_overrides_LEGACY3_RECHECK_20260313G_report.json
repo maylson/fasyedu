@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-03-13T05:20:51.670Z",
+  "apply": true,
+  "input_file": "c:/Users/Maylson/Desktop/lectures-old-system3.json",
+  "batch_id": "LEGACY3_RECHECK_20260313G",
+  "school": {
+    "id": "d8f6b9cc-cfdd-43a6-b279-1e1f8ff8573c",
+    "name": "Colégio Mirante"
+  },
+  "stats": {
+    "source_rows": 729,
+    "ignored_by_list": 24,
+    "ignored_suspected_ana_paula_2b": 13,
+    "prepared": 691,
+    "inserted": 15,
+    "skipped_existing": 676,
+    "unresolved_class": 0,
+    "unresolved_date": 0,
+    "unresolved_time": 0,
+    "unresolved_schedule": 0,
+    "unresolved_ambiguous": 1,
+    "matched_by_ana_paula_fallback": 18,
+    "matched_by_leticia_fallback": 16
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-03-13T03:13:51.051Z",
+  "input_file": "c:/Users/Maylson/Desktop/lectures-old-system.json",
+  "stats": {
+    "totalImportedPlansFound": 465,
+    "sourceRowsFound": 465,
+    "updatedPlans": 1,
+    "unchangedPlans": 464,
+    "sourceMissing": 0
+  },
+  "changed_preview": [
+    {
+      "lesson_plan_id": "442753e7-76e8-48f8-8f53-c4c4b61a6c4b",
+      "title": "Importação legado #39172",
+      "lectureid": 39172
+    }
+  ],
+  "missing_preview": []
+}

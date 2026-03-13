@@ -48,6 +48,8 @@ type CoordinationWeekGridProps = {
   weekEndIso: string;
   previousWeekIso: string;
   nextWeekIso: string;
+  previousMonthIso: string;
+  nextMonthIso: string;
   days: CoordinationDay[];
   timeSlots: string[];
   entries: CoordinationEntry[];
@@ -62,6 +64,43 @@ type CoordinationWeekGridProps = {
 };
 
 const PILLAR_OPTIONS = ["Físico", "Socioafetivo", "Volitivo", "Cognitivo", "Transcendental"] as const;
+
+function escapeHtml(text: string) {
+  return text
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+}
+
+function sanitizeFeedbackHtml(input: string) {
+  let sanitized = input;
+  sanitized = sanitized.replace(/<script[\s\S]*?>[\s\S]*?<\/script>/gi, "");
+  sanitized = sanitized.replace(/<style[\s\S]*?>[\s\S]*?<\/style>/gi, "");
+  sanitized = sanitized.replace(/\son\w+="[^"]*"/gi, "");
+  sanitized = sanitized.replace(/\son\w+='[^']*'/gi, "");
+  sanitized = sanitized.replace(/\s(href|src)\s*=\s*(['"])javascript:[\s\S]*?\2/gi, "");
+  return sanitized;
+}
+
+function decodeHtmlEntities(input: string) {
+  return input
+    .replaceAll("&lt;", "<")
+    .replaceAll("&gt;", ">")
+    .replaceAll("&amp;", "&")
+    .replaceAll("&quot;", '"')
+    .replaceAll("&#39;", "'");
+}
+
+function toFeedbackDisplayHtml(raw: string) {
+  const decoded = decodeHtmlEntities(raw);
+  const hasHtmlTag = /<\/?[a-z][\s\S]*>/i.test(decoded);
+  if (hasHtmlTag) {
+    return sanitizeFeedbackHtml(decoded);
+  }
+  return `<p>${escapeHtml(decoded).replaceAll("\n", "<br />")}</p>`;
+}
 
 function getStatusStyles(status: PlanStatus) {
   if (status === "APPROVED") return "border-emerald-200 bg-emerald-50";
@@ -129,6 +168,8 @@ export function CoordinationWeekGrid({
   weekEndIso,
   previousWeekIso,
   nextWeekIso,
+  previousMonthIso,
+  nextMonthIso,
   days,
   timeSlots,
   entries,
@@ -346,6 +387,13 @@ export function CoordinationWeekGrid({
         </p>
         <div className="flex items-center gap-2">
           <Link
+            href={`/coordenacao?class_id=${encodeURIComponent(classId)}&week=${previousMonthIso}`}
+            onClick={() => showLoadingOverlay("coord-grid-zone")}
+            className="rounded-lg border border-[var(--line)] px-3 py-1 text-sm hover:bg-[var(--panel-soft)]"
+          >
+            Mês anterior
+          </Link>
+          <Link
             href={`/coordenacao?class_id=${encodeURIComponent(classId)}&week=${previousWeekIso}`}
             onClick={() => showLoadingOverlay("coord-grid-zone")}
             className="rounded-lg border border-[var(--line)] px-3 py-1 text-sm hover:bg-[var(--panel-soft)]"
@@ -359,6 +407,13 @@ export function CoordinationWeekGrid({
             className="rounded-lg border border-[var(--line)] px-3 py-1 text-sm hover:bg-[var(--panel-soft)]"
           >
             Próxima semana
+          </Link>
+          <Link
+            href={`/coordenacao?class_id=${encodeURIComponent(classId)}&week=${nextMonthIso}`}
+            onClick={() => showLoadingOverlay("coord-grid-zone")}
+            className="rounded-lg border border-[var(--line)] px-3 py-1 text-sm hover:bg-[var(--panel-soft)]"
+          >
+            Próximo mês
           </Link>
         </div>
       </div>
@@ -485,6 +540,16 @@ export function CoordinationWeekGrid({
                 <input type="hidden" name="status" value={submitStatus} />
                 <input type="hidden" name="ai_feedback" value={activeEntry.plan.ai_feedback ?? ""} />
                 <input type="hidden" name="pillars" value={showPillars ? selectedPillars.join(", ") : activeEntry.plan.pillars ?? ""} />
+
+                {activeEntry.plan.ai_feedback ? (
+                  <section className="rounded-xl border border-indigo-100 bg-indigo-50/70 p-3 text-sm">
+                    <p className="text-xs font-semibold text-indigo-800">Último feedback de IA</p>
+                    <div
+                      className="mt-2 space-y-2 text-[13px] leading-relaxed text-[var(--brand-blue)] [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5 [&_strong]:font-semibold"
+                      dangerouslySetInnerHTML={{ __html: toFeedbackDisplayHtml(activeEntry.plan.ai_feedback) }}
+                    />
+                  </section>
+                ) : null}
 
                 <label className="grid gap-1 text-sm">
                   <span className="font-medium">Conteúdo</span>

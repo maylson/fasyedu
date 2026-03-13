@@ -1,0 +1,288 @@
+[
+  {
+    "lectureid": 38581,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Leitura",
+    "data_aula": "2026-02-04",
+    "horario": "09:10"
+  },
+  {
+    "lectureid": 38580,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Leitura",
+    "data_aula": "2026-02-06",
+    "horario": "08:50"
+  },
+  {
+    "lectureid": 38579,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Grafomotricidade",
+    "data_aula": "2026-02-06",
+    "horario": "09:10"
+  },
+  {
+    "lectureid": 38578,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Grafomotricidade",
+    "data_aula": "2026-02-05",
+    "horario": "09:10"
+  },
+  {
+    "lectureid": 38577,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Grafomotricidade",
+    "data_aula": "2026-02-03",
+    "horario": "09:10"
+  },
+  {
+    "lectureid": 38576,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Estação de Aprendizagem",
+    "data_aula": "2026-02-05",
+    "horario": "08:50"
+  },
+  {
+    "lectureid": 38575,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Estação de Aprendizagem",
+    "data_aula": "2026-02-04",
+    "horario": "08:50"
+  },
+  {
+    "lectureid": 38574,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Estação de Aprendizagem",
+    "data_aula": "2026-02-03",
+    "horario": "08:50"
+  },
+  {
+    "lectureid": 38573,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Passeio de Aprendizagem",
+    "data_aula": "2026-02-06",
+    "horario": "08:30"
+  },
+  {
+    "lectureid": 38569,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Grupo Coloquial",
+    "data_aula": "2026-02-05",
+    "horario": "08:30"
+  },
+  {
+    "lectureid": 38568,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Grupo Coloquial",
+    "data_aula": "2026-02-04",
+    "horario": "08:30"
+  },
+  {
+    "lectureid": 38567,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Grupo Coloquial",
+    "data_aula": "2026-02-03",
+    "horario": "08:30"
+  },
+  {
+    "lectureid": 38562,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Bits de Linguagem e Inteligência / Conto / Poesia / Trava-Língua / Adivinhação / Ditado Popular",
+    "data_aula": "2026-02-02",
+    "horario": "09:10"
+  },
+  {
+    "lectureid": 38561,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Grupo Coloquial",
+    "data_aula": "2026-02-02",
+    "horario": "08:30"
+  },
+  {
+    "lectureid": 38546,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Grafomotricidade",
+    "data_aula": "2026-02-02",
+    "horario": "09:10"
+  },
+  {
+    "lectureid": 38545,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Miguel III",
+    "professor": "Letícia Alves",
+    "componente": "Estação de Aprendizagem",
+    "data_aula": "2026-02-02",
+    "horario": "08:50"
+  },
+  {
+    "lectureid": 38539,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara II",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-29",
+    "horario": "10:15"
+  },
+  {
+    "lectureid": 38538,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara II",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-28",
+    "horario": "10:15"
+  },
+  {
+    "lectureid": 38537,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara II",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-27",
+    "horario": "10:15"
+  },
+  {
+    "lectureid": 38536,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-29",
+    "horario": "09:45"
+  },
+  {
+    "lectureid": 38535,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-28",
+    "horario": "09:45"
+  },
+  {
+    "lectureid": 38534,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-27",
+    "horario": "09:45"
+  },
+  {
+    "lectureid": 38532,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara II",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-26",
+    "horario": "10:15"
+  },
+  {
+    "lectureid": 38531,
+    "reason": "schedule_not_found",
+    "turma": "Baú da Clara I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-26",
+    "horario": "09:45"
+  },
+  {
+    "lectureid": 38513,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico II",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-30",
+    "horario": "08:25"
+  },
+  {
+    "lectureid": 38512,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-30",
+    "horario": "08:00"
+  },
+  {
+    "lectureid": 38509,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico II",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-29",
+    "horario": "08:25"
+  },
+  {
+    "lectureid": 38508,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-29",
+    "horario": "08:00"
+  },
+  {
+    "lectureid": 38505,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico II",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-28",
+    "horario": "08:25"
+  },
+  {
+    "lectureid": 38504,
+    "reason": "schedule_not_found",
+    "turma": "Baú do Nico I",
+    "professor": "Ana Paula Jacó",
+    "componente": "Inglês",
+    "data_aula": "2026-01-28",
+    "horario": "08:00"
+  },
+  {
+    "lectureid": 38503,
+    "reason": "no_teacher_match",
+    "turma": "5º Ano A",
+    "professor": "Rilda Leal",
+    "componente": "Língua Portuguesa",
+    "data_aula": "2026-01-13",
+    "horario": "08:15",
+    "candidates": [
+      {
+        "schedule_id": "348f0d68-a994-4290-a54b-80bb4377c96c",
+        "subject": "Música",
+        "teacher": "Fernanda Calandrin e"
+      }
+    ]
+  }
+]

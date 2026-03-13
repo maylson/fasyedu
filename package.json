@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "migrate:legacy:plans": "node scripts/migrate_legacy_lesson_plans.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.9.0",
