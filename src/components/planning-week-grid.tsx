@@ -176,6 +176,10 @@ function formatDateRange(startIso: string, endIso: string) {
   return `${start} a ${end}`;
 }
 
+function formatDatePtBr(dateIso: string) {
+  return new Date(`${dateIso}T12:00:00`).toLocaleDateString("pt-BR");
+}
+
 function formatBytes(value: number | null) {
   if (!value) return "";
   if (value < 1024) return `${value} B`;
@@ -437,6 +441,124 @@ export function PlanningWeekGrid({
     setSelectedPillars(parsedPillars);
   }
 
+  function buildPlanSectionHtml(entry: PlanningEntry) {
+    const content = (entry.plan.content ?? "").trim();
+    const objective = (entry.plan.objective ?? "").trim();
+    const methodology = (entry.plan.methodology ?? "").trim();
+    const classroomActivities = (entry.plan.classroom_activities ?? "").trim();
+    const homeActivities = (entry.plan.home_activities ?? "").trim();
+
+    return `
+      <section class="plan-card">
+        <h3>${escapeHtml(entry.subjectName)}</h3>
+        <p class="meta">${escapeHtml(entry.className)} · ${escapeHtml(formatDatePtBr(entry.lessonDate))} · ${escapeHtml(
+          `${entry.startsAt.slice(0, 5)} - ${entry.endsAt.slice(0, 5)}`,
+        )}</p>
+        ${content ? `<p><strong>Conteúdo:</strong> ${escapeHtml(content).replaceAll("\n", "<br />")}</p>` : ""}
+        ${objective ? `<p><strong>Objetivo:</strong> ${escapeHtml(objective).replaceAll("\n", "<br />")}</p>` : ""}
+        ${methodology ? `<p><strong>Metodologia:</strong> ${escapeHtml(methodology).replaceAll("\n", "<br />")}</p>` : ""}
+        ${classroomActivities ? `<p><strong>Atividades em Sala:</strong> ${escapeHtml(classroomActivities).replaceAll("\n", "<br />")}</p>` : ""}
+        ${homeActivities ? `<p><strong>Atividades em Casa:</strong> ${escapeHtml(homeActivities).replaceAll("\n", "<br />")}</p>` : ""}
+        ${
+          !content && !objective && !methodology && !classroomActivities && !homeActivities
+            ? `<p class="empty">Sem conteúdo preenchido neste planejamento.</p>`
+            : ""
+        }
+      </section>
+    `;
+  }
+
+  function openPdfDocument(title: string, subtitle: string, rows: PlanningEntry[]) {
+    const printableRows = [...rows].sort((a, b) => {
+      if (a.lessonDate !== b.lessonDate) return a.lessonDate.localeCompare(b.lessonDate);
+      if (a.startsAt !== b.startsAt) return a.startsAt.localeCompare(b.startsAt);
+      return a.className.localeCompare(b.className, "pt-BR");
+    });
+
+    const popup = window.open("", "_blank", "noopener,noreferrer");
+    if (!popup) {
+      window.alert("Não foi possível abrir a janela de exportação. Verifique o bloqueador de pop-up.");
+      return;
+    }
+
+    const logoUrl = `${window.location.origin}/fasy-login-brand.jpg`;
+    const nowLabel = new Date().toLocaleString("pt-BR");
+    const bodyHtml = printableRows.map((entry) => buildPlanSectionHtml(entry)).join("");
+
+    popup.document.open();
+    popup.document.write(`<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>${escapeHtml(title)}</title>
+    <style>
+      @page { size: A4; margin: 16mm 12mm 18mm 12mm; }
+      * { box-sizing: border-box; }
+      body { margin: 0; font-family: "Segoe UI", Arial, sans-serif; color: #0b2a4a; background: #fff; }
+      header { display: flex; align-items: center; gap: 14px; border-bottom: 2px solid #d5e2f0; padding-bottom: 10px; margin-bottom: 12px; }
+      header img { width: 72px; height: auto; border-radius: 8px; object-fit: cover; }
+      .head-title h1 { margin: 0; font-size: 18px; letter-spacing: 0.01em; color: #0d3f73; }
+      .head-title p { margin: 4px 0 0; font-size: 12px; color: #406487; }
+      .meta-sheet { margin: 0 0 12px; font-size: 12px; color: #406487; }
+      .plan-card { border: 1px solid #c9d9ea; border-radius: 10px; padding: 10px 12px; margin-bottom: 10px; page-break-inside: avoid; }
+      .plan-card h3 { margin: 0; font-size: 14px; color: #0d3f73; }
+      .plan-card .meta { margin: 4px 0 8px; font-size: 12px; color: #4a6a88; }
+      .plan-card p { margin: 6px 0; font-size: 12px; line-height: 1.45; }
+      .plan-card p strong { color: #0b2a4a; }
+      .plan-card .empty { color: #6b839d; font-style: italic; }
+      footer { position: fixed; bottom: 0; left: 0; right: 0; border-top: 1px solid #d5e2f0; padding: 6px 12mm 0; font-size: 10px; color: #6b839d; text-align: center; background: #fff; }
+      @media print {
+        a[href]:after { content: ""; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="${logoUrl}" alt="FASY" />
+      <div class="head-title">
+        <h1>${escapeHtml(title)}</h1>
+        <p>${escapeHtml(subtitle)}</p>
+      </div>
+    </header>
+    <p class="meta-sheet">Gerado em: ${escapeHtml(nowLabel)}</p>
+    ${bodyHtml || '<p class="meta-sheet">Nenhum planejamento encontrado para exportação.</p>'}
+    <footer>Plano de Aula gerado através do FASY - www.fasyedu.com.br</footer>
+    <script>
+      window.addEventListener("load", () => {
+        setTimeout(() => window.print(), 120);
+      });
+    </script>
+  </body>
+</html>`);
+    popup.document.close();
+  }
+
+  function exportSinglePlan(entry: PlanningEntry) {
+    openPdfDocument(
+      "Plano de Aula",
+      `${entry.className} · ${entry.subjectName} · ${formatDatePtBr(entry.lessonDate)}`,
+      [entry],
+    );
+  }
+
+  function exportDayPlans(day: PlanningDay) {
+    const dayEntries = effectiveEntries.filter((entry) => entry.lessonDate === day.lessonDate && entry.plan.id);
+    openPdfDocument(
+      "Planos de Aula do Dia",
+      `${teacherName} · ${day.label} · ${formatDatePtBr(day.lessonDate)}`,
+      dayEntries,
+    );
+  }
+
+  function exportWeeklySlotPlans(slot: string) {
+    const slotEntries = effectiveEntries.filter((entry) => entry.startsAt === slot && entry.plan.id);
+    openPdfDocument(
+      "Planos de Aula por Horário",
+      `${teacherName} · Semana ${formatDateRange(weekStartIso, weekEndIso)} · Horário ${slot.slice(0, 5)}`,
+      slotEntries,
+    );
+  }
+
   useEffect(() => {
     if (autoOpenDoneRef.current) return;
     if (!initialOpenScheduleId || !initialOpenLessonDate) return;
@@ -616,7 +738,18 @@ export function PlanningWeekGrid({
               <th className="w-24 px-3 py-2">Horario</th>
               {days.map((day) => (
                 <th key={`head-${day.value}`} className="px-3 py-2">
-                  {day.label} · {new Date(`${day.lessonDate}T12:00:00`).toLocaleDateString("pt-BR")}
+                  <div className="flex items-center justify-between gap-2">
+                    <span>
+                      {day.label} · {new Date(`${day.lessonDate}T12:00:00`).toLocaleDateString("pt-BR")}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => exportDayPlans(day)}
+                      className="rounded-full border border-[var(--line)] bg-white px-2 py-0.5 text-[10px] font-semibold text-[var(--brand-blue)] hover:bg-[var(--panel-soft)]"
+                    >
+                      PDF
+                    </button>
+                  </div>
                 </th>
               ))}
             </tr>
@@ -631,7 +764,18 @@ export function PlanningWeekGrid({
             ) : null}
             {timeSlots.map((slot) => (
               <tr key={`slot-${slot}`} className="border-t border-[var(--line)] align-top">
-                <td className="px-3 py-3 text-xs font-semibold whitespace-nowrap text-[var(--brand-blue)]">{slot.slice(0, 5)}</td>
+                <td className="px-3 py-3 text-xs font-semibold whitespace-nowrap text-[var(--brand-blue)]">
+                  <div className="flex flex-col items-start gap-1">
+                    <span>{slot.slice(0, 5)}</span>
+                    <button
+                      type="button"
+                      onClick={() => exportWeeklySlotPlans(slot)}
+                      className="rounded-full border border-[var(--line)] bg-white px-2 py-0.5 text-[10px] font-semibold text-[var(--brand-blue)] hover:bg-[var(--panel-soft)]"
+                    >
+                      PDF
+                    </button>
+                  </div>
+                </td>
                 {days.map((day) => {
                   const slotEntries = entriesByCell.get(`${day.value}|${slot}`) ?? [];
                   return (
@@ -672,6 +816,16 @@ export function PlanningWeekGrid({
                               </p>
                               {entry.plan.id ? (
                                 <div className="mt-2">
+                                  <button
+                                    type="button"
+                                    onClick={(event) => {
+                                      event.stopPropagation();
+                                      exportSinglePlan(entry);
+                                    }}
+                                    className="mr-2 rounded-lg border border-[var(--line)] bg-white px-2 py-1 text-[11px] hover:bg-[var(--panel-soft)]"
+                                  >
+                                    PDF
+                                  </button>
                                   <button
                                     type="button"
                                     onClick={(event) => {
