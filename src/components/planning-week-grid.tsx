@@ -475,7 +475,7 @@ export function PlanningWeekGrid({
       return a.className.localeCompare(b.className, "pt-BR");
     });
 
-    const popup = window.open("", "_blank", "noopener,noreferrer");
+    const popup = window.open("about:blank", "_blank");
     if (!popup) {
       window.alert("Não foi possível abrir a janela de exportação. Verifique o bloqueador de pop-up.");
       return;
@@ -485,8 +485,7 @@ export function PlanningWeekGrid({
     const nowLabel = new Date().toLocaleString("pt-BR");
     const bodyHtml = printableRows.map((entry) => buildPlanSectionHtml(entry)).join("");
 
-    popup.document.open();
-    popup.document.write(`<!DOCTYPE html>
+    const html = `<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
@@ -529,8 +528,17 @@ export function PlanningWeekGrid({
       });
     </script>
   </body>
-</html>`);
-    popup.document.close();
+</html>`;
+
+    try {
+      popup.document.open();
+      popup.document.write(html);
+      popup.document.close();
+      popup.focus();
+    } catch {
+      popup.close();
+      window.alert("Falha ao gerar o PDF nesta aba. Tente novamente.");
+    }
   }
 
   function exportSinglePlan(entry: PlanningEntry) {
