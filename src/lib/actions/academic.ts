@@ -1505,10 +1505,38 @@ export async function duplicateLessonPlanAction(formData: FormData) {
   }
 
   const canReview = hasAnyRole(roles, REVIEW_ROLES);
-  let sourceQuery = supabase.from("lesson_plans").select("*").eq("id", sourceId).eq("school_id", schoolId);
-  if (!canReview) sourceQuery = sourceQuery.eq("created_by", userId);
-  const { data: source, error: sourceError } = await sourceQuery.maybeSingle();
+  const { data: source, error: sourceError } = await supabase
+    .from("lesson_plans")
+    .select("*")
+    .eq("id", sourceId)
+    .eq("school_id", schoolId)
+    .maybeSingle();
   if (sourceError || !source) throw new Error("Planejamento de origem não encontrado.");
+
+  if (!canReview) {
+    const { data: teacher, error: teacherError } = await supabase
+      .from("teachers")
+      .select("id")
+      .eq("school_id", schoolId)
+      .eq("user_id", userId)
+      .maybeSingle();
+
+    if (teacherError) throw new Error(teacherError.message);
+    if (!teacher?.id) throw new Error("Usuário professor não vinculado para duplicação de planejamento.");
+    if (!source.class_schedule_id) throw new Error("Planejamento de origem sem horário vinculado para duplicação.");
+
+    const { data: sourceSchedule, error: sourceScheduleError } = await supabase
+      .from("class_schedules")
+      .select("id, teacher_id")
+      .eq("id", source.class_schedule_id)
+      .eq("school_id", schoolId)
+      .maybeSingle();
+
+    if (sourceScheduleError) throw new Error(sourceScheduleError.message);
+    if (!sourceSchedule || sourceSchedule.teacher_id !== teacher.id) {
+      throw new Error("Sem permissão para duplicar este planejamento.");
+    }
+  }
 
   const { data: targetSchedule, error: targetScheduleError } = await supabase
     .from("class_schedules")
@@ -1574,6 +1602,7 @@ export async function duplicateLessonPlanAction(formData: FormData) {
   }
 
   revalidatePath("/planejamento");
+  revalidatePath("/coordenacao");
 }
 
 export async function addLessonPlanLinkResourceAction(formData: FormData) {
