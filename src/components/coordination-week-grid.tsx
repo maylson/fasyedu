@@ -43,6 +43,7 @@ type CoordinationDay = {
 
 type CoordinationWeekGridProps = {
   classId: string;
+  teacherId: string | null;
   className: string;
   weekStartIso: string;
   weekEndIso: string;
@@ -163,6 +164,7 @@ function showLoadingOverlay(targetId: string) {
 
 export function CoordinationWeekGrid({
   classId,
+  teacherId,
   className,
   weekStartIso,
   weekEndIso,
@@ -263,14 +265,7 @@ export function CoordinationWeekGrid({
     duplicateTargetClassId && eligibleTargetClasses.some((item) => item.classId === duplicateTargetClassId)
       ? duplicateTargetClassId
       : "";
-  const visibleScheduleTargets = useMemo(
-    () =>
-      duplicateScheduleTargets.filter((item) => {
-        if (!duplicateSource) return true;
-        return item.scheduleId !== duplicateSource.scheduleId;
-      }),
-    [duplicateScheduleTargets, duplicateSource],
-  );
+  const visibleScheduleTargets = useMemo(() => duplicateScheduleTargets, [duplicateScheduleTargets]);
   const effectiveTargetScheduleId =
     duplicateTargetScheduleId && visibleScheduleTargets.some((item) => item.scheduleId === duplicateTargetScheduleId)
       ? duplicateTargetScheduleId
@@ -318,6 +313,13 @@ export function CoordinationWeekGrid({
   }, [duplicateSource, effectiveTargetClassId]);
 
   const modalFormId = activeEntry ? `coord-plan-form-${activeEntry.scheduleId}-${activeEntry.lessonDate}` : "coord-plan-form";
+  const buildNavigationHref = (weekIso: string) => {
+    const params = new URLSearchParams();
+    if (classId) params.set("class_id", classId);
+    if (teacherId) params.set("teacher_id", teacherId);
+    params.set("week", weekIso);
+    return `/coordenacao?${params.toString()}`;
+  };
 
   const displayedStatus: PlanStatus = isDirty
     ? "DRAFT"
@@ -387,14 +389,14 @@ export function CoordinationWeekGrid({
         </p>
         <div className="flex items-center gap-2">
           <Link
-            href={`/coordenacao?class_id=${encodeURIComponent(classId)}&week=${previousMonthIso}`}
+            href={buildNavigationHref(previousMonthIso)}
             onClick={() => showLoadingOverlay("coord-grid-zone")}
             className="rounded-lg border border-[var(--line)] px-3 py-1 text-sm hover:bg-[var(--panel-soft)]"
           >
             Mês anterior
           </Link>
           <Link
-            href={`/coordenacao?class_id=${encodeURIComponent(classId)}&week=${previousWeekIso}`}
+            href={buildNavigationHref(previousWeekIso)}
             onClick={() => showLoadingOverlay("coord-grid-zone")}
             className="rounded-lg border border-[var(--line)] px-3 py-1 text-sm hover:bg-[var(--panel-soft)]"
           >
@@ -402,14 +404,14 @@ export function CoordinationWeekGrid({
           </Link>
           <span className="rounded-lg bg-[var(--panel-soft)] px-3 py-1 text-sm text-[var(--brand-blue)]">{formatDateRange(weekStartIso, weekEndIso)}</span>
           <Link
-            href={`/coordenacao?class_id=${encodeURIComponent(classId)}&week=${nextWeekIso}`}
+            href={buildNavigationHref(nextWeekIso)}
             onClick={() => showLoadingOverlay("coord-grid-zone")}
             className="rounded-lg border border-[var(--line)] px-3 py-1 text-sm hover:bg-[var(--panel-soft)]"
           >
             Próxima semana
           </Link>
           <Link
-            href={`/coordenacao?class_id=${encodeURIComponent(classId)}&week=${nextMonthIso}`}
+            href={buildNavigationHref(nextMonthIso)}
             onClick={() => showLoadingOverlay("coord-grid-zone")}
             className="rounded-lg border border-[var(--line)] px-3 py-1 text-sm hover:bg-[var(--panel-soft)]"
           >

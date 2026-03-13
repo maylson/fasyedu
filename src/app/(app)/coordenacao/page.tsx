@@ -1,5 +1,4 @@
-﻿import { ClassSelectAutoSubmit } from "@/components/class-select-auto-submit";
-import { CoordinationWeekGrid } from "@/components/coordination-week-grid";
+﻿import { CoordinationWeekGrid } from "@/components/coordination-week-grid";
 import { ModuleShell } from "@/components/module-shell";
 import { getUserContext } from "@/lib/app-context";
 import { getWeekdayLabel, WEEKDAY_OPTIONS } from "@/lib/constants";
@@ -44,6 +43,7 @@ export default async function CoordenacaoPage({ searchParams }: CoordenacaoPageP
   const canAccess = roles.includes("SUPPORT") || roles.includes("DIRECAO") || roles.includes("COORDENACAO");
   const params = await searchParams;
   const selectedClassId = typeof params.class_id === "string" ? params.class_id : "";
+  const selectedTeacherId = typeof params.teacher_id === "string" ? params.teacher_id : "";
   const requestedWeek = typeof params.week === "string" ? params.week : undefined;
 
   const weekStart = getWeekStart(requestedWeek);
@@ -66,6 +66,8 @@ export default async function CoordenacaoPage({ searchParams }: CoordenacaoPageP
 
   const classesResult = await supabase.from("classes").select("id, name, stage, series").eq("school_id", activeSchoolId).limit(500);
   const classes = (classesResult.data ?? []) as Array<{ id: string; name: string; stage: string; series: string | null }>;
+  const teachersResult = await supabase.from("teachers").select("id, full_name").eq("school_id", activeSchoolId).order("full_name");
+  const teachers = (teachersResult.data ?? []) as Array<{ id: string; full_name: string }>;
 
   const classStageOrder = new Map<string, number>([
     ["EDUCACAO_INFANTIL", 0],
@@ -81,6 +83,7 @@ export default async function CoordenacaoPage({ searchParams }: CoordenacaoPageP
   });
 
   const selectedClass = classesSorted.find((item) => item.id === selectedClassId) ?? null;
+  const selectedTeacher = teachers.find((item) => item.id === selectedTeacherId) ?? null;
 
   const { data: schoolSettings } = await supabase
     .from("schools")
@@ -128,15 +131,18 @@ export default async function CoordenacaoPage({ searchParams }: CoordenacaoPageP
     classSeries: string | null;
   }> = [];
 
-  if (selectedClassId) {
-    const schedulesResult = await supabase
+  if (selectedClassId || selectedTeacherId) {
+    let schedulesQuery = supabase
       .from("class_schedules")
       .select("id, class_id, day_of_week, starts_at, ends_at, classes(id,name,series), teachers(full_name), class_subjects(subjects(name))")
       .eq("school_id", activeSchoolId)
-      .eq("class_id", selectedClassId)
       .eq("entry_type", "AULA")
       .order("day_of_week")
       .order("starts_at");
+    if (selectedClassId) schedulesQuery = schedulesQuery.eq("class_id", selectedClassId);
+    if (selectedTeacherId) schedulesQuery = schedulesQuery.eq("teacher_id", selectedTeacherId);
+
+    const schedulesResult = await schedulesQuery;
 
     const schedules = (schedulesResult.data ?? []) as Array<{
       id: string;
@@ -251,15 +257,35 @@ export default async function CoordenacaoPage({ searchParams }: CoordenacaoPageP
 
   return (
     <ModuleShell title="Coordenação" description="Visão semanal dos planejamentos por turma">
-      <form method="get" className="rounded-2xl border border-[var(--line)] bg-white p-4">
-        <ClassSelectAutoSubmit
-          name="class_id"
-          defaultValue={selectedClassId}
-          options={classesSorted.map((item) => ({ id: item.id, name: item.name }))}
-          className="fasy-input"
-          placeholder="Selecione a turma"
-          loadingTargetId="coord-grid-zone"
-        />
+      <form method="get" className="grid gap-3 rounded-2xl border border-[var(--line)] bg-white p-4 md:grid-cols-[1fr_1fr_auto_auto] md:items-end">
+        <div className="grid gap-1">
+          <span className="text-xs font-medium text-[var(--muted)]">Turma (opcional)</span>
+          <select name="class_id" defaultValue={selectedClassId} className="fasy-input">
+            <option value="">Todas as turmas</option>
+            {classesSorted.map((item) => (
+              <option key={`class-${item.id}`} value={item.id}>
+                {item.name}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="grid gap-1">
+          <span className="text-xs font-medium text-[var(--muted)]">Professor (opcional)</span>
+          <select name="teacher_id" defaultValue={selectedTeacherId} className="fasy-input">
+            <option value="">Todos os professores</option>
+            {teachers.map((teacher) => (
+              <option key={`teacher-${teacher.id}`} value={teacher.id}>
+                {teacher.full_name}
+              </option>
+            ))}
+          </select>
+        </div>
+        <button type="submit" className="fasy-btn-primary px-4 py-2 text-sm">
+          Aplicar filtros
+        </button>
+        <a href="/coordenacao" className="rounded-lg border border-[var(--line)] px-4 py-2 text-sm text-center hover:bg-[var(--panel-soft)]">
+          Limpar
+        </a>
       </form>
 
       <div id="coord-grid-zone" className="relative">
@@ -275,14 +301,18 @@ export default async function CoordenacaoPage({ searchParams }: CoordenacaoPageP
           </div>
         </div>
 
-        {!selectedClassId ? (
+        {!selectedClassId && !selectedTeacherId ? (
           <div className="rounded-2xl border border-dashed border-[var(--line)] bg-white p-8 text-center text-sm text-[var(--muted)]">
-            Selecione uma turma para visualizar e revisar os planejamentos da semana.
+            Selecione uma turma e/ou um professor para visualizar e revisar os planejamentos da semana.
           </div>
         ) : (
           <CoordinationWeekGrid
             classId={selectedClassId}
-            className={selectedClass?.name ?? "Turma"}
+            className={
+              selectedClass?.name ??
+              (selectedTeacher ? `Professor: ${selectedTeacher.full_name}` : "Turmas")
+            }
+            teacherId={selectedTeacherId || null}
             weekStartIso={weekStartIso}
             weekEndIso={weekEndIso}
             previousWeekIso={previousWeekIso}
@@ -302,4 +332,5 @@ export default async function CoordenacaoPage({ searchParams }: CoordenacaoPageP
     </ModuleShell>
   );
 }
+
 

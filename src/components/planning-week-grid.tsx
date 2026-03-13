@@ -360,14 +360,7 @@ export function PlanningWeekGrid({
     duplicateTargetClassId && eligibleTargetClasses.some((item) => item.classId === duplicateTargetClassId)
       ? duplicateTargetClassId
       : "";
-  const visibleScheduleTargets = useMemo(
-    () =>
-      duplicateScheduleTargets.filter((item) => {
-        if (!duplicateSource) return true;
-        return item.scheduleId !== duplicateSource.scheduleId;
-      }),
-    [duplicateScheduleTargets, duplicateSource],
-  );
+  const visibleScheduleTargets = useMemo(() => duplicateScheduleTargets, [duplicateScheduleTargets]);
   const effectiveTargetScheduleId =
     duplicateTargetScheduleId && visibleScheduleTargets.some((item) => item.scheduleId === duplicateTargetScheduleId)
       ? duplicateTargetScheduleId
