@@ -1357,7 +1357,11 @@ export async function saveLessonPlanAction(formData: FormData) {
   const objective = String(formData.get("objective") ?? "").trim();
   const content = String(formData.get("content") ?? "").trim();
   const methodology = String(formData.get("methodology") ?? "").trim();
-  const pillars = String(formData.get("pillars") ?? "").trim();
+  const pillarsOptions = formData
+    .getAll("pillars_option")
+    .map((value) => String(value).trim())
+    .filter(Boolean);
+  const pillars = (pillarsOptions.length > 0 ? pillarsOptions.join(", ") : String(formData.get("pillars") ?? "")).trim();
   const resources = String(formData.get("resources") ?? "").trim();
   const classroomActivities = String(formData.get("classroom_activities") ?? "").trim();
   const homeActivities = String(formData.get("home_activities") ?? "").trim();

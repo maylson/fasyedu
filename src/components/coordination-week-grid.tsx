@@ -1,6 +1,6 @@
 ﻿"use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, useTransition } from "react";
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import { SubmitButton } from "@/components/submit-button";
@@ -200,6 +200,8 @@ export function CoordinationWeekGrid({
   const [duplicateScheduleTargetsLoading, setDuplicateScheduleTargetsLoading] = useState(false);
   const [duplicateScheduleTargetsError, setDuplicateScheduleTargetsError] = useState<string | null>(null);
   const highlightTimeoutRef = useRef<number | null>(null);
+  const [isPending, startTransition] = useTransition();
+  const [deletingPlanKey, setDeletingPlanKey] = useState<string | null>(null);
 
   useEffect(() => {
     const target = document.getElementById("coord-grid-zone");
@@ -313,6 +315,33 @@ export function CoordinationWeekGrid({
   }, [duplicateSource, effectiveTargetClassId]);
 
   const modalFormId = activeEntry ? `coord-plan-form-${activeEntry.scheduleId}-${activeEntry.lessonDate}` : "coord-plan-form";
+
+  function handleDeletePlan(entry: CoordinationEntry) {
+    if (!entry.plan.id) return;
+    if (!window.confirm("Tem certeza que deseja excluir este planejamento?")) {
+      return;
+    }
+
+    const key = `${entry.scheduleId}-${entry.lessonDate}`;
+    setDeletingPlanKey(key);
+    startTransition(async () => {
+      try {
+        const formData = new FormData();
+        formData.set("id", entry.plan.id as string);
+        await deleteLessonPlanAction(formData);
+
+        setOptimisticDeletedKeys((current) => ({ ...current, [key]: true }));
+        setOptimisticStatusByKey((current) => ({ ...current, [key]: "MISSING" }));
+        setCardSavedAnimation(key);
+        setActiveKey(null);
+      } catch (error) {
+        const message = error instanceof Error ? error.message : "Nao foi possivel excluir o planejamento.";
+        window.alert(message);
+      } finally {
+        setDeletingPlanKey(null);
+      }
+    });
+  }
   const buildNavigationHref = (weekIso: string) => {
     const params = new URLSearchParams();
     if (classId) params.set("class_id", classId);
@@ -573,12 +602,14 @@ export function CoordinationWeekGrid({
                     <div className="grid gap-2 rounded-xl border border-[var(--line)] bg-white p-3 sm:grid-cols-2">
                       {PILLAR_OPTIONS.map((pillar) => (
                         <label key={pillar} className="flex items-center gap-2 text-sm text-[var(--brand-blue)]">
-                          <input
-                            type="checkbox"
-                            checked={selectedPillars.includes(pillar)}
-                            onChange={() => togglePillar(pillar)}
-                            className="h-4 w-4 rounded border-[var(--line)]"
-                          />
+                            <input
+                              type="checkbox"
+                              name="pillars_option"
+                              value={pillar}
+                              checked={selectedPillars.includes(pillar)}
+                              onChange={() => togglePillar(pillar)}
+                              className="h-4 w-4 rounded border-[var(--line)]"
+                            />
                           <span>{pillar}</span>
                         </label>
                       ))}
@@ -627,26 +658,26 @@ export function CoordinationWeekGrid({
               </button>
 
               {activeEntry.plan.id ? (
-                <form action={deleteLessonPlanAction}>
-                  <input type="hidden" name="id" value={activeEntry.plan.id} />
-                  <SubmitButton
-                    className="rounded-lg border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-700 hover:bg-rose-100"
-                    pendingLabel="Excluindo..."
-                    onClick={(event) => {
-                      if (!window.confirm("Tem certeza que deseja excluir este planejamento?")) {
-                        event.preventDefault();
-                        return;
-                      }
-                      const key = `${activeEntry.scheduleId}-${activeEntry.lessonDate}`;
-                      setOptimisticDeletedKeys((current) => ({ ...current, [key]: true }));
-                      setOptimisticStatusByKey((current) => ({ ...current, [key]: "MISSING" }));
-                      setCardSavedAnimation(key);
-                      setActiveKey(null);
+                <>
+                  {deletingPlanKey === `${activeEntry.scheduleId}-${activeEntry.lessonDate}` ? (
+                    <span className="rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-800">
+                      Excluindo planejamento...
+                    </span>
+                  ) : null}
+                  <form
+                    action={() => {
+                      handleDeletePlan(activeEntry);
                     }}
                   >
-                    Excluir
-                  </SubmitButton>
-                </form>
+                    <SubmitButton
+                      className="rounded-lg border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-700 hover:bg-rose-100"
+                      pendingLabel="Excluindo..."
+                      disabled={isPending || deletingPlanKey === `${activeEntry.scheduleId}-${activeEntry.lessonDate}`}
+                    >
+                      {deletingPlanKey === `${activeEntry.scheduleId}-${activeEntry.lessonDate}` ? "Excluindo..." : "Excluir"}
+                    </SubmitButton>
+                  </form>
+                </>
               ) : null}
 
               <button type="button" onClick={() => setActiveKey(null)} className="rounded-lg border border-[var(--line)] px-3 py-2 text-sm hover:bg-[var(--panel-soft)]">

@@ -253,6 +253,7 @@ export function PlanningWeekGrid({
   const submitStatusRef = useRef<PersistedStatus>("DRAFT");
   const latestWizardFeedbackRef = useRef("");
   const [isPending, startTransition] = useTransition();
+  const [deletingPlanKey, setDeletingPlanKey] = useState<string | null>(null);
   const modalFormRef = useRef<HTMLFormElement | null>(null);
   const waitingIntervalRef = useRef<number | null>(null);
   const highlightTimeoutRef = useRef<number | null>(null);
@@ -414,6 +415,33 @@ export function PlanningWeekGrid({
     : (wizardStatus ?? (submitStatus as PlanStatus) ?? (activeEntry?.plan.status ?? "MISSING")) as PlanStatus;
   const savedStatus = (activeEntry?.plan.status ?? "MISSING") as PlanStatus;
   const modalBackgroundStatus = (isDirty ? "DRAFT" : displayedStatus) || savedStatus;
+
+  function handleDeletePlan(entry: PlanningEntry) {
+    if (!entry.plan.id) return;
+    if (!window.confirm("Tem certeza que deseja excluir este planejamento?")) {
+      return;
+    }
+
+    const key = `${entry.scheduleId}-${entry.lessonDate}`;
+    setDeletingPlanKey(key);
+    startTransition(async () => {
+      try {
+        const formData = new FormData();
+        formData.set("id", entry.plan.id as string);
+        await deleteLessonPlanAction(formData);
+
+        setOptimisticDeletedKeys((current) => ({ ...current, [key]: true }));
+        setOptimisticStatusByKey((current) => ({ ...current, [key]: "MISSING" }));
+        setCardSavedAnimation(key);
+        setActiveKey(null);
+      } catch (error) {
+        const message = error instanceof Error ? error.message : "Nao foi possivel excluir o planejamento.";
+        window.alert(message);
+      } finally {
+        setDeletingPlanKey(null);
+      }
+    });
+  }
 
   function openModal(entry: PlanningEntry) {
     const initialFeedback = entry.plan.ai_feedback ?? "";
@@ -897,11 +925,7 @@ export function PlanningWeekGrid({
                       name="ai_feedback"
                       value={latestWizardFeedbackRef.current || wizardText || activeEntry.plan.ai_feedback || ""}
                     />
-                    <input
-                      type="hidden"
-                      name="pillars"
-                      value={showPillars ? selectedPillars.join(", ") : activeEntry.plan.pillars ?? ""}
-                    />
+                    <input type="hidden" name="pillars" value={showPillars ? selectedPillars.join(", ") : activeEntry.plan.pillars ?? ""} />
 
                     {activeEntry.plan.reviewer_comment ? (
                       <section className="rounded-xl border border-amber-200 bg-amber-50 p-3">
@@ -930,6 +954,8 @@ export function PlanningWeekGrid({
                             <label key={pillar} className="flex items-center gap-2 text-sm text-[var(--brand-blue)]">
                               <input
                                 type="checkbox"
+                                name="pillars_option"
+                                value={pillar}
                                 checked={selectedPillars.includes(pillar)}
                                 onChange={() => togglePillar(pillar)}
                                 className="h-4 w-4 rounded border-[var(--line)]"
@@ -1052,24 +1078,22 @@ export function PlanningWeekGrid({
             <div className="sticky bottom-0 flex flex-wrap items-center justify-end gap-2 border-t border-[var(--line)] bg-white px-4 py-3">
               {activeEntry.plan.id ? (
                 <>
-                  <form action={deleteLessonPlanAction}>
-                    <input type="hidden" name="id" value={activeEntry.plan.id} />
+                  {deletingPlanKey === `${activeEntry.scheduleId}-${activeEntry.lessonDate}` ? (
+                    <span className="rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-800">
+                      Excluindo planejamento...
+                    </span>
+                  ) : null}
+                  <form
+                    action={() => {
+                      handleDeletePlan(activeEntry);
+                    }}
+                  >
                     <SubmitButton
                       className="rounded-lg border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-700 hover:bg-rose-100"
                       pendingLabel="Excluindo..."
-                      onClick={(event) => {
-                        if (!window.confirm("Tem certeza que deseja excluir este planejamento?")) {
-                          event.preventDefault();
-                          return;
-                        }
-                        const key = `${activeEntry.scheduleId}-${activeEntry.lessonDate}`;
-                        setOptimisticDeletedKeys((current) => ({ ...current, [key]: true }));
-                        setOptimisticStatusByKey((current) => ({ ...current, [key]: "MISSING" }));
-                        setCardSavedAnimation(key);
-                        setActiveKey(null);
-                      }}
+                      disabled={wizardBusy || isPending || deletingPlanKey === `${activeEntry.scheduleId}-${activeEntry.lessonDate}`}
                     >
-                      Excluir
+                      {deletingPlanKey === `${activeEntry.scheduleId}-${activeEntry.lessonDate}` ? "Excluindo..." : "Excluir"}
                     </SubmitButton>
                   </form>
                 </>

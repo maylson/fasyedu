@@ -93,7 +93,7 @@ export default async function PlanejamentoPage({ searchParams }: PlanejamentoPag
     .eq("is_active", true)
     .maybeSingle();
 
-  const [schedulesResult, plansResult, classesResult] = await Promise.all([
+  const [schedulesResult, classesResult] = await Promise.all([
     supabase
       .from("class_schedules")
       .select("id, class_id, class_subject_id, day_of_week, starts_at, ends_at, classes(id,name,series), class_subjects(subjects(name))")
@@ -101,14 +101,6 @@ export default async function PlanejamentoPage({ searchParams }: PlanejamentoPag
       .eq("teacher_id", teacher.id)
       .order("day_of_week")
       .order("starts_at"),
-    supabase
-      .from("lesson_plans")
-      .select(
-        "id, class_schedule_id, lesson_date, title, objective, content, methodology, pillars, resources, classroom_activities, home_activities, ai_feedback, reviewer_comment, status",
-      )
-      .eq("school_id", activeSchoolId)
-      .gte("lesson_date", weekStartIso)
-      .lte("lesson_date", weekEndIso),
     supabase.from("classes").select("id, name, series").eq("school_id", activeSchoolId).limit(500),
   ]);
 
@@ -124,6 +116,20 @@ export default async function PlanejamentoPage({ searchParams }: PlanejamentoPag
       | { subjects?: { name?: string } | Array<{ name?: string }> }
       | Array<{ subjects?: { name?: string } | Array<{ name?: string }> }>;
   }>;
+
+  const scheduleIds = schedules.map((schedule) => schedule.id);
+  const plansResult =
+    scheduleIds.length > 0
+      ? await supabase
+          .from("lesson_plans")
+          .select(
+            "id, class_schedule_id, lesson_date, title, objective, content, methodology, pillars, resources, classroom_activities, home_activities, ai_feedback, reviewer_comment, status",
+          )
+          .eq("school_id", activeSchoolId)
+          .in("class_schedule_id", scheduleIds)
+          .gte("lesson_date", weekStartIso)
+          .lte("lesson_date", weekEndIso)
+      : { data: [], error: null };
 
   const plans = (plansResult.data ?? []) as Array<{
     id: string;
