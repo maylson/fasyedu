@@ -1415,9 +1415,33 @@ export async function saveLessonPlanAction(formData: FormData) {
     created_by: userId,
   };
 
+  let savedPlan:
+    | {
+        id: string;
+        title: string | null;
+        objective: string | null;
+        content: string | null;
+        methodology: string | null;
+        pillars: string | null;
+        resources: string | null;
+        classroom_activities: string | null;
+        home_activities: string | null;
+        ai_feedback: string | null;
+        reviewer_comment: string | null;
+        status: LessonPlanStatus;
+      }
+    | null = null;
+
   if (id) {
-    const { error } = await supabase.from("lesson_plans").update(payload).eq("id", id).eq("school_id", schoolId);
+    const { data, error } = await supabase
+      .from("lesson_plans")
+      .update(payload)
+      .eq("id", id)
+      .eq("school_id", schoolId)
+      .select("id, title, objective, content, methodology, pillars, resources, classroom_activities, home_activities, ai_feedback, reviewer_comment, status")
+      .single();
     if (error) throw new Error(error.message);
+    savedPlan = data;
   } else {
     const { data: existing } = await supabase
       .from("lesson_plans")
@@ -1428,16 +1452,34 @@ export async function saveLessonPlanAction(formData: FormData) {
       .maybeSingle();
 
     if (existing?.id) {
-      const { error } = await supabase.from("lesson_plans").update(payload).eq("id", existing.id).eq("school_id", schoolId);
+      const { data, error } = await supabase
+        .from("lesson_plans")
+        .update(payload)
+        .eq("id", existing.id)
+        .eq("school_id", schoolId)
+        .select("id, title, objective, content, methodology, pillars, resources, classroom_activities, home_activities, ai_feedback, reviewer_comment, status")
+        .single();
       if (error) throw new Error(error.message);
+      savedPlan = data;
     } else {
-      const { error } = await supabase.from("lesson_plans").insert(payload);
+      const { data, error } = await supabase
+        .from("lesson_plans")
+        .insert(payload)
+        .select("id, title, objective, content, methodology, pillars, resources, classroom_activities, home_activities, ai_feedback, reviewer_comment, status")
+        .single();
       if (error) throw new Error(error.message);
+      savedPlan = data;
     }
   }
 
   revalidatePath("/planejamento");
   revalidatePath("/coordenacao");
+
+  return savedPlan;
+}
+
+export async function saveLessonPlanFormAction(formData: FormData) {
+  await saveLessonPlanAction(formData);
 }
 
 export async function deleteLessonPlanAction(formData: FormData) {

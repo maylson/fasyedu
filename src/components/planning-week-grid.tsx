@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState, useTransition } from "react";
 import Link from "next/link";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { SubmitButton } from "@/components/submit-button";
 import {
   addLessonPlanLinkResourceAction,
@@ -10,6 +10,7 @@ import {
   deleteLessonPlanResourceAction,
   duplicateLessonPlanAction,
   saveLessonPlanAction,
+  saveLessonPlanFormAction,
   uploadLessonPlanFileResourceAction,
 } from "@/lib/actions/academic";
 
@@ -51,6 +52,21 @@ type PlanningEntry = {
     status: PlanStatus;
   };
   resources: PlanResource[];
+};
+
+type OptimisticPlanSnapshot = {
+  id: string | null;
+  title: string | null;
+  content: string | null;
+  objective: string | null;
+  methodology: string | null;
+  pillars: string | null;
+  resources: string | null;
+  classroom_activities: string | null;
+  home_activities: string | null;
+  ai_feedback: string | null;
+  reviewer_comment: string | null;
+  status: PlanStatus;
 };
 
 type PlanningDay = {
@@ -226,7 +242,6 @@ export function PlanningWeekGrid({
   initialOpenScheduleId,
   initialOpenLessonDate,
 }: PlanningWeekGridProps) {
-  const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [activeKey, setActiveKey] = useState<string | null>(null);
@@ -241,6 +256,7 @@ export function PlanningWeekGrid({
   const [selectedPillars, setSelectedPillars] = useState<string[]>([]);
   const [optimisticStatusByKey, setOptimisticStatusByKey] = useState<Record<string, PlanStatus>>({});
   const [optimisticDeletedKeys, setOptimisticDeletedKeys] = useState<Record<string, boolean>>({});
+  const [optimisticPlanByKey, setOptimisticPlanByKey] = useState<Record<string, OptimisticPlanSnapshot>>({});
   const [recentlyUpdatedCardKey, setRecentlyUpdatedCardKey] = useState<string | null>(null);
   const [duplicateSource, setDuplicateSource] = useState<PlanningEntry | null>(null);
   const [duplicateTargetClassId, setDuplicateTargetClassId] = useState<string>("");
@@ -310,27 +326,37 @@ export function PlanningWeekGrid({
     () =>
       entries.map((entry) => {
         const entryKey = `${entry.scheduleId}-${entry.lessonDate}`;
-        if (!optimisticDeletedKeys[entryKey]) return entry;
+        if (optimisticDeletedKeys[entryKey]) {
+          return {
+            ...entry,
+            plan: {
+              ...entry.plan,
+              id: null,
+              title: null,
+              content: null,
+              objective: null,
+              methodology: null,
+              pillars: null,
+              resources: null,
+              classroom_activities: null,
+              home_activities: null,
+              ai_feedback: null,
+              status: "MISSING" as PlanStatus,
+            },
+            resources: [],
+          };
+        }
+        const optimisticPlan = optimisticPlanByKey[entryKey];
+        if (!optimisticPlan) return entry;
         return {
           ...entry,
           plan: {
             ...entry.plan,
-            id: null,
-            title: null,
-            content: null,
-            objective: null,
-            methodology: null,
-            pillars: null,
-            resources: null,
-            classroom_activities: null,
-            home_activities: null,
-            ai_feedback: null,
-            status: "MISSING" as PlanStatus,
+            ...optimisticPlan,
           },
-          resources: [],
         };
       }),
-    [entries, optimisticDeletedKeys],
+    [entries, optimisticDeletedKeys, optimisticPlanByKey],
   );
 
   const entriesByCell = useMemo(() => {
@@ -434,9 +460,13 @@ export function PlanningWeekGrid({
 
         setOptimisticDeletedKeys((current) => ({ ...current, [key]: true }));
         setOptimisticStatusByKey((current) => ({ ...current, [key]: "MISSING" }));
+        setOptimisticPlanByKey((current) => {
+          const next = { ...current };
+          delete next[key];
+          return next;
+        });
         setCardSavedAnimation(key);
         setActiveKey(null);
-        router.refresh();
       } catch (error) {
         const message = error instanceof Error ? error.message : "Nao foi possivel excluir o planejamento.";
         window.alert(message);
@@ -633,13 +663,43 @@ export function PlanningWeekGrid({
     setSavingPlanKey(key);
     startTransition(async () => {
       try {
-        await saveLessonPlanAction(formData);
-        setOptimisticStatusByKey((current) => ({ ...current, [key]: nextStatus }));
+        const savedPlan = await saveLessonPlanAction(formData);
+        const persistedStatus = ((savedPlan?.status as PlanStatus) ?? nextStatus) as PlanStatus;
+        setOptimisticStatusByKey((current) => ({ ...current, [key]: persistedStatus }));
+        if (savedPlan) {
+          setOptimisticDeletedKeys((current) => ({ ...current, [key]: false }));
+          setOptimisticPlanByKey((current) => ({
+            ...current,
+            [key]: {
+              id: savedPlan.id,
+              title: savedPlan.title ?? null,
+              content: savedPlan.content ?? null,
+              objective: savedPlan.objective ?? null,
+              methodology: savedPlan.methodology ?? null,
+              pillars: savedPlan.pillars ?? null,
+              resources: savedPlan.resources ?? null,
+              classroom_activities: savedPlan.classroom_activities ?? null,
+              home_activities: savedPlan.home_activities ?? null,
+              ai_feedback: savedPlan.ai_feedback ?? null,
+              reviewer_comment: savedPlan.reviewer_comment ?? null,
+              status: persistedStatus,
+            },
+          }));
+          latestWizardFeedbackRef.current = savedPlan.ai_feedback ?? latestWizardFeedbackRef.current;
+          setWizardText(savedPlan.ai_feedback ?? wizardText);
+          setSubmitStatus(normalizePersistedStatus(persistedStatus));
+          submitStatusRef.current = normalizePersistedStatus(persistedStatus);
+          setSelectedPillars(
+            (savedPlan.pillars ?? "")
+              .split(",")
+              .map((value) => value.trim())
+              .filter(Boolean),
+          );
+        }
         setCardSavedAnimation(key);
         if (closeAfterSubmit) {
           setActiveKey(null);
         }
-        router.refresh();
       } catch (error) {
         const message = error instanceof Error ? error.message : "Nao foi possivel salvar o planejamento.";
         window.alert(message);
@@ -928,7 +988,7 @@ export function PlanningWeekGrid({
                     id={modalFormId}
                     key={`${activeEntry.scheduleId}-${activeEntry.lessonDate}-${activeEntry.plan.id ?? "new"}`}
                     ref={modalFormRef}
-                    action={saveLessonPlanAction}
+                    action={saveLessonPlanFormAction}
                     className="grid gap-3"
                   >
                     <input type="hidden" name="id" value={activeEntry.plan.id ?? ""} />

@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState, useTransition } from "react";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { SubmitButton } from "@/components/submit-button";
-import { deleteLessonPlanAction, duplicateLessonPlanAction, saveLessonPlanAction } from "@/lib/actions/academic";
+import { deleteLessonPlanAction, duplicateLessonPlanAction, saveLessonPlanFormAction } from "@/lib/actions/academic";
 
 type PlanStatus = "DRAFT" | "UNDER_REVIEW" | "APPROVED" | "REJECTED" | "HUMAN_REVIEW" | "MISSING";
 type PersistedStatus = "DRAFT" | "UNDER_REVIEW" | "APPROVED" | "REJECTED" | "HUMAN_REVIEW";
@@ -565,7 +565,7 @@ export function CoordinationWeekGrid({
                 id={modalFormId}
                 key={`${activeEntry.scheduleId}-${activeEntry.lessonDate}-${activeEntry.plan.id ?? "new"}`}
                 ref={modalFormRef}
-                action={saveLessonPlanAction}
+                action={saveLessonPlanFormAction}
                 className="grid gap-3"
               >
                 <input type="hidden" name="id" value={activeEntry.plan.id ?? ""} />
