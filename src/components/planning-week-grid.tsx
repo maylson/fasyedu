@@ -274,6 +274,7 @@ export function PlanningWeekGrid({
   const [savingPlanKey, setSavingPlanKey] = useState<string | null>(null);
   const modalFormRef = useRef<HTMLFormElement | null>(null);
   const waitingIntervalRef = useRef<number | null>(null);
+  const wizardTypingIntervalRef = useRef<number | null>(null);
   const highlightTimeoutRef = useRef<number | null>(null);
   const autoOpenDoneRef = useRef(false);
 
@@ -289,6 +290,22 @@ export function PlanningWeekGrid({
     if (waitingIntervalRef.current !== null) {
       window.clearInterval(waitingIntervalRef.current);
       waitingIntervalRef.current = null;
+    }
+  }
+
+  function clearWizardTypingStreaming() {
+    if (wizardTypingIntervalRef.current !== null) {
+      window.clearInterval(wizardTypingIntervalRef.current);
+      wizardTypingIntervalRef.current = null;
+    }
+  }
+
+  function stopWizardStreaming(resetText = false) {
+    clearWaitingStreaming();
+    clearWizardTypingStreaming();
+    setWizardStreamingPlainPreview(false);
+    if (resetText) {
+      setWizardText("");
     }
   }
 
@@ -466,6 +483,7 @@ export function PlanningWeekGrid({
           return next;
         });
         setCardSavedAnimation(key);
+        stopWizardStreaming(true);
         setActiveKey(null);
       } catch (error) {
         const message = error instanceof Error ? error.message : "Nao foi possivel excluir o planejamento.";
@@ -477,6 +495,7 @@ export function PlanningWeekGrid({
   }
 
   function openModal(entry: PlanningEntry) {
+    stopWizardStreaming();
     const initialFeedback = entry.plan.ai_feedback ?? "";
     setActiveKey(`${entry.scheduleId}-${entry.lessonDate}`);
     setWizardStatus(null);
@@ -698,6 +717,7 @@ export function PlanningWeekGrid({
         }
         setCardSavedAnimation(key);
         if (closeAfterSubmit) {
+          stopWizardStreaming(true);
           setActiveKey(null);
         }
       } catch (error) {
@@ -715,7 +735,7 @@ export function PlanningWeekGrid({
     setWizardBusy(true);
     setWizardError(null);
     setShowWizardPanel(true);
-    setWizardText("");
+    stopWizardStreaming(true);
     startWaitingStreaming();
 
     const payload = {
@@ -763,11 +783,12 @@ export function PlanningWeekGrid({
           const plainPreview = full.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
           if (plainPreview.length > 0) {
             setWizardStreamingPlainPreview(true);
-            const timer = window.setInterval(() => {
+            clearWizardTypingStreaming();
+            wizardTypingIntervalRef.current = window.setInterval(() => {
               index += 1;
               setWizardText(plainPreview.slice(0, index));
               if (index >= plainPreview.length) {
-                window.clearInterval(timer);
+                clearWizardTypingStreaming();
                 setWizardText(full);
                 setWizardStreamingPlainPreview(false);
               }
@@ -777,23 +798,29 @@ export function PlanningWeekGrid({
             setWizardStreamingPlainPreview(false);
           }
         } else {
-          const timer = window.setInterval(() => {
+          clearWizardTypingStreaming();
+          wizardTypingIntervalRef.current = window.setInterval(() => {
             index += 1;
             setWizardText(full.slice(0, index));
             if (index >= full.length) {
-              window.clearInterval(timer);
+              clearWizardTypingStreaming();
             }
           }, 14);
         }
       } catch {
-        clearWaitingStreaming();
-        setWizardStreamingPlainPreview(false);
+        stopWizardStreaming();
         setWizardError("Falha ao avaliar o plano agora. Tente novamente em instantes.");
       } finally {
         setWizardBusy(false);
       }
     });
   }
+
+  useEffect(() => {
+    return () => {
+      stopWizardStreaming();
+    };
+  }, []);
 
   return (
     <>
@@ -1195,7 +1222,14 @@ export function PlanningWeekGrid({
               >
                 Revisão Humana
               </button>
-              <button type="button" onClick={() => setActiveKey(null)} className="rounded-lg border border-[var(--line)] px-3 py-2 text-sm hover:bg-[var(--panel-soft)]">
+              <button
+                type="button"
+                onClick={() => {
+                  stopWizardStreaming(true);
+                  setActiveKey(null);
+                }}
+                className="rounded-lg border border-[var(--line)] px-3 py-2 text-sm hover:bg-[var(--panel-soft)]"
+              >
                 Cancelar
               </button>
               {savingPlanKey === `${activeEntry.scheduleId}-${activeEntry.lessonDate}` ? (

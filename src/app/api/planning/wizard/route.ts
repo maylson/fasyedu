@@ -26,18 +26,7 @@ type WizardInput = {
 
 type WizardHistory = {
   lesson_plan_id?: string | null;
-  prior_status?: string | null;
   prior_feedback?: string | null;
-  prior_response_id?: string | null;
-  prior_plan?: {
-    content?: string | null;
-    objective?: string | null;
-    methodology?: string | null;
-    pillars?: string | null;
-    resources?: string | null;
-    classroom_activities?: string | null;
-    home_activities?: string | null;
-  } | null;
 };
 
 function fallbackEvaluate(input: WizardInput) {
@@ -186,7 +175,6 @@ async function callOpenAiCompatible(config: {
   baseUrl?: string | null;
   model?: string | null;
   prompt: string;
-  previousResponseId?: string | null;
 }) {
   const base = (config.baseUrl || "https://api.openai.com/v1").replace(/\/+$/, "");
   const body: Record<string, unknown> = {
@@ -194,10 +182,6 @@ async function callOpenAiCompatible(config: {
     temperature: 0.2,
     input: config.prompt,
   };
-
-  if (config.previousResponseId) {
-    body.previous_response_id = config.previousResponseId;
-  }
 
   const response = await fetch(`${base}/responses`, {
     method: "POST",
@@ -341,20 +325,7 @@ async function getWizardHistory(
 
   return {
     lesson_plan_id: previousPlan?.id ?? lessonPlanId ?? null,
-    prior_status: previousPlan?.status ?? null,
     prior_feedback: previousFeedback,
-    prior_response_id: previousPlan?.ai_last_response_id ?? null,
-    prior_plan: previousPlan
-      ? {
-          content: previousPlan.content,
-          objective: previousPlan.objective,
-          methodology: previousPlan.methodology,
-          pillars: previousPlan.pillars,
-          resources: previousPlan.resources,
-          classroom_activities: previousPlan.classroom_activities,
-          home_activities: previousPlan.home_activities,
-        }
-      : null,
   };
 }
 
@@ -414,7 +385,6 @@ export async function POST(request: Request) {
         baseUrl: config.llm_base_url,
         model: config.llm_model,
         prompt,
-        previousResponseId: history?.prior_response_id ?? null,
       });
     } else if (provider === "ANTHROPIC") {
       result = await callAnthropic({
