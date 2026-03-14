@@ -254,6 +254,7 @@ export function PlanningWeekGrid({
   const latestWizardFeedbackRef = useRef("");
   const [isPending, startTransition] = useTransition();
   const [deletingPlanKey, setDeletingPlanKey] = useState<string | null>(null);
+  const [savingPlanKey, setSavingPlanKey] = useState<string | null>(null);
   const modalFormRef = useRef<HTMLFormElement | null>(null);
   const waitingIntervalRef = useRef<number | null>(null);
   const highlightTimeoutRef = useRef<number | null>(null);
@@ -620,16 +621,27 @@ export function PlanningWeekGrid({
   }
 
   function persistWithSave(closeAfterSubmit = false) {
-    if (activeEntry) {
-      const key = `${activeEntry.scheduleId}-${activeEntry.lessonDate}`;
-      const nextStatus = submitStatusRef.current as PlanStatus;
-      setOptimisticStatusByKey((current) => ({ ...current, [key]: nextStatus }));
-      setCardSavedAnimation(key);
-    }
-    requestAnimationFrame(() => {
-      modalFormRef.current?.requestSubmit();
-      if (closeAfterSubmit) {
-        setActiveKey(null);
+    if (!activeEntry || !modalFormRef.current) return;
+
+    const entry = activeEntry;
+    const key = `${entry.scheduleId}-${entry.lessonDate}`;
+    const nextStatus = submitStatusRef.current as PlanStatus;
+    const formData = new FormData(modalFormRef.current);
+
+    setSavingPlanKey(key);
+    startTransition(async () => {
+      try {
+        await saveLessonPlanAction(formData);
+        setOptimisticStatusByKey((current) => ({ ...current, [key]: nextStatus }));
+        setCardSavedAnimation(key);
+        if (closeAfterSubmit) {
+          setActiveKey(null);
+        }
+      } catch (error) {
+        const message = error instanceof Error ? error.message : "Nao foi possivel salvar o planejamento.";
+        window.alert(message);
+      } finally {
+        setSavingPlanKey(null);
       }
     });
   }
@@ -1102,7 +1114,7 @@ export function PlanningWeekGrid({
               <button
                 type="button"
                 onClick={runWizard}
-                disabled={wizardBusy || isPending}
+                disabled={wizardBusy || isPending || savingPlanKey === `${activeEntry.scheduleId}-${activeEntry.lessonDate}`}
                 className="inline-flex items-center gap-2 rounded-lg border border-emerald-300 bg-emerald-50 px-3 py-2 text-sm font-medium text-emerald-800 hover:bg-emerald-100 disabled:cursor-not-allowed disabled:opacity-60"
               >
                 <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
@@ -1116,7 +1128,7 @@ export function PlanningWeekGrid({
               <button
                 type="button"
                 onClick={() => setPendingStatus("HUMAN_REVIEW")}
-                disabled={wizardBusy || isPending}
+                disabled={wizardBusy || isPending || savingPlanKey === `${activeEntry.scheduleId}-${activeEntry.lessonDate}`}
                 className="rounded-lg border border-yellow-300 bg-yellow-100 px-3 py-2 text-sm font-medium text-yellow-800 hover:bg-yellow-200 disabled:cursor-not-allowed disabled:opacity-60"
               >
                 Revisão Humana
@@ -1124,13 +1136,18 @@ export function PlanningWeekGrid({
               <button type="button" onClick={() => setActiveKey(null)} className="rounded-lg border border-[var(--line)] px-3 py-2 text-sm hover:bg-[var(--panel-soft)]">
                 Cancelar
               </button>
+              {savingPlanKey === `${activeEntry.scheduleId}-${activeEntry.lessonDate}` ? (
+                <span className="rounded-lg border border-sky-200 bg-sky-50 px-3 py-2 text-sm text-sky-800">
+                  Salvando planejamento...
+                </span>
+              ) : null}
               <button
                 type="button"
                 onClick={() => persistWithSave(true)}
                 className="fasy-btn-primary px-3 py-2 text-sm disabled:cursor-not-allowed disabled:opacity-60"
-                disabled={wizardBusy || isPending}
+                disabled={wizardBusy || isPending || savingPlanKey === `${activeEntry.scheduleId}-${activeEntry.lessonDate}`}
               >
-                Salvar
+                {savingPlanKey === `${activeEntry.scheduleId}-${activeEntry.lessonDate}` ? "Salvando..." : "Salvar"}
               </button>
             </div>
           </div>
