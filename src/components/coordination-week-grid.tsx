@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState, useTransition } from "react";
 import Link from "next/link";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { SubmitButton } from "@/components/submit-button";
 import { deleteLessonPlanAction, duplicateLessonPlanAction, saveLessonPlanAction } from "@/lib/actions/academic";
 
@@ -180,6 +180,7 @@ export function CoordinationWeekGrid({
   duplicateDateMin,
   duplicateDateMax,
 }: CoordinationWeekGridProps) {
+  const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [activeKey, setActiveKey] = useState<string | null>(null);
@@ -334,6 +335,7 @@ export function CoordinationWeekGrid({
         setOptimisticStatusByKey((current) => ({ ...current, [key]: "MISSING" }));
         setCardSavedAnimation(key);
         setActiveKey(null);
+        router.refresh();
       } catch (error) {
         const message = error instanceof Error ? error.message : "Nao foi possivel excluir o planejamento.";
         window.alert(message);

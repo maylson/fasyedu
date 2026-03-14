@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState, useTransition } from "react";
 import Link from "next/link";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { SubmitButton } from "@/components/submit-button";
 import {
   addLessonPlanLinkResourceAction,
@@ -226,6 +226,7 @@ export function PlanningWeekGrid({
   initialOpenScheduleId,
   initialOpenLessonDate,
 }: PlanningWeekGridProps) {
+  const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [activeKey, setActiveKey] = useState<string | null>(null);
@@ -435,6 +436,7 @@ export function PlanningWeekGrid({
         setOptimisticStatusByKey((current) => ({ ...current, [key]: "MISSING" }));
         setCardSavedAnimation(key);
         setActiveKey(null);
+        router.refresh();
       } catch (error) {
         const message = error instanceof Error ? error.message : "Nao foi possivel excluir o planejamento.";
         window.alert(message);
@@ -637,6 +639,7 @@ export function PlanningWeekGrid({
         if (closeAfterSubmit) {
           setActiveKey(null);
         }
+        router.refresh();
       } catch (error) {
         const message = error instanceof Error ? error.message : "Nao foi possivel salvar o planejamento.";
         window.alert(message);
