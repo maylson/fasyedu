@@ -13,7 +13,6 @@ type WizardInput = {
   content?: string;
   objective?: string;
   methodology?: string;
-  pillars?: string;
   resources?: string;
   classroom_activities?: string;
   home_activities?: string;
@@ -141,7 +140,6 @@ function buildDefaultPrompt(input: WizardInput, history: WizardHistory | null) {
         content: input.content ?? "",
         objective: input.objective ?? "",
         methodology: input.methodology ?? "",
-        pillars: input.pillars ?? "",
         resources: input.resources ?? "",
         classroom_activities: input.classroom_activities ?? "",
         home_activities: input.home_activities ?? "",
@@ -160,7 +158,6 @@ function buildPromptFromTemplate(input: WizardInput, template: string, history: 
       content: input.content ?? "",
       objective: input.objective ?? "",
       methodology: input.methodology ?? "",
-      pillars: input.pillars ?? "",
       resources: input.resources ?? "",
       classroom_activities: input.classroom_activities ?? "",
       home_activities: input.home_activities ?? "",

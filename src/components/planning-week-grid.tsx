@@ -726,7 +726,6 @@ export function PlanningWeekGrid({
       content: String(formData.get("content") ?? ""),
       objective: String(formData.get("objective") ?? ""),
       methodology: String(formData.get("methodology") ?? ""),
-      pillars: String(formData.get("pillars") ?? ""),
       resources: String(formData.get("resources") ?? ""),
       classroom_activities: String(formData.get("classroom_activities") ?? ""),
       home_activities: String(formData.get("home_activities") ?? ""),
