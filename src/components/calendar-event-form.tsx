@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useMemo, useState } from "react";
 import { SubmitButton } from "@/components/submit-button";
@@ -16,6 +16,21 @@ type CalendarEventFormProps = {
   classes: EventFormClass[];
   schoolYearStart: string | null;
   schoolYearEnd: string | null;
+  title?: string;
+  submitLabel?: string;
+  pendingLabel?: string;
+  initialValues?: {
+    id?: string;
+    title: string;
+    eventDate: string;
+    description: string;
+    eventType: "FERIADO" | "COMEMORACAO" | "PROGRAMACAO";
+    isAdministrative: boolean;
+    targetStages: EducationStage[];
+    targetSeries: string[];
+    targetClassIds: string[];
+    attachmentName?: string | null;
+  };
 };
 
 const STAGE_LABELS: Record<EducationStage, string> = {
@@ -26,11 +41,33 @@ const STAGE_LABELS: Record<EducationStage, string> = {
   CURSO_LIVRE: "Curso Livre",
 };
 
-export function CalendarEventForm({ action, classes, schoolYearStart, schoolYearEnd }: CalendarEventFormProps) {
-  const [selectedStages, setSelectedStages] = useState<Set<EducationStage>>(new Set());
-  const [selectedSeries, setSelectedSeries] = useState<Set<string>>(new Set());
-  const [manuallySelectedClassIds, setManuallySelectedClassIds] = useState<Set<string>>(new Set());
-  const [isAdministrative, setIsAdministrative] = useState(false);
+const EMPTY_VALUES: NonNullable<CalendarEventFormProps["initialValues"]> = {
+  title: "",
+  eventDate: "",
+  description: "",
+  eventType: "PROGRAMACAO",
+  isAdministrative: false,
+  targetStages: [],
+  targetSeries: [],
+  targetClassIds: [],
+  attachmentName: null,
+};
+
+export function CalendarEventForm({
+  action,
+  classes,
+  schoolYearStart,
+  schoolYearEnd,
+  title = "Cadastrar evento",
+  submitLabel = "Cadastrar evento",
+  pendingLabel = "Salvando...",
+  initialValues,
+}: CalendarEventFormProps) {
+  const values = initialValues ?? EMPTY_VALUES;
+  const [selectedStages, setSelectedStages] = useState<Set<EducationStage>>(() => new Set(values.targetStages));
+  const [selectedSeries, setSelectedSeries] = useState<Set<string>>(() => new Set(values.targetSeries));
+  const [manuallySelectedClassIds, setManuallySelectedClassIds] = useState<Set<string>>(() => new Set(values.targetClassIds));
+  const [isAdministrative, setIsAdministrative] = useState(values.isAdministrative);
 
   const seriesByStage = useMemo(() => {
     const map = new Map<EducationStage, string[]>();
@@ -86,7 +123,6 @@ export function CalendarEventForm({ action, classes, schoolYearStart, schoolYear
       else next.delete(series);
       return next;
     });
-
   }
 
   function toggleClass(classId: string, checked: boolean) {
@@ -109,26 +145,29 @@ export function CalendarEventForm({ action, classes, schoolYearStart, schoolYear
 
   return (
     <section className="rounded-2xl border border-[var(--line)] bg-white p-4">
-      <h3 className="text-sm font-semibold text-[var(--brand-blue)]">Cadastrar evento</h3>
+      <h3 className="text-sm font-semibold text-[var(--brand-blue)]">{title}</h3>
       <form action={action} className="mt-3 grid gap-3">
+        {values.id ? <input type="hidden" name="id" value={values.id} /> : null}
+
         <div className="grid gap-3 lg:grid-cols-3">
-          <input name="title" className="fasy-input" placeholder="Nome do evento" required />
+          <input name="title" className="fasy-input" placeholder="Nome do evento" defaultValue={values.title} required />
           <input
             name="event_date"
             type="date"
             className="fasy-input"
             min={schoolYearStart ?? undefined}
             max={schoolYearEnd ?? undefined}
+            defaultValue={values.eventDate}
             required
           />
-          <select name="event_type" className="fasy-input" defaultValue="PROGRAMACAO">
+          <select name="event_type" className="fasy-input" defaultValue={values.eventType}>
             <option value="FERIADO">Feriado</option>
             <option value="COMEMORACAO">Comemoração</option>
             <option value="PROGRAMACAO">Programação</option>
           </select>
         </div>
 
-        <textarea name="description" className="fasy-input min-h-24" placeholder="Descrição do evento" />
+        <textarea name="description" className="fasy-input min-h-24" placeholder="Descrição do evento" defaultValue={values.description} />
 
         <div className="grid gap-3 lg:grid-cols-2">
           <fieldset className={`rounded-xl border p-3 ${isAdministrative ? "border-[var(--line)] bg-[var(--panel-soft)]/40 opacity-70" : "border-[var(--line)]"}`}>
@@ -210,9 +249,16 @@ export function CalendarEventForm({ action, classes, schoolYearStart, schoolYear
           <input type="file" name="attachment_file" accept=".pdf,image/*" className="fasy-input text-sm" />
         </div>
 
+        {values.attachmentName ? (
+          <label className="flex items-center gap-2 text-sm">
+            <input type="checkbox" name="remove_attachment" className="h-4 w-4" />
+            <span>Remover anexo atual ({values.attachmentName})</span>
+          </label>
+        ) : null}
+
         <div>
-          <SubmitButton className="fasy-btn-primary px-4 py-2 text-sm" pendingLabel="Salvando...">
-            Cadastrar evento
+          <SubmitButton className="fasy-btn-primary px-4 py-2 text-sm" pendingLabel={pendingLabel}>
+            {submitLabel}
           </SubmitButton>
         </div>
       </form>

@@ -1,30 +1,32 @@
 # FASY
 
-FASY (Formative Assessment System) é um sistema de gestão escolar e pedagógica multiescola, com foco em planejamento de aulas e avaliação formativa.
+FASY (Formative Assessment System) é um sistema de gestão escolar e pedagógica multiescola, com foco em planejamento de aulas, coordenação pedagógica, comunicação institucional e acompanhamento acadêmico.
 
 ## Estado atual
 
-Projeto em desenvolvimento ativo, com base funcional para operação real já disponível.
+Projeto em desenvolvimento ativo, já com base funcional suficiente para operação real em ambiente escolar.
 
-### Módulos implementados
+## Módulos implementados
 
-- Autenticação: login, esqueci senha e redefinição de senha (Supabase Auth).
+- Autenticação: login, esqueci senha e redefinição de senha com Supabase Auth.
 - Controle de acesso por perfil: Direção, Coordenação, Professor, Secretaria, Pai, Aluno e SUPPORT.
 - Multi-escola com contexto de escola ativa.
-- Usuários e perfis: criação, vinculação de papéis, edição e busca paginada.
-- Turmas: cadastro, edição, exclusão, série por etapa.
+- Usuários e perfis: criação, edição, busca paginada e gestão de múltiplos papéis por escola.
+- Turmas: cadastro, edição, exclusão e série por etapa.
 - Disciplinas por turma: cadastro, edição, exclusão e duplicação entre turmas.
 - Horários: grade semanal por turma, aula/intervalo, edição e exclusão.
-- Planejamento: grade semanal, status, Wizard IA, recursos e duplicação.
+- Planejamento: grade semanal, status, Wizard IA, recursos extras, duplicação e exportação em PDF.
 - Coordenação pedagógica: visão global e gestão de status de planejamento.
+- Agenda da família: aulas, conteúdos, tarefas e eventos da semana para pais e alunos.
 - Calendário escolar e mural com anexos.
+- Alunos e pais: cadastro de alunos, ficha, foto, responsáveis vinculados e histórico de matrículas.
 - Dashboard por perfil e Minha Conta.
 
-### Pontos de atenção
+## Pontos de atenção
 
-- Ainda há textos com problema de encoding em partes legadas.
+- Ainda há textos com problema de encoding em partes legadas da interface.
 - Existem fluxos em nível MVP que ainda pedem refinamento de UX.
-- Ainda não existe suíte formal de testes automatizados (unitário/integração/E2E).
+- Ainda não existe suíte formal de testes automatizados.
 
 ## Stack
 
@@ -69,47 +71,18 @@ Migrar schema:
 npx supabase db push
 ```
 
-## Migração de planejamentos legados (MySQL -> Supabase)
-
-Foi adicionado o script:
-
-- `scripts/migrate_legacy_lesson_plans.mjs`
-
-Ele:
-
-- lê o JSON legado (`lectures-old-system.json`);
-- corrige mojibake (ex.: `InglÃªs` -> `Inglês`);
-- ignora registros deletados (`Deletado = Sim`);
-- mapeia cada aula para `class_schedules` por turma + dia da semana + horário;
-- desambigua por professor/disciplina quando há mais de um horário no mesmo slot;
-- converte status para o padrão atual (`DRAFT`, `HUMAN_REVIEW`, `APPROVED`, `REJECTED`);
-- insere em `lesson_plans` sem sobrescrever existentes (conflitos são ignorados por `(class_schedule_id, lesson_date)`).
-
-### 1) Simulação (sem gravar no banco)
-
-```bash
-npm run migrate:legacy:plans -- --input "c:/Users/Maylson/Desktop/lectures-old-system.json"
-```
-
-### 2) Aplicação no banco
-
-```bash
-npm run migrate:legacy:plans -- --input "c:/Users/Maylson/Desktop/lectures-old-system.json" --apply
-```
-
-### 3) Artefatos gerados
-
-- `generated_schedules/migrate_legacy_lesson_plans_report.json`
-- `generated_schedules/migrate_legacy_lesson_plans_unresolved.json`
-- `generated_schedules/migrate_legacy_lesson_plans_preview.json`
-
-Os casos em `unresolved` precisam de ajuste manual (tipicamente divergência de turma/horário/professor na base atual).
-
 ## Qualidade
 
 ```bash
 npm run lint
-npx tsc --noEmit
+npm run typecheck
+npm run build
+```
+
+Ou tudo em sequência:
+
+```bash
+npm run check
 ```
 
 ## Wizard de IA
@@ -121,3 +94,13 @@ Configuração por escola em `Configurações > Pedagógico`:
 - base URL opcional;
 - API key;
 - prompt template por escola.
+
+## Migração de planejamentos legados
+
+Scripts já disponíveis para importação e reconciliação de planejamentos legados:
+
+- `scripts/migrate_legacy_lesson_plans.mjs`
+- `scripts/import_legacy2_lesson_plans_strict.mjs`
+- `scripts/import_legacy3_with_overrides.mjs`
+
+Artefatos gerados ficam em `generated_schedules/`.

@@ -23,6 +23,7 @@ type ActionContext = {
 
 const EVENT_ATTACHMENTS_BUCKET = "event-attachments";
 const ANNOUNCEMENT_ATTACHMENTS_BUCKET = "announcement-attachments";
+const STUDENT_PHOTOS_BUCKET = "student-photos";
 
 function hasAnyRole(userRoles: UserRole[], allowedRoles: UserRole[]) {
   if (userRoles.includes("SUPPORT")) return true;
@@ -45,6 +46,16 @@ async function ensureAnnouncementAttachmentsBucket() {
   const exists = (buckets ?? []).some((bucket) => bucket.name === ANNOUNCEMENT_ATTACHMENTS_BUCKET);
   if (!exists) {
     await admin.storage.createBucket(ANNOUNCEMENT_ATTACHMENTS_BUCKET, { public: false, fileSizeLimit: 10 * 1024 * 1024 });
+  }
+  return admin;
+}
+
+async function ensureStudentPhotosBucket() {
+  const admin = createAdminClient();
+  const { data: buckets } = await admin.storage.listBuckets();
+  const exists = (buckets ?? []).some((bucket) => bucket.name === STUDENT_PHOTOS_BUCKET);
+  if (!exists) {
+    await admin.storage.createBucket(STUDENT_PHOTOS_BUCKET, { public: false, fileSizeLimit: 10 * 1024 * 1024 });
   }
   return admin;
 }
@@ -170,6 +181,51 @@ async function removeAnnouncementAttachment(path: string | null) {
   await admin.storage.from(ANNOUNCEMENT_ATTACHMENTS_BUCKET).remove([path]);
 }
 
+async function uploadStudentPhoto(
+  schoolId: string,
+  file: File | null,
+  currentPath?: string | null,
+): Promise<{
+  photo_path: string | null;
+  photo_url: string | null;
+}> {
+  if (!(file instanceof File) || file.size === 0) {
+    return {
+      photo_path: currentPath ?? null,
+      photo_url: null,
+    };
+  }
+
+  const admin = await ensureStudentPhotosBucket();
+  const safeName = file.name.replace(/[^\w.\-() ]+/g, "_");
+  const filePath = `${schoolId}/${Date.now()}-${safeName}`;
+  const bytes = Buffer.from(await file.arrayBuffer());
+
+  const { error: uploadError } = await admin.storage
+    .from(STUDENT_PHOTOS_BUCKET)
+    .upload(filePath, bytes, { contentType: file.type || "application/octet-stream", upsert: false });
+
+  if (uploadError) {
+    throw new Error(uploadError.message);
+  }
+
+  if (currentPath) {
+    await admin.storage.from(STUDENT_PHOTOS_BUCKET).remove([currentPath]);
+  }
+
+  const { data: publicData } = admin.storage.from(STUDENT_PHOTOS_BUCKET).getPublicUrl(filePath);
+  return {
+    photo_path: filePath,
+    photo_url: publicData.publicUrl,
+  };
+}
+
+async function removeStudentPhoto(path: string | null) {
+  if (!path) return;
+  const admin = await ensureStudentPhotosBucket();
+  await admin.storage.from(STUDENT_PHOTOS_BUCKET).remove([path]);
+}
+
 async function getBaseContext(): Promise<ActionContext> {
   const supabase = await createClient();
   const {
@@ -237,7 +293,7 @@ export async function createStudentAction(formData: FormData) {
   const birthDateRaw = String(formData.get("birth_date") ?? "").trim();
 
   if (!registrationCode || !fullName || !stage) {
-    throw new Error("Preencha os campos obrigatórios do aluno.");
+    redirect(`/alunos?error=${encodeURIComponent("Preencha os campos obrigatórios do aluno.")}`);
   }
 
   const { error } = await supabase.from("students").insert({
@@ -248,10 +304,277 @@ export async function createStudentAction(formData: FormData) {
     birth_date: birthDateRaw || null,
     status: "ATIVO",
   });
-  if (error) throw new Error(error.message);
+  if (error) {
+    redirect(`/alunos?error=${encodeURIComponent(error.message)}`);
+  }
 
   revalidatePath("/alunos");
   revalidatePath("/dashboard");
+  redirect(`/alunos?success=${encodeURIComponent("Aluno cadastrado com sucesso.")}`);
+}
+
+export async function updateStudentAction(formData: FormData) {
+  const { supabase, schoolId } = await getSchoolManagementContext();
+  const studentId = String(formData.get("student_id") ?? "").trim();
+  const registrationCode = String(formData.get("registration_code") ?? "").trim();
+  const fullName = String(formData.get("full_name") ?? "").trim();
+  const stage = String(formData.get("stage") ?? "FUNDAMENTAL_1").trim();
+  const status = String(formData.get("status") ?? "ATIVO").trim();
+  const birthDateRaw = String(formData.get("birth_date") ?? "").trim();
+  const removePhoto = String(formData.get("remove_photo") ?? "") === "on";
+  const photoFile = formData.get("photo_file");
+
+  if (!studentId || !registrationCode || !fullName || !stage) {
+    redirect(`/alunos/${studentId || ""}?error=${encodeURIComponent("Preencha os campos obrigatórios do aluno.")}`);
+  }
+
+  const { data: existingStudent, error: existingError } = await supabase
+    .from("students")
+    .select("id, photo_path, photo_url")
+    .eq("school_id", schoolId)
+    .eq("id", studentId)
+    .maybeSingle();
+
+  if (existingError || !existingStudent) {
+    redirect(`/alunos/${studentId}?error=${encodeURIComponent("Aluno não encontrado para edição.")}`);
+  }
+
+  let photoPayload = {
+    photo_path: existingStudent.photo_path as string | null,
+    photo_url: existingStudent.photo_url as string | null,
+  };
+
+  if (removePhoto && photoPayload.photo_path) {
+    await removeStudentPhoto(photoPayload.photo_path);
+    photoPayload = { photo_path: null, photo_url: null };
+  }
+
+  if (photoFile instanceof File && photoFile.size > 0) {
+    photoPayload = await uploadStudentPhoto(schoolId, photoFile, photoPayload.photo_path);
+  }
+
+  const { error } = await supabase
+    .from("students")
+    .update({
+      registration_code: registrationCode,
+      full_name: fullName,
+      stage,
+      status,
+      birth_date: birthDateRaw || null,
+      ...photoPayload,
+    })
+    .eq("school_id", schoolId)
+    .eq("id", studentId);
+
+  if (error) {
+    redirect(`/alunos/${studentId}?error=${encodeURIComponent(error.message)}`);
+  }
+
+  revalidatePath("/alunos");
+  revalidatePath(`/alunos/${studentId}`);
+  revalidatePath("/dashboard");
+  redirect(`/alunos/${studentId}?success=${encodeURIComponent("Aluno atualizado com sucesso.")}`);
+}
+
+export async function deleteStudentAction(formData: FormData) {
+  const { supabase, schoolId } = await getSchoolManagementContext();
+  const studentId = String(formData.get("student_id") ?? "").trim();
+  if (!studentId) {
+    redirect(`/alunos?error=${encodeURIComponent("Aluno inválido para exclusão.")}`);
+  }
+
+  const { data: student } = await supabase
+    .from("students")
+    .select("photo_path")
+    .eq("school_id", schoolId)
+    .eq("id", studentId)
+    .maybeSingle();
+
+  if (student?.photo_path) {
+    await removeStudentPhoto(student.photo_path);
+  }
+
+  const { error } = await supabase.from("students").delete().eq("school_id", schoolId).eq("id", studentId);
+  if (error) {
+    redirect(`/alunos/${studentId}?error=${encodeURIComponent(error.message)}`);
+  }
+
+  revalidatePath("/alunos");
+  revalidatePath("/dashboard");
+  redirect(`/alunos?success=${encodeURIComponent("Aluno excluído com sucesso.")}`);
+}
+
+export async function createGuardianLinkAction(formData: FormData) {
+  const { supabase, schoolId } = await getSchoolManagementContext();
+  const studentId = String(formData.get("student_id") ?? "").trim();
+  const fullName = String(formData.get("full_name") ?? "").trim();
+  const email = String(formData.get("email") ?? "").trim().toLowerCase();
+  const phone = String(formData.get("phone") ?? "").trim();
+  const document = String(formData.get("document") ?? "").trim();
+  const relationship = String(formData.get("relationship") ?? "").trim();
+  const isFinancialResponsible = String(formData.get("is_financial_responsible") ?? "") === "on";
+
+  if (!studentId || !fullName || !relationship) {
+    redirect(`/alunos/${studentId || ""}?error=${encodeURIComponent("Nome do responsável e relação são obrigatórios.")}`);
+  }
+
+  let guardianId: string | null = null;
+
+  if (email) {
+    const { data: existingByEmail } = await supabase
+      .from("guardians")
+      .select("id")
+      .eq("school_id", schoolId)
+      .eq("email", email)
+      .maybeSingle();
+    guardianId = existingByEmail?.id ?? null;
+  }
+
+  if (!guardianId && phone) {
+    const { data: existingByPhone } = await supabase
+      .from("guardians")
+      .select("id")
+      .eq("school_id", schoolId)
+      .eq("phone", phone)
+      .eq("full_name", fullName)
+      .maybeSingle();
+    guardianId = existingByPhone?.id ?? null;
+  }
+
+  if (!guardianId) {
+    const { data: createdGuardian, error: createGuardianError } = await supabase
+      .from("guardians")
+      .insert({
+        school_id: schoolId,
+        full_name: fullName,
+        email: email || null,
+        phone: phone || null,
+        document: document || null,
+      })
+      .select("id")
+      .single();
+
+    if (createGuardianError || !createdGuardian?.id) {
+      redirect(`/alunos/${studentId}?error=${encodeURIComponent(createGuardianError?.message ?? "Não foi possível criar o responsável.")}`);
+    }
+    guardianId = createdGuardian.id;
+  } else {
+    const { error: updateGuardianError } = await supabase
+      .from("guardians")
+      .update({
+        full_name: fullName,
+        email: email || null,
+        phone: phone || null,
+        document: document || null,
+      })
+      .eq("school_id", schoolId)
+      .eq("id", guardianId);
+    if (updateGuardianError) {
+      redirect(`/alunos/${studentId}?error=${encodeURIComponent(updateGuardianError.message)}`);
+    }
+  }
+
+  const { error: linkError } = await supabase.from("student_guardians").upsert(
+    {
+      school_id: schoolId,
+      student_id: studentId,
+      guardian_id: guardianId,
+      relationship,
+      is_financial_responsible: isFinancialResponsible,
+    },
+    { onConflict: "student_id,guardian_id" },
+  );
+
+  if (linkError) {
+    redirect(`/alunos/${studentId}?error=${encodeURIComponent(linkError.message)}`);
+  }
+
+  revalidatePath(`/alunos/${studentId}`);
+  revalidatePath("/alunos");
+  redirect(`/alunos/${studentId}?success=${encodeURIComponent("Responsável vinculado com sucesso.")}`);
+}
+
+export async function updateGuardianLinkAction(formData: FormData) {
+  const { supabase, schoolId } = await getSchoolManagementContext();
+  const studentId = String(formData.get("student_id") ?? "").trim();
+  const guardianId = String(formData.get("guardian_id") ?? "").trim();
+  const fullName = String(formData.get("full_name") ?? "").trim();
+  const email = String(formData.get("email") ?? "").trim().toLowerCase();
+  const phone = String(formData.get("phone") ?? "").trim();
+  const document = String(formData.get("document") ?? "").trim();
+  const relationship = String(formData.get("relationship") ?? "").trim();
+  const isFinancialResponsible = String(formData.get("is_financial_responsible") ?? "") === "on";
+
+  if (!studentId || !guardianId || !fullName || !relationship) {
+    redirect(`/alunos/${studentId || ""}?error=${encodeURIComponent("Dados inválidos para edição do responsável.")}`);
+  }
+
+  const { error: guardianError } = await supabase
+    .from("guardians")
+    .update({
+      full_name: fullName,
+      email: email || null,
+      phone: phone || null,
+      document: document || null,
+    })
+    .eq("school_id", schoolId)
+    .eq("id", guardianId);
+
+  if (guardianError) {
+    redirect(`/alunos/${studentId}?error=${encodeURIComponent(guardianError.message)}`);
+  }
+
+  const { error: linkError } = await supabase
+    .from("student_guardians")
+    .update({
+      relationship,
+      is_financial_responsible: isFinancialResponsible,
+    })
+    .eq("school_id", schoolId)
+    .eq("student_id", studentId)
+    .eq("guardian_id", guardianId);
+
+  if (linkError) {
+    redirect(`/alunos/${studentId}?error=${encodeURIComponent(linkError.message)}`);
+  }
+
+  revalidatePath(`/alunos/${studentId}`);
+  revalidatePath("/alunos");
+  redirect(`/alunos/${studentId}?success=${encodeURIComponent("Responsável atualizado com sucesso.")}`);
+}
+
+export async function removeGuardianLinkAction(formData: FormData) {
+  const { supabase, schoolId } = await getSchoolManagementContext();
+  const studentId = String(formData.get("student_id") ?? "").trim();
+  const guardianId = String(formData.get("guardian_id") ?? "").trim();
+  if (!studentId || !guardianId) {
+    redirect(`/alunos/${studentId || ""}?error=${encodeURIComponent("Responsável inválido para remoção.")}`);
+  }
+
+  const { error } = await supabase
+    .from("student_guardians")
+    .delete()
+    .eq("school_id", schoolId)
+    .eq("student_id", studentId)
+    .eq("guardian_id", guardianId);
+
+  if (error) {
+    redirect(`/alunos/${studentId}?error=${encodeURIComponent(error.message)}`);
+  }
+
+  const { data: remainingLinks } = await supabase
+    .from("student_guardians")
+    .select("id", { count: "exact" })
+    .eq("school_id", schoolId)
+    .eq("guardian_id", guardianId);
+
+  if ((remainingLinks ?? []).length === 0) {
+    await supabase.from("guardians").delete().eq("school_id", schoolId).eq("id", guardianId);
+  }
+
+  revalidatePath(`/alunos/${studentId}`);
+  revalidatePath("/alunos");
+  redirect(`/alunos/${studentId}?success=${encodeURIComponent("Responsável removido com sucesso.")}`);
 }
 
 export async function createSubjectAction(formData: FormData) {

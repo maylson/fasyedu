@@ -2,7 +2,7 @@
 import { CalendarEventForm } from "@/components/calendar-event-form";
 import { ModuleShell } from "@/components/module-shell";
 import { SubmitButton } from "@/components/submit-button";
-import { createEventAction, deleteEventAction } from "@/lib/actions/academic";
+import { createEventAction, deleteEventAction, updateEventAction } from "@/lib/actions/academic";
 import { getUserContext } from "@/lib/app-context";
 import { type EducationStage } from "@/lib/constants";
 
@@ -151,6 +151,7 @@ export default async function CalendarioPage({ searchParams }: CalendarioPagePro
   );
 
   const deleteEventId = typeof params.delete_event_id === "string" ? params.delete_event_id : "";
+  const editEventId = typeof params.edit_event_id === "string" ? params.edit_event_id : "";
   const weekDayLabels = ["Seg", "Ter", "Qua", "Qui", "Sex", "Sáb", "Dom"];
   const localDateKeyFormatter = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Sao_Paulo" });
   const eventsByDate = new Map<string, Array<(typeof eventsWithAttachmentUrl)[number]>>();
@@ -172,6 +173,7 @@ export default async function CalendarioPage({ searchParams }: CalendarioPagePro
   const trailingCount = preGridCount % 7 === 0 ? 0 : 7 - (preGridCount % 7);
   const trailingDays = Array.from({ length: trailingCount }, (_, idx) => new Date(year, month, idx + 1));
   const monthGridDays = [...leadingDays, ...monthDays, ...trailingDays];
+  const eventToEdit = canManage ? eventsWithAttachmentUrl.find((event) => event.id === editEventId) ?? null : null;
 
   return (
     <ModuleShell title="Calendário Escolar" description="Eventos organizados em cards com segmentação por etapa, série e turma">
@@ -219,12 +221,40 @@ export default async function CalendarioPage({ searchParams }: CalendarioPagePro
       </div>
 
       {canManage ? (
-        <CalendarEventForm
-          action={createEventAction}
-          classes={classes}
-          schoolYearStart={schoolYearResult.data?.starts_at ?? null}
-          schoolYearEnd={schoolYearResult.data?.ends_at ?? null}
-        />
+        <div className="space-y-3">
+          <CalendarEventForm
+            action={eventToEdit ? updateEventAction : createEventAction}
+            classes={classes}
+            schoolYearStart={schoolYearResult.data?.starts_at ?? null}
+            schoolYearEnd={schoolYearResult.data?.ends_at ?? null}
+            title={eventToEdit ? "Editar evento" : "Cadastrar evento"}
+            submitLabel={eventToEdit ? "Salvar evento" : "Cadastrar evento"}
+            pendingLabel={eventToEdit ? "Salvando..." : "Cadastrando..."}
+            initialValues={
+              eventToEdit
+                ? {
+                    id: eventToEdit.id,
+                    title: eventToEdit.title,
+                    eventDate: new Date(eventToEdit.starts_at).toISOString().slice(0, 10),
+                    description: eventToEdit.description ?? "",
+                    eventType: eventToEdit.event_type,
+                    isAdministrative: eventToEdit.is_administrative,
+                    targetStages: eventToEdit.target_stages ?? [],
+                    targetSeries: eventToEdit.target_series ?? [],
+                    targetClassIds: eventToEdit.target_class_ids ?? [],
+                    attachmentName: eventToEdit.attachment_name ?? null,
+                  }
+                : undefined
+            }
+          />
+          {eventToEdit ? (
+            <div className="flex justify-end">
+              <Link href={withQuery(currentMonth, eventTypeFilter, currentView)} className="rounded-lg border border-[var(--line)] bg-white px-3 py-2 text-sm hover:bg-[var(--panel-soft)]">
+                Cancelar edição
+              </Link>
+            </div>
+          ) : null}
+        </div>
       ) : null}
 
       <section className="space-y-3">
@@ -291,6 +321,9 @@ export default async function CalendarioPage({ searchParams }: CalendarioPagePro
 
                   {canManage ? (
                     <div className="mt-4 flex items-center gap-2">
+                      <Link href={`${withQuery(currentMonth, eventTypeFilter, currentView)}&edit_event_id=${event.id}`} className="rounded-lg border border-[var(--line)] bg-white px-2 py-1 text-xs hover:bg-[var(--panel-soft)]">
+                        Editar
+                      </Link>
                       {!isDeleting ? (
                         <Link href={`${withQuery(currentMonth, eventTypeFilter, currentView)}&delete_event_id=${event.id}`} className="rounded-lg border border-rose-200 bg-white px-2 py-1 text-xs text-rose-700 hover:bg-rose-50">
                           Excluir

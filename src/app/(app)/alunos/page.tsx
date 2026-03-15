@@ -25,6 +25,8 @@ export default async function AlunosPage({ searchParams }: AlunosPageProps) {
   const q = typeof params.q === "string" ? params.q.trim() : "";
   const stageFilter = typeof params.stage === "string" ? params.stage : "ALL";
   const statusFilter = typeof params.status === "string" ? params.status : "ALL";
+  const error = typeof params.error === "string" ? params.error : null;
+  const success = typeof params.success === "string" ? params.success : null;
 
   let query = supabase
     .from("students")
@@ -48,6 +50,9 @@ export default async function AlunosPage({ searchParams }: AlunosPageProps) {
 
   return (
     <ModuleShell title="Alunos e Pais" description="Cadastro de estudantes, vínculos familiares e acesso à ficha do aluno">
+      {error ? <p className="rounded-xl border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-700">{error}</p> : null}
+      {success ? <p className="rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm text-emerald-700">{success}</p> : null}
+
       <form action={createStudentAction} className="grid gap-3 rounded-2xl border border-[var(--line)] bg-white p-4 md:grid-cols-5">
         <input name="registration_code" required placeholder="Matrícula" className="fasy-input md:col-span-1" />
         <input name="full_name" required placeholder="Nome completo" className="fasy-input md:col-span-2" />
@@ -67,12 +72,7 @@ export default async function AlunosPage({ searchParams }: AlunosPageProps) {
       </form>
 
       <form method="get" className="grid gap-3 rounded-2xl border border-[var(--line)] bg-white p-4 md:grid-cols-[1.2fr_1fr_1fr_auto_auto] md:items-center">
-        <input
-          name="q"
-          defaultValue={q}
-          placeholder="Buscar por nome ou matrícula"
-          className="fasy-input"
-        />
+        <input name="q" defaultValue={q} placeholder="Buscar por nome ou matrícula" className="fasy-input" />
 
         <select name="stage" defaultValue={stageFilter} className="fasy-input">
           <option value="ALL">Todas as etapas</option>
@@ -104,11 +104,7 @@ export default async function AlunosPage({ searchParams }: AlunosPageProps) {
           <article key={student.id} className="rounded-2xl border border-[var(--line)] bg-white p-4 shadow-[0_8px_20px_rgba(8,33,63,0.06)]">
             <div className="grid grid-cols-[84px_1fr] gap-3">
               <div className="overflow-hidden rounded-xl border border-[var(--line)] bg-[var(--panel-soft)]">
-                <img
-                  src={student.photo_url || silhouetteSrc}
-                  alt={`Foto de ${student.full_name}`}
-                  className="h-[110px] w-full object-cover"
-                />
+                <img src={student.photo_url || silhouetteSrc} alt={`Foto de ${student.full_name}`} className="h-[110px] w-full object-cover" />
               </div>
 
               <div className="min-w-0">
@@ -133,7 +129,7 @@ export default async function AlunosPage({ searchParams }: AlunosPageProps) {
           </article>
         ))}
 
-        {(!data || data.length === 0) ? (
+        {!data || data.length === 0 ? (
           <p className="rounded-xl border border-dashed border-[var(--line)] bg-[var(--panel-soft)] p-4 text-sm text-[var(--muted)] md:col-span-2 xl:col-span-3">
             Nenhum aluno encontrado com os filtros selecionados.
           </p>

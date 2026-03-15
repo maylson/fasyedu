@@ -89,7 +89,16 @@ function uniqueByKey<T>(items: T[], getKey: (item: T) => string) {
   });
 }
 
-async function fetchAllRows<T>(query: any, pageSize = 1000) {
+type RangeQueryResult<T> = {
+  data: T[] | null;
+  error: { message: string } | null;
+};
+
+type RangeQuery<T> = {
+  range(from: number, to: number): PromiseLike<RangeQueryResult<T>>;
+};
+
+async function fetchAllRows<T>(query: RangeQuery<T>, pageSize = 1000) {
   const rows: T[] = [];
   let from = 0;
   while (true) {
